@@ -1,9 +1,13 @@
 <template>
 <v-app id="inspire">
+ <v-container ma-0 pa-0>
 
- <AppHeader/> <router-view></router-view>
+ <AppHeader class="menu"/> 
+ <router-view></router-view>
 
 <AppFooter/>
+ </v-container>
+
     </v-app>
 </template>
 
@@ -11,39 +15,24 @@
 
 import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
-import Main from './views/Main'
 
 
 export default {
   components: {
     AppHeader,
     AppFooter,
-    Main
+    
   },
-
-    data () {
-      return {
-
-
-        right: null,
-        drawer: false,
-        group: null,
-        
-      }
-    },
-        watch: {
-      group () {
-        this.drawer = false
-      },
-    },
   }
 </script>
 
 
 <style>
   html, body, #app {
-    margin: 0;
-    padding: 0;
+ margin: 0;
+ padding: 0;
     background: #ccc;
+
   }
+
 </style>
