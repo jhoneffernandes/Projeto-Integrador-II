@@ -1,6 +1,6 @@
 <template>
 <v-app id="inspire">
- <v-container ma-0 pa-0>
+ <v-container ma-0 pa-0 fluid="">
 
  <AppHeader class="menu"/> 
  <router-view></router-view>

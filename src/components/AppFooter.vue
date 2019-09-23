@@ -17,7 +17,7 @@
 <v-layout pa-5 justify-center=""><h1> Nos siga nas redes sociais! </h1></v-layout> <br>
 
 
-        <v-row ><v-layout pa-5 justify-center="">
+        <v-row ><v-layout ma-5 pa-5 justify-center="">
           
          <v-btn icon class="espacamento">
           <v-icon large>mdi-facebook</v-icon>
@@ -70,9 +70,9 @@ export default {
 
 <style>
  .espacamento{
-   margin-left: 3rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
+   margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
  }
 
 </style>
