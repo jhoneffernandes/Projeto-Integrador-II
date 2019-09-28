@@ -25,6 +25,51 @@ export default new Router({
       name: 'classes',
      
       component: () => import('./views/Classes.vue')
+    },
+
+    {
+      path: '/professores',
+      name: 'professores',
+     
+      component: () => import('./views/Professores.vue')
+    },
+
+    {
+      path: '/login',
+      name: 'login',
+     
+      component: () => import('./views/painel/Login.vue')
+    },
+
+    {
+      path: '/painel',
+      name: 'painel',
+     
+      component: () => import('./views/painel/Painel.vue')
+    },
+
+    {
+      path: '/painel/perfis',
+      name: 'perfis',
+     
+      component: () => import('./views/painel/Perfis.vue')
+    },
+
+    {
+      path: '/painel/cursos',
+      name: 'cursos',
+     
+      component: () => import('./views/painel/Cursos.vue')
+    },
+
+    {
+      path: '/painel/duvidas',
+      name: 'duvidas',
+     
+      component: () => import('./views/painel/Duvidas.vue')
     }
+
+
+
   ]
 })

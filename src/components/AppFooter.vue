@@ -1,5 +1,5 @@
 <template>
-<v-container fluid fill-height>
+<v-container fluid>
   <v-footer height="0rem"
   width="auto"
   absolute=""

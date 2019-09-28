@@ -1,4 +1,5 @@
 <template>
+
     <v-row>
  <v-toolbar>
 
@@ -13,11 +14,11 @@
 <v-layout justify-end align-content-center="">
       <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
         
-      <router-link to="/about">  <v-btn text>Professores</v-btn></router-link>
+      <router-link to="/professores">  <v-btn text>Professores</v-btn></router-link>
        <router-link to="/classes"> <v-btn text>Cursos</v-btn></router-link>
       <router-link to="/about"> <v-btn text>Sobre</v-btn></router-link>  
-      <v-btn dark>Acessar Conta</v-btn>
-       <v-btn dark >Registrar</v-btn>
+     <router-link to="/login">  <v-btn dark>Acessar Conta</v-btn> </router-link>
+     <router-link to="/registration">  <v-btn dark>Registrar</v-btn> </router-link>
 
       </v-toolbar-items>
 
@@ -49,7 +50,7 @@
          
         >
           <v-list-item>
-         <router-link to="/about"><v-list-item-title>Professores</v-list-item-title></router-link>
+         <router-link to="/professores"><v-list-item-title>Professores</v-list-item-title></router-link>
           </v-list-item>
 
           <v-list-item>
@@ -63,11 +64,11 @@
           <v-divider></v-divider>
 
           <v-list-item>
-         <router-link to="/about"><v-list-item-title>Acesse sua conta</v-list-item-title></router-link>
+         <router-link to="/login"><v-list-item-title>Acesse sua conta</v-list-item-title></router-link>
           </v-list-item>
 
           <v-list-item>
-         <router-link to="/"><v-list-item-title>Registre Sua Conta</v-list-item-title></router-link>
+         <router-link to="/registration"><v-list-item-title>Registre Sua Conta</v-list-item-title></router-link>
           </v-list-item>
 
         </v-list-item-group>
@@ -99,10 +100,3 @@ export default {
 </script>
 
 
-<style>
-
-.espaco{
-  margin-top: 5rem;
-}
-
-</style>
