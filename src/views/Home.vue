@@ -1,18 +1,13 @@
 <template>
-<div>
-  <AppHeader/>
-  <ContentHome/>
-</div>
+  <HelloWorld/>
 </template>
 
 <script>
-import ContentHome from '../components/ContentHome';
-import AppHeader from '../components/AppHeader';
+import HelloWorld from '../components/HelloWorld';
 
 export default {
   components: {
-    ContentHome,
-    AppHeader
+    HelloWorld,
   },
 };
 </script>
