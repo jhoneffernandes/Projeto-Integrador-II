@@ -1,24 +1,26 @@
 <template>
 <v-app id="inspire">
- <v-content>
-<div id="app">
+ <v-container ma-0 pa-0 fluid="">
+
+ <AppHeader class="menu"/> 
  <router-view></router-view>
-</div>
+
 <AppFooter/>
- </v-content>
+ </v-container>
 
     </v-app>
 </template>
 
 <script>
 
+import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
 
 
 export default {
   components: {
+    AppHeader,
     AppFooter,
-    
   },
   }
 </script>
@@ -26,7 +28,8 @@ export default {
 
 <style>
   html, body, #app {
-
+ margin: 0;
+ padding: 0;
     background: #ccc;
 
   }
