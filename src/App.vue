@@ -1,37 +1,27 @@
 <template>
 <v-app id="inspire">
- <v-container ma-0 pa-0 fluid="">
-
- <AppHeader class="menu"/> 
+ <v-content>
+<div id="app">
  <router-view></router-view>
-
+</div>
 <AppFooter/>
- </v-container>
+ </v-content>
 
     </v-app>
 </template>
 
 <script>
 
-import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
 
 
 export default {
   components: {
-    AppHeader,
     AppFooter,
+    
   },
   }
 </script>
 
 
-<style>
-  html, body, #app {
- margin: 0;
- padding: 0;
-    background: #ccc;
 
-  }
-
-</style>

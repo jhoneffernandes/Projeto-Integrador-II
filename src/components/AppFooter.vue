@@ -1,5 +1,5 @@
 <template>
-<v-container fluid fill-height>
+<v-container fluid>
   <v-footer height="0rem"
   width="auto"
   absolute=""
@@ -12,7 +12,9 @@
       tile
       class="white--text text-center"
     >
-  
+   
+
+<v-layout pa-5 justify-center=""><h1> Nos siga nas redes sociais! </h1></v-layout> <br>
 
 
         <v-row ><v-layout ma-5 pa-5 justify-center="">
