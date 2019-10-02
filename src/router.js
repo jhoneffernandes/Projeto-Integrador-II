@@ -41,6 +41,14 @@ export default new Router({
       component: () => import('./views/painel/Login.vue')
     },
 
+
+    {
+      path: '/registration',
+      name: 'registrar',
+     
+      component: () => import('./views/painel/Registration.vue')
+    },
+
     {
       path: '/painel',
       name: 'painel',
@@ -63,10 +71,10 @@ export default new Router({
     },
 
     {
-      path: '/painel/duvidas',
-      name: 'duvidas',
+      path: '/painel/professores',
+      name: 'professorescurso',
      
-      component: () => import('./views/painel/Duvidas.vue')
+      component: () => import('./views/painel/Professores.vue')
     }
 
 

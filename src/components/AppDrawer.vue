@@ -59,8 +59,8 @@
          <v-list-item-title>Cursos</v-list-item-title>
           </v-list-item></router-link>
 
-         <router-link  to="/painel/duvidas"> <v-list-item>
-         <v-list-item-title >Dúvidas</v-list-item-title>
+         <router-link  to="/painel/professores"> <v-list-item>
+         <v-list-item-title >Professores</v-list-item-title>
           </v-list-item></router-link>
 
           <v-divider></v-divider>

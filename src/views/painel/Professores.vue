@@ -6,18 +6,18 @@
        hide-default-footer=""
     :headers="headers"
     :items="user"
-    sort-by="cpf"
+    sort-by="cursolecionado"
     class="elevation-1"
   >
     <template v-slot:top>
       <v-toolbar flat color="white">
-        <v-toolbar-title>Controle de Alunos</v-toolbar-title>
+        <v-toolbar-title>Registro dos professores</v-toolbar-title>
        
         <div class="flex-grow-1"></div>
         
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on }">
-            <v-btn color="indigo" dark class="mb-2" v-on="on">Cadastrar Aluno</v-btn>
+            <v-btn color="indigo" dark class="mb-2" v-on="on">Registar novo professor</v-btn>
           </template>
           <v-card>
             <v-card-title>
@@ -31,16 +31,16 @@
                     <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.cpf" label="CPF"></v-text-field>
+                    <v-text-field v-model="editedItem.cursolecionado" label="Curso Lecionado"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <v-text-field v-model="editedItem.registro" label="Número de registro"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.celular" label="Celular"></v-text-field>
+                    <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
+                    <v-text-field v-model="editedItem.salario" label="Salário"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>
@@ -95,33 +95,33 @@ components: {
           sortable: false,
           value: 'nome',
         },
-        { text: 'CPF', value: 'cpf' },
+        { text: 'Curso Lecionado', value: 'cursolecionado' },
         { text: 'Número de registro', value: 'registro' },
-        { text: 'Celular', value: 'celular' },
         { text: 'E-mail', value: 'email' },
+        { text: 'Salário', value: 'salario' },
         { text: '', value: 'action', sortable: false },
       ],
       user: [],
       editedIndex: -1,
       editedItem: {
         nome: '',
-        cpf: '000.000.000-00',
+        cursolecionado: 'Curso',
         registro: '',
-        celular: '',
         email: '',
+        salario: '00,00R$',
       },
       defaultItem: {
         nome: '',
-        cpf: '000.000.000-00',
+        cursolecionado: 'Curso',
         registro: '',
-        celular: '',
         email: '',
+        salario: '00,00R$',
       },
     }),
 
     computed: {
       formTitle () {
-        return this.editedIndex === -1 ? 'Cadastrar Aluno' : 'Editar Informações'
+        return this.editedIndex === -1 ? 'Registrar novo professor' : 'Editar Informações'
       },
     },
 
@@ -139,19 +139,26 @@ components: {
       initialize () {
         this.user = [
           {
-            nome: 'Para de ri Alek',
-            cpf: '241.291.940-20',
+            nome: 'Lucas Silva',
+            cursolecionado: 'Curso de HTML',
             registro: '1',
-            celular: '1194191702',
-            email: 'bauioehhardware@gmail.com',
+            email: 'silvalucas@professor.com',
+            salario: '3400,00R$',
           },
 
           {
-            nome: 'Everson Zoio',
-            cpf: '666.666.666-66',
+            nome: 'Fábio Assunção',
+            cursolecionado: 'Curso de CSS3',
             registro: '2',
-            celular: '1118377303',
-            email: 'ehtrolagi@gmail.com',
+            email: 'fabioprofessor@gmail.com',
+            salario: '4000,00R$',
+          },
+          {
+            nome: 'Jorge Castro',
+            cursolecionado: 'Curso de JavaScript',
+            registro: '3',
+            email: 'jorgecastro@professor.com',
+            salario: '4300,00R$',
           },
         ]
       },
@@ -164,7 +171,7 @@ components: {
 
       deleteItem (item) {
         const index = this.user.indexOf(item)
-        confirm('Deletar esse cadastro?') && this.user.splice(index, 1)
+        confirm('Deletar o registro desse professor?') && this.user.splice(index, 1)
       },
 
       close () {
