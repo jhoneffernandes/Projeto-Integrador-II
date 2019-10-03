@@ -102,6 +102,7 @@ export default {
     },
     sair () {
       this.$ls.remove('login')
+      this.$ls.remove('name')
       this.$router.push('/')
     }},
   }

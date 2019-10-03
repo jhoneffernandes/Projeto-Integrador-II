@@ -1,5 +1,4 @@
 <template>
-
   <v-container
       class="fill-height align-center justify-center"
       fluid>
@@ -10,7 +9,7 @@
           md="4">
 <v-card class="elevation-12">
     <v-toolbar
-              color="primary"
+              color="indigo"
               dark
               flat>
               <v-toolbar-title>Registro de usuário</v-toolbar-title>
@@ -28,7 +27,7 @@
       v-model="name"
       :counter="10"
       :rules="nameRules"
-      label="Name"
+      label="Nome"
       required
     ></v-text-field>
 
@@ -41,8 +40,8 @@
 
        <v-checkbox
       v-model="checkbox"
-      :rules="[v => !!v || 'You must agree to continue!']"
-      label="Do you agree?"
+      :rules="[v => !!v || 'Você precisa aceitar para continuar!']"
+      label="Você deseja receber nossos e-mails?"
       required
     ></v-checkbox>
 
@@ -52,7 +51,7 @@
       class="mr-4"
       @click="validate"
     >
-      Validate
+      Criar usuário
     </v-btn>
 
     <v-btn
@@ -60,14 +59,14 @@
       class="mr-4"
       @click="reset"
     >
-      Reset Form
+      Limpar campos
     </v-btn>
 
     <v-btn
       color="warning"
       @click="resetValidation"
     >
-      Reset Validation
+      Limpar validação 
     </v-btn>
   </v-form>
   </v-card>
@@ -78,26 +77,37 @@
 
 <script>
   export default {
+    data () {
+      return {
+        name: '',
+      }
+    },
+
     data: () => ({
       valid: true,
       name: '',
       nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+        v => !!v || 'O nome é obrigatório',
+        v => (v && v.length <= 10) || 'O nome de usuário deve ser menor que 10 caractéres',
       ],
       email: '',
       emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        v => !!v || 'O e-mail é obrigatório',
+        v => /.+@.+\..+/.test(v) || 'O e-mail deve ser válido',
       ],
      
       checkbox: false,
+
     }),
 
     methods: {
       validate () {
         if (this.$refs.form.validate()) {
-          this.snackbar = true
+          this.snackbar = true,
+                   this.$ls.set(  'name' , this.name),
+
+                  this.$router.push('/painel')
+
         }
       },
       reset () {

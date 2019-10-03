@@ -6,7 +6,7 @@
        hide-default-footer=""
     :headers="headers"
     :items="user"
-    sort-by="cursolecionado"
+    sort-by="registro"
     class="elevation-1"
   >
     <template v-slot:top>
@@ -17,7 +17,7 @@
         
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on }">
-            <v-btn color="indigo" dark class="mb-2" v-on="on">Registar novo professor</v-btn>
+            <v-btn color="indigo" dark class="mb-2" v-on="on">Registrar novo professor</v-btn>
           </template>
           <v-card>
             <v-card-title>
@@ -28,19 +28,19 @@
               <v-container>
                 <v-row>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
+                    <v-text-field required v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.cursolecionado" label="Curso Lecionado"></v-text-field>
+                    <v-text-field required v-model="editedItem.cursolecionado" label="Curso Lecionado"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.registro" label="Número de registro"></v-text-field>
+                    <v-text-field required v-model="editedItem.registro" label="Número de registro"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
+                    <v-text-field required v-model="editedItem.email" label="E-mail"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.salario" label="Salário"></v-text-field>
+                    <v-text-field required v-model="editedItem.salario" label="Salário"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>

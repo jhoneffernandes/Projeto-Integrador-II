@@ -28,19 +28,19 @@
               <v-container>
                 <v-row>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
+                    <v-text-field required v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.preço" label="Preço"></v-text-field>
+                    <v-text-field required v-model="editedItem.preço" label="Preço"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.registro" label="Número de registro"></v-text-field>
+                    <v-text-field required v-model="editedItem.registro" label="Número de registro"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.professor" label="Professor"></v-text-field>
+                    <v-text-field required v-model="editedItem.professor" label="Professor"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.duracao" label="Duração do curso"></v-text-field>
+                    <v-text-field required v-model="editedItem.duracao" label="Duração do curso"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>

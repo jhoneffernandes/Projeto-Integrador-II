@@ -28,19 +28,19 @@
               <v-container>
                 <v-row>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
+                    <v-text-field required v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.cpf" label="CPF"></v-text-field>
+                    <v-text-field required v-model="editedItem.cpf" label="CPF"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.registro" label="Número de registro"></v-text-field>
+                    <v-text-field required v-model="editedItem.registro" label="Número de registro"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.celular" label="Celular"></v-text-field>
+                    <v-text-field required v-model="editedItem.celular" label="Celular"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
+                    <v-text-field required v-model="editedItem.email" label="E-mail"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>
@@ -139,11 +139,11 @@ components: {
       initialize () {
         this.user = [
           {
-            nome: 'Para de ri Alek',
+            nome: 'Alek Fumac',
             cpf: '241.291.940-20',
             registro: '1',
             celular: '1194191702',
-            email: 'bauioehhardware@gmail.com',
+            email: 'hardware@gmail.com',
           },
 
           {
@@ -151,7 +151,7 @@ components: {
             cpf: '666.666.666-66',
             registro: '2',
             celular: '1118377303',
-            email: 'ehtrolagi@gmail.com',
+            email: 'trolagi@gmail.com',
           },
         ]
       },
