@@ -22,7 +22,7 @@
     </v-layout>
 
     <v-layout>
-      <div class="mx-12 my-5">
+      <div class="mx-auto" >
         <section>
           <video controls height="50%" width="60%" poster="../assets/poster.jpg" src="../assets/teste.mp4"></video>
         </section>
