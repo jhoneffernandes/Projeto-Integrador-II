@@ -23,9 +23,14 @@
       </p>
     </v-layout>
 
-<v-row align="center" justify="center" class="my-10">
-          <video controls height="50%" width="50%" poster="../assets/poster.jpg" src="../assets/teste.mp4"></video>
-</v-row>
+    <v-layout>
+      <div class="mx-auto" >
+        <section>
+          <video controls height="50%" width="60%" poster="../assets/poster.jpg" src="../assets/teste.mp4"></video>
+        </section>
+      </div>
+    </v-layout>
+  </v-container>
   </div>
 </template>
 
