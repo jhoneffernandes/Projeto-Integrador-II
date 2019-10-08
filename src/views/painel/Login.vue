@@ -3,8 +3,7 @@
   <v-content>
     
     <v-container
-      class="fill-height align-center justify-center"
-      fluid>
+      class="fill-height align-center justify-center">
       <v-row align="center" justify="center">
         <v-col
           cols="12"
@@ -16,7 +15,9 @@
               dark
               flat>
               <v-toolbar-title>Acesso Administrativo</v-toolbar-title>
+              
             </v-toolbar>
+            
             <v-card-text>
               <v-form>
                  <v-text-field v-model="login" label="Usuário" prepend-icon="mdi-account" />
@@ -25,7 +26,7 @@
 
               </v-form>
             </v-card-text>
-            <v-card-actions>
+            <v-card-actions class="flex-wrap">
                             <v-btn color="primary" @click="voltar">Voltar a página inicial</v-btn>
 
               <div class="flex-grow-1"></div>

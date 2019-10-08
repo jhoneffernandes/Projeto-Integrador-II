@@ -1,7 +1,6 @@
 <template>
-<v-container fluid fill-height>
   <v-footer height="0rem"
-  width="auto"
+  width="100%"
   absolute=""
   dark
     padless
@@ -12,10 +11,12 @@
       tile
       class="white--text text-center"
     >
-  
+   
+
+<v-layout pt-5 justify-center=""><h1> Nos siga nas redes sociais! </h1></v-layout> <br>
 
 
-        <v-row ><v-layout ma-5 pa-5 justify-center="">
+        <v-row  ><v-layout class="flex-wrap" ma-5 pa-5 justify-center="">
           
          <v-btn icon class="espacamento">
           <v-icon large>mdi-facebook</v-icon>
@@ -36,8 +37,7 @@
 
         </v-layout>
   </v-row>
-
-<p>
+<v-card-text class="white--text body-1">
 CNPJ: 32998352000174<br>
 E-Mail: comunicacoes@dioramadigital.com<br>
 CEP: 14050159<br>
@@ -47,8 +47,8 @@ Bairro: Vila Tibério<br>
 Cidade: Ribeirão Preto<br>
 Estado: SP<br>
 Telefone: (16) 2836-9713<br>
-Celular: (16) 99556-4409</p>
-
+Celular: (16) 99556-4409<br>
+</v-card-text>
 
       <v-divider></v-divider>
 
@@ -57,7 +57,6 @@ Celular: (16) 99556-4409</p>
       </v-card-text>
     </v-card>
   </v-footer>
-</v-container>
 </template>
 
 <script>

@@ -1,30 +1,30 @@
 <template>
-  <v-container pa-0 ma-0 fluid>
-    <v-layout align-center justify-center text-center class="my-5">
+  <div>
+    <AppHeader/>
+      <v-divider></v-divider>
+   
       <v-row>
-        <v-card min-width="auto" width="100%" max-width="auto" height="10rem" dark color="indigo">
-          <v-layout class="flex-wrap" justify-center align-center>
+        <v-card width="100%" height="15rem" dark color="indigo">
+          <v-layout class="flex-wrap" justify-center align-center="">
             <v-card-title>
-              <h2 class="tituloh">Professores da Diorama Digital</h2>
+              <h2>Professores da Diorama Digital</h2>
             </v-card-title>
 
             <v-card-text>
-              <p  class="textop">Os nossos professores são mestres  em programação, design  e tem muita paixão por ensinar. A combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.</p>
+              <p class="textop text-center ma-6">Os nossos professores são mestres  em programação, design  e tem muita paixão por ensinar. A combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.</p>
             </v-card-text>
           </v-layout>
         </v-card>
       </v-row>
-    </v-layout>
 
-    <v-layout class="mx-12 ml-12">
-      <v-row no-gutters>
+      <v-row no-gutter justify="center">
         <v-col cols="5" sm="3" class="ml-12">
           <v-card class="pa-2">
             <v-img
               class="mx-9"
               :src="require('../assets/prof.jpg')"
               aspect-ratio="1"
-              max-width="250"
+              min-width="50%"
               max-height="300"
             ></v-img>
 
@@ -65,7 +65,7 @@
               class="mx-9"
               :src="require('../assets/prof2.jpg')"
               aspect-ratio="1"
-              max-width="250"
+              min-width="50%"
               max-height="300"
             ></v-img>
 
@@ -98,13 +98,13 @@
           </v-card>
         </v-col>
 
-        <v-col cols="5" sm="3" class="ml-12">
+        <v-col cols="5" sm="3" class="mx-12">
           <v-card class="pa-2">
             <v-img
-              class="mx-9"
+              class="mx-12"
               :src="require('../assets/prof3.jpg')"
               aspect-ratio="1"
-              max-width="250"
+              min-width="50%"
               max-height="300"
             ></v-img>
 
@@ -138,27 +138,19 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-layout>
-  </v-container>
+
+  </div>
 </template>
 
+<script>
+import AppHeader from '../components/AppHeader';
+export default {
 
-<style lang="scss" scoped>
-.textop {
-  font-size: 1rem;
-}
+components: {
+    AppHeader,
+  }
 
-.tituloh {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
+</script>
 
-.spacer {
-  margin-top: 0.5rem;
-}
 
-a {
-  text-decoration: none;
-}
-</style>
