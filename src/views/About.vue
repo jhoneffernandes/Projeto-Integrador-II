@@ -24,7 +24,9 @@
         </p>
       </v-layout>
     </v-row>
-    
+    <div>
+      <p>Vê ai ce ta no commit nao master e nao aceita esse bagulho</p>
+    </div>
     <v-layout>
       <div class="mx-auto">
         <section>
