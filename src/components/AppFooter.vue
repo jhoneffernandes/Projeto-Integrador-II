@@ -1,14 +1,17 @@
 <template>
   <v-footer height="0rem"
-  width="100%"
+  min-width="100%"
   absolute=""
   dark
-    padless
+  tile=""
+  padless=""
+  fluid
+  app=""
   >
     
-    <v-card width="100%" cols="auto"
+    <v-card min-width="100%" cols="12"
       flat
-      tile
+      tile=""
       class="white--text text-center"
     >
    

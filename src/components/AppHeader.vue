@@ -4,7 +4,7 @@
       <v-toolbar-items>
         <v-btn text max-width="16rem">
           <router-link to="/">
-            <v-img :src="require('../assets/logo2.png')" height="3rem" contain></v-img>
+            <v-img :src="require('../assets/logo2.svg')" height="3rem" contain></v-img>
           </router-link>
         </v-btn>
       </v-toolbar-items>
@@ -35,7 +35,7 @@
       </v-layout>
     </v-toolbar>
 
-    <v-navigation-drawer class="mob" col="12" app stateless v-model="menumob" fixed right temporary>
+    <v-navigation-drawer class="mob" col="12" app v-model="menumob" fixed right temporary>
       <v-list nav dense>
         <v-app-bar-nav-icon @click.stop="menumob = !menumob"></v-app-bar-nav-icon>
         <v-divider></v-divider>

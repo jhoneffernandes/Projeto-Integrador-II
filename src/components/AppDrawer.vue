@@ -20,7 +20,7 @@
                       target="_blank"
                       v-on="on"
                      text max-width="16rem"> <router-link to="/">
-    <v-img :src="require('../assets/logo2.png')" height="3rem" contain></v-img>
+    <v-img :src="require('../assets/logo2.svg')" height="3rem" contain></v-img>
     </router-link>                    </v-btn>
                   </template>
                   <span>Página Inicial</span>
@@ -30,11 +30,9 @@
     </v-toolbar>
 
         <v-navigation-drawer class="mob"  col="12"
-    app stateless
+      app 
       v-model="menumob"
-      fixed
       left
-      
       temporary
     >
       <v-list nav dense>
@@ -86,13 +84,13 @@ export default {
   data () {
       return {
 
-       menumob: true,
+       menumob: false,
         
       }
     },
         watch: {
       group () {
-        this.menumob = false
+        this.menumob = true
 
       },
     },

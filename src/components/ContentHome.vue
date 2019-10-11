@@ -1,19 +1,19 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card min-width="auto" width="100%" max-width="auto" height="13rem" dark color="indigo">
+        <v-card width="100%" height="100%" dark color="indigo">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
-              <h2 class="tituloh flex-nowrap">Bem vindos a Diorama!</h2>
+              <h2 class="tituloh text-center">Bem vindos a Diorama!</h2>
             </v-card-title>
 
             <v-card-text>
-              <p
-                class="textop"
-              >Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
-              <v-btn min-height="100%" max-height="auto">Clique aqui para conhecer</v-btn>
+              <p class="textop">Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
             </v-card-text>
+                          <v-btn class="mb-5">Clique aqui para conhecer</v-btn>
+
           </v-layout>
         </v-card>
       </v-row>
@@ -79,63 +79,69 @@
       </v-carousel>
     </v-row>
 
-    <v-row dense pa-0 ma-0 fill-height>
+    <v-row dense fill-height>
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+            <v-divider></v-divider>
+            <v-card-text class="text-center">Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
 
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="text-center">Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
 
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="text-center">Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
 
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/css.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+            <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>            
+            <v-divider></v-divider>
+            <v-card-text class="text-center">Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
 
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="text-center">Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
 
       <v-col sm="12" md="2">
         <a href="#">
-          <v-card>
+          <v-card dark="" color="indigo" elevation="01">
             <v-img :src="require('../assets/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
-            <v-card-text>Descrição breve do curso</v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="text-center" >Descrição breve do curso</v-card-text>
           </v-card>
         </a>
       </v-col>
