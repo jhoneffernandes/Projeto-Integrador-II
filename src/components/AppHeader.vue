@@ -1,14 +1,13 @@
 <template>
   <v-row>
-    <v-toolbar>
+    <v-toolbar elevation="1">
       <v-toolbar-items>
         <v-btn text max-width="16rem">
           <router-link to="/">
-            <v-img :src="require('../assets/logo2.png')" height="3rem" contain></v-img>
+            <v-img :src="require('../assets/logo.svg')" height="3rem" contain></v-img>
           </router-link>
         </v-btn>
       </v-toolbar-items>
-
       <div class="flex-grow-1"></div>
       <v-layout justify-end align-content-center>
         <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
@@ -28,7 +27,6 @@
             <v-btn dark>Registrar</v-btn>
           </router-link>
         </v-toolbar-items>
-
         <v-toolbar-items v-if="$vuetify.breakpoint.smAndDown">
           <v-app-bar-nav-icon @click.stop="menumob = !menumob"></v-app-bar-nav-icon>
         </v-toolbar-items>
@@ -46,7 +44,7 @@
               <v-list-item-title>Cursos</v-list-item-title>
             </router-link>
           </v-list-item>
-          
+
           <v-list-item>
             <router-link to="/professores">
               <v-list-item-title>Professores</v-list-item-title>
