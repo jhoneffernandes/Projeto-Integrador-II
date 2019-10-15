@@ -12,7 +12,7 @@
             <v-card-text>
               <p class="textop">Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
             </v-card-text>
-                          <v-btn class="mb-5">Clique aqui para conhecer</v-btn>
+                          <v-btn @click="conhecer" class="mb-5">Clique aqui para conhecer</v-btn>
 
           </v-layout>
         </v-card>
@@ -79,7 +79,7 @@
       </v-carousel>
     </v-row>
 
-    <v-row dense fill-height>
+    <v-row dense fill-height class="my-5">
       <v-col sm="12" md="2">
         <a href="#">
           <v-card dark="" color="indigo" elevation="01">
@@ -150,7 +150,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods : {
+ conhecer () {
+      this.$router.push('/about')
+    }
+  }
+};
 </script>
 
 
