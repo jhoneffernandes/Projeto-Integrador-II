@@ -17,7 +17,7 @@
         
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on }">
-            <v-btn color="indigo" @click="cadastro" dark class="mb-2" v-on="on">Cadastrar Aluno</v-btn>
+            <v-btn color="indigo" dark class="mb-2" v-on="on">Cadastrar Aluno</v-btn>
           </template>
           <v-card>
             <v-card-title>
@@ -86,8 +86,7 @@ export default {
 components: {
     AppDrawer,
   },
-
-   data: () => ({
+  data: () => ({
       dialog: false,
       headers: [
         {
@@ -155,10 +154,6 @@ components: {
             email: 'trolagi@gmail.com',
           },
         ]
-      },
-
-      cadastro () {
-      this.$router.push('/painel/perfis/form')
       },
 
       editItem (item) {

@@ -11,7 +11,7 @@
           <template v-slot:activator="{ on }">
             <v-btn target="_blank" v-on="on" text max-width="16rem">
               <router-link to="/">
-                <v-img :src="require('../assets/logo.svg')" height="3rem" contain></v-img>
+                <v-img :src="require('../assets/logo2.png')" height="3rem" contain></v-img>
               </router-link>
             </v-btn>
           </template>
@@ -20,7 +20,7 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-navigation-drawer class="mob" col="12" app v-model="menumob" fixed left temporary>
+    <v-navigation-drawer class="mob" col="12" app stateless v-model="menumob" fixed left temporary>
       <v-list nav dense>
         <v-app-bar-nav-icon @click.stop="menumob = !menumob"></v-app-bar-nav-icon>
         <v-divider></v-divider>
