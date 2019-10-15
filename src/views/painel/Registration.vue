@@ -62,12 +62,7 @@
       Limpar campos
     </v-btn>
 
-    <v-btn
-      color="warning"
-      @click="resetValidation"
-    >
-      Limpar validação 
-    </v-btn>
+    
   </v-form>
   </v-card>
         </v-col>
@@ -113,11 +108,8 @@
       reset () {
         this.$refs.form.reset()
       },
-      resetValidation () {
-        this.$refs.form.resetValidation()
-      },
-      
-        voltar () {
+     
+     voltar () {
       this.$router.push('/')
     }
       
