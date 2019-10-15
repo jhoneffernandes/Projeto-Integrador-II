@@ -4,7 +4,7 @@
       <v-toolbar-items>
         <v-btn text max-width="16rem">
           <router-link to="/">
-            <v-img :src="require('../assets/logo.svg')" height="3rem" contain></v-img>
+            <v-img :src="require('../assets/logos/logo.svg')" height="3rem" contain></v-img>
           </router-link>
         </v-btn>
       </v-toolbar-items>
@@ -74,6 +74,7 @@
       </v-list>
     </v-navigation-drawer>
   </v-row>
+  
 </template>
 
 <script>
