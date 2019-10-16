@@ -20,7 +20,7 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-navigation-drawer class="mob" col="12" app stateless v-model="menumob" fixed left temporary>
+    <v-navigation-drawer class="mob" col="12" app  v-model="menumob" fixed left temporary>
       <v-list nav dense>
         <v-app-bar-nav-icon @click.stop="menumob = !menumob"></v-app-bar-nav-icon>
         <v-divider></v-divider>
