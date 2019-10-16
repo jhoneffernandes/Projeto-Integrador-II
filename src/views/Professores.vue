@@ -26,7 +26,7 @@
           <v-img
             id="profimg"
             class="mx-10"
-            :src="require('../assets/prof.jpg')"
+            :src="require('../assets/prof1.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -97,7 +97,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof3.jpg')"
+            :src="require('../assets/prof2.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -170,7 +170,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof2.jpg')"
+            :src="require('../assets/prof3.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -292,8 +292,8 @@ export default {
   border-radius: 100rem;
 }
 .fundo {
-  background-image: url(../assets/banner1.png);
-  background-repeat: repeat;
+  background-image: url(../assets/banner1.svg);
+  background-repeat: no-repeat;
   border-radius: 10px;
 }
 .linha{
