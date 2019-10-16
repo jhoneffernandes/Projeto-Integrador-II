@@ -64,6 +64,13 @@ export default new Router({
     },
 
     {
+      path: '/painel/perfis/form',
+      name: 'form',
+     
+      component: () => import('./views/painel/AppForm.vue')
+    },
+
+    {
       path: '/painel/cursos',
       name: 'cursos',
      
