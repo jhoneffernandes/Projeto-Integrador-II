@@ -7,7 +7,7 @@
         <v-card width="100%" height="6rem" dark color="indigo">
           <v-layout justify-center align-center>
             <v-card-title>
-              <h2 class="tituloh flex-nowrap">Sobre Diorama Digital</h2>
+              <h2 class="tituloh flex-nowrap">{{textbannersobre}}</h2>
             </v-card-title>
           </v-layout>
         </v-card>
@@ -15,23 +15,23 @@
     </v-layout>
 
     <v-card-text class="headline">
-      <p>Confira um vídeo introdutório sobre o projeto Diorama Cursos:</p>
+      <p>{{textvideo}}</p>
     </v-card-text>
 
-    <v-layout >
-      <div class="mx-auto">
+    <v-layout>
+      <div>
         <section>
           <video
             controls
             height="10%"
-            width="60%"
+            width="50%"
             poster="../assets/poster.jpg"
             :src="require('../assets/vsobre.mp4')"
           ></video>
         </section>
       </div>
     </v-layout>
-    
+
     <v-row class="ml-2 mt-5">
       <v-layout>
         <p class="text-justify">
@@ -48,6 +48,13 @@
 <script>
 import AppHeader from "../components/AppHeader";
 export default {
+  data() {
+    return {
+      textvideo:
+        "Confira um vídeo introdutório sobre o projeto Diorama Cursos:",
+      textbannersobre: "Sobre Diorama Digital"
+    };
+  },
   components: {
     AppHeader
   }
