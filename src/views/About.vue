@@ -18,15 +18,15 @@
       <p>Confira um vídeo introdutório sobre o projeto Diorama Cursos:</p>
     </v-card-text>
 
-    <v-layout >
+    <v-layout>
       <div class="mx-auto">
         <section>
           <video
             controls
-            height="10%"
-            width="60%"
-            poster="../assets/banners/poster.jpg"
-            :src="require('../assets/videos/vsobre.mp4')"
+            height="100%"
+            width="100%"
+            poster="../assets/poster.jpg"
+            :src="require('../assets/teste.mp4')"
           ></video>
         </section>
       </div>
@@ -53,3 +53,4 @@ export default {
   }
 };
 </script>
+
