@@ -146,6 +146,36 @@
         </a>
       </v-col>
     </v-row>
+    
+    <v-row align="center" justify="center" class="my-5"> 
+      <v-col sm="12" md="6" xl="5">
+      <v-card>
+        <v-card-text class="text-center my-5 tamanho white--text">Assine nossso Newsletter!</v-card-text>
+
+<v-text-field
+  v-model="email"
+      :rules="emailRules"
+      required
+ class="mx-6 my-6" color="indigo" label="Digite seu e-mail">
+  <v-icon class="mx-1" slot="prepend" color="indigo">mdi-email</v-icon>
+  </v-text-field>
+
+  <v-card-actions class="align-center justify-center">
+
+    <v-btn
+      dark
+      :disabled="!valid"
+      color="indigo"
+      class="mb-5"
+      @click="validate"
+    >
+Assinar 
+    </v-btn> 
+      </v-card-actions>
+      </v-card>
+</v-col>
+    </v-row>
+  
   </v-container>
 </template>
 
@@ -154,8 +184,24 @@ export default {
   methods : {
  conhecer () {
       this.$router.push('/about')
-    }
-  }
+    },
+
+validate() {
+      this.$router.push('/painel')
+}
+
+  },
+   data: () => ({
+      valid: true,
+     
+      email: '',
+      emailRules: [
+        v => !!v || 'O e-mail é obrigatório para assinar o Newsletter!',
+        v => /.+@.+\..+/.test(v) || 'O e-mail deve ser válido',
+      ],
+     
+     
+    }),
 };
 </script>
 
@@ -181,6 +227,11 @@ a {
 .hoverz a:hover {
   background: cyan;
   border-top: 5px solid blue;
+}
+
+.tamanho{
+  font-size: 2rem;
+  background-color: rgb(65, 40, 207);
 }
 
 </style>
