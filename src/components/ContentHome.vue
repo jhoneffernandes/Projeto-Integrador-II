@@ -20,7 +20,7 @@
     <v-row align="center" justify="center" class="spacer">
       <v-carousel cycle height="20rem" interval="9000" hide-delimiters>
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/firstimg.png')">
+          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title>Produto 1</v-card-title>
               <v-card-text
@@ -34,7 +34,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/firstimg.png')">
+          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title>Produto 2</v-card-title>
               <v-card-text
@@ -48,7 +48,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/firstimg.png')">
+          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title>Produto 3</v-card-title>
               <v-card-text
@@ -62,7 +62,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/firstimg.png')">
+          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title>Produto 4</v-card-title>
               <v-card-text
@@ -102,7 +102,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -113,7 +113,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -124,7 +124,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -135,7 +135,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -146,7 +146,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/csharp.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -157,7 +157,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/javascript.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -179,7 +179,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -190,7 +190,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -201,7 +201,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -212,7 +212,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -223,7 +223,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/csharp.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -234,7 +234,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/javascript.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -256,7 +256,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -267,7 +267,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -278,7 +278,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -289,7 +289,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/css.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -300,7 +300,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/csharp.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
@@ -311,7 +311,7 @@
       <v-col sm="11" md="3" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/javascript.jpg')"></v-img>
+            <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>

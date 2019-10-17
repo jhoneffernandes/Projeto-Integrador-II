@@ -25,8 +25,8 @@
             controls
             height="10%"
             width="50%"
-            poster="../assets/poster.jpg"
-            :src="require('../assets/vsobre.mp4')"
+            poster="../assets/banners/poster.jpg"
+            :src="require('../assets/videos/vsobre.mp4')"
           ></video>
         </section>
       </div>

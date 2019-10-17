@@ -26,7 +26,7 @@
           <v-img
             id="profimg"
             class="mx-10"
-            :src="require('../assets/prof1.jpg')"
+            :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -78,7 +78,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/pit.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -97,7 +97,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof2.jpg')"
+            :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -151,7 +151,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/pit.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -170,7 +170,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof3.jpg')"
+            :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -226,7 +226,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/pit.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -292,7 +292,7 @@ export default {
   border-radius: 100rem;
 }
 .fundo {
-  background-image: url(../assets/banner1.svg);
+  background-image: url(../assets/banners/banner1.svg);
   background-repeat: no-repeat;
   border-radius: 10px;
 }

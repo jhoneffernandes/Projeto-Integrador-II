@@ -11,7 +11,7 @@
           <template v-slot:activator="{ on }">
             <v-btn target="_blank" v-on="on" text max-width="16rem">
               <router-link to="/">
-                <v-img :src="require('../assets/logo.svg')" height="3rem" contain></v-img>
+                <v-img :src="require('../assets/logos/logo.svg')" height="3rem" contain></v-img>
               </router-link>
             </v-btn>
           </template>
