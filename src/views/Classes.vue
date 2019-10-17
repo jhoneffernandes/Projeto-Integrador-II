@@ -9,38 +9,44 @@
               <h2 class="tituloh text-center">Nossos cursos</h2>
             </v-card-title>
 
-            <v-card-text>
-              <p class="textop text-center">Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
-             
-            </v-card-text>
+            
           </v-layout>
         </v-card>
  </v-row>
 
- <v-row align="center" justify="center" class="my-5 mx-5">
+ <v-row align="center" justify="center" class="mt-12 my-5 mx-5">
       
-      <h1 class="mb-5 text-center">eaeaeaeae</h1>
 
       <p class="text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ratione nostrum debitis molestias impedit reiciendis, cupiditate nisi accusantium voluptas veniam quaerat aspernatur qui vitae nesciunt recusandae unde eaque adipisci amet.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore a, libero ipsa amet laborum? Saepe accusamus, asperiores cupiditate cumque neque mollitia iure delectus modi, earum enim molestias, et provident.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero laborum, incidunt autem numquam hic labore nostrum in corrupti quia laudantium, rerum exercitationem harum. Corrupti deserunt earum dicta ab nostrum.</p>
+      Nos cursos online da Diorama Cursos você sempre terá acesso a um conteúdo atualizado, já que os cursos são frequentemente modificados. É possível assistir às aulas e fazer as avaliações a partir de qualquer computador com acesso à internet, desde que o mesmo cumpra os requisitos mínimos.
 
+Além das aulas, o ambiente de aprendizado também é totalmente online, de forma que você pode usá-lo para esclarecer suas dúvidas com os instrutores e realizar outras atividades propostas. Por estes motivos, os cursos da Diorama Cursos não são disponibilizados em formato DVD.
+      </p>
     </v-row>
 
+<v-row>
+  <v-col>
 
-  <v-row justify="center">
-    <v-btn color="primary">Todos</v-btn>
-    <v-btn color="primary">Cursos de design</v-btn>
-    <v-btn color="primary">Cursos de framework</v-btn>
-    <v-btn color="primary">Cursos de programação</v-btn>
-  </v-row>
+    <v-tabs slider-size="4" slider-color="indigo" centered=""> 
+      
+       
+       <v-tab class="blue white--text">
+        Todos
+      </v-tab>
+      <v-tab class="blue white--text">
+        Design
+      </v-tab>
+      <v-tab class="blue white--text">
+        Framework
+      </v-tab>
+      <v-tab class="blue white--text">
+        Programação
+      </v-tab>
 
-  <v-row dense fill-height class="my-5">
-      <v-col>
-     
-      <v-row justify-sm="center">
-      <v-col class="bordagreen mx-3 my-2" sm="11" md="3" lg="2">
+      <v-tab-item class="mx-6">
+<v-row justify="center">
+
+ <v-col class="bordagreen mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
@@ -51,7 +57,7 @@
         </a>
       </v-col>
 
-      <v-col class="bordayellow mx-3 my-2" sm="11" md="3" lg="2">
+      <v-col class="bordayellow mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordayellow" :src="require('../assets/webcurso.jpg')"></v-img>
@@ -62,7 +68,7 @@
         </a>
       </v-col>
 
-      <v-col class="bordapurple mx-3 my-2" sm="11" md="3" lg="2">
+      <v-col class="bordapurple mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordapurple" :src="require('../assets/webcurso.jpg')"></v-img>
@@ -73,7 +79,7 @@
         </a>
       </v-col>
 
-      <v-col class="bordagreen mx-3 my-2" sm="11" md="3" lg="2">
+      <v-col class="bordagreen mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
@@ -84,7 +90,7 @@
         </a>
       </v-col>
 
-      <v-col class="bordayellow mx-3 my-2" sm="11" md="3" lg="2">
+      <v-col class="bordayellow mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordayellow" :src="require('../assets/csharp.jpg')"></v-img>
@@ -95,7 +101,7 @@
         </a>
       </v-col>
 
-      <v-col class="bordapurple mx-3 my-2" sm="11" md="3" lg="2">
+      <v-col class="bordapurple mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img class="bordapurple" :src="require('../assets/javascript.jpg')"></v-img>
@@ -105,9 +111,124 @@
           </v-card>
         </a>
       </v-col>
-      </v-row>
+</v-row>
+      </v-tab-item>
+
+      <v-tab-item class="mx-6">
+        <v-row>
+          <v-col class="bordapurple mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
       </v-col>
-    </v-row>
+      <v-col class="bordapurple mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+      <v-col class="bordapurple mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+        </v-row>
+      </v-tab-item>
+
+
+       <v-tab-item class="mx-6">
+          
+        <v-row>
+          <v-col class="bordayellow mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+      <v-col class="bordayellow mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+      <v-col class="bordayellow mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+        </v-row>
+      
+      </v-tab-item>
+
+       <v-tab-item class="mx-6">
+          
+        <v-row>
+     <v-col class="bordagreen mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+       <v-col class="bordagreen mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+       <v-col class="bordagreen mx-3 my-2" sm="11" md="3" lg="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="text-center blue">Saiba mais</v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+        </v-row>
+      
+      </v-tab-item>
+    
+    </v-tabs>
+  
+  </v-col>
+</v-row>
+  
 
   </div>
 </template>
@@ -118,8 +239,9 @@ export default {
 
 components: {
     AppHeader,
-  }
+  },
 
+  
 }
 </script>
 
