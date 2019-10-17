@@ -26,7 +26,7 @@
           <v-img
             id="profimg"
             class="mx-10"
-            :src="require('../assets/prof1.jpg')"
+            :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -78,7 +78,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/webcurso.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -97,7 +97,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof2.jpg')"
+            :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -151,7 +151,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/css.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -170,7 +170,7 @@
           <v-img
             id="profimg"
             class="mx-12"
-            :src="require('../assets/prof3.jpg')"
+            :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
             width="18%"
             min-width="auto"
@@ -226,7 +226,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/pit.jpg')"
+                      :src="require('../assets/cursos/pit.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -258,9 +258,9 @@ export default {
       p2: "Seu currículo",
       p3: "Cursos ministrados",
 
-      sobre1: "Respeita  a minha history A o maluco e brabo mesmo slk",
-      sobre2:" Ta tirando  o maluco e brabo mesmo slk A o maluco e brabo mesmo slk",
-      sobre3:"Seloco o pai manja mesmo mds o maluco e brabo mesmo slk A o maluco e brabo mesmo slk",
+      sobre1: "Se você traçar metas absurdamente altas e falhar, seu fracasso será muito melhor que o sucesso de todos",
+      sobre2:" O sucesso normalmente vem para quem está ocupado demais para procurar por ele",
+      sobre3:"Todos os seus sonhos podem se tornar realidade se você tem coragem para persegui-los",
 
       prof1:"Lucas Santos",
       prof2:"Jorge Alcantara",
@@ -292,7 +292,7 @@ export default {
   border-radius: 100rem;
 }
 .fundo {
-  background-image: url(../assets/banner1.svg);
+  background-image: url(../assets/banners/banner1.svg);
   background-repeat: no-repeat;
   border-radius: 10px;
 }

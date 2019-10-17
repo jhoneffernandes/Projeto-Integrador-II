@@ -49,7 +49,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
  <v-col class="bordagreen mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
+            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
@@ -60,7 +60,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-col class="bordayellow mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img class="bordayellow" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
@@ -71,7 +71,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-col class="bordapurple mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/webcurso.jpg')"></v-img>
+            <v-img class="bordapurple" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
@@ -82,7 +82,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-col class="bordagreen mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/css.jpg')"></v-img>
+            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
@@ -93,7 +93,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-col class="bordayellow mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/csharp.jpg')"></v-img>
+            <v-img class="bordayellow" :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
@@ -104,7 +104,7 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-col class="bordapurple mx-3 my-2" sm="11" md="5" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/javascript.jpg')"></v-img>
+            <v-img class="bordapurple" :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Preço</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="text-center blue">Saiba mais</v-card-text>
