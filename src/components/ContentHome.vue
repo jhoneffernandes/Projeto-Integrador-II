@@ -105,7 +105,7 @@
             <v-img :src="require('../assets/cursos/photoshop.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+            <v-card-text class="textopadrao"><H1>Preço:  R$ 150,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -119,7 +119,7 @@
             <v-img :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -133,7 +133,7 @@
             <v-img :src="require('../assets/cursos/blender.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 800,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -147,7 +147,7 @@
             <v-img :src="require('../assets/cursos/max.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 800,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -173,7 +173,7 @@
             <v-img :src="require('../assets/cursos/bootstrap.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -187,7 +187,7 @@
             <v-img :src="require('../assets/cursos/vue.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -201,7 +201,7 @@
             <v-img :src="require('../assets/cursos/bulma.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
@@ -215,7 +215,7 @@
             <v-img :src="require('../assets/cursos/materialize.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
@@ -242,7 +242,7 @@
             <v-img :src="require('../assets/cursos/javascript.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
@@ -257,7 +257,7 @@
             <v-img :src="require('../assets/cursos/python.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
@@ -272,7 +272,7 @@
             <v-img :src="require('../assets/cursos/php.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
@@ -287,7 +287,7 @@
             <v-img :src="require('../assets/cursos/c.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
@@ -353,9 +353,8 @@ validate() {
         v => !!v || 'O e-mail é obrigatório para assinar o Newsletter!',
         v => /.+@.+\..+/.test(v) || 'O e-mail deve ser válido',
       ],
-     
-     
     }),
+
 };
 </script>
 
