@@ -108,7 +108,7 @@
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
-            <v-card-text class="text-center"><v-btn width="100%" color="primary">Saiba mais</v-btn></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
