@@ -79,88 +79,108 @@
 
     <v-row align="center" justify="center" class="my-5 mx-5">
       
-      <h1 class="mb-5 text-center">eaeaeaeae</h1>
+      <h1 class="mb-5 text-center">Diorama Cursos</h1>
 
       <p class="text-center">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ratione nostrum debitis molestias impedit reiciendis, cupiditate nisi accusantium voluptas veniam quaerat aspernatur qui vitae nesciunt recusandae unde eaque adipisci amet.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore a, libero ipsa amet laborum? Saepe accusamus, asperiores cupiditate cumque neque mollitia iure delectus modi, earum enim molestias, et provident.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero laborum, incidunt autem numquam hic labore nostrum in corrupti quia laudantium, rerum exercitationem harum. Corrupti deserunt earum dicta ab nostrum.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ratione nostrum debitis molestias impedit reiciendis, cupiditate nisi accusantium voluptas veniam quaerat aspernatur qui vitae nesciunt recusandae unde eaque adipisci amet.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore a, libero ipsa amet laborum? Saepe accusamus, asperiores cupiditate cumque neque mollitia iure delectus modi, earum enim molestias, et provident.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero laborum, incidunt autem numquam hic labore nostrum in corrupti quia laudantium, rerum exercitationem harum. Corrupti deserunt earum dicta ab nostrum.</p>
+      A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos materiais  de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos materiais de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos de HTML e CSS, Conheça alguns dos nossos cursos mais famosos abaixo:
+      </p>
 
     </v-row>
 
     <v-row dense fill-height class="my-5 mene">
       <v-col>
       <v-row align="center" justify="center" class="ss">
-        <v-col xl="1" md="2" sm="6">
-      <p class="menetitulo1 text-center white--text tituloh">Título 1</p>
+        <v-col xl="4" sm="6">
+      <p class="menetitulo1 text-center white--text tituloh">Cursos de design e modelagem 3D</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+            <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn width="100%" color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
@@ -171,73 +191,97 @@
     <v-row dense fill-height class="my-5 mene3">
       <v-col>
       <v-row align="center" justify="center" class="ss">
-        <v-col xl="1" md="2" sm="6">
-      <p class="menetitulo2 text-center white--text tituloh">Título 2</p>
+        <v-col xl="4" sm="6">
+      <p class="menetitulo2 text-center white--text tituloh">Cursos sobre frameworks</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
@@ -248,73 +292,97 @@
     <v-row dense fill-height class="my-5 mene4">
       <v-col>
       <v-row align="center" justify="center" class="ss">
-        <v-col xl="1" md="2" sm="6">
-      <p class="menetitulo3 text-center white--text tituloh">Título 3</p>
+        <v-col xl="4" sm="6">
+      <p class="menetitulo3 text-center white--text tituloh">Cursos de linguagens de programação</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 1</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 2</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 4</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 5</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
 
-      <v-col sm="11" md="3" lg="2">
+      <v-col sm="11" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Curso 6</v-card-title>
             <v-divider></v-divider>
-            <v-card-text class="text-center blue">Descrição breve do curso</v-card-text>
+             <v-card-text><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Clique aqui para conhecer</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
@@ -410,11 +478,11 @@ a {
 }
 
 .mene{
-  border: 0.5rem solid rgba(0, 0, 255, 0.61);
+  border: 0.5rem solid rgba(82, 0, 102, 0.61);
 }
 
 .menetitulo1{
-  background-color: rgb(168, 186, 219);
+  background-color: purple;
 }
 
 .mene3
@@ -428,11 +496,11 @@ a {
 }
 
 .menetitulo2{
-  background-color: rgb(219, 214, 168);
+  background-color: rgb(161, 151, 0);
 }
 
 .menetitulo3{
-  background-color: rgb(170, 219, 168);
+  background-color: green;
 }
 
 
