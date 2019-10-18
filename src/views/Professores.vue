@@ -90,7 +90,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/cursos/webcurso.jpg')"
+                      :src="require('../assets/cursos/vue.png')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -173,7 +173,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/cursos/css.jpg')"
+                      :src="require('../assets/cursos/c.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -258,7 +258,7 @@
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text>
                     <v-img
-                      :src="require('../assets/cursos/pit.jpg')"
+                      :src="require('../assets/cursos/c.jpg')"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"

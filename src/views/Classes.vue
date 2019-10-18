@@ -46,11 +46,109 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       <v-tab-item class="mx-6">
 <v-row justify="center">
 
- <v-col class="bordagreen mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+ <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordagreen" :src="require('../assets/cursos/photoshop.png')"></v-img>
+           <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class="mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordagreen" :src="require('../assets/cursos/max.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
+           <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/cursos/vue.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+<v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/cursos/bulma.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/cursos/materialize.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -61,11 +159,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
         </a>
       </v-col>
 
-      <v-col class="bordayellow mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+<v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/javascript.png')"></v-img>
+              <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -76,11 +174,12 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
         </a>
       </v-col>
 
-      <v-col class="bordapurple mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/python.jpg')"></v-img>
+           <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -91,11 +190,12 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
         </a>
       </v-col>
 
-      <v-col class="bordagreen mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/php.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -106,11 +206,12 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
         </a>
       </v-col>
 
-      <v-col class="bordayellow mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+
+      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/csharp.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/c.jpg')"></v-img>
+              <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -121,63 +222,63 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
         </a>
       </v-col>
 
-      <v-col class="bordapurple mx-3 my-2" sm="9" md="5" lg="3" xl="2">
-        <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/javascript.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
-            <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
-                        <v-divider></v-divider>
-            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
 
-            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
-          </v-card>
-        </a>
-      </v-col>
+
+
 </v-row>
       </v-tab-item>
 
       <v-tab-item class="mx-6">
         <v-row>
-          <v-col class="bordapurple mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+          <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/photoshop.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
             <v-divider></v-divider>
-             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+            <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
-
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
-      <v-col class="bordapurple mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
-
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
-      <v-col class="bordapurple mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
 
+       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordapurple" :src="require('../assets/cursos/max.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
@@ -189,39 +290,50 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
        <v-tab-item class="mx-6">
           
         <v-row>
-          <v-col class="bordayellow mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+          <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-           <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
-
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
-      <v-col class="bordayellow mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordayellow" :src="require('../assets/cursos/vue.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
-
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
       </v-col>
-      <v-col class="bordayellow mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/webcurso.jpg')"></v-img>
-           <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordayellow" :src="require('../assets/cursos/bulma.png')"></v-img>
+          <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordayellow" :src="require('../assets/cursos/materialize.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -238,11 +350,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
        <v-tab-item class="mx-6">
           
         <v-row>
-     <v-col class="bordagreen mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+     <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
-           <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordagreen" :src="require('../assets/cursos/javascript.png')"></v-img>
+           <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -252,11 +364,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
           </v-card>
         </a>
       </v-col>
-       <v-col class="bordagreen mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordagreen" :src="require('../assets/cursos/python.jpg')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -266,11 +378,25 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
           </v-card>
         </a>
       </v-col>
-       <v-col class="bordagreen mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/css.jpg')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Curso 3</v-card-title>
+            <v-img class="bordagreen" :src="require('../assets/cursos/php.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
+            <v-divider></v-divider>
+             <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
+                        <v-divider></v-divider>
+            <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
+
+            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+          </v-card>
+        </a>
+      </v-col>
+      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+        <a href="#">
+          <v-card color="grey lighten-4" elevation="01">
+            <v-img class="bordagreen" :src="require('../assets/cursos/c.jpg')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 198,00</H1></v-card-text>
                         <v-divider></v-divider>
