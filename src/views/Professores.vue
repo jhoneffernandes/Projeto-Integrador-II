@@ -20,18 +20,30 @@
       </p>
     </v-card-text>
 
-    <v-row>
+    <v-row justify="center">
       <v-col sm="7" md="12">
         <v-card outlined class="mx-5 fundo">
-          <v-img
+          <v-img v-if="$vuetify.breakpoint.mdAndUp"
             id="profimg"
             class="mx-10"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
             width="18%"
-            min-width="auto"
             max-height="300"
-          ></v-img>
+            min-width="18%">
+            
+            </v-img>
+
+            <v-img v-if="$vuetify.breakpoint.smAndDown"
+            id="profimg"
+            class="mx-10"
+            :src="require('../assets/professores/prof1.jpg')"
+            aspect-ratio="1"
+            width="50%"
+            height="200"
+            min-width="18%">
+            
+            </v-img>
 
           <p class="ttl text-center  mb-3 linha ">
            {{prof1}}
@@ -94,15 +106,25 @@
 
       <v-col sm="7" md="12">
         <v-card outlined class="mx-5 fundo">
-          <v-img
+          <v-img v-if="$vuetify.breakpoint.mdAndUp"
             id="profimg"
-            class="mx-12"
+            class="mx-10"
             :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
             width="18%"
-            min-width="auto"
             max-height="300"
-          ></v-img>
+            min-width="18%">
+            
+            </v-img>
+
+            <v-img v-if="$vuetify.breakpoint.smAndDown"
+            id="profimg"
+            class="mx-10"
+            :src="require('../assets/professores/prof2.jpg')"
+            aspect-ratio="1"
+            width="50%"
+            height="200"
+            min-width="18%"></v-img>
 
           <p class="ttl text-center  mb-3 linha ">
            {{prof2}}
@@ -167,15 +189,25 @@
 
       <v-col sm="7" md="12">
         <v-card outlined class="mx-5 fundo">
-          <v-img
+         <v-img v-if="$vuetify.breakpoint.mdAndUp"
             id="profimg"
-            class="mx-12"
+            class="mx-10"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
             width="18%"
-            min-width="auto"
             max-height="300"
-          ></v-img>
+            min-width="18%">
+            
+            </v-img>
+
+            <v-img v-if="$vuetify.breakpoint.smAndDown"
+            id="profimg"
+            class="mx-10"
+            :src="require('../assets/professores/prof3.jpg')"
+            aspect-ratio="1"
+            width="50%"
+            height="200"
+            min-width="18%"></v-img>
 
           <p class="ttl text-center  mb-3 linha ">
            {{prof3}}
@@ -291,6 +323,8 @@ export default {
   margin: 10px;
   border-radius: 100rem;
 }
+
+
 .fundo {
   background-image: url(../assets/banners/banner1.svg);
   background-repeat: no-repeat;
