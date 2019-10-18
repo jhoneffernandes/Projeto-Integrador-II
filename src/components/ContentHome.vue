@@ -95,7 +95,7 @@
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -110,7 +110,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -125,7 +125,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -140,7 +140,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -155,7 +155,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
@@ -170,7 +170,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
@@ -196,7 +196,7 @@
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -211,7 +211,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -226,7 +226,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -241,7 +241,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -256,7 +256,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
@@ -271,7 +271,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
@@ -297,7 +297,7 @@
       </v-col>
       </v-row>
       <v-row justify-sm="center">
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -312,7 +312,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -327,7 +327,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/webcurso.jpg')"></v-img>
@@ -342,7 +342,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/css.jpg')"></v-img>
@@ -357,7 +357,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/csharp.jpg')"></v-img>
@@ -372,7 +372,7 @@
         </a>
       </v-col>
 
-      <v-col sm="11" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img :src="require('../assets/cursos/javascript.jpg')"></v-img>
@@ -426,7 +426,7 @@ Assinar
 export default {
   methods : {
  conhecer () {
-      this.$router.push('/about')
+      this.$router.push('/classes')
     },
 
 validate() {
