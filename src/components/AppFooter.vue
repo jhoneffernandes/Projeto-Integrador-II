@@ -25,7 +25,7 @@
         <br />E-Mail: comunicacoes@dioramadigital.com
         <div class="corletra">
           <br />CEP: 14050159
-          <br />Política de Privacidade
+          <br /> <router-link to="/classes">Política de Privacidade</router-link>
         </div>
       </v-card-text>
 
