@@ -15,7 +15,7 @@
       </v-row>
     </v-layout>
     <v-card-text>
-      <p class="textop2 text-justify">{{textoinicio1}}</p>
+      <p class="textop2 text-justify">Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos e mais,  <a href="#/classes">clique aqui para ver os nossos cursos.</a></p>
     </v-card-text>
 
     <v-row  justify="center" >
@@ -358,7 +358,7 @@ export default {
       prof2:"Jorge Alcantara",
       prof3:"Fabio Vasconcelos",
       
-      textoinicio1:"Os nossos professores são mestres em programação, design e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece. Abaixo você confere os docentes por trás de todos os nossos cursos:",
+      textoinicio1:"Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.Abaixo você confere os docentes por trás de todos os nossos cursos:",
       textbannerprof:"Professores da Diorama Digital",
     };
   },
