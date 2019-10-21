@@ -20,7 +20,7 @@
     <v-row align="center" justify="center" class="spacer">
       <v-carousel cycle height="20rem" interval="9000" hide-delimiters>
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title class="white--text">Produto 1</v-card-title>
              </v-row>
@@ -34,7 +34,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title class="white--text">Produto 2</v-card-title>
              </v-row>
@@ -48,7 +48,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title class="white--text">Produto 3</v-card-title>
                                       </v-row>
@@ -63,7 +63,7 @@
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
             <v-row align="center" justify="center">
               <v-card-title class="white--text">Produto 4</v-card-title>
                          </v-row>

@@ -402,4 +402,12 @@ export default {
   flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+
+.tituloh {
+  font-size: 1.3rem;
+}
+
+}
+
 </style>
