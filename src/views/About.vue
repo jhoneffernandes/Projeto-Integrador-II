@@ -34,7 +34,7 @@
 
         <v-row justify="center" align="center" no-gutters="" class="my-5">
 <v-col md="8" sm="12">
-        <section>
+        <section title="Dois alunos falando sobre a empresa">
           <video
           height="100%"
           width="100%"
@@ -54,20 +54,22 @@
 <v-layout color="grey lighten-5">
               
                 
-                      <ul class="tipografia">
-                        <li>Formar profissionais na área de Full-Stack</li>
-                        <li>Ensinar de forma eficiente e divertida</li>
-                        <li>
-                         Gerar empregos aos clientes
-                        </li>
-                        <li>Ser referência em conteúdo de qualidade</li>
-                        <li>
-                         Sempre prestar o melhor atendimento e acompanhamento aos  usuários
-                        </li>
-                        <li>
-                         Promover a área de desenvolvimento  web
-                        </li>
-                      </ul>
+                      <section title="Topicos falando sobre os objetivos da empresa">
+                        <ul class="tipografia">
+                          <li>Formar profissionais na área de Full-Stack</li>
+                          <li>Ensinar de forma eficiente e divertida</li>
+                          <li>
+                           Gerar empregos aos clientes
+                          </li>
+                          <li>Ser referência em conteúdo de qualidade</li>
+                          <li>
+                           Sempre prestar o melhor atendimento e acompanhamento aos  usuários
+                          </li>
+                          <li>
+                           Promover a área de desenvolvimento  web
+                          </li>
+                        </ul>
+                      </section>
                    
  
 </v-layout>

@@ -24,6 +24,7 @@
         <v-card outlined class="mx-5 fundo">
           <v-img
             v-if="$vuetify.breakpoint.mdAndUp"
+            longdesc="Homen com sorriso branco e terno preto"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
@@ -34,6 +35,7 @@
 
           <v-img
             v-if="$vuetify.breakpoint.smAndDown"
+            longdesc="Homen com sorriso branco e terno preto"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
@@ -45,11 +47,11 @@
           <p class="ttl text-center mb-3 linha">{{prof1}}</p>
 
           <v-card >
-            <div color="black" dark flat elevation="0">
+           <section title="Primeiro Professor">
               <v-tabs slot="extension" v-model="tabs" background-color="indigo" dark centered>
                 <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
               </v-tabs>
-            </div>
+           </section>
 
             <v-tabs-items v-model="tabs">
               <v-tab-item>
@@ -79,6 +81,7 @@
                   <v-card-text class="quebra">
                     <v-img
                       :src="require('../assets/cursos/vue.png')"
+                      alt="Logo vue.js"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -86,6 +89,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/bootstrap.png')"
+                      alt="Logo bootstrap"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -93,6 +97,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/bulma.png')"
+                      alt="Logo bulma"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -100,6 +105,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/materialize.png')"
+                      alt="Logo materialize"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -119,6 +125,7 @@
         <v-card outlined class="mx-5 fundo">
           <v-img
             v-if="$vuetify.breakpoint.mdAndUp"
+            longdesc="Homen com óculos segurando uma revista"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
@@ -129,6 +136,7 @@
 
           <v-img
             v-if="$vuetify.breakpoint.smAndDown"
+            longdesc="Homen com óculos segurando uma revista"          
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
@@ -139,11 +147,11 @@
 
           <p class="ttl text-center mb-3 linha">{{prof2}}</p>
           <v-card >
-            <div color="black" dark flat elevation="0">
+            <section title="Segundo Professor">
               <v-tabs slot="extension" v-model="tabso" background-color="indigo" dark centered>
                 <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
               </v-tabs>
-            </div>
+            </section>
 
             <v-tabs-items v-model="tabso">
               <v-tab-item>
@@ -173,6 +181,7 @@
                   <v-card-text class="quebra">
                     <v-img 
                       :src="require('../assets/cursos/blender.png')"
+                      alt="Logo do blender"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -180,6 +189,7 @@
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/max.png')"
+                      alt="Lodo do 3ds max"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -187,6 +197,7 @@
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/photoshop.png')"
+                      alt="Logo do adobe photoshop"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -194,6 +205,7 @@
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/corelphotopaint.png')"
+                      alt="Logo do corel photopaint"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -215,6 +227,7 @@
         <v-card outlined class="mx-5 fundo">
           <v-img
             v-if="$vuetify.breakpoint.mdAndUp"
+            longdesc="Homen branco de óculos com sorriso de aparência velha"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
@@ -225,6 +238,7 @@
 
           <v-img
             v-if="$vuetify.breakpoint.smAndDown"
+            longdesc="Homen branco de óculos com sorriso de aparência velha"            
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
@@ -236,11 +250,11 @@
           <p class="ttl text-center mb-3 linha">{{prof3}}</p>
 
           <v-card>
-            <div color="black" dark flat elevation="0">
+           <section title="Terceiro Professor">
               <v-tabs slot="extension" v-model="tabsc" background-color="indigo" dark centered>
                 <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
               </v-tabs>
-            </div>
+           </section>
 
             <v-tabs-items v-model="tabsc">
               <v-tab-item>
@@ -278,6 +292,7 @@
                   <v-card-text class="quebra">
                     <v-img
                       :src="require('../assets/cursos/c.jpg')"
+                      alt="Logo do csharp"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -285,6 +300,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/javascript.png')"
+                      alt="Logo javascript"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -292,6 +308,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/python.jpg')"
+                      alt="Logo do python"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
@@ -299,6 +316,7 @@
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/php.png')"
+                      alt="Logo do php"
                       aspect-ratio="1"
                       width="18%"
                       min-width="auto"
