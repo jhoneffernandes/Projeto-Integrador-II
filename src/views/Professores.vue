@@ -388,7 +388,6 @@ export default {
 .fundo {
   background-image: url(../assets/banners/banner1.svg);
   background-repeat: no-repeat;
-  border-radius: 10px;
 }
 .linha {
   background-color: rgb(0, 0, 185);
