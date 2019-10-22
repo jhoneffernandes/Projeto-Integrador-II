@@ -90,11 +90,11 @@
 
     </v-row>
 
-    <v-row dense fill-height class="my-5 mene">
+    <v-row dense class="my-5">
       <v-col>
       <v-row align="center" justify="center" class="ss">
         <v-col xl="4" sm="6">
-      <p class="menetitulo1 text-center white--text tituloh">Cursos de design e modelagem 3D</p>
+      <p class="tituloroxo text-center white--text tituloh">Cursos de design e modelagem 3D</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
@@ -102,8 +102,8 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card fill-height color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/photoshop.png')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/photoshop.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Adobe Photoshop</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Preço:  R$ 150,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -116,8 +116,8 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Corel Photopaint</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
                         <v-divider></v-divider>
@@ -130,7 +130,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/blender.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/blender.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 800,00</H1></v-card-text>
@@ -144,7 +144,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/max.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/max.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 800,00</H1></v-card-text>
@@ -159,18 +159,24 @@
       </v-col>
     </v-row>
 
-    <v-row dense fill-height class="my-5 mene3">
+<v-row><br>
+<br>
+<br>
+<br>
+<br> </v-row>
+
+    <v-row dense class="my-5">
       <v-col>
       <v-row align="center" justify="center" class="ss">
         <v-col xl="4" sm="6">
-      <p class="menetitulo2 text-center white--text tituloh">Cursos de frameworks</p>
+      <p class="tituloamarelo text-center white--text tituloh">Cursos de frameworks</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/bootstrap.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/bootstrap.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
@@ -184,7 +190,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/vue.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/vue.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
@@ -198,7 +204,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/bulma.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/bulma.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
@@ -209,10 +215,10 @@
         </a>
       </v-col>
 
-      <v-col sm="9" md="4" lg="2">
+      <v-col sm="6" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/materialize.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/materialize.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 120,00</H1></v-card-text>
@@ -228,18 +234,24 @@
       </v-col>
     </v-row>
 
-    <v-row dense fill-height class="my-5 mene4">
+<v-row><br>
+<br>
+<br>
+<br>
+<br> </v-row>
+
+    <v-row dense class="my-5 ">
       <v-col>
       <v-row align="center" justify="center" class="ss">
         <v-col xl="4" sm="6">
-      <p class="menetitulo3 text-center white--text tituloh">Cursos de linguagens de programação</p>
+      <p class="tituloverde text-center white--text tituloh">Cursos de linguagens de programação</p>
       </v-col>
       </v-row>
       <v-row justify-sm="center">
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/javascript.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/javascript.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
@@ -254,7 +266,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/python.jpg')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/python.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
@@ -269,7 +281,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/php.png')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/php.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
@@ -284,7 +296,7 @@
       <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
-            <v-img :src="require('../assets/cursos/c.jpg')"></v-img>
+            <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/c.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ 548,00</H1></v-card-text>
@@ -387,29 +399,15 @@ a {
   background-color: rgb(65, 40, 207);
 }
 
-.mene{
-  border: 0.5rem solid rgba(82, 0, 102, 0.61);
-}
-
-.menetitulo1{
+.tituloroxo{
   background-color: purple;
 }
 
-.mene3
-{
-    border: 0.5rem solid rgba(255, 255, 0, 0.342);
-}
-
-.mene4 {
-    border: 0.5rem solid rgba(0, 128, 0, 0.301);
-
-}
-
-.menetitulo2{
+.tituloamarelo{
   background-color: rgb(161, 151, 0);
 }
 
-.menetitulo3{
+.tituloverde{
   background-color: green;
 }
 

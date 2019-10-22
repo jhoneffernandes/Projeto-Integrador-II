@@ -1,37 +1,50 @@
 <template>
   <v-footer height="0rem" width="100%" absolute padless>
-    <v-card width="100%" cols="auto" flat title class="white--text d-flex-row indigo darken-4">
-      <v-row>
-        <v-layout class="flex-wrap" ma-5>
-          <v-btn icon large class="white espacamento">
+        <v-row>
+        <v-card tile="" width="100%" height="100%" dark color="indigo darken-4">
+          <v-layout class="flex-wrap" justify-center align-center>
+            <v-card-title>
+                <v-layout class="flex-wrap">
+          <v-btn icon large class="grey darken-4 espacamento">
             <v-icon large>mdi-facebook</v-icon>
           </v-btn>
 
-          <v-btn icon large class="white espacamento">
+          <v-btn icon large class="grey darken-4 espacamento">
             <v-icon large>mdi-twitter</v-icon>
           </v-btn>
 
-          <v-btn icon large class="white espacamento">
+          <v-btn icon large class="grey darken-4 espacamento">
             <v-icon large>mdi-gmail</v-icon>
           </v-btn>
 
-          <v-btn icon large class="white espacamento">
+          <v-btn icon large class="grey darken-4 espacamento">
             <v-icon large>mdi-instagram</v-icon>
           </v-btn>
         </v-layout>
-      </v-row>
-      <v-card-text class="body-1 white--text">
-        CNPJ: 32998352000174
+            </v-card-title>
+
+            <v-card-text class="body-1">
+               CNPJ: 32998352000174
         <br />E-Mail: comunicacoes@dioramadigital.com
           <br />CEP: 14050159
-        
-      </v-card-text>
+            </v-card-text>
 
-      <v-card-text class="white--text text-center">
-        {{ new Date().getFullYear() }} —
-        <strong>Diorama Digital</strong>
+
+        <v-card-text>
+
+  <v-divider></v-divider>
+
+        </v-card-text>
+        
+
+             <v-card-text class="white--text text-center">
+          {{ new Date().getFullYear() }} —
+        <strong>Diorama Cursos</strong>
       </v-card-text>
-    </v-card>
+          </v-layout>
+        </v-card>
+      </v-row>
+
   </v-footer>
 </template>
 

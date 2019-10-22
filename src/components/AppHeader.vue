@@ -41,37 +41,38 @@
         <v-divider></v-divider>
 
         <v-list-item-group>
-          <v-list-item>
             <router-link to="/classes">
+          <v-list-item>
               <v-list-item-title>Cursos</v-list-item-title>
-            </router-link>
           </v-list-item>
+            </router-link>
 
-          <v-list-item>
             <router-link to="/professores">
-              <v-list-item-title>Professores</v-list-item-title>
-            </router-link>
-          </v-list-item>
-
           <v-list-item>
-            <router-link to="/about">
-              <v-list-item-title>Sobre</v-list-item-title>
-            </router-link>
+              <v-list-item-title>Professores</v-list-item-title>
           </v-list-item>
+            </router-link>
+
+            <router-link to="/about">
+          <v-list-item>
+              <v-list-item-title>Sobre</v-list-item-title>
+          </v-list-item>
+            </router-link>
 
           <v-divider></v-divider>
 
-          <v-list-item>
             <router-link to="/login">
-              <v-list-item-title>Acesse sua conta</v-list-item-title>
-            </router-link>
-          </v-list-item>
-
           <v-list-item>
-            <router-link to="/registration">
-              <v-list-item-title>Registre Sua Conta</v-list-item-title>
-            </router-link>
+              <v-list-item-title>Acesse sua conta</v-list-item-title>
           </v-list-item>
+            </router-link>
+
+
+            <router-link to="/registration">
+          <v-list-item>
+              <v-list-item-title>Registre Sua Conta</v-list-item-title>
+          </v-list-item>
+            </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
