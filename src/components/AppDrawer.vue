@@ -53,13 +53,16 @@
           </router-link>
 
           <v-divider></v-divider>
+            <v-btn text="" width="100%" icon @click="sair">
 
           <v-list-item>
             Sair
-            <v-btn class="ml-2" icon @click="sair">
-              <v-icon>mdi-logout</v-icon>
-            </v-btn>
+              <v-icon class="mx-12" color="red">mdi-logout</v-icon>
+
           </v-list-item>
+            </v-btn>
+
+
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
