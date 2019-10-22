@@ -215,7 +215,7 @@
         </a>
       </v-col>
 
-      <v-col sm="6" md="4" lg="2">
+      <v-col sm="9" md="4" lg="2">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01">
             <v-img height="18rem" min-width="100%" :src="require('../assets/cursos/materialize.png')"></v-img>
