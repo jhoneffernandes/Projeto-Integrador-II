@@ -24,7 +24,7 @@
         <v-card outlined class="mx-5 fundo">
           <v-img
             v-if="$vuetify.breakpoint.mdAndUp"
-            longdesc="Homen com sorriso branco e terno preto"
+            longdesc="Homen com sorriso, branco de terno preto"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
@@ -35,7 +35,7 @@
 
           <v-img
             v-if="$vuetify.breakpoint.smAndDown"
-            longdesc="Homen com sorriso branco e terno preto"
+            longdesc="Homen com sorriso, branco de terno preto"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
@@ -227,7 +227,7 @@
         <v-card outlined class="mx-5 fundo">
           <v-img
             v-if="$vuetify.breakpoint.mdAndUp"
-            longdesc="Homen branco de óculos com sorriso de aparência velha"
+            longdesc="Homen branco de óculos com sorriso, de aparência velha"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
@@ -238,7 +238,7 @@
 
           <v-img
             v-if="$vuetify.breakpoint.smAndDown"
-            longdesc="Homen branco de óculos com sorriso de aparência velha"            
+            longdesc="Homen branco de óculos com sorriso, de aparência velha"            
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"

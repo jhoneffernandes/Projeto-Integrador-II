@@ -52,10 +52,11 @@ export default {
 
   methods: {
     acessar () {
-       if (this.login === 'user' && this.password === '123') {
+       if (this.login === 'adm' && this.password === 'adm') {
          this.$ls.set('login' , this.login)
         this.$router.push('/painel')
-      } else {
+      }
+       else {
         this.alerta = 'Usuário ou senha não correspondentes.'
     }},
 
