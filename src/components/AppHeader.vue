@@ -12,20 +12,20 @@
       <v-layout justify-end align-content-center>
         <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
           <router-link to="/classes">
-            <v-btn class="botao" text>Cursos</v-btn>
+            <v-btn class="botao" tile="" text>Cursos</v-btn>
           </router-link>
           <router-link to="/professores">
-            <v-btn class="botao"  text>Professores</v-btn>
+            <v-btn class="botao" tile="" text>Professores</v-btn>
           </router-link>
           <router-link to="/about">
-            <v-btn class="botao"  text>Sobre</v-btn>
+            <v-btn class="botao" tile="" text>Sobre</v-btn>
           </router-link>
 
           <router-link to="/login">
-            <v-btn dark="">Acessar Conta</v-btn>
+            <v-btn dark="" class="mx-2 primary">Acessar Conta</v-btn>
           </router-link>
           <router-link to="/registration">
-            <v-btn dark="">Registrar</v-btn>
+            <v-btn dark="" class="mx-2 primary">Registrar</v-btn>
           </router-link>
 
         </v-toolbar-items>
@@ -109,8 +109,6 @@ export default {
     border-bottom: 3px solid rgb(0, 17, 255);
     animation-name: anima2;
     animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
     animation-fill-mode: both;
 
 }
