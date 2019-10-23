@@ -5,12 +5,12 @@
         <v-card width="100%" height="100%" dark color="indigo">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
-              <h2 class="tituloh text-center">Bem vindos a Diorama!</h2>
+              <h2 class="tituloh text-center">Bem vindos a Diorama cursos online!</h2>
             </v-card-title>
 
             <v-card-text>
               <p class="textop">Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
-              <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
+              <!-- <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn> -->
             </v-card-text>
           </v-layout>
         </v-card>
@@ -18,65 +18,36 @@
     </v-layout>
 
     <v-row align="center" justify="center" class="spacer">
-      <v-carousel cycle height="20rem" interval="9000" hide-delimiters>
+      <v-carousel cycle height="20rem" interval="4000" hide-delimiters>
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Promoção do curso de html logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerhtml.svg')">
             <v-row align="center" justify="center">
-              <v-card-title class="white--text">Produto 1</v-card-title>
+          
              </v-row>
 
-              <v-row align="end" justify="center">
+              <v-row  align="end" justify="center">
               <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <v-btn>Saiba mais sobre o curso</v-btn>
+                <!-- <v-btn>Saiba mais sobre o curso</v-btn> -->
               </v-card-title>
             </v-row>
           </v-img>
         </v-carousel-item>
 
         <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
+          <v-img height="100%" min-height="100%" alt="Promoção do curso de Adobe ilustrator logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerai.svg')">
             <v-row align="center" justify="center">
-              <v-card-title class="white--text">Produto 2</v-card-title>
+           
              </v-row>
 
              <v-row align="end" justify="center">
               <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <v-btn>Saiba mais sobre o curso</v-btn>
+                <!-- <v-btn>Saiba mais sobre o curso</v-btn> -->
               </v-card-title>
             </v-row>
           </v-img>
         </v-carousel-item>
 
-        <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
-            <v-row align="center" justify="center">
-              <v-card-title class="white--text">Produto 3</v-card-title>
-                                      </v-row>
-
-                         <v-row align="end" justify="center">
-
-              <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <v-btn>Saiba mais sobre o curso</v-btn>
-              </v-card-title>
-            </v-row>
-          </v-img>
-        </v-carousel-item>
-
-        <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Banner azul com um globo no meio com a logo da empresa centralizada" :src="require('../assets/banners/firstimg.png')">
-            <v-row align="center" justify="center">
-              <v-card-title class="white--text">Produto 4</v-card-title>
-                         </v-row>
-
-
-                         <v-row align="end" justify="center">
-
-              <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <v-btn>Saiba mais sobre o curso</v-btn>
-              </v-card-title>
-            </v-row>
-          </v-img>
-        </v-carousel-item>
+        
       </v-carousel>
     </v-row>
 
@@ -415,5 +386,4 @@ a {
   font-size: 0.6rem;
   text-align: center;
 }
-
 </style>
