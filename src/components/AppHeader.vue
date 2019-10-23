@@ -10,7 +10,7 @@
       </v-toolbar-items>
       <div class="flex-grow-1"></div>
       <v-layout justify-end align-content-center>
-        <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
+        <v-toolbar-items v-if="$vuetify.breakpoint.lgAndUp">
           <router-link to="/classes">
             <v-btn class="botao" tile="" text>Cursos</v-btn>
           </router-link>
@@ -29,7 +29,7 @@
           </router-link>
 
         </v-toolbar-items>
-        <v-toolbar-items v-if="$vuetify.breakpoint.smAndDown">
+        <v-toolbar-items v-if="$vuetify.breakpoint.mdAndDown">
           <v-app-bar-nav-icon @click.stop="menumob = !menumob"></v-app-bar-nav-icon>
         </v-toolbar-items>
       </v-layout>
