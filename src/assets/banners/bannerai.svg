@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1580px" height="320px" viewBox="0 0 1580 320" enable-background="new 0 0 1580 320" xml:space="preserve">
+<rect y="0.399" fill="#346DB6" width="1580" height="319.601"/>
+<polygon fill="#061926" points="454.25,319.602 0,319.602 0,0.399 790,0.399 "/>
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="-1413.0063" cy="-454.6294" r="0.3569" gradientTransform="matrix(435.4502 0 0 421.595 615453.25 191774.5)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#423325;stop-opacity:0.98"/>
+		<stop  offset="1" style="stop-color:#1B0E09"/>
+	</radialGradient>
+	<path fill="url(#SVGID_1_)" d="M92.257,60.648h204.209v198.623H92.257V60.648z"/>
+	<path fill="#F57E26" d="M92.257,60.648h204.209v198.623H92.257V60.648z M83,268.609h222.803V51.392H83V268.609z M228.956,128.878
+		c0-0.798,0.239-1.117,1.117-1.117h14.604c0.798,0,1.117,0.239,1.117,1.117v73.257c0,0.799-0.16,1.117-1.117,1.117h-14.444
+		c-0.958,0-1.197-0.479-1.197-1.197v-73.177H228.956L228.956,128.878z M227.917,107.73c0-5.905,4.229-9.496,9.496-9.496
+		c5.666,0,9.497,3.83,9.497,9.496c0,6.145-3.99,9.496-9.656,9.496C231.828,117.227,227.917,113.875,227.917,107.73z
+		 M186.182,159.361c-2.554-10.294-8.778-32.718-11.093-43.65h-0.159c-1.995,10.853-6.862,29.207-10.773,43.65H186.182
+		L186.182,159.361z M160.407,174.365l-7.342,27.85c-0.159,0.799-0.479,0.957-1.356,0.957h-13.646c-0.957,0-1.117-0.238-0.957-1.355
+		l26.334-92.25c0.479-1.676,0.798-3.192,0.958-7.741c0-0.639,0.239-0.957,0.798-0.957h19.471c0.639,0,0.958,0.159,1.117,0.957
+		l29.526,100.149c0.16,0.799,0,1.197-0.798,1.197H199.11c-0.798,0-1.197-0.158-1.356-0.877l-7.661-27.93H160.407L160.407,174.365z"
+		/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 936.8281 112.9385)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="59.6474">Promoção de novembro</text>
+	<text transform="matrix(1 0 0 1 936.8281 163.1436)" fill="#F8F9FA" font-family="'MyriadPro-Regular'" font-size="47.718">curso básico de adobe</text>
+	<text transform="matrix(1 0 0 1 936.8281 220.4053)" fill="#F8F9FA" font-family="'MyriadPro-Regular'" font-size="47.718">illustrator</text>
+	<text transform="matrix(1 0 0 1 1134.0449 219.2051)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="47.718">por 24,99</text>
+</g>
+</svg>

@@ -79,6 +79,13 @@ export default new Router({
       name: 'professorescurso',
      
       component: () => import('./views/painel/Professores.vue')
+    },
+
+    {
+      path: '/usuario',
+      name: 'usuario',
+     
+      component: () => import('./views/Usuario.vue')
     }
 
 
