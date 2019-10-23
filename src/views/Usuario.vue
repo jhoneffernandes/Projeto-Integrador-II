@@ -27,25 +27,26 @@
                 <v-form>
                     <v-col  cols="12" md="5" sm="6">
 
-                            <v-text-field v-model="name"  label="Seu Nome" outlined=""></v-text-field>
+                            <v-text-field v-model="name"  label="Seu Nome" disabled="" outlined=""></v-text-field>
                 
-                            <v-text-field v-model="surname" label="Seu Sobrenome" outlined=""></v-text-field>
+                            <v-text-field v-model="surname" label="Seu Sobrenome" disabled="" outlined=""></v-text-field>
                 
-                            <v-text-field v-model="cell" v-mask="mask" label=" Seu Celular" outlined=""></v-text-field>
+                            <v-text-field v-model="cell" v-mask="mask" label=" Seu Celular"  disabled="" outlined=""></v-text-field>
                 
-                             <v-text-field v-model="email" label="Seu E-mail" outlined="" ></v-text-field>
+                             <v-text-field v-model="email" label="Seu E-mail" disabled="" outlined="" ></v-text-field>
                      </v-col>
     
                
                   <v-col cols="12" md="12" sm="12">
-                      <v-btn color="primary" class="mr-4">Alterar</v-btn>
-                      <v-btn color="primary" class="mr-4" >Concluir alteração</v-btn>
+                      <v-btn color="primary" class="mr-4" @click="alterar" >Alterar</v-btn>
+                      <v-btn color="primary" class="mr-4" @click="concluir" disabled="" >Concluir alteração</v-btn>
                   </v-col>
                 
     
                 </v-form>
               </v-card-text>
               </v-card>
+
 
         </v-tab-item>
 
@@ -136,7 +137,8 @@ export default {
   methods:{
       sair() {
       this.$router.push("/");
-    }
+    },
+     
   },
   components: {
     AppHeader

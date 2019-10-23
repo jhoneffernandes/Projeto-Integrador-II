@@ -13,13 +13,7 @@
               </v-btn>
             </v-toolbar>
             <v-form ref="form" v-model="valid" lazy-validation>
-              <v-text-field 
-              v-model="name" 
-              :counter="10"
-               :rules="nameRules" 
-               label="Nome" 
-               required
-               ></v-text-field>
+              <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
 
               <v-text-field
                 v-model="surname"
@@ -29,12 +23,7 @@
                 required
               ></v-text-field>
 
-              <v-text-field
-                v-model="email" 
-                :rules="emailRules"
-                label="E-mail"
-                required
-              ></v-text-field>
+              <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
 
               <v-text-field
                 v-model="confemail"
@@ -53,17 +42,21 @@
 
               <v-text-field
                 v-model="password"
-                type="password"
+                :append-icon="show1 ? 'mdiEye' : 'mdiEyeOff'"
+                :type="show1 ? 'text' : 'password'"
                 :rules="passRules"
                 label="Senha"
+                @click:append="show1 = !show1"
                 required
               ></v-text-field>
 
               <v-text-field
                 v-model="confpass"
-                type="password"
+                :append-icon="show2 ? 'mdiEye' : 'mdiEyeOff'"
+                :type="show2 ? 'text' : 'password'"
                 :rules="confpassRules"
                 label="Confirme sua senha"
+                @click:append="show2 = !show2"
                 required
               ></v-text-field>
 
@@ -74,7 +67,7 @@
                 required
               ></v-checkbox>
 
-              <v-btn color="error"  :disabled="!valid" class="mr-4" @click="validate">Cadastrar</v-btn>
+              <v-btn color="error" :disabled="!valid" class="mr-4" @click="validate">Cadastrar</v-btn>
               <v-btn color="success" class="mr-4" @click="reset">Limpar campos</v-btn>
             </v-form>
           </v-card>
@@ -86,6 +79,8 @@
 
 <script>
 import { mask } from "vue-the-mask";
+import { mdiEye, mdiEyeOff } from "@mdi/js";
+
 export default {
   directives: {
     mask
@@ -93,23 +88,19 @@ export default {
   data() {
     return {
       name: "",
-      surname:"",
-      email:"",
-      confemail:"",
-      cell:"",
-      password:"",
-      confpass:"",
-
-      show1: false,
-        show2: true,
-        show3: false,
-        show4: false,
+      surname: "",
+      email: "",
+      confemail: "",
+      cell: "",
+      password: "",
+      confpass: ""
     };
   },
 
   data: () => ({
     mask: "(###)-####-####",
-
+    show1: false,
+    show2: false,
     valid: true,
 
     name: "",
@@ -153,7 +144,7 @@ export default {
     confpass: "",
     confpassRules: [
       v => !!v || " Confirmar a senha é obrigatório",
-      v =>  (v && v.length <= 12) || "As senhas não são iguais"
+      v => (v && v.length <= 12) || "As senhas não são iguais"
     ],
 
     checkbox: false
@@ -170,10 +161,10 @@ export default {
           this.$ls.set("cell", this.cell),
           this.$ls.set("password", this.password),
           this.$ls.set("confpass", this.confpassRules),
-          this.$router.push('/usuario');
+          this.$router.push("/usuario");
       }
     },
-    
+
     reset() {
       this.$refs.form.reset();
     },
