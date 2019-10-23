@@ -29,7 +29,9 @@
               <v-card-title class="align-center justify-center fill-height flex-wrap">
                 <!-- <v-btn>Saiba mais sobre o curso</v-btn> -->
               </v-card-title>
+              </v-row>
           </v-img>
+        </v-carousel-item>
 
         <v-carousel-item>
           <v-img height="100%" min-height="100%" alt="Promoção do curso de Adobe ilustrator logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerai.svg')">
