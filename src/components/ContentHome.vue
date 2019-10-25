@@ -59,7 +59,6 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
 
 
     <v-row dense justify="center" class="my-5">
-      <v-col cols="12" xl="12" lg="9" md="8" sm="12">
         
      
  <v-row justify="center" class="mb-12">
@@ -72,6 +71,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
   
           </v-card>
  </v-row>
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
 
 
       <v-row justify="center" class="flex-wrap">
@@ -137,7 +137,6 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
 <br> </v-row>
 
     <v-row dense justify="center" class="my-5">
-      <v-col cols="12" xl="12" lg="9" md="8" sm="12">
 
   <v-row justify="center" class="mb-12">
 
@@ -150,6 +149,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
           </v-card>
  </v-row>
 
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
 
 
       <v-row justify="center">
@@ -214,7 +214,6 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
 <br> </v-row>
 
     <v-row justify="center" dense class="my-5 ">
-      <v-col cols="12" xl="12" lg="9" md="8" sm="12">
 
 
  <v-row justify="center" class="mb-12">
@@ -227,6 +226,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
   
           </v-card>
  </v-row>
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
 
 
       <v-row justify="center">
