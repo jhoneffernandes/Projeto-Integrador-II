@@ -15,34 +15,22 @@
       </v-row>
     </v-layout>
     <v-card-text>
-      <p class="textop2 text-justify">Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos e mais,  <a href="#/classes">clique aqui para ver os nossos cursos.</a></p>
-    </v-card-text>
+ <p class="textop2 text-justify">Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
+ <a href="#/classes">clique aqui para ver os nossos cursos.</a></p>    </v-card-text>
 
     <v-row  justify="center" >
 
-      <v-col sm="12" md="12">
+      <v-col cols="6" sm="6" md="6">
         <v-card outlined class="mx-5 fundo">
           <v-img
-            v-if="$vuetify.breakpoint.mdAndUp"
             longdesc="Homen com sorriso, branco de terno preto"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof1.jpg')"
             aspect-ratio="1"
-            width="18%"
+            width="30rem"
             max-height="300"
-            min-width="18%"
           ></v-img>
 
-          <v-img
-            v-if="$vuetify.breakpoint.smAndDown"
-            longdesc="Homen com sorriso, branco de terno preto"
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof1.jpg')"
-            aspect-ratio="1"
-            width="50%"
-            height="200"
-            min-width="18%"
-          ></v-img>
 
           <p class="ttl text-center mb-3 linha">{{prof1}}</p>
 
@@ -82,34 +70,34 @@
                     <v-img
                       :src="require('../assets/cursos/vue.png')"
                       alt="Logo vue.js"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/bootstrap.png')"
                       alt="Logo bootstrap"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/bulma.png')"
                       alt="Logo bulma"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/materialize.png')"
                       alt="Logo materialize"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                   </v-card-text>
                 </v-card>
@@ -121,30 +109,18 @@
     </v-row>
 
      <v-row justify="center">
-      <v-col sm="12" md="12">
+      <v-col cols="6" sm="6" md="6">
         <v-card outlined class="mx-5 fundo">
           <v-img
-            v-if="$vuetify.breakpoint.mdAndUp"
             longdesc="Homen com óculos segurando uma revista"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof2.jpg')"
             aspect-ratio="1"
-            width="18%"
+            width="30rem"
             max-height="300"
-            min-width="18%"
           ></v-img>
 
-          <v-img
-            v-if="$vuetify.breakpoint.smAndDown"
-            longdesc="Homen com óculos segurando uma revista"          
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof2.jpg')"
-            aspect-ratio="1"
-            width="50%"
-            height="200"
-            min-width="18%"
-          ></v-img>
-
+         
           <p class="ttl text-center mb-3 linha">{{prof2}}</p>
           <v-card >
             <section title="Segundo Professor">
@@ -182,34 +158,34 @@
                     <v-img 
                       :src="require('../assets/cursos/blender.png')"
                       alt="Logo do blender"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/max.png')"
                       alt="Lodo do 3ds max"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/photoshop.png')"
                       alt="Logo do adobe photoshop"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                       <v-img 
                       :src="require('../assets/cursos/corelphotopaint.png')"
                       alt="Logo do corel photopaint"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="20rem"
+                      max-height="300px"
                     ></v-img>
                   </v-card-text>
                 </v-card>
@@ -223,30 +199,18 @@
 
          <v-row justify="center">
 
-      <v-col sm="12" md="12">
+      <v-col cols="6" sm="6" md="6">
         <v-card outlined class="mx-5 fundo">
           <v-img
-            v-if="$vuetify.breakpoint.mdAndUp"
             longdesc="Homen branco de óculos com sorriso, de aparência velha"
             class="mx-10 profimg mx-auto"
             :src="require('../assets/professores/prof3.jpg')"
             aspect-ratio="1"
-            width="18%"
+            width="30rem"
             max-height="300"
-            min-width="18%"
           ></v-img>
 
-          <v-img
-            v-if="$vuetify.breakpoint.smAndDown"
-            longdesc="Homen branco de óculos com sorriso, de aparência velha"            
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof3.jpg')"
-            aspect-ratio="1"
-            width="50%"
-            height="200"
-            min-width="18%"
-          ></v-img>
-
+         
           <p class="ttl text-center mb-3 linha">{{prof3}}</p>
 
           <v-card>
@@ -290,37 +254,22 @@
                 <v-card flat>
                   <v-card-title class="headline">{{p3}}</v-card-title>
                   <v-card-text class="quebra">
-                    <v-img
-                      :src="require('../assets/cursos/c.jpg')"
-                      alt="Logo do csharp"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
-                    ></v-img>
-                    <v-img
-                      :src="require('../assets/cursos/javascript.png')"
-                      alt="Logo javascript"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
-                    ></v-img>
+                  
                     <v-img
                       :src="require('../assets/cursos/python.jpg')"
                       alt="Logo do python"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="15rem"
+                      max-height="300px"
                     ></v-img>
                     <v-img
                       :src="require('../assets/cursos/php.png')"
                       alt="Logo do php"
-                      aspect-ratio="1"
-                      width="18%"
-                      min-width="auto"
-                      max-height="300"
+                      contain
+                      class="my-6"
+                      min-width="15rem"
+                      max-height="300px"
                     ></v-img>
                   </v-card-text>
                 </v-card>
@@ -388,6 +337,7 @@ export default {
 .fundo {
   background-image: url(../assets/banners/banner1.svg);
   background-repeat: no-repeat;
+  background-size: auto auto;
 }
 .linha {
   background-color: rgb(0, 0, 185);

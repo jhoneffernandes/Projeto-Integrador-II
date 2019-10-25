@@ -50,7 +50,8 @@
       <h1 class="mb-5 text-center">Diorama Cursos</h1>
 
       <p class="text-center">
-      A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos materiais  de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos materiais de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos de HTML e CSS, Conheça alguns dos nossos cursos mais famosos abaixo:
+A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos cursos online de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos cursos online de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos online de HTML e CSS, Conheça alguns dos cursos mais famosos da escola online Diorama Cursos online abaixo:
+
       </p>
 
     </v-row>

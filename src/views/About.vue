@@ -17,13 +17,15 @@
     </v-layout>
       </v-row>
 
-     <v-row class="mx-6 my-5">
+     <v-row class="mx-6 my-5" justify="center">
+
         <v-row justify="center my-5">
+             <h3 class="display-1 text-center">A criação da instituição</h3>
+
         </v-row>
         <p class="text-justify">
-         A Diorama Digital é uma empresa de cursos de programação, fundada em 2015, com intuito de cobrir a demanda de profissionais no mercado, com isso o negócio se expandiu rapidamente e possibilitou a formação de vários profissionais no mercado de cursos online.
-        Em 2019, a Diorama uniu forças, fundindo a Black zebra em nossa equipe, outra empresa brasileira de cursos ambas as empresas eram de ex-funcionários da extinta Playlore Gameworks, os parceiros fundadores da Diorama têm mais 10 anos de experiência em programação e proporcionam cursos de alta qualidade com diplomas reconhecidos no mundo. 
-         </p>
+      A Diorama cursos online foi criada para o segundo projeto integrador da turma de Sistemas para internet da Fatec Taquaritinga, inspirada na empresa brasileira Diorama Digital, foi escolhido o tema de uma escola online com cursos online, que tem como objetivo além da venda dos mesmos, a propagação do desenvolvimento web, através de materiais como nossos cursos online de programação em Java, JavaScript, Python, também através  do nosso material de web designer com nossos cursos online de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Além também do nosso conteúdo de estruturação de sites nos cursos online de HTML e CSS, e com esses materiais a empresa espera propagar a onda de desenvolvimento web através dos nossos cursos online e também formar profissionais de qualidade em programação, edição e também web designers qualificados, e assim também nos tornarmos uma renomada escola de cursos online.
+       </p>
     </v-row>
 
 <v-row class="my-5">
@@ -32,24 +34,33 @@
     </v-card-text>
 </v-row>
 
-        <v-row justify="center" align="center" no-gutters="" class="my-5">
-<v-col md="8" sm="12">
+        <v-row dense justify="center" class="my-5">
+<v-col cols="11" xl="7" lg="8" md="9" sm="10">
+
+
+      <v-row justify="center" class="flex-wrap">
+        <v-card>
         <section title="Dois alunos falando sobre a empresa">
       <vue-plyr>
-  <video poster="firstimgs.jpg" :src="require('../assets/videos/firstimgs.jpg')">
-    <source :src="require('../assets/videos/vsobre.mp4')" type="video/mp4" size="720">
-    <track kind="captions" label="English" srclang="en" src="captions-en.vtt" default>
+  <video height="60rem" width="100%" preload="metadata" poster="">
+    <source src="../assets/videos/vsobre.mp4#t=2" type="video/mp4" size="1080">
+    <track kind="captions" label="Em breve">
   </video>
 </vue-plyr>
+
+
         </section>
+        </v-card>
+      </v-row>
         </v-col>
+        
         </v-row>
 
         <v-row class="my-5 mx-5" justify="center" align="center"> 
 <v-col>
 
         <v-row class="my-5" justify="center">
-        <p class="objt"> {{objetivos}} </p>
+        <p class="display-1"> {{objetivos}} </p>
         </v-row>
 
 

@@ -18,9 +18,8 @@
       
 
       <p class="text-center">
-      Nos cursos online da Diorama Cursos você sempre terá acesso a um conteúdo atualizado, já que os cursos são frequentemente modificados. É possível assistir às aulas e fazer as avaliações a partir de qualquer computador com acesso à internet, desde que o mesmo cumpra os requisitos mínimos.
+     Nos cursos online da Diorama Cursos você sempre terá acesso a um conteúdo atualizado, já que os cursos de programação, de edição de web designer e todos os outros são frequentemente modificados. É possível assistir às aulas dos nossos cursos online a partir de qualquer computador com acesso à internet, desde que o mesmo cumpra os requisitos mínimos, e então é só começar a aprender com nossos cursos online e a realizar seu desenvolvimento web. Além das aulas, pelo fato de sermos a mais nova escola de cursos online o ambiente de aprendizado também é totalmente online, de forma que você pode usá-lo para esclarecer suas dúvidas com os instrutores e realizar outras atividades propostas. Por estes motivos, os cursos da Diorama Cursos online não são disponibilizados em formato DVD e foi optado que a nossa escola online se mante-se totalmente ligada à web.
 
-Além das aulas, o ambiente de aprendizado também é totalmente online, de forma que você pode usá-lo para esclarecer suas dúvidas com os instrutores e realizar outras atividades propostas. Por estes motivos, os cursos da Diorama Cursos não são disponibilizados em formato DVD.
       </p>
     </v-row>
 
