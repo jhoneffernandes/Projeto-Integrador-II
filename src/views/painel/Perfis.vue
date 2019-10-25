@@ -31,13 +31,13 @@
                     <v-text-field required v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.cpf" label="CPF"></v-text-field>
+                    <v-text-field required v-mask="maskcpf" v-model="editedItem.cpf" label="CPF"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.registro" label="Número de registro"></v-text-field>
+                    <v-text-field required v-model="editedItem.registro"  label="Número de registro"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.celular" label="Celular"></v-text-field>
+                    <v-text-field required v-mask="maskcell" v-model="editedItem.celular" label="Celular"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <v-text-field required v-model="editedItem.email" label="E-mail"></v-text-field>
@@ -81,12 +81,19 @@
 
 <script>
 import AppDrawer from '../../components/AppDrawer';
+import { mask } from "vue-the-mask";
 export default {
-
+      directives:{
+        mask
+      },
 components: {
     AppDrawer,
   },
   data: () => ({
+      maskcell: "(###)-####-####",
+      maskcpf:"###.###.###-##",
+
+
       dialog: false,
       headers: [
         {
@@ -105,14 +112,14 @@ components: {
       editedIndex: -1,
       editedItem: {
         nome: '',
-        cpf: '000.000.000-00',
+        cpf: '###.###.###-##',
         registro: '',
         celular: '',
         email: '',
       },
       defaultItem: {
         nome: '',
-        cpf: '000.000.000-00',
+        cpf: '###.###.###-##',
         registro: '',
         celular: '',
         email: '',
@@ -138,21 +145,23 @@ components: {
     methods: {
       initialize () {
         this.user = [
-          {
-            nome: 'Alek Fumac',
-            cpf: '241.291.940-20',
+            {
+            nome: 'Everson Silva',
+            cpf: '116.524.7746-16',
             registro: '1',
-            celular: '1194191702',
-            email: 'hardware@gmail.com',
+            celular: '(111)-8377-303',
+            email: 'everson-silva@gmail.com',
           },
 
           {
-            nome: 'Everson Zoio',
-            cpf: '666.666.666-66',
+            nome: 'Alex Santos',
+            cpf: '241.291.940-20',
             registro: '2',
-            celular: '1118377303',
-            email: 'trolagi@gmail.com',
+            celular: '(119)-4191-702',
+            email: 'alex-santos@gmail.com',
           },
+
+          
         ]
       },
 

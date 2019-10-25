@@ -86,7 +86,7 @@ export default new Router({
       name: 'usuario',
      
       component: () => import('./views/Usuario.vue')
-    }
+    },
 
 
 

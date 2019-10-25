@@ -17,7 +17,8 @@
         
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on }">
-            <v-btn color="indigo" dark class="mb-2" v-on="on">Registrar novo professor</v-btn>
+              <v-btn color="indigo"  dark class="mb-2" v-on="on" >Registrar novo professor</v-btn>
+           
           </template>
           <v-card>
             <v-card-title>
@@ -40,7 +41,7 @@
                     <v-text-field required v-model="editedItem.email" label="E-mail"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.salario" label="Salário"></v-text-field>
+                    <v-text-field required v-mask="masksal" v-model="editedItem.salario" label="Salário"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>
@@ -81,12 +82,17 @@
 
 <script>
 import AppDrawer from '../../components/AppDrawer';
+import { mask } from "vue-the-mask";
 export default {
-
+      directives:{
+        mask,
+      },
 components: {
     AppDrawer,
   },
   data: () => ({
+      masksal:"R$ ####.##",
+
       dialog: false,
       headers: [
         {
@@ -108,14 +114,14 @@ components: {
         cursolecionado: 'Curso',
         registro: '',
         email: '',
-        salario: '00,00R$',
+        salario: 'R$ ####.##',
       },
       defaultItem: {
         nome: '',
         cursolecionado: 'Curso',
         registro: '',
         email: '',
-        salario: '00,00R$',
+        salario: 'R$ ####.##',
       },
     }),
 
@@ -143,7 +149,7 @@ components: {
             cursolecionado: 'Curso de HTML',
             registro: '1',
             email: 'silvalucas@professor.com',
-            salario: '3400,00R$',
+            salario: 'R$ 3400,00',
           },
 
           {
@@ -151,14 +157,14 @@ components: {
             cursolecionado: 'Curso de CSS3',
             registro: '2',
             email: 'fabioprofessor@gmail.com',
-            salario: '4000,00R$',
+            salario: 'R$ 4000,00',
           },
           {
             nome: 'Jorge Castro',
             cursolecionado: 'Curso de JavaScript',
             registro: '3',
             email: 'jorgecastro@professor.com',
-            salario: '4300,00R$',
+            salario: 'R$ 4300,00',
           },
         ]
       },

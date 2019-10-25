@@ -31,7 +31,7 @@
                     <v-text-field required v-model="editedItem.nome" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.preço" label="Preço"></v-text-field>
+                    <v-text-field required v-mask="maskpreco" v-model="editedItem.preço" label="Preço"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <v-text-field required v-model="editedItem.registro" label="Número de registro"></v-text-field>
@@ -40,7 +40,7 @@
                     <v-text-field required v-model="editedItem.professor" label="Professor"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field required v-model="editedItem.duracao" label="Duração do curso"></v-text-field>
+                    <v-text-field required v-mask="masktemp" v-model="editedItem.duracao" label="Duração do curso"></v-text-field>
                   </v-col>
                 </v-row>
               </v-container>
@@ -81,12 +81,18 @@
 
 <script>
 import AppDrawer from '../../components/AppDrawer';
+import { mask } from "vue-the-mask";
 export default {
-
+      directives:{
+        mask,
+      },
 components: {
     AppDrawer,
   },
   data: () => ({
+      
+      maskpreco:"R$ ####.##",
+
       dialog: false,
       headers: [
         {
@@ -105,14 +111,14 @@ components: {
       editedIndex: -1,
       editedItem: {
         nome: 'Curso',
-        preço: '00,00 R$',
+        preço: 'R$ ###,##',
         registro: '',
         professor: '',
         duracao: 'horas',
       },
       defaultItem: {
         nome: 'Curso',
-        preço: '00,00 R$',
+        preço: 'R$ ###,##',
         registro: '',
         professor: '',
         duracao: 'horas',
@@ -140,7 +146,7 @@ components: {
         this.user = [
           {
             nome: 'Curso HTML 5',
-            preço: '140,00 R$',
+            preço: 'R$ 140,00',
             registro: '1',
             professor: 'Lucas Silva',
             duracao: '50 horas',
@@ -148,14 +154,14 @@ components: {
 
           {
             nome: 'Curso CSS3',
-            preço: '150,00 R$',
+            preço: 'R$ 150,00 ',
             registro: '2',
             professor: 'Fábio Assunção',
             duracao: '47 horas',
           },
           {
             nome: 'Curso JavaScript',
-            preço: '200,00 R$',
+            preço: 'R$ 200,00',
             registro: '3',
             professor: 'Jorge Castro',
             duracao: '70 horas',
