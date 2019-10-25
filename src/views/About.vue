@@ -35,23 +35,26 @@
         <v-row justify="center" align="center" no-gutters="" class="my-5">
 <v-col md="8" sm="12">
         <section title="Dois alunos falando sobre a empresa">
-          <video
-          height="100%"
-          width="100%"
-            controls
-            :src="require('../assets/videos/vsobre.mp4')"
-          ></video>
+      <vue-plyr>
+  <video poster="firstimgs.jpg" :src="require('../assets/videos/firstimgs.jpg')">
+    <source :src="require('../assets/videos/vsobre.mp4')" type="video/mp4" size="720">
+    <track kind="captions" label="English" srclang="en" src="captions-en.vtt" default>
+  </video>
+</vue-plyr>
         </section>
         </v-col>
         </v-row>
+
+        <v-row class="my-5 mx-5" justify="center" align="center"> 
+<v-col>
 
         <v-row class="my-5" justify="center">
         <p class="objt"> {{objetivos}} </p>
         </v-row>
 
-<v-row class="my-5 mx-5" justify="center" align="center"> 
 
-<v-layout color="grey lighten-5">
+  <v-row justify="center">
+<v-layout color="grey lighten-5" justify-center="">
               
                 
                       <section title="Topicos falando sobre os objetivos da empresa">
@@ -73,7 +76,8 @@
                    
  
 </v-layout>
-
+  </v-row>
+</v-col>
 </v-row>
 
    </v-container>

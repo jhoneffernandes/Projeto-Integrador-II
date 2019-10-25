@@ -4,10 +4,14 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify';
 import store from './store'
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css' 
 
 Vue.config.productionTip = false
 
 Vue.use (Storage)
+Vue.use(VuePlyr)
+
 
 new Vue({
   router,

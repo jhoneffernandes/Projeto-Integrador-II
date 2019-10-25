@@ -10,46 +10,40 @@
 
             <v-card-text>
               <p class="textop">Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
-              <!-- <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn> -->
+          <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
             </v-card-text>
           </v-layout>
         </v-card>
       </v-row>
     </v-layout>
 
-    <v-row align="center" justify="center" class="spacer">
-      <v-carousel cycle height="20rem" interval="4000" hide-delimiters>
-        <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Promoção do curso de html logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerhtml.svg')">
-            <v-row align="center" justify="center">
-          
-             </v-row>
 
-              <v-row  align="end" justify="center">
-              <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <!-- <v-btn>Saiba mais sobre o curso</v-btn> -->
-              </v-card-title>
-              </v-row>
+
+    <v-row align="center" justify="center" class="spacer">
+
+      <v-carousel height="100%" cycle interval="4000" hide-delimiters>
+
+        <v-carousel-item >
+
+          <v-img contain="" min-height="100%" min-width="100%" alt="Promoção do curso de html logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerhtml.svg')">
           </v-img>
+
         </v-carousel-item>
 
-        <v-carousel-item>
-          <v-img height="100%" min-height="100%" alt="Promoção do curso de Adobe ilustrator logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerai.svg')">
-            <v-row align="center" justify="center">
-           
-             </v-row>
 
-             <v-row align="end" justify="center">
-              <v-card-title class="align-center justify-center fill-height flex-wrap">
-                <!-- <v-btn>Saiba mais sobre o curso</v-btn> -->
-              </v-card-title>
-            </v-row>
+        <v-carousel-item>
+
+          <v-img contain="" min-height="100%" min-width="100%" alt="Promoção do curso de Adobe ilustrator logo na parte esquerda e preço na direita" :src="require('../assets/banners/bannerai.svg')">
           </v-img>
+
         </v-carousel-item>
 
         
       </v-carousel>
     </v-row>
+
+
+
 
     <v-row align="center" justify="center" class="my-5 mx-5">
       
@@ -61,13 +55,24 @@
 
     </v-row>
 
+
+
     <v-row dense justify="center" class="my-5">
       <v-col cols="12" xl="12" lg="9" md="8" sm="12">
-      <v-row align="center" justify="center" class="ss">
-        <v-col md="8" xl="4" sm="10" lg="5" cols="12">
-      <p class="tituloroxo text-center white--text tituloh">Cursos de design e modelagem 3D</p>
-      </v-col>
-      </v-row>
+        
+     
+ <v-row justify="center" class="mb-12">
+
+          <v-card fill-height color="purple" dark="" class="mx-6 my-6" elevation="01">
+         
+            <v-row justify="center">
+            <v-card-title class="align-center text-center ma-2 fontetitulo justify-center flex-nowrap">Cursos de design e modelagem 3D</v-card-title>
+            </v-row>
+  
+          </v-card>
+ </v-row>
+
+
       <v-row justify="center" class="flex-wrap">
 
         <a href="#">
@@ -132,11 +137,20 @@
 
     <v-row dense justify="center" class="my-5">
       <v-col cols="12" xl="12" lg="9" md="8" sm="12">
-      <v-row align="center" justify="center" class="ss">
-        <v-col md="8" xl="4" sm="10" lg="5" cols="12">
-      <p class="tituloamarelo text-center white--text tituloh">Cursos de frameworks</p>
-      </v-col>
-      </v-row>
+
+  <v-row justify="center" class="mb-12">
+
+          <v-card fill-height color="lime darken-4" dark="" class="mx-6 my-6" elevation="01">
+         
+            <v-row justify="center">
+            <v-card-title class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap">Cursos de frameworks</v-card-title>
+            </v-row>
+  
+          </v-card>
+ </v-row>
+
+
+
       <v-row justify="center">
         
         <a href="#">
@@ -200,11 +214,20 @@
 
     <v-row justify="center" dense class="my-5 ">
       <v-col cols="12" xl="12" lg="9" md="8" sm="12">
-      <v-row align="center" justify="center" class="ss">
-        <v-col md="8" xl="4" sm="10" lg="5" cols="12">
-      <p class="tituloverde text-center white--text tituloh">Cursos de linguagens de programação</p>
-      </v-col>
-      </v-row>
+
+
+ <v-row justify="center" class="mb-12">
+
+          <v-card fill-height color="green darken-3" dark="" class="mx-6 my-6" elevation="01">
+         
+            <v-row justify="center">
+            <v-card-title class="align-center text-center ma-2 fontetitulo justify-center flex-nowrap">Cursos de programação</v-card-title>
+            </v-row>
+  
+          </v-card>
+ </v-row>
+
+
       <v-row justify="center">
         <a href="#">
           <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
@@ -263,9 +286,10 @@
       </v-col>
     </v-row>
     
-    <v-row align="center" justify="center" class="my-5"> 
-      <v-col sm="12" md="6" xl="5">
-      <v-card>
+    <v-row justify="center" dense class="my-5 ">
+      <v-col cols="12" xl="12" lg="9" md="8" sm="12">
+<v-row justify="center">
+      <v-card class="mx-6" width="40rem" height="16rem" tile="">
         <v-card-text class="text-center my-5 tamanho white--text">Assine nossa Newsletter!</v-card-text>
 
 <v-text-field
@@ -289,6 +313,7 @@ Assinar
     </v-btn> 
       </v-card-actions>
       </v-card>
+</v-row>
 </v-col>
     </v-row>
   
@@ -297,6 +322,7 @@ Assinar
 
 <script>
 export default {
+  
   methods : {
  conhecer () {
       this.$router.push('/classes')
@@ -317,7 +343,7 @@ validate() {
       ],
     }),
 
-};
+}
 </script>
 
 
@@ -326,6 +352,11 @@ validate() {
 .v-card__text, .v-card__title {
   word-break: normal; /* maybe !important  */
 }
+
+.fontetitulo {
+  font-size: 2rem ;
+
+ }
 
 .textop {
   font-size: 1.3rem;
@@ -355,6 +386,7 @@ a {
 }
 
 .tituloroxo{
+  width: 100%;
   background-color: purple;
 }
 
@@ -370,4 +402,5 @@ a {
   font-size: 0.6rem;
   text-align: center;
 }
+
 </style>

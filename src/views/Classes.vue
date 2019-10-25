@@ -44,13 +44,17 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
       </v-tab>
 
       <v-tab-item class="mx-6">
-<v-row justify="center">
 
- <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
+<v-row dense justify="center" class="my-5">
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
+
+
+      <v-row justify="center" class="flex-wrap">
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/photoshop.png')"></v-img>
-           <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/photoshop.png')"></v-img>
+           <v-card-title class="align-center justify-center fill-height">Adobe Photoshop</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Preço:  R$ {{photoshop}}</H1></v-card-text>
                         <v-divider></v-divider>
@@ -58,13 +62,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
-             <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
+             <v-card-title class="align-center justify-center fill-height">Corel Photopaint</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{photopaint}}</H1></v-card-text>
                         <v-divider></v-divider>
@@ -72,12 +74,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class="mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{blender}}</H1></v-card-text>
@@ -86,12 +86,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/max.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/max.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{max}}</H1></v-card-text>
@@ -100,12 +98,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
            <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{bootstrap}}</H1></v-card-text>
@@ -114,12 +110,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/vue.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/vue.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ vue }}</H1></v-card-text>
@@ -128,12 +122,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-<v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/bulma.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/bulma.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{bulma}}</H1></v-card-text>
@@ -142,12 +134,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/materialize.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/materialize.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{materialize}}</H1></v-card-text>
@@ -157,12 +147,10 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-<v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/javascript.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/javascript.png')"></v-img>
               <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{javascript}}</H1></v-card-text>
@@ -172,13 +160,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/python.jpg')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/python.jpg')"></v-img>
            <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{python}}</H1></v-card-text>
@@ -188,13 +174,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/php.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/php.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ php }}</H1></v-card-text>
@@ -204,13 +188,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
 
-      <v-col class=" mx-3 my-2" sm="9" md="5" lg="3" xl="2">
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/c.jpg')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/c.jpg')"></v-img>
               <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ c }}</H1></v-card-text>
@@ -220,21 +202,27 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
 
-
+</v-row>
+</v-col>
 
 </v-row>
       </v-tab-item>
 
       <v-tab-item class="mx-6">
-        <v-row>
-          <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+
+
+        <v-row dense justify="center" class="my-5">
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
+
+
+      <v-row justify="center" class="flex-wrap">
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/photoshop.png')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Adobe<br>Photoshop</v-card-title>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/photoshop.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Adobe Photoshop</v-card-title>
             <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Preço:  R$ {{photoshop}}</H1></v-card-text>
                         <v-divider></v-divider>
@@ -242,12 +230,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
-            <v-card-title class="align-center justify-center fill-height">Corel<br>Photopaint</v-card-title>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/corelphotopaint.png')"></v-img>
+            <v-card-title class="align-center justify-center fill-height">Corel Photopaint</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{photopaint}}</H1></v-card-text>
                         <v-divider></v-divider>
@@ -255,11 +242,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/blender.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{blender}}</H1></v-card-text>
@@ -268,12 +255,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
 
-       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordapurple" :src="require('../assets/cursos/max.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordapurple" :src="require('../assets/cursos/max.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">3Ds Max</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{max}}</H1></v-card-text>
@@ -282,6 +268,8 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
+
+      </v-row>
       </v-col>
         </v-row>
       </v-tab-item>
@@ -289,11 +277,16 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
 
        <v-tab-item class="mx-6">
           
-        <v-row>
-          <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+        <v-row dense justify="center" class="my-5">
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
+
+
+      <v-row justify="center" class="flex-wrap">
+
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/bootstrap.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Bootstrap 5</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{bootstrap}}</H1></v-card-text>
@@ -302,11 +295,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+     
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/vue.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/vue.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Vue.js</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{vue}}</H1></v-card-text>
@@ -315,11 +308,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/bulma.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/bulma.png')"></v-img>
           <v-card-title class="align-center justify-center fill-height">Bulma</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{bulma}}</H1></v-card-text>
@@ -328,11 +321,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordayellow" :src="require('../assets/cursos/materialize.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordayellow" :src="require('../assets/cursos/materialize.png')"></v-img>
             <v-card-title class="align-center justify-center fill-height">Materialize</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{materialize}}</H1></v-card-text>
@@ -342,18 +335,23 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
+      
+      </v-row>
       </v-col>
         </v-row>
       
       </v-tab-item>
 
        <v-tab-item class="mx-6">
-          
-        <v-row>
-     <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      <v-row dense justify="center" class="my-5">
+<v-col cols="6" xl="12" lg="10" md="9" sm="8">
+
+
+      <v-row justify="center" class="flex-wrap">
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/javascript.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/javascript.png')"></v-img>
            <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{javascript}}</H1></v-card-text>
@@ -363,11 +361,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+      
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/python.jpg')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/python.jpg')"></v-img>
              <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ python }}</H1></v-card-text>
@@ -377,11 +375,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-       <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+     
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/php.png')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/php.png')"></v-img>
              <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ php }}</H1></v-card-text>
@@ -391,11 +389,11 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
-      </v-col>
-      <v-col class=" mx-3 my-2" sm="9" md="3" lg="3" xl="2">
+    
+
         <a href="#">
-          <v-card color="grey lighten-4" elevation="01">
-            <v-img class="bordagreen" :src="require('../assets/cursos/c.jpg')"></v-img>
+          <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+            <v-img contain width="18rem" height="18rem" class="bordagreen" :src="require('../assets/cursos/c.jpg')"></v-img>
             <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
             <v-divider></v-divider>
              <v-card-text class="textopadrao"><H1>Preço:  R$ {{ c }}</H1></v-card-text>
@@ -405,6 +403,8 @@ Além das aulas, o ambiente de aprendizado também é totalmente online, de form
             <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
           </v-card>
         </a>
+      
+      </v-row>
       </v-col>
         </v-row>
       
