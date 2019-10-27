@@ -4,7 +4,7 @@
       <v-toolbar-items>
         <v-btn text max-width="16rem">
           <router-link to="/">
-            <v-img class="logo" :src="require('../assets/logos/logo.svg')" height="3rem" contain></v-img>
+            <v-img :src="require('../assets/logos/logo.svg')" height="3rem" contain></v-img>
           </router-link>
         </v-btn>
       </v-toolbar-items>
@@ -97,31 +97,15 @@ export default {
 
 <style >
 
-.logo:hover{
-    animation-name: anima1;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in;
-}
 .botao:hover{
     border-bottom: 3px solid rgb(0, 17, 255);
-    animation-name: anima2;
+    animation-name: anima1;
     animation-duration: 1s;
     animation-fill-mode: both;
 
 }
 
-
-@keyframes anima1 {
-    100%{
-        transform: scale(1);
-        transform: rotateX(360deg);
-
-    }
-}
- @keyframes anima2{
+ @keyframes anima1{
     0%{
         border-bottom: 3px solid rgb(0, 17, 255);
     }

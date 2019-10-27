@@ -76,7 +76,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
 
       <v-row justify="center" class="flex-wrap">
 
-        <a href="#">
+        <a href="">
           <v-card fill-height color="grey lighten-4" ele class="mx-6 my-6" elevation="01">
             <v-img height="18rem" contain="" width="18rem" :src="require('../assets/cursos/photoshop.png')"></v-img>
             <v-row justify="center">
@@ -86,7 +86,11 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
             <v-card-text class="textopadrao"><H1>Preço:  R$ 150,00</H1></v-card-text>
                         <v-divider></v-divider>
             <v-card-text class="textopadrao"><H1>Duração:  40 horas</H1></v-card-text>
-            <v-card-text class="text-center"><v-btn color="primary">Saiba mais</v-btn></v-card-text>
+            <v-card-text class="text-center">
+              <router-link to="./photoshop">
+              <v-btn color="primary">Saiba mais</v-btn>
+            </router-link>
+            </v-card-text>
           </v-card>
         </a>
 
@@ -290,8 +294,8 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
     <v-row justify="center" dense class="my-5 ">
       <v-col cols="12" xl="12" lg="9" md="8" sm="12">
 <v-row justify="center">
-      <v-card class="mx-6" width="40rem" height="16rem" tile="">
-        <v-card-text class="text-center my-5 tamanho white--text">Assine nossa Newsletter!</v-card-text>
+      <v-card  class="mx-6" width="40rem" height="16rem" tile="">
+        <v-card-text  class="text-center my-5 tamanho white--text">Assine nossa Newsletter!</v-card-text>
 
 <v-text-field
   v-model="email"
