@@ -20,13 +20,13 @@
           ></v-img>
         </v-col>
         <v-col class="cortexto" md="5" sm="2">
-          <p>{{nomecurso}}</p>
-          <p>{{tempocurso}}</p>
+            <p class="nomecurso">{{nomecurso}}</p>
+            <p class="horacurso">{{tempocurso}}</p>
         </v-col>
 
         <v-col md="3" sm="4">
           <section class="cortexto">
-            <p>{{professor}}</p>
+            <p class="nomeprof">{{professor}}</p>
           </section>
 
           <v-img
@@ -49,15 +49,12 @@
         </p>
       </section>
 
-      <v-row class="ml-5">
+      <v-row class="ml-5 fdn">
         <h1 class="fonte">Requisitos</h1>
         <p>
           Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
           Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
         </p>
-      </v-row>
-
-      <v-row class="ml-5">
         <h1 class="fonte">Resumo</h1>
         <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
       </v-row>
@@ -193,8 +190,8 @@ export default {
   },
   data() {
     return {
-      nomecurso: "Aqui fica o nome do curso",
-      tempocurso: "Aqui fica as horas que o curso tem",
+      nomecurso: "Adobe Photoshop cs6",
+      tempocurso: "77 aulas | 10 horas",
       professor: "Lucas Santos"
     };
   },
@@ -229,11 +226,16 @@ export default {
 .centro {
   text-align: center;
 }
-
+.letra{
+  font-family: sans-serif;
+  height: 4rem;
+  font-size: 2rem;
+  color: white;
+}
 .fonte {
   font-size: 1.5rem;
+  color: black;
 }
-
 .tmn {
   height: 4rem;
   font-size: 2rem;
@@ -248,5 +250,17 @@ export default {
   background-repeat: no-repeat;
   color: rgb(255, 0, 0);
   height: 5rem;
+}
+.nomecurso{
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+.horacurso{
+  font-size: 2rem;
+  color: rgba(0, 0, 124, 0.658);
+}
+.nomeprof{
+  font-size: 1.5rem;
+
 }
 </style>
