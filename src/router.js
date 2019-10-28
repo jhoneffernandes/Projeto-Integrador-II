@@ -56,7 +56,8 @@ export default new Router({
 
     {
       path: '/painel/perfis/form',
-      name: 'form',
+      name: 'userform',
+     
       component: () => import('./views/painel/AppForm.vue')
     },
 
@@ -67,9 +68,23 @@ export default new Router({
     },
 
     {
+      path: '/painel/cursos/form',
+      name: 'cursosform',
+     
+      component: () => import('./views/painel/CursosForm.vue')
+    },
+
+    {
       path: '/painel/professores',
       name: 'professorescurso',
       component: () => import('./views/painel/Professores.vue')
+    },
+
+    {
+      path: '/painel/professores/form',
+      name: 'profform',
+     
+      component: () => import('./views/painel/ProfForm.vue')
     },
 
     {

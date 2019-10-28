@@ -28,9 +28,9 @@
     lazy-validation
   >
     <v-text-field class="my-5 mx-6"
-      v-model="name"
+      v-model="nomeuser"
       :counter="10"
-      :rules="nameRules"
+      :rules="nomeuserRules"
       label="Nome"
       required
     ></v-text-field>
@@ -99,16 +99,27 @@ export default {
   components: {
     AppDrawer,
   },
+
     data () {
       return {
-        name: '',
+
+        usuario: [
+          {
+        nomeuser: '',
+        cel: '',
+        cpf: '',
+        email: ''
+          }
+                ]
+
+        
       }
     },
 
     data: () => ({
       valid: true,
-      name: '',
-      nameRules: [
+      nomeuser: '',
+      nomeuserRules: [
         v => !!v || 'O nome é obrigatório',
         v => (v && v.length <= 10) || 'O nome de usuário deve ser menor que 10 caractéres',
       ],
@@ -139,9 +150,12 @@ export default {
       validate () {
         if (this.$refs.form.validate()) {
           this.snackbar = true,
-                   this.$ls.set(  'name' , this.name),
 
-                  this.$router.push('/painel')
+                   this.$ls.set(  'nomeuser' , this.nomeuser),
+                   this.$ls.set(  'cel' , this.cel),
+                   this.$ls.set(  'cpf' , this.cpf),
+                   this.$ls.set(  'email' , this.email),
+                  this.$router.push('/painel/perfis')
 
         }
       },
