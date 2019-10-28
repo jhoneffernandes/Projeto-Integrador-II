@@ -17,8 +17,6 @@
       </v-row>
     </v-layout>
 
-
-
     <v-row align="center" justify="center" class="spacer">
 
       <v-carousel height="100%" cycle interval="4000" hide-delimiters>
@@ -328,6 +326,7 @@ Assinar
 <script>
 export default {
   
+
   methods : {
  conhecer () {
       this.$router.push('/classes')
@@ -335,8 +334,7 @@ export default {
 
 validate() {
       this.$router.push('/painel')
-}
-
+},
   },
    data: () => ({
       valid: true,

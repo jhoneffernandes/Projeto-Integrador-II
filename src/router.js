@@ -80,7 +80,7 @@ export default new Router({
     {
       path: '/photoshop',
       name: 'photoshop',
-      component: () => import('./produtos/Photoshop.vue')
+      component: () => import('./produtos/edicao/Photoshop.vue')
     },
 
     {
