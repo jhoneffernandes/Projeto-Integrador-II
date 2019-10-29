@@ -49,44 +49,46 @@
         </p>
       </section>
 
-      <v-row class="ml-5 fdn">
-        <h1 class="fonte">Requisitos</h1>
-        <p>
-          Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
-          Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
-        </p>
-        <h1 class="fonte">Resumo</h1>
-        <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
-      </v-row>
+      <v-col lg="10" md="12" sm="12">
+        <v-row class="ml-5 fdn">
+          <h1 class="fonte">Requisitos</h1>
+          <p>
+            Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
+            Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
+          </p>
+          <h1 class="fonte">Resumo</h1>
+          <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
+        </v-row>
+      </v-col>
 
       <section class="centro fundo tmn">Conteúdo</section>
 
       <v-col md="5" class="mx-auto">
-        <v-expansion-panels accordion>
+        <v-expansion-panels >
           <v-expansion-panel>
             <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
-            <v-expansion-panel-content>Conhecendo melhor o curso</v-expansion-panel-content>
+            <v-expansion-panel-content>CONHECENDO MELHOR O CURSO</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Apresentando o Photoshop</v-expansion-panel-header>
-            <v-expansion-panel-content>Introdução ao Photoshop</v-expansion-panel-content>
-            <v-expansion-panel-content>O que é o Photoshop</v-expansion-panel-content>
-            <v-expansion-panel-content>Principais teclas de atalho</v-expansion-panel-content>
+            <v-expansion-panel-content>INTRODUÇÃO AO PHOTOSHOP</v-expansion-panel-content>
+            <v-expansion-panel-content>O QUE É O PHOTOSHOP</v-expansion-panel-content>
+            <v-expansion-panel-content>PRINCIPAIS TECLAS DE ATALHO</v-expansion-panel-content>
 
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Ferramentas de seleçao</v-expansion-panel-header>
-            <v-expansion-panel-content>O que é seleção</v-expansion-panel-content>
-            <v-expansion-panel-content>Seleçôes de Letreiro </v-expansion-panel-content>
-            <v-expansion-panel-content>Selções de Laço</v-expansion-panel-content>
-            <v-expansion-panel-content>Seleções Rápidas</v-expansion-panel-content>
-            <v-expansion-panel-content>Seleçoes de Intervalo de cores</v-expansion-panel-content>
-            <v-expansion-panel-content>Seleção de Máscara Rápida</v-expansion-panel-content>
-            <v-expansion-panel-content>Menu Selecionar</v-expansion-panel-content>
-            <v-expansion-panel-content>Salvar e carregar seleções</v-expansion-panel-content>
-            <v-expansion-panel-content>Exercício 01 Seleções</v-expansion-panel-content>
+            <v-expansion-panel-content>O QUE É SELEÇÃO</v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇÔES DE LETREIRO </v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇÕES DE LAÇO</v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇÕES RÁPIDAS</v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇOES DE INTERVALO DE CORES</v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇÃO DE MÁSCARA RÁPIDA</v-expansion-panel-content>
+            <v-expansion-panel-content>MENU SELECIONAR</v-expansion-panel-content>
+            <v-expansion-panel-content>SALVAR E CARREGAR SELEÇÕES</v-expansion-panel-content>
+            <v-expansion-panel-content>EXERCÍCIO 01 SELEÇÕES</v-expansion-panel-content>
           
           </v-expansion-panel>
 
@@ -189,15 +191,17 @@
       </v-col>
 
         <section class="fundodois justify">
-          <h1 class="centro letra">Certificado</h1>
-          <p class="ml-2">
-            Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
-            A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
-          </p>
+          <v-col lg="12" md="12" sm="12">
+            <h1 class="centro letra">Certificado</h1>
+            <p class="ml-2">
+              Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
+              A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
+            </p>
+          </v-col>
         </section>
     
 
-      <v-col md="5" sm="5" class="mx-auto">
+      <v-col lg="5" md="5" sm="5" class="mx-auto">
         <section class="centro agd">
           Precisa de ajuda?
           <br />Preencha o formulario com sua dúvida.
@@ -290,7 +294,7 @@ export default {
 }
 .fundodois {
   background-color: rgba(211, 207, 248, 0.61);
-  height: 7rem;
+  
 }
 .centro {
   text-align: center;

@@ -74,7 +74,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
 
       <v-row justify="center" class="flex-wrap">
 
-        <a href="">
+        
           <v-card fill-height color="grey lighten-4" ele class="mx-6 my-6" elevation="01">
             <v-img height="18rem" contain="" width="18rem" :src="require('../assets/cursos/photoshop.png')"></v-img>
             <v-row justify="center">
@@ -90,7 +90,7 @@ A Diorama Cursos online como a mais nova escola de cursos online oferece uma gra
             </router-link>
             </v-card-text>
           </v-card>
-        </a>
+        
 
         <a href="#">
           <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
