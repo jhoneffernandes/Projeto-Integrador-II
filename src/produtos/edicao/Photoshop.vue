@@ -16,7 +16,7 @@
             height="10rem"
             contain
             width="10rem"
-           :src="require('../assets/cursos/photoshop.png')"
+           :src="require('../../assets/cursos/photoshop.png')"
           ></v-img>
         </v-col>
         <v-col class="cortexto" md="5" sm="5">
@@ -34,7 +34,7 @@
             aspect-ratio="1"
             width="10rem"
             max-height="300"
-            :src="require('../assets/professores/prof1.jpg')"
+            :src="require('../../assets/professores/prof1.jpg')"
           ></v-img>
         </v-col>
       </v-card>
@@ -252,7 +252,7 @@
   </div>
 </template>
 <script>
-import AppHeader from "../components/AppHeader";
+import AppHeader from "../../components/AppHeader";
 export default {
   components: {
     AppHeader
