@@ -47,7 +47,7 @@ export default {
 
   methods: {
     acessar() {
-      if (this.login === "adm" && this.password === "adm") {
+      if (this.login === "Jorge" && this.password === "adm") {
         this.$ls.set("login", this.login);
         this.$router.push("/painel");
       }

@@ -15,307 +15,274 @@
       </v-row>
     </v-layout>
     <v-card-text>
- <p class="textop2 text-justify">Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
- <a href="#/classes">clique aqui para ver os nossos cursos.</a></p>    </v-card-text>
+      <p class="textop2 text-justify">
+        Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
+        <a
+          href="#/classes"
+        >clique aqui para ver os nossos cursos.</a>
+      </p>
+    </v-card-text>
 
-    <v-row  justify="center" >
+    <v-row class="teste">
+      <v-card class="ml-5 mb-5" max-width="434" tile>
+        <v-tabs>
+          <v-tab>
+            <v-icon left>mdi-account</v-icon>Professor
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-application</v-icon>Cursos
+          </v-tab>
 
-      <v-col cols="6" sm="6" md="6">
-        <v-card outlined class="mx-5 fundo">
-          <v-img
-            longdesc="Homen com sorriso, branco de terno preto"
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof1.jpg')"
-            aspect-ratio="1"
-            width="30rem"
-            max-height="300"
-          ></v-img>
+          <v-tab-item>
+            <v-card flat>
+              <v-img height="100%" src="../assets/banners/background.png">
+                <v-row align="end" class="fill-height">
+                  <v-col align-self="start" class="pa-0" cols="12">
+                    <v-avatar class="profile" color="grey" size="164" tile>
+                      <v-img src="../assets/professores/prof1.jpg"></v-img>
+                    </v-avatar>
+                  </v-col>
+                  <v-col class="py-0">
+                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                      <v-list-item-content>
+                        <v-list-item-title class="title">{{prof1}}</v-list-item-title>
+                        <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-col>
+                </v-row>
+              </v-img>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                <ul class="lista">
+                  <li>Formado em Ciência da Computação pela PUC-PR</li>
+                  <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
+                  <li>Design Gráfico</li>
+                  <li>Web Designer</li>
+                  <li>Pós-graduado em Marketing</li>
+                  <li>Colaborador oficial do framework vuetify</li>
+                  <li>Trabalhou por 2 anos na Tiwebdesign</li>
+                  <li>Etec Dr.Adail Nunes da Silva</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-content>
+                  <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
+                </v-list-item-content>
+                <ul class="lista">
+                  <li>Curso Adobe Photoshop cs6</li>
+                  <li>Curso Adobe Premiere Pro cs6</li>
+                  <li>Curso Adobe Ilustrator cs6</li>
+                  <li>Curso After Effects cs6</li>
+                  <li>Curso Corel Drawn X8</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+        </v-tabs>
+      </v-card>
 
+      <v-card class="ml-5 mb-5" max-width="434" tile>
+        <v-tabs>
+          <v-tab>
+            <v-icon left>mdi-account</v-icon>Professor
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-application</v-icon>Cursos
+          </v-tab>
 
-          <p class="ttl text-center mb-3 linha">{{prof1}}</p>
+          <v-tab-item>
+            <v-card flat>
+              <v-img height="100%" src="../assets/banners/background.png">
+                <v-row align="end" class="fill-height">
+                  <v-col align-self="start" class="pa-0" cols="12">
+                    <v-avatar class="profile" color="grey" size="164" tile>
+                      <v-img src="../assets/professores/prof2.jpg"></v-img>
+                    </v-avatar>
+                  </v-col>
+                  <v-col class="py-0">
+                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                      <v-list-item-content>
+                        <v-list-item-title class="title">{{prof2}}</v-list-item-title>
+                        <v-list-item-subtitle>Desenvolvedor de jogos</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-col>
+                </v-row>
+              </v-img>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                <ul class="lista">
+                  <ul>
+                    <li>Pós-Graduação | Jogos E Animação Digital: Modelagem 3d, Game Design</li>
+                    <li>Desenho e Ilustração Digital</li>
+                    <li>Inteligência Artificial.</li>
+                    <li>Graduação em Projeto e desenvolvimento de jogos digitais - Universidade Cruzeiro do sul</li>
+                    <li>Alta experiência com Realidade Aumentada</li>
+                    <li>Pós-graduação lato sensu – Especialização em Produção Artística para Jogos Digitais.</li>
+                  </ul>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-content>
+                  <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
+                </v-list-item-content>
+                <ul class="lista">
+                  <li>Curso Zbrush</li>
+                  <li>Curso 3ds Max</li>
+                  <li>Curso Cinema 4d</li>
+                  <li>Curso Maya</li>
+                  <li>Curso Blender</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+        </v-tabs>
+      </v-card>
 
-          <v-card >
-           <section title="Primeiro Professor">
-              <v-tabs slot="extension" v-model="tabs" background-color="indigo" dark centered>
-                <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
-              </v-tabs>
-           </section>
+      <v-card class="ml-5 mb-5" max-width="434" tile>
+        <v-tabs>
+          <v-tab>
+            <v-icon left>mdi-account</v-icon>Professor
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+          </v-tab>
+          <v-tab>
+            <v-icon left>mdi-application</v-icon>Cursos
+          </v-tab>
 
-            <v-tabs-items v-model="tabs">
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p1}}</v-card-title>
-
-                  <v-card-text>{{sobre1}}</v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p2}}</v-card-title>
-                  <v-card-text>
-                    <ul>
-                      <li>Formado em Ciência da Computação pela PUC-PR</li>
-                      <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-                      <li>Web Designer</li>
-                      <li>Pós-graduado em Marketing</li>
-                      <li>Colaborador oficial do framework vuetify</li>
-                    </ul>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p3}}</v-card-title>
-                  <v-card-text class="quebra">
-                    <v-img
-                      :src="require('../assets/cursos/vue.png')"
-                      alt="Logo vue.js"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                    <v-img
-                      :src="require('../assets/cursos/bootstrap.png')"
-                      alt="Logo bootstrap"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                    <v-img
-                      :src="require('../assets/cursos/bulma.png')"
-                      alt="Logo bulma"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                    <v-img
-                      :src="require('../assets/cursos/materialize.png')"
-                      alt="Logo materialize"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-            </v-tabs-items>
-          </v-card>
-        </v-card>
-      </v-col>
+          <v-tab-item>
+            <v-card flat>
+              <v-img height="100%" src="../assets/banners/background.png">
+                <v-row align="end" class="fill-height">
+                  <v-col align-self="start" class="pa-0" cols="12">
+                    <v-avatar class="profile" color="grey" size="164" tile>
+                      <v-img src="../assets/professores/prof3.jpg"></v-img>
+                    </v-avatar>
+                  </v-col>
+                  <v-col class="py-0">
+                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                      <v-list-item-content>
+                        <v-list-item-title class="title">{{prof3}}</v-list-item-title>
+                        <v-list-item-subtitle>Programador Sênior</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-col>
+                </v-row>
+              </v-img>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                <ul class="lista">
+                  <li>Formado em Ciência da Computação pela PUC-PR</li>
+                  <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
+                  <li>Possui diversas certificações na área de TI</li>
+                  <li>Atua desde 2003 com desenvolvimento web e treinamentos de profissionais.</li>
+                  <li>Desenvolvedor de aplicativos para o ambiente iOS da Apple</li>
+                  <li>MySQL - Guia do Programador (ed. Novatec)</li>
+                  <li>Construindo Aplicações Web com PHP & MySQL (ed. Novatec)</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+          <v-tab-item>
+            <v-card flat>
+              <v-card-text>
+                <v-list-item-content>
+                  <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
+                </v-list-item-content>
+                <ul class="lista">
+                  <li>Curso Html5 e CSS3</li>
+                  <li>Curso Java</li>
+                  <li>Curso Javascript</li>
+                  <li>Curso Php</li>
+                  <li>Curso Python</li>
+                  <li>Curso C#</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+        </v-tabs>
+      </v-card>
     </v-row>
 
-     <v-row justify="center">
-      <v-col cols="6" sm="6" md="6">
-        <v-card outlined class="mx-5 fundo">
-          <v-img
-            longdesc="Homen com óculos segurando uma revista"
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof2.jpg')"
-            aspect-ratio="1"
-            width="30rem"
-            max-height="300"
-          ></v-img>
+     <section class="depoimento mt-5 mb-5">
+        <p
+          class="ml-5"
+        >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+        <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+      </section>
 
-         
-          <p class="ttl text-center mb-3 linha">{{prof2}}</p>
-          <v-card >
-            <section title="Segundo Professor">
-              <v-tabs slot="extension" v-model="tabso" background-color="indigo" dark centered>
-                <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
-              </v-tabs>
-            </section>
+      <v-row justify="center" dense class="my-5">
+        <v-col cols="12" xl="12" lg="9" md="8" sm="12">
+          <v-row justify="center">
+            <v-card class="mx-6"  tile="" elevation="2" width="35rem" height="16rem">
+              <v-card-text class="text-center my-5 tamanho white--text">Assine nossa Newsletter!</v-card-text>
 
-            <v-tabs-items v-model="tabso">
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p1}}</v-card-title>
-                  <v-card-text>{{sobre2}}</v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p2}}</v-card-title>
-                  <v-card-text>
-                    <ul>
-                      <li>Pós-Graduação | Jogos E Animação Digital: Modelagem 3d, Game Design</li>
-                      <li>Desenho e Ilustração Digital</li>
-                      <li> Inteligência Artificial.</li>
-                      <li> Graduação em Projeto e desenvolvimento de jogos digitais - Universidade Cruzeiro do sul</li>
-                      <li> Alta experiência com Realidade Aumentada</li>
-                      <li> Pós-graduação lato sensu – Especialização em Produção Artística para Jogos Digitais.</li>
-                    </ul>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p3}}</v-card-title>
-                  <v-card-text class="quebra">
-                    <v-img 
-                      :src="require('../assets/cursos/blender.png')"
-                      alt="Logo do blender"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                      <v-img 
-                      :src="require('../assets/cursos/max.png')"
-                      alt="Lodo do 3ds max"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                      <v-img 
-                      :src="require('../assets/cursos/photoshop.png')"
-                      alt="Logo do adobe photoshop"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                      <v-img 
-                      :src="require('../assets/cursos/corelphotopaint.png')"
-                      alt="Logo do corel photopaint"
-                      contain
-                      class="my-6"
-                      min-width="20rem"
-                      max-height="300px"
-                    ></v-img>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-            </v-tabs-items>
-          </v-card>
-        </v-card>
-      </v-col>
+              <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                required
+                class="mx-6 my-6"
+                color="indigo"
+                label="Digite seu e-mail"
+              >
+                <v-icon class="mx-1" slot="prepend" color="indigo">mdi-email</v-icon>
+              </v-text-field>
 
-     </v-row>
-
-         <v-row justify="center">
-
-      <v-col cols="6" sm="6" md="6">
-        <v-card outlined class="mx-5 fundo">
-          <v-img
-            longdesc="Homen branco de óculos com sorriso, de aparência velha"
-            class="mx-10 profimg mx-auto"
-            :src="require('../assets/professores/prof3.jpg')"
-            aspect-ratio="1"
-            width="30rem"
-            max-height="300"
-          ></v-img>
-
-         
-          <p class="ttl text-center mb-3 linha">{{prof3}}</p>
-
-          <v-card>
-           <section title="Terceiro Professor">
-              <v-tabs slot="extension" v-model="tabsc" background-color="indigo" dark centered>
-                <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
-              </v-tabs>
-           </section>
-
-            <v-tabs-items v-model="tabsc">
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p1}}</v-card-title>
-
-                  <v-card-text>{{sobre3}}</v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p2}}</v-card-title>
-                  <v-card-text>
-                    <ul>
-                      <li>Formado em Ciência da Computação pela PUC-PR</li>
-                      <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-                      <li>Possui diversas certificações na área de TI </li>
-                      <li>Atua desde 2003 com desenvolvimento web e treinamentos de profissionais.</li>
-                      <li>
-                        Desenvolvedor de aplicativos para o ambiente iOS da Apple, possui aplicações que juntas somam mais de 50.000 downloads na AppStore!
-                        E tem mais: além dos cursos, ele quis compartilhar todo o conhecimento que possui também através da publicação de livros de informática.
-                        Programando para iPhone e iPad (ed. Novatec)
-                      </li>
-                      <li>
-                        MySQL - Guia do Programador (ed. Novatec)
-                        Construindo Aplicações Web com PHP & MySQL (ed. Novatec)
-                      </li>
-                    </ul>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-              <v-tab-item>
-                <v-card flat>
-                  <v-card-title class="headline">{{p3}}</v-card-title>
-                  <v-card-text class="quebra">
-                  
-                    <v-img
-                      :src="require('../assets/cursos/python.jpg')"
-                      alt="Logo do python"
-                      contain
-                      class="my-6"
-                      min-width="15rem"
-                      max-height="300px"
-                    ></v-img>
-                    <v-img
-                      :src="require('../assets/cursos/php.png')"
-                      alt="Logo do php"
-                      contain
-                      class="my-6"
-                      min-width="15rem"
-                      max-height="300px"
-                    ></v-img>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
-            </v-tabs-items>
-          </v-card>
-        </v-card>
-      </v-col>
-    </v-row>
+              <v-card-actions class="align-center justify-center">
+                <v-btn dark :disabled="!valid" color="indigo" class="mb-5" @click="validate">Assinar</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-row>
+        </v-col>
+      </v-row>
   </div>
 </template>
 <script>
-
-
 import AppHeader from "../components/AppHeader";
-
 export default {
   data() {
     return {
-      tabs: null,
-      tabso: null,
-      tabsc: null,
-      items: ["Sobre ele", "Seu curriculo", "Curso ministrado"],
-      
-   
-      p1: "Sobre ele",
-      p2: "Seu currículo",
-      p3: "Cursos ministrados",
+      prof1: "Lucas Santos",
+      prof2: "Jorge Alcantara",
+      prof3: "Fabio Vasconcelos",
 
-      sobre1: "Se você traçar metas absurdamente altas e falhar, seu fracasso será muito melhor que o sucesso de todos",
-      sobre2:" O sucesso normalmente vem para quem está ocupado demais para procurar por ele",
-      sobre3:"Todos os seus sonhos podem se tornar realidade se você tem coragem para persegui-los",
-
-      prof1:"Lucas Santos",
-      prof2:"Jorge Alcantara",
-      prof3:"Fabio Vasconcelos",
-      
-      textoinicio1:"Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.Abaixo você confere os docentes por trás de todos os nossos cursos:",
-      textbannerprof:"Professores da Diorama Digital",
+      textoinicio1:
+        "Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.Abaixo você confere os docentes por trás de todos os nossos cursos:",
+      textbannerprof: "Professores da Diorama Digital"
     };
   },
   components: {
-    AppHeader,
+    AppHeader
   }
 };
-
 </script>
 
 
@@ -345,18 +312,37 @@ export default {
   width: auto;
   font-size: 1.7rem;
 }
-.quebra{
+.quebra {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.lista {
+  color: black;
+}
+.teste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.depoimento {
+  background-color: rgb(113, 113, 255);
+  color: rgb(255, 253, 253);
+  height: 5rem;
+}
 
 @media (max-width: 600px) {
-
-.tituloh {
-  font-size: 1.3rem;
+  .tituloh {
+    font-size: 1.3rem;
+  }
 }
 
+@media (max-width: 700px) {
+  .teste {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 </style>

@@ -145,23 +145,23 @@ components: {
       initialize () {
         this.user = [
           {
-            nome: 'Lucas Silva',
-            cursolecionado: 'Curso de HTML',
+            nome: 'Lucas Santos',
+            cursolecionado: 'Cursos de edição',
             registro: '1',
             email: 'silvalucas@professor.com',
             salario: 'R$ 3400,00',
           },
 
           {
-            nome: 'Fábio Assunção',
-            cursolecionado: 'Curso de CSS3',
+            nome: 'Jorge Alcantara',
+            cursolecionado: 'Cursos de Modelagem 3d',
             registro: '2',
             email: 'fabioprofessor@gmail.com',
             salario: 'R$ 4000,00',
           },
           {
-            nome: 'Jorge Castro',
-            cursolecionado: 'Curso de JavaScript',
+            nome: 'Fábio Vasconcelos',
+            cursolecionado: 'Curso de Desenvolvimento web',
             registro: '3',
             email: 'jorgecastro@professor.com',
             salario: 'R$ 4300,00',
