@@ -97,7 +97,26 @@ export default new Router({
       name: 'photoshop',
       component: () => import('./produtos/edicao/Photoshop.vue')
     },
-
+    {
+      path: '/ilustrator',
+      name: 'ilustrato',
+      component: () => import('./produtos/edicao/Ilustrator.vue')
+    },
+    {
+      path: '/corel',
+      name: 'corel',
+      component: () => import('./produtos/edicao/Corel.vue')
+    },
+    {
+      path: '/premiere',
+      name: 'premiere',
+      component: () => import('./produtos/edicao/Premiere.vue')
+    },
+    {
+      path: '/after',
+      name: 'after',
+      component: () => import('./produtos/edicao/After.vue')
+    },
     {
       path: '/compra',
       name: 'compra',

@@ -42,7 +42,7 @@
 
               <v-text-field
                 v-model="password"
-                :append-icon="show1 ? 'mdiEye' : 'mdiEyeOff'"
+                :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                 :type="show1 ? 'text' : 'password'"
                 :rules="passRules"
                 label="Senha"
@@ -52,7 +52,7 @@
 
               <v-text-field
                 v-model="confpass"
-                :append-icon="show2 ? 'mdiEye' : 'mdiEyeOff'"
+                :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
                 :type="show2 ? 'text' : 'password'"
                 :rules="confpassRules"
                 label="Confirme sua senha"
@@ -79,7 +79,6 @@
 
 <script>
 import { mask } from "vue-the-mask";
-import { mdiEye, mdiEyeOff } from "@mdi/js";
 
 export default {
   directives: {
