@@ -224,7 +224,7 @@
       <section class="depoimento mt-5 mb-5">
         <p
           class="ml-5"
-        >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+        >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
         <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
       </section>
 
@@ -321,7 +321,7 @@ export default {
 .depoimento {
   background-color: rgb(113, 113, 255);
   color: rgb(255, 253, 253);
-  height: 5rem;
+  height: 7rem;
 }
 .nomecurso{
   font-size: 3rem;

@@ -106,9 +106,9 @@
                 <H1>Duração: 40 horas</H1>
               </v-card-text>
               <v-card-text class="text-center">
-               <router-link to="./corel">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </router-link>
+                <router-link to="./corel">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
               </v-card-text>
             </v-card>
           </a>
@@ -131,9 +131,9 @@
                 <H1>Duração: 40 horas</H1>
               </v-card-text>
               <v-card-text class="text-center">
-                 <router-link to="./ilustrator">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </router-link>
+                <router-link to="./ilustrator">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
               </v-card-text>
             </v-card>
           </a>
@@ -156,9 +156,9 @@
                 <H1>Duração: 40 horas</H1>
               </v-card-text>
               <v-card-text class="text-center">
-                 <router-link to="./after">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </router-link>
+                <router-link to="./after">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
               </v-card-text>
             </v-card>
           </a>
@@ -182,8 +182,8 @@
               </v-card-text>
               <v-card-text class="text-center">
                 <router-link to="./premiere">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </router-link>
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
               </v-card-text>
             </v-card>
           </a>
@@ -305,7 +305,7 @@
             </v-card>
           </a>
 
-           <a href="#">
+          <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
               <v-img
                 height="18rem"
@@ -376,7 +376,7 @@
             </v-card>
           </a>
 
-            <a href="#">
+          <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
               <v-img
                 height="18rem"
@@ -469,7 +469,12 @@
 
           <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img height="18rem" contain width="18rem" :src="require('../assets/cursos/html.svg')"></v-img>
+              <v-img
+                height="18rem"
+                contain
+                width="18rem"
+                :src="require('../assets/cursos/html.svg')"
+              ></v-img>
               <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -488,6 +493,13 @@
         </v-row>
       </v-col>
     </v-row>
+
+    <section class="depoimento mt-5 mb-5">
+      <p
+        class="ml-5"
+      >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, no principio estava com muitas duvidas devido as várias ferramentas  que utilizam mas não desisti.Diorama força pelo bom trabalho que estão exercendo."</p>
+      <p class="ml-5">Roberto | Taquaritinga - SP</p>
+    </section>
 
     <v-row justify="center" dense class="my-5">
       <v-col cols="12" xl="12" lg="9" md="8" sm="12">

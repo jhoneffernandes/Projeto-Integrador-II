@@ -73,8 +73,8 @@
     <section class="depoimento mt-5 mb-5">
         <p
           class="ml-5"
-        >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-        <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+        >"A instituição de ensino é excelente, fiz um curso de Zbrush a algum certo tempo, e vou voltar a fazer mais cursos aqui, pretendo fazer todos os cursos. Obrigada equipe."</p>
+        <p class="ml-5">Ricardo Adalberto | Nova Iguaçu - RJ</p>
       </section>
 
       <v-row justify="center" dense class="my-5">
