@@ -51,43 +51,43 @@
       >A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos cursos online de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos cursos online de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos online de HTML e CSS, Conheça alguns dos cursos mais famosos da escola online Diorama Cursos online abaixo:</p>
     </v-row>
 
-    <v-row dense justify="center" class="my-5">
+  <v-row dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
         <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
             <v-card-title
-              class="align-center text-center ma-2 fontetitulo justify-center flex-nowrap"
-            >Cursos de Design</v-card-title>
+              class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
+            >Cursos de web design</v-card-title>
           </v-row>
         </v-card>
       </v-row>
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center" class="flex-wrap">
-          <v-card fill-height color="grey lighten-4" ele class="mx-6 my-6" elevation="01">
-            <v-img
-              height="18rem"
-              contain
-              width="18rem"
-              :src="require('../assets/cursos/photoshop.png')"
-            ></v-img>
-            <v-row justify="center">
-              <v-card-title class="align-center justify-center flex-nowrap">Adobe Photoshop cs6</v-card-title>
-            </v-row>
-            <v-divider></v-divider>
-            <v-card-text class="textopadrao">
-              <H1>Preço: R$ 150,00</H1>
-            </v-card-text>
-            <v-divider></v-divider>
-            <v-card-text class="textopadrao">
-              <H1>Duração: 40 horas</H1>
-            </v-card-text>
-            <v-card-text class="text-center">
-              <router-link to="./photoshop">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </router-link>
-            </v-card-text>
-          </v-card>
 
+           <a href="#">
+            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+              <v-img
+                height="18rem"
+                contain
+                width="18rem"
+                :src="require('../assets/cursos/photoshop.png')"
+              ></v-img>
+              <v-card-title class="align-center justify-center fill-height">Adobe Photoshop cs6</v-card-title>
+              <v-divider></v-divider>
+              <v-card-text class="textopadrao">
+                <H1>Preço: R$ 150,00</H1>
+              </v-card-text>
+              <v-divider></v-divider>
+              <v-card-text class="textopadrao">
+                <H1>Duração: 40 horas</H1>
+              </v-card-text>
+              <v-card-text class="text-center">
+                <router-link to="./photoshop">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
+              </v-card-text>
+            </v-card>
+          </a>
           <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
               <v-img

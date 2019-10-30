@@ -36,7 +36,6 @@
                         contain
                         width="18rem"
                         height="18rem"
-                        class="bordagreen"
                         :src="require('../assets/cursos/photoshop.png')"
                       ></v-img>
                       <v-card-title
