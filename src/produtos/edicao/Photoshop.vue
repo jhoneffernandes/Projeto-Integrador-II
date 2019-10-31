@@ -2,26 +2,25 @@
   <div>
     <AppHeader />
     <v-container pa-0 ma-0 fluid>
-      
       <section class="mt-1">
-        <v-btn class="ma-2 " color="blue darken-2" dark @click="voltar">
+        <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
           <v-icon dark left>mdi-arrow-left</v-icon>Voltar
         </v-btn>
       </section>
 
-      <v-card outlined class=" emlinha blue">
-        <v-col md="2" sm="3" >
+      <v-card outlined class="emlinha  blue backgroundtopp">
+        <v-col md="2" sm="3">
           <v-img
             class="lado"
             height="10rem"
             contain
             width="10rem"
-           :src="require('../../assets/cursos/photoshop.png')"
+            :src="require('../../assets/cursos/photoshop.png')"
           ></v-img>
         </v-col>
         <v-col class="cortexto" md="5" sm="5">
-              <p class="nomecurso">{{nomecurso}}</p>
-              <p class="horacurso">{{tempocurso}}</p>
+          <p class="nomecurso">{{nomecurso}}</p>
+          <p class="horacurso">{{tempocurso}}</p>
         </v-col>
 
         <v-col md="3" sm="4">
@@ -64,7 +63,7 @@
       <section class="centro fundo tmn">Conteúdo</section>
 
       <v-col md="5" class="mx-auto">
-        <v-expansion-panels >
+        <v-expansion-panels>
           <v-expansion-panel>
             <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
             <v-expansion-panel-content>CONHECENDO MELHOR O CURSO</v-expansion-panel-content>
@@ -75,13 +74,12 @@
             <v-expansion-panel-content>INTRODUÇÃO AO PHOTOSHOP</v-expansion-panel-content>
             <v-expansion-panel-content>O QUE É O PHOTOSHOP</v-expansion-panel-content>
             <v-expansion-panel-content>PRINCIPAIS TECLAS DE ATALHO</v-expansion-panel-content>
-
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Ferramentas de seleçao</v-expansion-panel-header>
             <v-expansion-panel-content>O QUE É SELEÇÃO</v-expansion-panel-content>
-            <v-expansion-panel-content>SELEÇÔES DE LETREIRO </v-expansion-panel-content>
+            <v-expansion-panel-content>SELEÇÔES DE LETREIRO</v-expansion-panel-content>
             <v-expansion-panel-content>SELEÇÕES DE LAÇO</v-expansion-panel-content>
             <v-expansion-panel-content>SELEÇÕES RÁPIDAS</v-expansion-panel-content>
             <v-expansion-panel-content>SELEÇOES DE INTERVALO DE CORES</v-expansion-panel-content>
@@ -89,50 +87,48 @@
             <v-expansion-panel-content>MENU SELECIONAR</v-expansion-panel-content>
             <v-expansion-panel-content>SALVAR E CARREGAR SELEÇÕES</v-expansion-panel-content>
             <v-expansion-panel-content>EXERCÍCIO 01 SELEÇÕES</v-expansion-panel-content>
-          
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Pinceis</v-expansion-panel-header>
-            <v-expansion-panel-content>Inicio de seção - Pinceis </v-expansion-panel-content>
-            <v-expansion-panel-content>DIFERENÇA ENTRE LÁPIS E PINCEL </v-expansion-panel-content>
-            <v-expansion-panel-content>SELETOR DE CORES  </v-expansion-panel-content>
-            <v-expansion-panel-content>PRINCIPAIS CONFIGURAÇÕES DOS PINCÉIS  </v-expansion-panel-content>
+            <v-expansion-panel-content>Inicio de seção - Pinceis</v-expansion-panel-content>
+            <v-expansion-panel-content>DIFERENÇA ENTRE LÁPIS E PINCEL</v-expansion-panel-content>
+            <v-expansion-panel-content>SELETOR DE CORES</v-expansion-panel-content>
+            <v-expansion-panel-content>PRINCIPAIS CONFIGURAÇÕES DOS PINCÉIS</v-expansion-panel-content>
             <v-expansion-panel-content>BAIXAR E CARREGAR PINCEIS</v-expansion-panel-content>
-            <v-expansion-panel-content>CRIANDO PINCÉIS </v-expansion-panel-content>
-            <v-expansion-panel-content>MENU AVANÇADO DOS PINCEIS </v-expansion-panel-content>
+            <v-expansion-panel-content>CRIANDO PINCÉIS</v-expansion-panel-content>
+            <v-expansion-panel-content>MENU AVANÇADO DOS PINCEIS</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Camadas e Máscaras</v-expansion-panel-header>
             <v-expansion-panel-content>CAMADAS</v-expansion-panel-content>
             <v-expansion-panel-content>O QUE SÃO CAMADAS</v-expansion-panel-content>
-            <v-expansion-panel-content>EDIÇÃO DESTRUTIVA E EDIÇÃO NÃO DESTRUTIVA  </v-expansion-panel-content>  
+            <v-expansion-panel-content>EDIÇÃO DESTRUTIVA E EDIÇÃO NÃO DESTRUTIVA</v-expansion-panel-content>
             <v-expansion-panel-content>MENU DAS CAMADAS</v-expansion-panel-content>
-            <v-expansion-panel-content>MODOS DE MESCLAGEM</v-expansion-panel-content>                    
-            <v-expansion-panel-content>ENTENDENDO O QUE É MÁSCARAS DE CAMADAS </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 01</v-expansion-panel-content>            
+            <v-expansion-panel-content>MODOS DE MESCLAGEM</v-expansion-panel-content>
+            <v-expansion-panel-content>ENTENDENDO O QUE É MÁSCARAS DE CAMADAS</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 01</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Textos</v-expansion-panel-header>
             <v-expansion-panel-content>TEXTOS</v-expansion-panel-content>
-            <v-expansion-panel-content>TEXTOS DE PONTO E TEXTOS DE PARAGRAFO </v-expansion-panel-content>
-            <v-expansion-panel-content>CONFIGURANDO TEXTOS </v-expansion-panel-content>
+            <v-expansion-panel-content>TEXTOS DE PONTO E TEXTOS DE PARAGRAFO</v-expansion-panel-content>
+            <v-expansion-panel-content>CONFIGURANDO TEXTOS</v-expansion-panel-content>
             <v-expansion-panel-content>INSTALANDO FONTES DE TEXTOS</v-expansion-panel-content>
-            <v-expansion-panel-content>ESTILOS DE CAMADAS </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 02 </v-expansion-panel-content>
+            <v-expansion-panel-content>ESTILOS DE CAMADAS</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 02</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 03</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Trabalhando imagens</v-expansion-panel-header>
-            <v-expansion-panel-content>PRINCIPAIS AJUSTES DE IMAGENS </v-expansion-panel-content>
-            <v-expansion-panel-content>FERRAMENTAS DE CORREÇÃO DE IMAGEM  </v-expansion-panel-content>
-            <v-expansion-panel-content>FERRAMENTA CARIMBO </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 04  </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 05 </v-expansion-panel-content>
-          
+            <v-expansion-panel-content>PRINCIPAIS AJUSTES DE IMAGENS</v-expansion-panel-content>
+            <v-expansion-panel-content>FERRAMENTAS DE CORREÇÃO DE IMAGEM</v-expansion-panel-content>
+            <v-expansion-panel-content>FERRAMENTA CARIMBO</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 04</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 05</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
@@ -143,101 +139,81 @@
             <v-expansion-panel-content>CRIANDO ANIMAÇÃO GIF</v-expansion-panel-content>
             <v-expansion-panel-content>ANIMAÇÃO GIF COM TEXTOS</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 06</v-expansion-panel-content>
-          
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Conceitos Teóricos</v-expansion-panel-header>
-            <v-expansion-panel-content>CONCEITOS TEÓRICOS </v-expansion-panel-content>
+            <v-expansion-panel-content>CONCEITOS TEÓRICOS</v-expansion-panel-content>
             <v-expansion-panel-content>EIXO CARTESIANO</v-expansion-panel-content>
             <v-expansion-panel-content>PRINCIPAIS TAMANHO DE ARQUIVOS</v-expansion-panel-content>
             <v-expansion-panel-content>O QUE É FORMATOS DE IMAGENS</v-expansion-panel-content>
-            <v-expansion-panel-content>QUAIS OS PRINCIPAIS FORMATOS DE IMAGENS </v-expansion-panel-content>
-            <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA  </v-expansion-panel-content>
-            <v-expansion-panel-content>TEORIA DAS CORES  </v-expansion-panel-content>
-            <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA - 2 </v-expansion-panel-content>
+            <v-expansion-panel-content>QUAIS OS PRINCIPAIS FORMATOS DE IMAGENS</v-expansion-panel-content>
+            <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA</v-expansion-panel-content>
+            <v-expansion-panel-content>TEORIA DAS CORES</v-expansion-panel-content>
+            <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA - 2</v-expansion-panel-content>
             <v-expansion-panel-content>CONCEITO PARA IMPRESSÃO</v-expansion-panel-content>
             <v-expansion-panel-content>CONCEITO TEORICO</v-expansion-panel-content>
-
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Filtros</v-expansion-panel-header>
-            <v-expansion-panel-content>FILTROS  </v-expansion-panel-content>
-            <v-expansion-panel-content>OBJETOS INTELIGENTES OU SMART OBJECT </v-expansion-panel-content>
-            <v-expansion-panel-content>GALERIA DE FILTROS </v-expansion-panel-content>
-            <v-expansion-panel-content>MINI BRIDGE E BRIDGE  </v-expansion-panel-content>
+            <v-expansion-panel-content>FILTROS</v-expansion-panel-content>
+            <v-expansion-panel-content>OBJETOS INTELIGENTES OU SMART OBJECT</v-expansion-panel-content>
+            <v-expansion-panel-content>GALERIA DE FILTROS</v-expansion-panel-content>
+            <v-expansion-panel-content>MINI BRIDGE E BRIDGE</v-expansion-panel-content>
             <v-expansion-panel-content>EXERCÍCIO - 03 BANNERS</v-expansion-panel-content>
           </v-expansion-panel>
 
           <v-expansion-panel>
             <v-expansion-panel-header>+ Seção de Trabalhos</v-expansion-panel-header>
-            <v-expansion-panel-content>INICIO DE SEÇÃO - TRABALHOS </v-expansion-panel-content>
+            <v-expansion-panel-content>INICIO DE SEÇÃO - TRABALHOS</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 07</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 08</v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 09 </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 10 </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 11 </v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 12 </v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 09</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 10</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 11</v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 12</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 13</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 14</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 15</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO - 16</v-expansion-panel-content>
-            <v-expansion-panel-content>TRABALHO - 17 </v-expansion-panel-content>
+            <v-expansion-panel-content>TRABALHO - 17</v-expansion-panel-content>
             <v-expansion-panel-content>TRABALHO FINAL ALUNO</v-expansion-panel-content>
-            <v-expansion-panel-content>CONCLUSÃO FINAL </v-expansion-panel-content>
+            <v-expansion-panel-content>CONCLUSÃO FINAL</v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </v-col>
 
-        <section class="fundodois justify">
-          <v-col lg="12" md="12" sm="12">
-            <h1 class="centro letra">Certificado</h1>
-            <p class="ml-2">
-              Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
-              A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
-            </p>
-          </v-col>
-        </section>
-    
+      <section class="fundodois backgroundcertificado justify">
+        <v-col lg="12" md="12" sm="12">
+          <h1 class="centro letra">Certificado</h1>
+          <p class="ml-2 textofonte">
+            Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
+            A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
+          </p>
+        </v-col>
+      </section>
 
-      <v-col lg="5" md="5" sm="5" class="mx-auto">
-        <section class="centro agd">
-          Precisa de ajuda?
-          <br />Preencha o formulario com sua dúvida.
-        </section>
-
-        <v-form>
-          <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
-
-          <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-
-          <v-text-field v-model="assunto" label="Assunto"></v-text-field>
-
-          <v-textarea v-model="desc" label="Descrição"></v-textarea>
-
-          <v-btn tile elevation="0" color="primary mr-3">Enviar</v-btn>
-          <v-btn tile elevation="0" color="primary">Limpar</v-btn>
-        </v-form>
-      </v-col>
-
+    <AppHelp/>
       <section class="depoimento mt-5 mb-5">
         <p
           class="ml-5"
         >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
         <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
       </section>
-<AppNewsletter/>
+      <AppNewsletter />
     </v-container>
   </div>
 </template>
 <script>
 import AppNewsletter from "../../components/AppNewsletter";
 import AppHeader from "../../components/AppHeader";
+import AppHelp from "../../components/AppHelp";
 export default {
   components: {
     AppHeader,
-    AppNewsletter
+    AppNewsletter,
+    AppHelp,
   },
   data() {
     return {
@@ -246,11 +222,11 @@ export default {
       professor: "Lucas Santos"
     };
   },
-  methods:{
+  methods: {
     voltar() {
       this.$router.push("/");
     }
-  },
+  }
 };
 </script>
 
@@ -263,25 +239,29 @@ export default {
   align-items: center;
 }
 
+.centro {
+  text-align: center;
+}
 .cortexto,
 .fundo {
   color: white;
 }
 .fundo {
+  background-image: url("../../assets/banners/background.png");
   background-color: rgb(184, 184, 255);
 }
 .fundodois {
   background-color: rgba(211, 207, 248, 0.61);
+}
+.backgroundcertificado{
+  background-image: url("../../assets/banners/certificado.jpg");
   
 }
-.centro {
-  text-align: center;
-}
-.letra{
+.letra {
   font-family: sans-serif;
   height: 4rem;
   font-size: 2rem;
-  color: white;
+  color: rgb(255, 250, 250);
 }
 .fonte {
   font-size: 1.5rem;
@@ -291,26 +271,27 @@ export default {
   height: 4rem;
   font-size: 2rem;
 }
-.agd {
-  background-color: rgb(177, 177, 248);
+.textofonte{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .depoimento {
+  background-image: url("../../assets/banners/depoimento.svg");
+  background-position-x: 160pt;
+  background-repeat: repeat-x;
   background-color: rgb(113, 113, 255);
   color: rgb(255, 253, 253);
   height: 7rem;
 }
-.nomecurso{
+.nomecurso {
   font-size: 3rem;
   color: rgb(255, 255, 255);
 }
-.horacurso{
+.horacurso {
   font-size: 2rem;
   color: rgba(0, 0, 124, 0.658);
 }
-.nomeprof{
+.nomeprof {
   font-size: 1.5rem;
-
 }
 </style>
