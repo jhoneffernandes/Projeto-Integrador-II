@@ -151,10 +151,8 @@ export default {
         if (this.$refs.form.validate()) {
           this.snackbar = true,
 
-                   this.$ls.set(  'nomeuser' , this.nomeuser),
-                   this.$ls.set(  'cel' , this.cel),
-                   this.$ls.set(  'cpf' , this.cpf),
-                   this.$ls.set(  'email' , this.email),
+                   this.$ls.set(  'usuario' , this.usuarionovo),
+            
                   this.$router.push('/painel/perfis')
 
         }
