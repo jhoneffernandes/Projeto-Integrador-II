@@ -835,36 +835,20 @@
       >"Estou gostando do curso, aulas bem explicativas, já tinha algum conhecimento sobre o assunto mais não tão bem explicado como agora com esse conteúdo que a Diorama proporciona, também estou conciliando o Tempo. Enfim, a Diorama está me surpreendendo bastante."</p>
       <p class="ml-5">Luana Carla | Piracicaba - SP</p>
     </section>
-    <v-row justify="center" dense class="my-5">
-      <v-col cols="12" xl="12" lg="9" md="8" sm="12">
-        <v-row justify="center">
-          <v-card class="mx-6" width="40rem" height="16rem" tile>
-            <v-card-text class="text-center my-5 tamanho white--text">Assine nossa Newsletter!</v-card-text>
 
-            <v-text-field
-              v-model="email"
-              :rules="emailRules"
-              required
-              class="mx-6 my-6"
-              color="indigo"
-              label="Digite seu e-mail"
-            >
-              <v-icon class="mx-1" slot="prepend" color="indigo">mdi-email</v-icon>
-            </v-text-field>
-
-            <v-card-actions class="align-center justify-center">
-              <v-btn dark :disabled="!valid" color="indigo" class="mb-5" @click="validate">Assinar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-row>
-      </v-col>
-    </v-row>
+ <AppNewsletter/>
   </div>
+
 </template>
 
 <script>
 import AppHeader from "../components/AppHeader";
+import AppNewsletter from '../components/AppNewsletter'
 export default {
+   components: {
+    AppHeader,
+    AppNewsletter
+  },
   data() {
     return {
       photoshop: "150,00",
@@ -882,9 +866,6 @@ export default {
       php: "548,00",
       c: "548,00"
     };
-  },
-  components: {
-    AppHeader
   }
 };
 </script>
