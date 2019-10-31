@@ -61,27 +61,10 @@ components: {
       maskcpf:"###.###.###-##",
 
         computed: {
-       nomeuser(){
-          return this.$ls.get('nomeuser')==nome
+       novouser(){
+          return this.$ls.get('usuarionovo')
 
-        },
-         cel(){
-          return this.$ls.get('cel')==celular
-        },
-        cpf(){
-          return this.$ls.get('cpf')==cpf
-
-        },
-        email(){
-          return this.$ls.get('email')==email
-
-        },
-
-        adicionar(){
-          array_push($user, {'nome' : 'celular' , 'cpf' : 'email'});
-
-        }
-    
+        }    
     },
 
 
@@ -112,6 +95,9 @@ components: {
         celular: '',
         email: '',
       },
+        adicionar(){
+          user_push('usuarionovo')
+           }
     }),
 
     watch: {
@@ -157,6 +143,8 @@ components: {
       deleteItem (item) {
         const index = this.user.indexOf(item)
         confirm('Deletar esse cadastro?') && this.user.splice(index, 1)
+      
+
       },
 
     },
