@@ -551,6 +551,11 @@ a {
   text-decoration: none;
 }
 
+.depoimento {
+  background-color: rgb(113, 113, 255);
+  color: rgb(255, 253, 253);
+  height: 7rem;
+}
 .hoverz a:hover {
   background: cyan;
   border-top: 5px solid blue;

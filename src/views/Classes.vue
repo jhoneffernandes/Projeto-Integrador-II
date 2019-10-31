@@ -882,4 +882,10 @@ export default {
 .bordapurple {
   border: 2px solid purple;
 }
+
+.depoimento {
+  background-color: rgb(113, 113, 255);
+  color: rgb(255, 253, 253);
+  height: 7rem;
+}
 </style>

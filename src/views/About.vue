@@ -106,4 +106,10 @@ export default {
 .tipografia {
   font-size: 20px;
 }
+
+.depoimento {
+  background-color: rgb(113, 113, 255);
+  color: rgb(255, 253, 253);
+  height: 7rem;
+}
 </style>
