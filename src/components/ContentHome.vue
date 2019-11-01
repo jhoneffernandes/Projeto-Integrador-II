@@ -2,21 +2,19 @@
   <v-container pa-0 ma-0 fluid>
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card width="100%" height="100%" dark color="indigo">
-          <v-layout class="flex-wrap" justify-center align-center>
-            <v-card-title>
-              <h2 class="tituloh text-center">Bem vindos a Diorama cursos online!</h2>
-            </v-card-title>
+    <v-card width="100%" height="100%" dark color="indigo">
+      <v-layout class="flex-wrap" justify-center align-center>
+        <v-card-title>
+          <h2 class="tituloh text-center">{{bemvindos}}</h2>
+        </v-card-title>
 
-            <v-card-text>
-              <p
-                class="textop"
-              >Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!</p>
-              <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
-            </v-card-text>
-          </v-layout>
-        </v-card>
-      </v-row>
+        <v-card-text>
+          <p class="textop">{{apresentacao}}</p>
+          <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
+        </v-card-text>
+      </v-layout>
+    </v-card>
+  </v-row>
     </v-layout>
 
     <v-row align="center" justify="center" class="spacer">
@@ -51,7 +49,7 @@
       >A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos cursos online de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos cursos online de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos online de HTML e CSS, Conheça alguns dos cursos mais famosos da escola online Diorama Cursos online abaixo:</p>
     </v-row>
 
-  <v-row dense justify="center" class="my-5">
+    <v-row dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
         <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
@@ -63,8 +61,7 @@
       </v-row>
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center" class="flex-wrap">
-
-           <a href="#">
+          <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
               <v-img
                 height="18rem"
@@ -494,23 +491,34 @@
       </v-col>
     </v-row>
 
-    <section class="depoimento mt-5 mb-5">
+    <section class="depoimento justify">
       <p
-        class="ml-5"
-      >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, no principio estava com muitas duvidas devido as várias ferramentas  que utilizam mas não desisti.Diorama força pelo bom trabalho que estão exercendo."</p>
+        class="ml-5 mt-5"
+      >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, Diorama força pelo bom trabalho que estão exercendo."</p>
       <p class="ml-5">Roberto | Taquaritinga - SP</p>
     </section>
-    <AppNewsletter/>
 
-    </v-container>
+    <AppNewsletter />
+
+  </v-container>
 </template>
 
 <script>
-import AppNewsletter from './AppNewsletter'
+import AppNewsletter from "./AppNewsletter";
 export default {
-components:{
-AppNewsletter
-},
+
+    data() {
+    return {
+      bemvindos: "Bem vindos a Diorama cursos online!",
+      apresentacao:
+        "Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!",
+    };
+  },
+
+  components: {
+    AppNewsletter,
+   
+  },
   methods: {
     conhecer() {
       this.$router.push("/classes");
@@ -550,10 +558,8 @@ AppNewsletter
 a {
   text-decoration: none;
 }
-
 .depoimento {
- 
-  background-color: rgb(113, 113, 255);
+  background-image: url("../assets/banners/depoimento.svg");
   color: rgb(255, 253, 253);
   height: 7rem;
 }

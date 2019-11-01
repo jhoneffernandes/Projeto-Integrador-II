@@ -1,12 +1,11 @@
 <template>
   <div>
     <AppHeader />
-
-    <v-row class="my-5">
+   <v-row class="my-5">
       <v-card width="100%" height="100%" dark color="indigo">
         <v-layout class="flex-wrap" justify-center align-center>
           <v-card-title>
-            <h2 class="tituloh text-center">Nossos cursos</h2>
+            <h2 class="tituloh text-center">{{nossoscursos}}</h2>
           </v-card-title>
         </v-layout>
       </v-card>
@@ -847,7 +846,7 @@ import AppNewsletter from '../components/AppNewsletter'
 export default {
    components: {
     AppHeader,
-    AppNewsletter
+    AppNewsletter,
   },
   data() {
     return {
@@ -864,7 +863,9 @@ export default {
       javascript: "548,00",
       python: "548,00",
       php: "548,00",
-      c: "548,00"
+      c: "548,00",
+
+      nossoscursos:"Nossos cursos",
     };
   }
 };

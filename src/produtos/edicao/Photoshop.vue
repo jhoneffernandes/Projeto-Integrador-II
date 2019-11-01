@@ -8,7 +8,7 @@
         </v-btn>
       </section>
 
-      <v-card outlined class="emlinha  blue backgroundtopp">
+      <v-card outlined class="emlinha  blue ">
         <v-col md="2" sm="3">
           <v-img
             class="lado"
@@ -38,9 +38,9 @@
         </v-col>
       </v-card>
 
-      <section class="centro fundo">
+      <section class="centro fundo backgroundt">
         <router-link to="/compra">
-          <v-btn tile class="mt-3" outlined>Inscreva-se</v-btn>
+          <v-btn tile class="mt-3 white" outlined>Inscreva-se</v-btn>
         </router-link>
         <p>
           12x s/juros R$ 33
@@ -60,7 +60,7 @@
         </v-row>
       </v-col>
 
-      <section class="centro fundo tmn">Conteúdo</section>
+      <section class="centro fundo tmn backgroundt">Conteúdo</section>
 
       <v-col md="5" class="mx-auto">
         <v-expansion-panels>
@@ -184,13 +184,15 @@
         </v-expansion-panels>
       </v-col>
 
-      <section class="fundodois backgroundcertificado justify">
+      <section class="backgroundcertificado">
         <v-col lg="12" md="12" sm="12">
-          <h1 class="centro letra">Certificado</h1>
-          <p class="ml-2 textofonte">
-            Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
-            A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
-          </p>
+          <div class="dks">
+            <h1 class="centro  letra black--text">Certificado</h1>
+            <p class=" justify">
+              Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
+              A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
+            </p>
+          </div>
         </v-col>
       </section>
 
@@ -231,6 +233,9 @@ export default {
 </script>
 
 <style >
+.dks{
+  background-color: rgba(252, 252, 252, 0.623);
+}
 .emlinha {
   display: flex;
   flex-direction: row;
@@ -238,7 +243,6 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-
 .centro {
   text-align: center;
 }
@@ -250,18 +254,15 @@ export default {
   background-image: url("../../assets/banners/background.png");
   background-color: rgb(184, 184, 255);
 }
-.fundodois {
-  background-color: rgba(211, 207, 248, 0.61);
-}
 .backgroundcertificado{
-  background-image: url("../../assets/banners/certificado.jpg");
-  
+  background-image: url("../../assets/banners/certificado.svg");
+  background-repeat: no-repeat;
 }
 .letra {
   font-family: sans-serif;
   height: 4rem;
   font-size: 2rem;
-  color: rgb(255, 250, 250);
+  color: rgb(5, 1, 1);
 }
 .fonte {
   font-size: 1.5rem;
@@ -277,9 +278,6 @@ export default {
 }
 .depoimento {
   background-image: url("../../assets/banners/depoimento.svg");
-  background-position-x: 160pt;
-  background-repeat: repeat-x;
-  background-color: rgb(113, 113, 255);
   color: rgb(255, 253, 253);
   height: 7rem;
 }
@@ -293,5 +291,9 @@ export default {
 }
 .nomeprof {
   font-size: 1.5rem;
+}
+.backgroundt{
+  background-image: url("../../assets/banners/backgroundttl.svg");
+  background-repeat: repeat;
 }
 </style>
