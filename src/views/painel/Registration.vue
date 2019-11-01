@@ -3,7 +3,7 @@
     <v-divider></v-divider>
     <v-container class="fill-height align-center justify-center" fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" sm="8" md="4">
+        <v-col xl="10" lg="8" md="7" sm="7" cols="12">
           <v-card class="elevation-12">
             <v-toolbar color="indigo" dark flat>
               <v-toolbar-title>Cadastro de usuário</v-toolbar-title>
@@ -13,27 +13,27 @@
               </v-btn>
             </v-toolbar>
             <v-form ref="form" v-model="valid" lazy-validation>
-              <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
+              <v-text-field class="mx-6" v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
 
               <v-text-field
-                v-model="surname"
+              class="mx-6"  v-model="surname"
                 :counter="10"
                 :rules="surnameRules"
                 label="Sobrenome"
                 required
               ></v-text-field>
 
-              <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+              <v-text-field class="mx-6" v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
 
               <v-text-field
-                v-model="confemail"
+              class="mx-6"  v-model="confemail"
                 :rules="confRules"
                 label="Confirme seu e-mail"
                 required
               ></v-text-field>
 
               <v-text-field
-                v-model="cell"
+              class="mx-6"  v-model="cell"
                 v-mask="mask"
                 :rules="cellRules"
                 label="Celular"
@@ -41,7 +41,7 @@
               ></v-text-field>
 
               <v-text-field
-                v-model="password"
+              class="mx-6"  v-model="password"
                 :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                 :type="show1 ? 'text' : 'password'"
                 :rules="passRules"
@@ -51,7 +51,7 @@
               ></v-text-field>
 
               <v-text-field
-                v-model="confpass"
+              class="mx-6"  v-model="confpass"
                 :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
                 :type="show2 ? 'text' : 'password'"
                 :rules="confpassRules"
@@ -61,14 +61,17 @@
               ></v-text-field>
 
               <v-checkbox
+              class="mx-6"
                 v-model="checkbox"
                 :rules="[v => !!v || 'Você precisa aceitar para continuar!']"
                 label="Declaro ter lido e estar de acordo com o Contrato de Prestação de Serviços."
                 required
               ></v-checkbox>
 
-              <v-btn color="error" :disabled="!valid" class="mr-4" @click="validate">Cadastrar</v-btn>
-              <v-btn color="success" class="mr-4" @click="reset">Limpar campos</v-btn>
+<v-row justify="center">
+              <v-btn color="error" :disabled="!valid" class="mx-1 my-5" @click="validate">Cadastrar</v-btn>
+              <v-btn color="success" class="mx-1 my-5" @click="reset">Limpar campos</v-btn>
+</v-row>           
             </v-form>
           </v-card>
         </v-col>
