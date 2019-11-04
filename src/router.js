@@ -117,11 +117,6 @@ export default new Router({
       name: 'after',
       component: () => import('./produtos/edicao/After.vue')
     },
-    {
-      path: '/compra',
-      name: 'compra',
-      component: () => import('./produtos/Compra.vue')
-    },
 
   ]
 })

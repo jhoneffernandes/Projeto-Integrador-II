@@ -2,19 +2,19 @@
   <v-container pa-0 ma-0 fluid>
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-    <v-card width="100%" height="100%" dark color="indigo">
-      <v-layout class="flex-wrap" justify-center align-center>
-        <v-card-title>
-          <h2 class="tituloh text-center">{{bemvindos}}</h2>
-        </v-card-title>
+        <v-card width="100%" height="100%" dark color="indigo">
+          <v-layout class="flex-wrap" justify-center align-center>
+            <v-card-title>
+              <h2 class="tituloh text-center">{{bemvindos}}</h2>
+            </v-card-title>
 
-        <v-card-text>
-          <p class="textop">{{apresentacao}}</p>
-          <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
-        </v-card-text>
-      </v-layout>
-    </v-card>
-  </v-row>
+            <v-card-text>
+              <p class="textop">{{apresentacao}}</p>
+              <v-btn @click="conhecer" class="mb-5">Saiba mais</v-btn>
+            </v-card-text>
+          </v-layout>
+        </v-card>
+      </v-row>
     </v-layout>
 
     <v-row align="center" justify="center" class="spacer">
@@ -499,25 +499,23 @@
     </section>
 
     <AppNewsletter />
-
   </v-container>
 </template>
 
 <script>
 import AppNewsletter from "./AppNewsletter";
 export default {
-
-    data() {
+  data() {
     return {
       bemvindos: "Bem vindos a Diorama cursos online!",
-      apresentacao:
-        "Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!",
+      apresentacao:"Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!",
+      name:"Kaio",
+      surname:"Alves",
     };
   },
 
   components: {
-    AppNewsletter,
-   
+    AppNewsletter
   },
   methods: {
     conhecer() {
@@ -526,8 +524,9 @@ export default {
 
     validate() {
       this.$router.push("/painel");
-    }
-  }
+    },
+ 
+},
 };
 </script>
 

@@ -8,55 +8,27 @@
         </v-btn>
       </section>
 
-      <v-card outlined class="emlinha  blue ">
-        <v-col md="2" sm="3">
-          <v-img
-            class="lado"
-            height="10rem"
-            contain
-            width="10rem"
-            :src="require('../../assets/cursos/photoshop.png')"
-          ></v-img>
-        </v-col>
-        <v-col class="cortexto" md="5" sm="5">
-          <p class="nomecurso">{{nomecurso}}</p>
-          <p class="horacurso">{{tempocurso}}</p>
-        </v-col>
+      <v-card outlined class="emlinha blue">
+        <v-col class="cortexto" md="5" sm="5" xl="2">
+          <p class="nomecurso">Curso de {{nomecurso}}</p>
 
-        <v-col md="3" sm="4">
-          <section class="cortexto">
-            <p class="nomeprof">{{professor}}</p>
-          </section>
+          <div class="text-center">
+            <v-rating v-model="rating"  color="yellow"></v-rating>
+          </div>
 
-          <v-img
-            longdesc="Homen com sorriso, branco de terno preto"
-            aspect-ratio="1"
-            width="10rem"
-            max-height="300"
-            :src="require('../../assets/professores/prof1.jpg')"
-          ></v-img>
         </v-col>
       </v-card>
 
-      <section class="centro fundo backgroundt">
-        <router-link to="/compra">
-          <v-btn tile class="mt-3 white" outlined>Inscreva-se</v-btn>
-        </router-link>
-        <p>
-          12x s/juros R$ 33
-          Preço válido até 31/10/2019.
-        </p>
-      </section>
-
       <v-col lg="10" md="12" sm="12">
         <v-row class="ml-5 fdn">
+          <h1 class="fonte">Resumo</h1>
+          <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
+
           <h1 class="fonte">Requisitos</h1>
           <p>
             Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
             Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
           </p>
-          <h1 class="fonte">Resumo</h1>
-          <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
         </v-row>
       </v-col>
 
@@ -187,8 +159,8 @@
       <section class="backgroundcertificado">
         <v-col lg="12" md="12" sm="12">
           <div class="dks">
-            <h1 class="centro  letra black--text">Certificado</h1>
-            <p class=" justify">
+            <h1 class="centro letra black--text">Certificado</h1>
+            <p class="justify">
               Ao concluir o curso com nota igual ou superior à 6,5, o aluno recebe o certificado de conclusão do curso em formato digital (PDF). Caso o aluno não atinja a nota necessária, poderá revisar as aulas que desejar e refazer as avaliações.
               A Diorama Cursos Online é associada à ABED (Associação Brasileira de Educação a Distância)
             </p>
@@ -196,12 +168,110 @@
         </v-col>
       </section>
 
-    <AppHelp/>
+      <AppHelp />
+
+      <v-row>
+        <v-col>
+          <v-card>
+            <h1 class="centro">Recomendações</h1>
+
+            <v-card outlined class="mt-3">
+              <v-row align="center" justify="center">
+                <v-img
+                  class="center"
+                  height="10rem"
+                  contain
+                  width="10rem"
+                  :src="require('../../assets/cursos/ilustrator.png')"
+                ></v-img>
+              </v-row>
+              <v-card-title class="justify-center">Adobe Illustrator cs6</v-card-title>
+
+              <v-card-text class="textopadrao">
+                <h1>Preço: R$ 150,00</h1>
+
+                <router-link to="./ilustrator">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
+              </v-card-text>
+            </v-card>
+
+            <v-divider></v-divider>
+
+            <v-card outlined class="mt-3">
+              <v-row align="center" justify="center">
+                <v-img
+                  class="center"
+                  height="10rem"
+                  contain
+                  width="10rem"
+                  :src="require('../../assets/cursos/corel.png')"
+                ></v-img>
+              </v-row>
+              <v-card-title class="justify-center">Corel Draw x8</v-card-title>
+
+              <v-card-text class="textopadrao">
+                <h1>Preço: R$ 150,00</h1>
+
+                <router-link to="./corel">
+                  <v-btn color="primary">Saiba mais</v-btn>
+                </router-link>
+              </v-card-text>
+            </v-card>
+
+            <v-divider></v-divider>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-card class="ml-5 mb-5" max-width="30rem" tile>
+        <v-tabs centered>
+          <v-tab>
+            <v-icon left>mdi-account</v-icon>Professor deste curso
+          </v-tab>
+          <v-tab-item>
+            <v-card flat>
+              <v-img height="100%" src="../../assets/banners/background.png">
+                <v-row align="end" class="fill-height">
+                  <v-col align-self="start" class="pa-0" cols="12">
+                    <v-img src="../../assets/professores/prof1.jpg"></v-img>
+                  </v-col>
+                  <v-col class="py-0">
+                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                      <v-list-item-content>
+                        <v-list-item-title class="title">{{professor}}</v-list-item-title>
+                        <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-col>
+                </v-row>
+              </v-img>
+
+              <v-card-text>
+                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                <ul class="lista">
+                  <li>Formado em Ciência da Computação pela PUC-PR</li>
+                  <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
+                  <li>Design Gráfico</li>
+                  <li>Web Designer</li>
+                  <li>Pós-graduado em Marketing</li>
+                  <li>Colaborador oficial do framework vuetify</li>
+                  <li>Trabalhou por 2 anos na Tiwebdesign</li>
+                  <li>Etec Dr.Adail Nunes da Silva</li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
+        </v-tabs>
+      </v-card>
+
       <section class="depoimento mt-5 mb-5">
-        <p
-          class="ml-5"
-        >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
-        <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+        <v-col md="10" sm="10">
+          <p
+            class="ml-5"
+          >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
+          <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+        </v-col>
       </section>
       <AppNewsletter />
     </v-container>
@@ -215,8 +285,11 @@ export default {
   components: {
     AppHeader,
     AppNewsletter,
-    AppHelp,
+    AppHelp
   },
+  data: () => ({
+    rating: 5
+  }),
   data() {
     return {
       nomecurso: "Adobe Photoshop cs6",
@@ -232,8 +305,8 @@ export default {
 };
 </script>
 
-<style >
-.dks{
+<style>
+.dks {
   background-color: rgba(252, 252, 252, 0.623);
 }
 .emlinha {
@@ -254,7 +327,7 @@ export default {
   background-image: url("../../assets/banners/background.png");
   background-color: rgb(184, 184, 255);
 }
-.backgroundcertificado{
+.backgroundcertificado {
   background-image: url("../../assets/banners/certificado.svg");
   background-repeat: no-repeat;
 }
@@ -272,7 +345,7 @@ export default {
   height: 4rem;
   font-size: 2rem;
 }
-.textofonte{
+.textofonte {
   color: white;
   font-size: 1rem;
 }
@@ -292,7 +365,7 @@ export default {
 .nomeprof {
   font-size: 1.5rem;
 }
-.backgroundt{
+.backgroundt {
   background-image: url("../../assets/banners/backgroundttl.svg");
   background-repeat: repeat;
 }

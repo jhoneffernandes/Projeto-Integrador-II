@@ -39,7 +39,7 @@
       </v-card>
 
       <section class="centro fundo backgroundt">
-        <router-link to="/compra">
+        <router-link to="#">
           <v-btn tile class="mt-3 white" outlined>Inscreva-se</v-btn>
         </router-link>
         <p>
