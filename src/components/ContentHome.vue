@@ -79,9 +79,9 @@
                 <H1>Duração: 40 horas</H1>
               </v-card-text>
               <v-card-text class="text-center">
-                <router-link to="./photoshop">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
+             <router-link to="./photoshop">
+    <v-btn color="primary">Saiba mais</v-btn>
+  </router-link>
               </v-card-text>
             </v-card>
           </a>
@@ -515,7 +515,8 @@ export default {
   },
 
   components: {
-    AppNewsletter
+    AppNewsletter,
+   
   },
   methods: {
     conhecer() {

@@ -5,7 +5,7 @@
           <br />Preencha o formulario com sua dúvida.
         </section>
 
-        <v-form>
+        <v-form >
           <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
           <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
           <v-text-field label="Assunto"></v-text-field>
@@ -44,7 +44,6 @@ export default {
         (this.snackbar = true),
           this.$ls.set("name", this.name),
           this.$ls.set("email", this.email);
-
       }
     },
 
@@ -60,11 +59,13 @@ export default {
 <style  scoped>
 
 .agd {
-  background-color: rgb(177, 177, 248);
+  background-color: rgb(0, 0, 138);
   color: white;
   font-size: 1.5rem;
 }
-
+.borda{
+  border-color: rgb(0, 0, 153);
+}
 .centro {
   text-align: center;
 }
