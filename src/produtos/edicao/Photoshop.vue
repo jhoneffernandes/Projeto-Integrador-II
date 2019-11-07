@@ -10,7 +10,11 @@
 
       <v-card outlined class="emlinha blue">
         <v-col class="cortexto" md="5" sm="5" xl="2">
-          <p class="nomecurso">Curso de {{nomecurso}}</p>
+          <p class="nomecurso">
+            Curso
+            <br />
+            {{nomecurso}}
+          </p>
 
           <div class="text-center">
             <v-rating v-model="rating" color="yellow"></v-rating>
@@ -157,21 +161,23 @@
 
       <AppCertificado />
 
-      <v-row>
-        <v-col>
-          <v-card>
-            <h1 class="centro mt-7">Recomendações</h1>
+      <v-row align="center">
+        <v-card width="100%">
+          <h1 class="centro mt-7">Recomendações</h1>
 
-            <v-card outlined elevation="0" class="mt-3 itenslado">
+          <v-card outlined elevation="0" class="mt-3 itenslado">
+           
               <v-img
-                class="center ml-5 mt-5 mb-5"
+                class="ml-5 mt-5 mb-5"
                 height="10rem"
                 contain
                 width="10rem"
                 :src="require('../../assets/cursos/ilustrator.png')"
               ></v-img>
-
+           
+           
               <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
+
               <v-card-text class="subtitle text-center">
                 <h3>Preço: R$ 150,00</h3>
                 <v-rating v-model="rating" color="yellow"></v-rating>
@@ -179,15 +185,19 @@
                   <v-btn color="primary">Saiba mais</v-btn>
                 </router-link>
               </v-card-text>
+          
 
+           
               <v-img
-                class="center ml-5 mt-5 mb-5"
+                class="ml-5 mt-5 mb-5"
                 height="10rem"
                 contain
                 width="10rem"
                 :src="require('../../assets/cursos/corel.png')"
               ></v-img>
+         
 
+          
               <v-card-title>Corel Draw x8</v-card-title>
 
               <v-card-text class="subtitle text-center">
@@ -199,14 +209,13 @@
                   <v-btn color="primary">Saiba mais</v-btn>
                 </router-link>
               </v-card-text>
-            </v-card>
+          
           </v-card>
-        </v-col>
+        </v-card>
       </v-row>
 
       <v-banner single-line class="mb-5 mt-5">
-        <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>
-        Professor deste curso
+        <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>Professor deste curso
         <template v-slot:actions>
           <router-link to="./professores">
             <v-btn color="primary" text>Ver todos os professores</v-btn>
@@ -214,52 +223,44 @@
         </template>
       </v-banner>
 
-     
-        <v-row>
-          <v-card class="ml-5 mb-5" max-width="30rem" tile>
-            <v-img height="100%" src="../../assets/banners/background.png">
-              <v-row align="end" class="fill-height">
-                <v-col align-self="start" class="pa-0" cols="12">
-                  <v-img src="../../assets/professores/prof1.jpg"></v-img>
-                </v-col>
-                <v-col class="py-0">
-                  <v-list-item  dark>
-                    <v-list-item-content>
-                      <v-list-item-title class="title">{{professor}}</v-list-item-title>
-                      <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-col>
-              </v-row>
-            </v-img>
-          </v-card>
-  
-        <v-card class="ml-5 mb-5" max-width="30rem" tile dark="">
-
-         
-                   <v-img height="100%" src="../../assets/banners/background.png">
-                    <v-list-item-content>
-                      <v-list-item-title class="title ml-5">Currículo do Professor</v-list-item-title>
-                    </v-list-item-content>
-                
-              
-
-            
-                  <ul class="lista ml-5">
-                    <li>Formado em Ciência da Computação pela PUC-PR</li>
-                    <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-                    <li>Design Gráfico</li>
-                    <li>Web Designer</li>
-                    <li>Pós-graduado em Marketing</li>
-                    <li>Colaborador oficial do framework vuetify</li>
-                    <li>Trabalhou por 2 anos na Tiwebdesign</li>
-                    <li>Etec Dr.Adail Nunes da Silva</li>
-                  </ul>
-              
-                   </v-img>
+      <v-row>
+        <v-card class="ml-5 mb-5" max-width="30rem" tile>
+          <v-img height="100%" src="../../assets/banners/background.png">
+            <v-row align="end" class="fill-height">
+              <v-col align-self="start" class="pa-0" cols="12">
+                <v-img src="../../assets/professores/prof1.jpg"></v-img>
+              </v-col>
+              <v-col class="py-0">
+                <v-list-item dark>
+                  <v-list-item-content>
+                    <v-list-item-title class="title">{{professor}}</v-list-item-title>
+                    <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-col>
+            </v-row>
+          </v-img>
         </v-card>
-      
-        </v-row>
+
+        <v-card class="ml-5 mb-5" max-width="30rem" tile dark>
+          <v-img height="100%" src="../../assets/banners/background.png">
+            <v-list-item-content>
+              <v-list-item-title class="title ml-5">Currículo do Professor</v-list-item-title>
+            </v-list-item-content>
+
+            <ul class="lista ml-5">
+              <li>Formado em Ciência da Computação pela PUC-PR</li>
+              <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
+              <li>Design Gráfico</li>
+              <li>Web Designer</li>
+              <li>Pós-graduado em Marketing</li>
+              <li>Colaborador oficial do framework vuetify</li>
+              <li>Trabalhou por 2 anos na Tiwebdesign</li>
+              <li>Etec Dr.Adail Nunes da Silva</li>
+            </ul>
+          </v-img>
+        </v-card>
+      </v-row>
 
       <section class="depoimento mt-5 mb-5">
         <v-col md="10" sm="10">
@@ -286,14 +287,12 @@ export default {
     AppHelp,
     AppCertificado
   },
-  data: () => ({
-    rating: 5
-  }),
   data() {
     return {
       nomecurso: "Adobe Photoshop cs6",
       tempocurso: "77 aulas | 10 horas",
-      professor: "Lucas Santos"
+      professor: "Lucas Santos",
+      rating: 5
     };
   },
   methods: {
@@ -355,7 +354,7 @@ export default {
 .depoimento {
   background-image: url("../../assets/banners/depoimento.svg");
   color: rgb(255, 253, 253);
-  height: 7rem;
+  height: 10rem;
 }
 .nomecurso {
   font-size: 3rem;
@@ -374,8 +373,21 @@ export default {
 }
 .itenslado {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 360px) {
+  .itenslado {
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 730px) {
+  .itenslado {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 </style>
