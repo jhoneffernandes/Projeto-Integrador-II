@@ -1,5 +1,6 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+    <AppAcc/>
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
         <v-card width="100%" height="100%" dark color="indigo">
@@ -497,6 +498,8 @@
 </template>
 
 <script>
+
+import AppAcc from "./AppAcc";
 import AppNewsletter from "./AppNewsletter";
 export default {
   data() {
@@ -510,6 +513,7 @@ export default {
 
   components: {
     AppNewsletter,
+    AppAcc,
    
   },
   methods: {
