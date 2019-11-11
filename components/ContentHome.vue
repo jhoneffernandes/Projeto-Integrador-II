@@ -18,18 +18,19 @@
       </v-row>
     </v-layout>
 
-    <v-row align="center" justify="center" class="spacer">
-      <v-carousel height="100%" cycle interval="4000" hide-delimiters>
+    <v-row>
+      <v-carousel height="100%" cycle interval="114000" hide-delimiters>
         <v-carousel-item>
-          <v-img
-            contain
+          <v-img class="testezao"
+          contain=""
             height="30rem"
-            min-width="100%"
-            alt="Promoção do curso de html logo na parte esquerda e preço na direita"
-            :src="require('../assets/banners/teste.jpg')"
+            width="100%"
+            alt="Promoção do curso de adobe illustrator com a logo na parte esquerda e preço na direita"
+            :src="require('../assets/banners/bannerai.png')"
           ></v-img>
-        </v-carousel-item>
+          </v-carousel-item>
 
+  
         
       </v-carousel>
     </v-row>
@@ -301,7 +302,7 @@
                 height="18rem"
                 contain
                 width="18rem"
-                :src="require('../assets/cursos/cinema.jpg')"
+                :src="require('../assets/cursos/cinema.png')"
               ></v-img>
               <v-card-title class="align-center justify-center fill-height">Cinema 4d</v-card-title>
               <v-divider></v-divider>
@@ -396,7 +397,7 @@
                 height="18rem"
                 contain
                 width="18rem"
-                :src="require('../assets/cursos/python.jpg')"
+                :src="require('../assets/cursos/python.png')"
               ></v-img>
               <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
               <v-divider></v-divider>
@@ -440,7 +441,7 @@
 
           <a href="#">
             <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img height="18rem" contain width="18rem" :src="require('../assets/cursos/c.jpg')"></v-img>
+              <v-img height="18rem" contain width="18rem" :src="require('../assets/cursos/c.png')"></v-img>
               <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -584,5 +585,9 @@ a {
 .textopadrao {
   font-size: 0.6rem;
   text-align: center;
+}
+
+.testezao{
+  background-color: rgb(245, 126, 38)
 }
 </style>

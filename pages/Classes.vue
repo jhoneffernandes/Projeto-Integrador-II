@@ -251,7 +251,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/cinema.jpg')"
+                        :src="require('../assets/cursos/cinema.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Cinema 4d</v-card-title>
                       <v-divider></v-divider>
@@ -322,7 +322,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/python.jpg')"
+                        :src="require('../assets/cursos/python.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
                       <v-divider></v-divider>
@@ -370,7 +370,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/c.jpg')"
+                        :src="require('../assets/cursos/c.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
                       <v-divider></v-divider>
@@ -653,7 +653,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/cinema.jpg')"
+                        :src="require('../assets/cursos/cinema.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Cinema 4d</v-card-title>
                       <v-divider></v-divider>
@@ -733,7 +733,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/python.jpg')"
+                        :src="require('../assets/cursos/python.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
                       <v-divider></v-divider>
@@ -781,7 +781,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/c.jpg')"
+                        :src="require('../assets/cursos/c.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
                       <v-divider></v-divider>
