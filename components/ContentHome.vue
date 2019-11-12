@@ -1,6 +1,6 @@
 <template>
   <v-container pa-0 ma-0 fluid>
-    <AppAcc/>
+   <AppAcc/>
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
         <v-card width="100%" height="100%" dark color="indigo">
@@ -507,8 +507,6 @@ export default {
     return {
       bemvindos: "Bem vindos a Diorama cursos online!",
       apresentacao:"Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!",
-      name:"Kaio",
-      surname:"Alves",
     };
   },
 

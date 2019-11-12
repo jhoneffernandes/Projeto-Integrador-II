@@ -166,50 +166,43 @@
           <h1 class="centro mt-7">Recomendações</h1>
 
           <v-card outlined elevation="0" class="mt-3 itenslado">
-           
-              <v-img
-                class="ml-5 mt-5 mb-5"
-                height="10rem"
-                contain
-                width="10rem"
-                :src="require('~/assets/cursos/ilustrator.png')"
-              ></v-img>
-           
-           
-              <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
+            <v-img
+              class="ml-5 mt-5 mb-5"
+              height="10rem"
+              contain
+              width="10rem"
+              :src="require('~/assets/cursos/ilustrator.png')"
+            ></v-img>
 
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 150,00</h3>
-                <v-rating v-model="rating" color="yellow"></v-rating>
-                <router-link to="./ilustrator">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-          
+            <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
 
-           
-              <v-img
-                class="ml-5 mt-5 mb-5"
-                height="10rem"
-                contain
-                width="10rem"
-                :src="require('~/assets/cursos/corel.png')"
-              ></v-img>
-         
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
+              <v-rating v-model="rating" color="yellow"></v-rating>
+              <router-link to="./ilustrator">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
 
-          
-              <v-card-title>Corel Draw x8</v-card-title>
+            <v-img
+              class="ml-5 mt-5 mb-5"
+              height="10rem"
+              contain
+              width="10rem"
+              :src="require('~/assets/cursos/corel.png')"
+            ></v-img>
 
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 150,00</h3>
+            <v-card-title>Corel Draw x8</v-card-title>
 
-                <v-rating v-model="rating" color="yellow"></v-rating>
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
 
-                <router-link to="./corel">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-          
+              <v-rating v-model="rating" color="yellow"></v-rating>
+
+              <router-link to="./corel">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
           </v-card>
         </v-card>
       </v-row>
@@ -262,14 +255,16 @@
         </v-card>
       </v-row>
 
-      <section class="depoimento mt-5 mb-5">
-        <v-col md="10" sm="10">
-          <p
-            class="ml-5"
-          >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
-          <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
-        </v-col>
-      </section>
+      <v-row>
+        <section class="depoimento mt-5 mb-5">
+          <v-col md="10" sm="10">
+            <p
+              class="ml-5"
+            >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
+            <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+          </v-col>
+        </section>
+      </v-row>
       <AppHelp />
       <AppNewsletter />
     </v-container>
@@ -308,9 +303,19 @@ export default {
   height: 100%;
   width: auto;
 }
+.backgroundt {
+  background-image: url("~assets/banners/certificado.svg");
+}
+.depoimento {
+  background-image: url("~assets/banners/depoimento.svg");
+  color: rgb(255, 253, 253);
+  height: 10rem;
+  width: 100rem;
+}
 .dks {
   background-color: rgba(252, 252, 252, 0.623);
 }
+
 .emlinha {
   display: flex;
   flex-direction: row;

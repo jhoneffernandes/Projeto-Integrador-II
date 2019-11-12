@@ -158,7 +158,7 @@ export default {
           this.$ls.set("cell", this.cell),
           this.$ls.set("password", this.password),
           this.$ls.set("confpass", this.confpassRules),
-          this.$router.push("/usuario");
+          this.$router.push("/painel");
       }
     },
 

@@ -16,3 +16,9 @@ export default {
     
 }
 </script>
+
+<style>
+.backgroundcertificado{
+  background-image: url("~assets/banners/certificado.svg")
+}
+</style>
