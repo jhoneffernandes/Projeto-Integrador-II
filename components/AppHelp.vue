@@ -1,20 +1,24 @@
 <template>
-    <v-col lg="5" md="5" sm="5" class="mx-auto">
-        <section class="centro agd">
-          Precisa de ajuda?
-          <br />Preencha o formulario com sua dúvida.
-        </section>
-
-        <v-form >
-          <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
-          <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-          <v-text-field label="Assunto"></v-text-field>
-          <v-textarea  label="Descrição"></v-textarea>
-
-          <v-btn tile elevation="0" color="primary mr-3" @click="enviar">Enviar</v-btn>
-          <v-btn tile elevation="0" color="primary" @click="limpar">Limpar</v-btn>
-        </v-form>
-      </v-col>
+    
+      <v-col lg="5" md="5" sm="5" class="mx-auto">
+        <v-card width="50rem" height="30rem">  
+          <section class="centro agd ">
+            Precisa de ajuda?
+            <br />Preencha o formulario com sua dúvida.
+          </section>
+  
+          <v-form class="mt-5 ml-5 mr-5">
+            <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
+            <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+            <v-text-field label="Assunto"></v-text-field>
+            <v-textarea  label="Descrição"></v-textarea>
+  
+            <v-btn tile elevation="0" color="red mr-3 white--text" @click="enviar">Enviar</v-btn>
+            <v-btn tile elevation="0" color="green white--text" @click="limpar">Limpar</v-btn>
+          </v-form>
+          </v-card>
+        </v-col>
+    
 </template>
 <script>
 export default {

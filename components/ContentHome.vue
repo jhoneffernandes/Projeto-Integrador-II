@@ -43,7 +43,7 @@
       >A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos cursos online de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos cursos online de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos online de HTML e CSS, Conheça alguns dos cursos mais famosos da escola online Diorama Cursos online abaixo:</p>
     </v-row>
 
-    <v-row dense justify="center" class="my-5">
+    <v-row id="principal" dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
         <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
@@ -66,7 +66,7 @@
               <v-card-title class="align-center justify-center fill-height">Adobe Photoshop cs6</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 150,00</H1>
+                <H1>Preço: R$ 599,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -90,7 +90,7 @@
               <v-card-title class="align-center justify-center fill-height">Corel Draw x8</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 144,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -115,7 +115,7 @@
               <v-card-title class="align-center justify-center fill-height">Adobe Illustrator cs6</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 800,00</H1>
+                <H1>Preço: R$ 599,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -140,7 +140,7 @@
               <v-card-title class="align-center justify-center fill-height">Adobe After effects cs6</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 800,00</H1>
+                <H1>Preço: R$ 129,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -165,7 +165,7 @@
               <v-card-title class="align-center justify-center fill-height">Adobe Premiere Pro cs6</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 800,00</H1>
+                <H1>Preço: R$ 294,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -214,7 +214,7 @@
               <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 384,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -237,7 +237,7 @@
               <v-card-title class="align-center justify-center fill-height">3ds Max</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 579,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -260,7 +260,7 @@
               <v-card-title class="align-center justify-center fill-height">Zbrush</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 220,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -283,7 +283,7 @@
               <v-card-title class="align-center justify-center fill-height">Maya</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 579,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -307,7 +307,7 @@
               <v-card-title class="align-center justify-center fill-height">Cinema 4d</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
+                <H1>Preço: R$ 579,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -354,7 +354,7 @@
               <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 252,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -378,7 +378,7 @@
               <v-card-title class="align-center justify-center fill-height">Java</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 200,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -402,7 +402,7 @@
               <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 260,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -426,7 +426,7 @@
               <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 360,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -445,7 +445,7 @@
               <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 268,99</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -469,7 +469,7 @@
               <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 548,00</H1>
+                <H1>Preço: R$ 120,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -485,14 +485,18 @@
       </v-col>
     </v-row>
 
-     <section class="justify">
-      <v-card height="100%" width="60rem" dark="" class="depoimento">
-      <p
-        class="ml-5 mt-5"
-      >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, Diorama força pelo bom trabalho que estão exercendo."</p>
-      <p class="ml-5">Roberto | Taquaritinga - SP</p>
-      </v-card>
-    </section>
+     
+       <v-row justify="center">
+         <section class="justify">
+          <v-card height="100%" width="60rem" dark="" class="depoimento">
+          <p
+            class="ml-5 mt-5"
+          >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, Diorama força pelo bom trabalho que estão exercendo."</p>
+          <p class="ml-5">Roberto | Taquaritinga - SP</p>
+          </v-card>
+        </section>
+       </v-row>
+    
 
     <AppNewsletter />
   </v-container>

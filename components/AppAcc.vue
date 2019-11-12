@@ -1,61 +1,40 @@
 <template>
   <div>
-    <v-card color="mt-5">
-      <div class="barra-acessibilidade">
-        <div class="container">
-          <ul class="barra-acessibilidade-esq">
-            <li>
-              <a class href=".\index.html" accesskey="1">ALT+1: Página inicial</a>
-            </li>
-            <li>
-              <a class href="#content" accesskey="2">ALT+2: Conteúdo principal</a>
-            </li>
-            <li>
-              <a
-                class
-                href="#buscaInput"
-                accesskey="3"
-                title="Ir para busca [3]"
-              >ALT+3: Buscar no portal</a>
-            </li>
-          </ul>
-          <ul class="barra-acessibilidade-dir">
-            <li>
-              <a class="zoom_mais" title="Aumentar fonte">A+</a>
-            </li>
-            <li>
-              <a class="zoom_normal" title="Normalizar fonte">A</a>
-            </li>
-            <li>
-              <a class="zoom_menos" title="Diminuir fonte">A-</a>
-            </li>
-            <li>
-              <a class="ico-acessibilidade ico-contraste" title="Contraste">C</a>
-            </li>
-            <li>
-              <a
-                class="ico-acessibilidade ico-human"
-                href="/wps/portal/portaldetran/cidadao/acessibilidade"
-                title="Acessibilidade"
-              >T</a>
-            </li>
-            <li>
-              <a
-                class="ico-libras"
-                href="http://www.vlibras.gov.br/"
-                target="blank"
-                title="O conteúdo desse portal pode ser acessível em Libras usando o VLibras."
-              >VLIBRAS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </v-card>
+    <section class="mt-5">
+      <v-toolbar elevation="2">
+        <v-toolbar-title class="ml-3">
+          <v-btn text="" to="#principal">Conteúdo Principal [Alt + 1]</v-btn>
+        </v-toolbar-title>
+        <v-toolbar-title class="ml-3">
+          <v-btn text="">Menu [Alt + 2]</v-btn>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+
+        <v-toolbar-items>
+          <v-btn icon>
+            <v-icon>mdi-format-annotation-minus</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon>mdi-format-annotation-plus</v-icon>
+          </v-btn>
+          <v-btn
+            text
+            href="#altocontraste"
+            id="altocontraste"
+            accesskey="3"
+            onclick="window.toggleContrast()"
+            onkeydown="window.toggleContrast()"
+          >
+            
+            Alto contraste [Alt + 3]
+          </v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+    </section>
   </div>
 </template>
 <script>
 export default {};
-
 </script>
 
 
@@ -77,7 +56,6 @@ footer {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 .barra-acessibilidade {
   height: 30px;
@@ -171,7 +149,6 @@ footer {
 .acContraste footer .links a {
   color: #fff;
 }
-
 
 .acContraste .ico-acessibilidade.ico-contraste {
   padding: 16px 8px 9px 8px;

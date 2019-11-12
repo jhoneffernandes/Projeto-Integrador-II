@@ -99,19 +99,8 @@ export default {
 
 .botao:hover{
     border-bottom: 3px solid rgb(0, 17, 255);
-    animation-name: anima1;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-
 }
 
- @keyframes anima1{
-    0%{
-        border-bottom: 3px solid rgb(0, 17, 255);
-    }
-    100%{
-        border-bottom: 3px solid rgb(0, 17, 255);
-    }
-} 
+ 
 </style>
 

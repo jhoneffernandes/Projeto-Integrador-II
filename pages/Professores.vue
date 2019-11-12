@@ -1,6 +1,7 @@
 <template>
   <div>
     <AppHeader />
+     <AppAcc/>
     <v-divider></v-divider>
 
     <v-layout align-center justify-center text-center class="my-5">
@@ -23,7 +24,7 @@
       </p>
     </v-card-text>
 
-    <v-row class="teste">
+    <v-row id="principal" class="teste">
       <v-card class="ml-5 mb-5" max-width="434" tile>
         <v-tabs>
           <v-tab>
@@ -232,14 +233,16 @@
       </v-card>
     </v-row>
 
-    <section class="mt-5 mb-5">
-<v-card height="100%" width="60rem" dark="" class="depoimento">
-      <p
-        class="ml-5"
-      >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-      <p class="ml-5">Luciano Renato | Santos- SP</p>
-</v-card>
-      </section>
+    <v-row justify="center">
+      <section class="mt-5 mb-5">
+  <v-card height="100%" width="60rem" dark="" class="depoimento">
+        <p
+          class="ml-5"
+        >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+        <p class="ml-5">Luciano Renato | Santos- SP</p>
+  </v-card>
+        </section>
+    </v-row>
 
  <AppNewsletter/>
 
@@ -247,7 +250,8 @@
 </template>
 <script>
 import AppHeader from "../components/AppHeader";
-import AppNewsletter from '../components/AppNewsletter'
+import AppNewsletter from '../components/AppNewsletter';
+import AppAcc from "../components/AppAcc";
 export default {
   data() {
     return {
@@ -262,7 +266,8 @@ export default {
   },
   components: {
     AppHeader,
-    AppNewsletter
+    AppNewsletter,
+    AppAcc,
   }
 };
 </script>

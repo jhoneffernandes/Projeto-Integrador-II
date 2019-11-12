@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader />
-
+    <AppAcc/>
     <v-row class="my-5">
       <v-card width="100%" height="100%" dark color="indigo">
         <v-layout class="flex-wrap" justify-center align-center>
@@ -18,7 +18,7 @@
       >Nos cursos online da Diorama Cursos você sempre terá acesso a um conteúdo atualizado, já que os cursos de programação, de edição de web designer e todos os outros são frequentemente modificados. É possível assistir às aulas dos nossos cursos online a partir de qualquer computador com acesso à internet, desde que o mesmo cumpra os requisitos mínimos, e então é só começar a aprender com nossos cursos online e a realizar seu desenvolvimento web. Além das aulas, pelo fato de sermos a mais nova escola de cursos online o ambiente de aprendizado também é totalmente online, de forma que você pode usá-lo para esclarecer suas dúvidas com os instrutores e realizar outras atividades propostas. Por estes motivos, os cursos da Diorama Cursos online não são disponibilizados em formato DVD e foi optado que a nossa escola online se mante-se totalmente ligada à web.</p>
     </v-row>
 
-    <v-row>
+    <v-row id="principal">
       <v-col>
         <v-tabs slider-size="4" slider-color="indigo" centered>
           <v-tab class="blue white--text">Todos</v-tab>
@@ -829,7 +829,7 @@
         </v-tabs>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row justify="center">
     <section class="mt-5 mb-5">
       <v-card height="100%" width="60rem" dark="" class="depoimento">
       <p
@@ -848,10 +848,12 @@
 <script>
 import AppHeader from "../components/AppHeader";
 import AppNewsletter from '../components/AppNewsletter'
+import AppAcc from '../components/AppAcc'
 export default {
    components: {
     AppHeader,
-    AppNewsletter
+    AppNewsletter,
+    AppAcc,
   },
   data() {
     return {

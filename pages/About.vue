@@ -1,6 +1,7 @@
 <template>
   <div>
     <AppHeader />
+    <AppAcc/>
     <v-container ma-0 pa-0 fluid>
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>
@@ -29,7 +30,7 @@
         </v-card-text>
       </v-row>
 
-      <v-row dense justify="center" class="my-5">
+      <v-row id="principal" dense justify="center" class="my-5">
         <v-col cols="11" xl="7" lg="8" md="9" sm="10">
           <v-row justify="center" class="flex-wrap">
             <v-card>
@@ -70,14 +71,16 @@
       </v-row>
     </v-container>
 
-    <section class="mt-5 mb-5">
-      <v-card height="100%" width="60rem" dark="" class="depoimento">
-        <p
-          class="ml-5"
-        >"A instituição de ensino é excelente, fiz um curso de Zbrush a algum certo tempo, e vou voltar a fazer mais cursos aqui, pretendo fazer todos os cursos. Obrigada equipe."</p>
-        <p class="ml-5">Ricardo Adalberto | Nova Iguaçu - RJ</p>
-      </v-card>
-      </section>
+    <v-row justify="center">
+      <section class="mt-5 mb-5">
+        <v-card height="100%" width="60rem" dark="" class="depoimento">
+          <p
+            class="ml-5"
+          >"A instituição de ensino é excelente, fiz um curso de Zbrush a algum certo tempo, e vou voltar a fazer mais cursos aqui, pretendo fazer todos os cursos. Obrigada equipe."</p>
+          <p class="ml-5">Ricardo Adalberto | Nova Iguaçu - RJ</p>
+        </v-card>
+        </section>
+    </v-row>
 
     <AppNewsletter/>
 
@@ -87,6 +90,7 @@
 <script>
 import AppNewsletter from '../components/AppNewsletter';
 import AppHeader from "../components/AppHeader";
+import AppAcc from '../components/AppAcc';
 export default {
   data() {
     return {
@@ -98,7 +102,8 @@ export default {
   },
   components: {
     AppHeader,
-    AppNewsletter
+    AppNewsletter,
+    AppAcc,
   }
 };
 </script>
