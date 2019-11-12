@@ -9,17 +9,31 @@
       </section>
 
       <v-card outlined class="emlinha blue">
-        <v-col class="cortexto" md="5" sm="5" xl="2">
-          <p class="nomecurso">
-            Curso
-            <br />
-            {{nomecurso}}
-          </p>
-
-          <div class="text-center">
-            <v-rating v-model="rating" color="yellow"></v-rating>
-          </div>
-        </v-col>
+        
+          <v-row justify="center">
+            <v-col md="2" sm="5" xl="2">
+              <v-img
+                class="ml-5 mt-5 mb-5"
+                height="10rem"
+                contain
+                width="10rem"
+                :src="require('~/assets/cursos/photoshop.png')"
+              ></v-img>
+            </v-col>
+       
+  
+          <v-col class="cortexto" md="3" sm="5" xl="2">
+            <p class="nomecurso">
+              Curso
+              <br />
+              {{nomecurso}}
+            </p>
+  
+            <div class="text-center">
+              <v-rating v-model="rating" color="yellow"></v-rating>
+            </div>
+          </v-col>
+          </v-row>
       </v-card>
 
       <v-col lg="10" md="12" sm="12">
