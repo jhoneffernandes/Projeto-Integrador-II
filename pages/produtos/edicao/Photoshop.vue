@@ -9,17 +9,31 @@
       </section>
 
       <v-card outlined class="emlinha blue">
-        <v-col class="cortexto" md="5" sm="5" xl="2">
-          <p class="nomecurso">
-            Curso
-            <br />
-            {{nomecurso}}
-          </p>
-
-          <div class="text-center">
-            <v-rating v-model="rating" color="yellow"></v-rating>
-          </div>
-        </v-col>
+        
+          <v-row justify="center">
+            <v-col md="2" sm="5" xl="2">
+              <v-img
+                class="ml-5 mt-5 mb-5"
+                height="10rem"
+                contain
+                width="10rem"
+                :src="require('~/assets/cursos/photoshop.png')"
+              ></v-img>
+            </v-col>
+       
+  
+          <v-col class="cortexto" md="3" sm="5" xl="2">
+            <p class="nomecurso">
+              Curso
+              <br />
+              {{nomecurso}}
+            </p>
+  
+            <div class="text-center">
+              <v-rating v-model="rating" color="yellow"></v-rating>
+            </div>
+          </v-col>
+          </v-row>
       </v-card>
 
       <v-col lg="10" md="12" sm="12">
@@ -166,50 +180,43 @@
           <h1 class="centro mt-7">Recomendações</h1>
 
           <v-card outlined elevation="0" class="mt-3 itenslado">
-           
-              <v-img
-                class="ml-5 mt-5 mb-5"
-                height="10rem"
-                contain
-                width="10rem"
-                :src="require('~/assets/cursos/ilustrator.png')"
-              ></v-img>
-           
-           
-              <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
+            <v-img
+              class="ml-5 mt-5 mb-5"
+              height="10rem"
+              contain
+              width="10rem"
+              :src="require('~/assets/cursos/ilustrator.png')"
+            ></v-img>
 
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 150,00</h3>
-                <v-rating v-model="rating" color="yellow"></v-rating>
-                <router-link to="./ilustrator">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-          
+            <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
 
-           
-              <v-img
-                class="ml-5 mt-5 mb-5"
-                height="10rem"
-                contain
-                width="10rem"
-                :src="require('~/assets/cursos/corel.png')"
-              ></v-img>
-         
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
+              <v-rating v-model="rating" color="yellow"></v-rating>
+              <router-link to="./ilustrator">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
 
-          
-              <v-card-title>Corel Draw x8</v-card-title>
+            <v-img
+              class="ml-5 mt-5 mb-5"
+              height="10rem"
+              contain
+              width="10rem"
+              :src="require('~/assets/cursos/corel.png')"
+            ></v-img>
 
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 150,00</h3>
+            <v-card-title>Corel Draw x8</v-card-title>
 
-                <v-rating v-model="rating" color="yellow"></v-rating>
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
 
-                <router-link to="./corel">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-          
+              <v-rating v-model="rating" color="yellow"></v-rating>
+
+              <router-link to="./corel">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
           </v-card>
         </v-card>
       </v-row>
