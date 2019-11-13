@@ -2,12 +2,7 @@
   <div>
     <section class="mt-5">
       <v-toolbar elevation="2">
-        <v-toolbar-title class="ml-3">
-          <v-btn text="" to="#principal">Conteúdo Principal [Alt + 1]</v-btn>
-        </v-toolbar-title>
-        <v-toolbar-title class="ml-3">
-          <v-btn text="">Menu [Alt + 2]</v-btn>
-        </v-toolbar-title>
+       
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
