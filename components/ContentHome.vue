@@ -3,7 +3,7 @@
    <AppAcc/>
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card width="100%" height="100%" dark color="indigo">
+        <v-card tile="" width="100%" height="100%" dark color="indigo">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
               <h2 class="tituloh text-center">{{bemvindos}}</h2>
@@ -18,20 +18,38 @@
       </v-row>
     </v-layout>
 
+  <v-row justify="center" class="my-12">
+        <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
+          <v-row justify="center">
+            <v-card-title
+              class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
+            >Promoções da Diorama Cursos!</v-card-title>
+          </v-row>
+        </v-card>
+      </v-row>
+
     <v-row>
-      <v-carousel height="100%" cycle interval="114000" hide-delimiters>
+      <v-carousel height="100%" cycle interval="4000" vertical="" reverse="" hide-delimiters>
         <v-carousel-item>
-          <v-img class="testezao"
+          <v-img class="fundobanner1"
           contain=""
             height="30rem"
             width="100%"
-            alt="Promoção do curso de adobe illustrator com a logo na parte esquerda e preço na direita"
+            alt="Promoção do curso de adobe illustrator com preço na parte de cima e logo do curso no centro"
             :src="require('../assets/banners/bannerai.png')"
           ></v-img>
           </v-carousel-item>
 
   
-        
+          <v-carousel-item>
+          <v-img class="fundobanner2"
+          contain=""
+            height="30rem"
+            width="100%"
+            alt="Promoção do curso de HTML 5 com preço na parte de cima e logo do curso no centro"
+            :src="require('../assets/banners/bannerhtml.png')"
+          ></v-img>
+          </v-carousel-item>
       </v-carousel>
     </v-row>
 
@@ -115,7 +133,7 @@
               <v-card-title class="align-center justify-center fill-height">Adobe Illustrator cs6</v-card-title>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
-                <H1>Preço: R$ 599,00</H1>
+                <H1>Preço: R$ 730,00</H1>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-text class="textopadrao">
@@ -485,18 +503,18 @@
       </v-col>
     </v-row>
 
-     
+
+              <section class="justify">
        <v-row justify="center">
-         <section class="justify">
           <v-card height="100%" width="60rem" dark="" class="depoimento">
           <p
-            class="ml-5 mt-5"
+            class="mx-5"
           >"Bom dia estou manifestando o meu agradecimento por concuir com sucesso o curso de Adobe Illustrator cs6, Diorama força pelo bom trabalho que estão exercendo."</p>
-          <p class="ml-5">Roberto | Taquaritinga - SP</p>
+          <p class="mx-5">Roberto | Taquaritinga - SP</p>
           </v-card>
-        </section>
        </v-row>
-    
+            </section>
+
 
     <AppNewsletter />
   </v-container>
@@ -560,11 +578,12 @@ a {
   text-decoration: none;
 }
 .depoimento {
-  background-size: 100%;
+  background-size: cover;
   background-image: url("../assets/banners/depoimento.svg");
   color: rgb(255, 253, 253);
   height: 7rem;
   width: 7rem;
+  text-align: center;
 }
 .hoverz a:hover {
   background: cyan;
@@ -589,7 +608,11 @@ a {
   text-align: center;
 }
 
-.testezao{
+.fundobanner1{
   background-color: rgb(245, 126, 38)
+}
+
+.fundobanner2{
+background-color: rgb(0, 83, 229)
 }
 </style>

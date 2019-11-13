@@ -5,7 +5,7 @@
     <v-container ma-0 pa-0 fluid>
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>
-          <v-card width="100%" height="100%" dark color="indigo">
+          <v-card tile="" width="100%" height="100%" dark color="indigo">
             <v-layout justify-center align-center>
               <v-card-title>
                 <h2 class="tituloh flex-nowrap">{{textbannersobre}}</h2>
@@ -71,16 +71,16 @@
       </v-row>
     </v-container>
 
-    <v-row justify="center">
       <section class="mt-5 mb-5">
+    <v-row justify="center">
         <v-card height="100%" width="60rem" dark="" class="depoimento">
           <p
-            class="ml-5"
+            class="mx-5"
           >"A instituição de ensino é excelente, fiz um curso de Zbrush a algum certo tempo, e vou voltar a fazer mais cursos aqui, pretendo fazer todos os cursos. Obrigada equipe."</p>
-          <p class="ml-5">Ricardo Adalberto | Nova Iguaçu - RJ</p>
+          <p class="mx-5">Ricardo Adalberto | Nova Iguaçu - RJ</p>
         </v-card>
-        </section>
     </v-row>
+        </section>
 
     <AppNewsletter/>
 
@@ -104,6 +104,14 @@ export default {
     AppHeader,
     AppNewsletter,
     AppAcc,
+  },
+   head: {
+    titleTemplate: '%s - Sobre',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página contendo a história da criação da Diorama Cursos online, o vídeo introdutório da empresa junto aos principais objetivos da Diorama perante a área de desenvolvimento web' }
+    ]
   }
 };
 </script>

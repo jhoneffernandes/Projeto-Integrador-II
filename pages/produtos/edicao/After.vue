@@ -282,6 +282,14 @@ export default {
     AppHelp,
     AppCertificado
   },
+  head: {
+    titleTemplate: '%s - Curso de After effects',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página do curso de After effects da Diorama Cursos online' }
+    ]
+  },
   data() {
     return {
       nomecurso: "Adobe After Effects cs6",

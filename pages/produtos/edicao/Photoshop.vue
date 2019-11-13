@@ -291,6 +291,14 @@ export default {
     AppHelp,
     AppCertificado
   },
+  head: {
+    titleTemplate: '%s - Curso de Adobe Photoshop',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página do curso de Adobe Photoshop da Diorama Cursos online' }
+    ]
+  },
   data() {
     return {
       nomecurso: "Adobe Photoshop cs6",

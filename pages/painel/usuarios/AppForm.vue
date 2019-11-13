@@ -97,6 +97,14 @@ export default {
   components: {
     AppDrawer,
   },
+  head: {
+    titleTemplate: '%s - Formulário de registro de usuário',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Formulário de registro de novo usuário na Diorama Cursos online' }
+    ]
+  },
 
     data () {
       return {

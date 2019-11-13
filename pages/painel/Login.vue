@@ -44,6 +44,14 @@ export default {
       alerta: ""
     };
   },
+ head: {
+    titleTemplate: '%s - Entrar',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página de login na área administrativa da Diorama Cursos online' }
+    ]
+  },
 
   methods: {
     acessar() {
@@ -52,11 +60,7 @@ export default {
         this.$router.push("/painel/Painel");
       }
 
-      if (this.login === "usuario" && this.password === "123") {
-        this.$ls.set("login", this.login);
-        this.$router.push("/usuario");
-        
-      } else {
+     else {
         this.alerta = "Usuário ou senha não correspondentes.";
       }
     },

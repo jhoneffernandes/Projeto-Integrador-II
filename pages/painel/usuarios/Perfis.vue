@@ -56,6 +56,14 @@ export default {
 components: {
     AppDrawer,
   },
+  head: {
+    titleTemplate: '%s - Controle de alunos',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página de controle dos alunos registrados na Diorama Cursos online' }
+    ]
+  },
   data: () => ({
       maskcell: "(###)-####-####",
       maskcpf:"###.###.###-##",

@@ -73,12 +73,12 @@
 export default {
   data() {
     return {
-      menumob: true
+      menumob: false
     };
   },
   watch: {
     group() {
-      this.menumob = false;
+      this.menumob = true;
     }
   },
   methods: {

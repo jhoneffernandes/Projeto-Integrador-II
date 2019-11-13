@@ -93,6 +93,14 @@ export default {
       confpass: ""
     };
   },
+  head: {
+    titleTemplate: '%s - Registrar conta',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página para usuários se registrarem na Diorama Cursos online' }
+    ]
+  },
 
   data: () => ({
     mask: "(###)-####-####",

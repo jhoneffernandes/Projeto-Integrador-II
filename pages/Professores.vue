@@ -233,16 +233,16 @@
       </v-card>
     </v-row>
 
-    <v-row justify="center">
       <section class="mt-5 mb-5">
+            <v-row justify="center">
   <v-card height="100%" width="60rem" dark="" class="depoimento">
         <p
-          class="ml-5"
+          class="mx-5"
         >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-        <p class="ml-5">Luciano Renato | Santos- SP</p>
+        <p class="mx-5">Luciano Renato | Santos- SP</p>
   </v-card>
-        </section>
     </v-row>
+        </section>
 
  <AppNewsletter/>
 
@@ -268,6 +268,14 @@ export default {
     AppHeader,
     AppNewsletter,
     AppAcc,
+  },
+   head: {
+    titleTemplate: '%s - Professores',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama' }
+    ]
   }
 };
 </script>

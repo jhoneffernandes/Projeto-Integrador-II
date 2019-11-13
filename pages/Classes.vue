@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-container pa-0 ma-0 fluid>
     <AppHeader />
     <AppAcc/>
     <v-row class="my-5">
-      <v-card width="100%" height="100%" dark color="indigo">
+      <v-card width="100%" height="100%" dark tile="" color="indigo">
         <v-layout class="flex-wrap" justify-center align-center>
           <v-card-title>
             <h2 class="tituloh text-center">Nossos cursos</h2>
@@ -829,20 +829,20 @@
         </v-tabs>
       </v-col>
     </v-row>
-    <v-row justify="center">
+
     <section class="mt-5 mb-5">
+    <v-row justify="center">
       <v-card height="100%" width="60rem" dark="" class="depoimento">
       <p
-        class="ml-5"
+        class="mx-5"
       >"Estou gostando do curso, aulas bem explicativas, já tinha algum conhecimento sobre o assunto mais não tão bem explicado como agora com esse conteúdo que a Diorama proporciona, também estou conciliando o Tempo. Enfim, a Diorama está me surpreendendo bastante."</p>
-      <p class="ml-5">Luana Carla | Piracicaba - SP</p>
+      <p class="mx-5">Luana Carla | Piracicaba - SP</p>
       </v-card>
-    </section>
     </v-row>
+    </section>
 
  <AppNewsletter/>
-  </div>
-
+  </v-container>
 </template>
 
 <script>
@@ -855,6 +855,7 @@ export default {
     AppNewsletter,
     AppAcc,
   },
+  
   data() {
     return {
       photoshop: "150,00",
@@ -870,10 +871,20 @@ export default {
       javascript: "548,00",
       python: "548,00",
       php: "548,00",
-      c: "548,00"
-    };
+      c: "548,00",
+      title: 'Cursos'
+    }
+  },
+     head: {
+    titleTemplate: '%s - Cursos',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página contendo todos os cursos da Diorama Cursos online, cursos de design, cursos de modelagem 3D e cursos de desenvolvimento web, todos ministrados por professores capacitados ' }
+    ]
   }
-};
+  
+}
 </script>
 
 <style>
