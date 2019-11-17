@@ -2,12 +2,13 @@
   <v-row justify="center" dense class="my-5">
     <v-col cols="12" xl="12" lg="9" md="8" sm="12">
       <v-row justify="center">
-        <v-card class="mx-6" width="30rem" height="16rem" tile>
+        <v-card width="30rem" height="16rem" tile>
           <v-card-text class="text-center tamanho white--text indigo title">Assine nossa Newsletter!</v-card-text>
 
           <v-text-field
             v-model="email"
             :rules="emailRules"
+            counter="30"
             required
             class="mx-6 my-6"
             color="indigo"

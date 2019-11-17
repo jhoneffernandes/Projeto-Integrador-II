@@ -11,7 +11,7 @@
                 <v-icon dark left @click="voltar">mdi-arrow-left</v-icon>
               </v-btn>
             </v-toolbar>
-            <v-form ref="form" v-model="valid" lazy-validation>
+            <v-form ref="form" id="registro" v-model="valid" lazy-validation>
               <v-text-field class="mx-6" v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
 
               <v-text-field class="mx-6"
@@ -123,34 +123,7 @@ export default {
         (v && v.length <= 10) || "O Sobrenome deve ser menor que 10 caractéres"
     ],
 
-    email: "",
-    emailRules: [
-      v => !!v || " O e-mail deve ser obrigatório",
-      v => /.+@.+\..+/.test(v) || "Preencher o campo e-mail é obrigatório"
-    ],
-
-    confemail: "",
-    confRules: [
-      v => !!v || " Confirmar o e-mail obrigatório",
-      v => /.+@.+\..+/.test(v) || "Os e=mails não são iguais"
-    ],
-
-    cell: "",
-    cellRules: [
-      v => !!v || "O campo celular deve ser obrigatório",
-      v => (v && v.length <= 16) || "Preencha o campo corretamente"
-    ],
-
-    password: "",
-    passRules: [
-      v => !!v || " O campo senha deve ser válido",
-      v => (v && v.length <= 12) || "Preencha o campo corretamente"
-    ],
-    confpass: "",
-    confpassRules: [
-      v => !!v || " Confirmar a senha é obrigatório",
-      v => (v && v.length <= 12) || "As senhas não são iguais"
-    ],
+    
 
     checkbox: false
   }),

@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-toolbar elevation="1">
+    <v-toolbar id="menu" elevation="1">
       <v-toolbar-items>
         <v-btn text max-width="16rem">
           <router-link to="/">

@@ -9,22 +9,17 @@
       </section>
 
       <v-card outlined class="emlinha blue">
-        <v-row justify="center">
-          <v-col md="2" sm="5" xl="2">
-            <v-img height="15rem" width="15rem" :src="require('~/assets/cursos/photoshop.png')"></v-img>
-          </v-col>
+        <v-col class="cortexto" md="5" sm="5" xl="2">
+          <p class="nomecurso">
+            Curso
+            <br />
+            {{nomecurso}}
+          </p>
 
-          <v-col class="cortexto" md="3" sm="5" xl="2">
-            <p class="nomecurso">
-              Curso
-              {{nomecurso}}
-            </p>
-
-            <div class="text-center">
-              <v-rating v-model="rating" color="yellow"></v-rating>
-            </div>
-          </v-col>
-        </v-row>
+          <div class="text-center">
+            <v-rating v-model="rating" color="yellow"></v-rating>
+          </div>
+        </v-col>
       </v-card>
 
       <v-col lg="10" md="12" sm="12">
@@ -40,7 +35,9 @@
         </v-row>
       </v-col>
 
-      <section class="centro fundo tmn backgroundt">Conteúdo</section>
+      <section class="centro fundo tmn backgroundt black--text">
+        <p class="dks">Conteúdo</p>
+      </section>
 
       <v-col md="5" class="mx-auto">
         <v-expansion-panels>
@@ -172,46 +169,42 @@
 
           <v-card outlined elevation="0" class="mt-3 itenslado">
             <v-img
+              class="ml-5 mt-5 mb-5"
               height="10rem"
               contain
               width="10rem"
               :src="require('~/assets/cursos/ilustrator.png')"
             ></v-img>
 
-            <v-col md="2" sm="2" xl="12">
-              <v-card-title class="title">
-                Adobe
-                <br />Illustrator cs6
-              </v-card-title>
-            </v-col>
+            <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
 
-            <v-col>
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 599,00</h3>
-                <v-rating v-model="rating" color="yellow"></v-rating>
-                <router-link to="./ilustrator">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-            </v-col>
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
+              <v-rating v-model="rating" color="yellow"></v-rating>
+              <router-link to="./ilustrator">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
 
-            <v-img height="10rem" contain width="10rem" :src="require('~/assets/cursos/corel.png')"></v-img>
+            <v-img
+              class="ml-5 mt-5 mb-5"
+              height="10rem"
+              contain
+              width="10rem"
+              :src="require('~/assets/cursos/corel.png')"
+            ></v-img>
 
-            <v-col md="2" sm="2">
-              <v-card-title>Corel Draw x8</v-card-title>
-            </v-col>
+            <v-card-title>Corel Draw x8</v-card-title>
 
-            <v-col>
-              <v-card-text class="subtitle text-center">
-                <h3>Preço: R$ 144,99</h3>
+            <v-card-text class="subtitle text-center">
+              <h3>Preço: R$ 150,00</h3>
 
-                <v-rating v-model="rating" color="yellow"></v-rating>
+              <v-rating v-model="rating" color="yellow"></v-rating>
 
-                <router-link to="./corel">
-                  <v-btn color="primary">Saiba mais</v-btn>
-                </router-link>
-              </v-card-text>
-            </v-col>
+              <router-link to="./corel">
+                <v-btn color="primary">Saiba mais</v-btn>
+              </router-link>
+            </v-card-text>
           </v-card>
         </v-card>
       </v-row>
@@ -244,13 +237,13 @@
           </v-img>
         </v-card>
 
-        <v-card class="ml-5 mb-5" max-width="30rem" tile dark>
-          <v-img height="100%" :src="require('~/assets/banners/background.png')">
+        
+          <v-card class="ml-5 mb-5" max-width="30rem" tile>
             <v-list-item-content>
-              <v-list-item-title class="title ml-5">Currículo do Professor</v-list-item-title>
+              <v-list-item-title class="title ml-5 black--text">Currículo do Professor</v-list-item-title>
             </v-list-item-content>
-
-            <ul class="lista ml-5 white--text">
+  
+            <ul class="lista ml-4 black--text">
               <li>Formado em Ciência da Computação pela PUC-PR</li>
               <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
               <li>Design Gráfico</li>
@@ -260,8 +253,8 @@
               <li>Trabalhou por 2 anos na Tiwebdesign</li>
               <li>Etec Dr.Adail Nunes da Silva</li>
             </ul>
-          </v-img>
-        </v-card>
+          </v-card>
+        
       </v-row>
 
       <v-row>
@@ -274,8 +267,10 @@
           </v-col>
         </section>
       </v-row>
-      <AppHelp />
-      <AppNewsletter />
+      <v-row class="ml-8" justify="center" align="center">
+        <AppHelp />
+        <AppNewsletter />
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -292,11 +287,15 @@ export default {
     AppCertificado
   },
   head: {
-    titleTemplate: '%s - Curso de Adobe Photoshop',
+    titleTemplate: "%s - Curso de Adobe Photoshop",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Página do curso de Adobe Photoshop da Diorama Cursos online' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: "Página do curso de Adobe Photoshop da Diorama Cursos online"
+      }
     ]
   },
   data() {

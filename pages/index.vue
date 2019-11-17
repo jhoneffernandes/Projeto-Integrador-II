@@ -1,5 +1,6 @@
 <template>
 <div>
+   <AppAcc />
   <AppHeader/>
   <ContentHome/>
 </div>
@@ -8,11 +9,13 @@
 <script>
 import ContentHome from '../components/ContentHome';
 import AppHeader from '../components/AppHeader';
+import AppAcc from '../components/AppAcc';
 
 export default {
   components: {
     ContentHome,
-    AppHeader
+    AppHeader,
+    AppAcc
   },
    head: {
     titleTemplate: '%s - Início',

@@ -1,7 +1,7 @@
 <template>
   <v-container pa-0 ma-0 fluid>
-    <AppHeader />
     <AppAcc/>
+    <AppHeader />
     <v-row class="my-5">
       <v-card width="100%" height="100%" dark tile="" color="indigo">
         <v-layout class="flex-wrap" justify-center align-center>
@@ -30,7 +30,7 @@
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                  <a href="#">
+                 <router-link to="/produtos/edicao/Photoshop">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         contain
@@ -53,9 +53,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                 </router-link>
 
-                  <a href="#">
+                <router-link to="/produtos/edicao/Corel">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -76,9 +76,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/edicao/Ilustrator">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -101,9 +101,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/edicao/After">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -126,9 +126,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/edicao/Premiere">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -151,7 +151,7 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
                   <a href="#">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
