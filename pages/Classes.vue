@@ -20,7 +20,8 @@
 
     <v-row id="principal">
       <v-col>
-        <v-tabs slider-size="4" slider-color="indigo" centered>
+        <v-tabs hide-slider="" align-with-title="" center-active="" slider-size="4" slider-color="indigo" centered>
+         
           <v-tab class="blue white--text">Todos</v-tab>
           <v-tab class="blue white--text">Design</v-tab>
           <v-tab class="blue white--text">Modelagem 3d</v-tab>
@@ -394,7 +395,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/html.svg')"
+                        :src="require('../assets/cursos/htmlecss.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
                       <v-divider></v-divider>
@@ -805,7 +806,7 @@
                         height="18rem"
                         contain
                         width="18rem"
-                        :src="require('../assets/cursos/html.svg')"
+                        :src="require('../assets/cursos/htmlecss.png')"
                       ></v-img>
                       <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
                       <v-divider></v-divider>
