@@ -1,7 +1,8 @@
 <template>
-  <div>
+  
+ <v-container pa-0 ma-0 fluid>
     <AppHeader />
-    <v-container pa-0 ma-0 fluid>
+  
       <section class="mt-1">
         <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
           <v-icon dark left>mdi-arrow-left</v-icon>Voltar
@@ -161,7 +162,7 @@
 
       <AppCertificado />
 
-      <v-row align="center">
+       <v-row align="center">
         <v-card width="100%">
           <h1 class="centro mt-7">Recomendações</h1>
 
@@ -207,7 +208,7 @@
         </v-card>
       </v-row>
 
-      <v-banner single-line class="mb-5 mt-5">
+       <v-banner single-line class="mb-5 mt-5">
         <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>Professor deste curso
         <template v-slot:actions>
           <router-link to="./professores">
@@ -235,13 +236,13 @@
           </v-img>
         </v-card>
 
-        <v-card class="ml-5 mb-5" max-width="30rem" tile dark>
-          <v-img height="100%" :src="require('~/assets/banners/background.png')">
+        
+          <v-card class="ml-5 mb-5" max-width="30rem" tile>
             <v-list-item-content>
-              <v-list-item-title class="title ml-5">Currículo do Professor</v-list-item-title>
+              <v-list-item-title class="title ml-5 black--text">Currículo do Professor</v-list-item-title>
             </v-list-item-content>
-
-            <ul class="lista ml-5">
+  
+            <ul class="lista ml-4 black--text">
               <li>Formado em Ciência da Computação pela PUC-PR</li>
               <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
               <li>Design Gráfico</li>
@@ -251,8 +252,8 @@
               <li>Trabalhou por 2 anos na Tiwebdesign</li>
               <li>Etec Dr.Adail Nunes da Silva</li>
             </ul>
-          </v-img>
-        </v-card>
+          </v-card>
+        
       </v-row>
 
       <v-row>
@@ -265,10 +266,12 @@
           </v-col>
         </section>
       </v-row>
-      <AppHelp />
-      <AppNewsletter />
+      <v-row class="ml-8" justify="center" align="center">
+        <AppHelp />
+        <AppNewsletter />
+      </v-row>
     </v-container>
-  </div>
+  
 </template>
 <script>
 import AppNewsletter from "~/components/AppNewsletter";

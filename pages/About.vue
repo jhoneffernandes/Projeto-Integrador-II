@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <v-container ma-0 pa-0 fluid>
     <AppHeader />
     <AppAcc/>
-    <v-container ma-0 pa-0 fluid>
+    
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>
           <v-card tile="" width="100%" height="100%" dark color="indigo">
@@ -69,7 +69,7 @@
           </v-row>
         </v-col>
       </v-row>
-    </v-container>
+  
 
       <section class="mt-5 mb-5">
     <v-row justify="center">
@@ -83,8 +83,8 @@
         </section>
 
     <AppNewsletter/>
-
-  </div>
+  </v-container>
+ 
 </template>
 
 <script>

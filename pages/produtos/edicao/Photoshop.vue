@@ -1,7 +1,7 @@
 <template>
-  <div>
+ <v-container pa-0 ma-0 fluid>
     <AppHeader />
-    <v-container pa-0 ma-0 fluid>
+   
       <section class="mt-1">
         <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
           <v-icon dark left>mdi-arrow-left</v-icon>Voltar
@@ -272,7 +272,7 @@
         <AppNewsletter />
       </v-row>
     </v-container>
-  </div>
+  
 </template>
 <script>
 import AppNewsletter from "~/components/AppNewsletter";

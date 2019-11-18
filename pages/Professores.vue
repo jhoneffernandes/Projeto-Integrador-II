@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <v-container pa-0 ma-0 fluid>
     <AppHeader />
-     <AppAcc/>
-    <v-divider></v-divider>
+    
 
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
@@ -15,17 +14,23 @@
         </v-card>
       </v-row>
     </v-layout>
-    <v-card-text>
-      <p class="textop2 text-justify">
-        Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
-        <a
-          href="#/classes"
-        >clique aqui para ver os nossos cursos.</a>
-      </p>
-    </v-card-text>
 
-    <v-row id="principal" class="teste">
-      <v-card class="ml-5 mb-5" max-width="434" tile>
+    <v-layout class="ml-5 mr-3">
+      <v-row>
+        <v-card-text>
+          <p class="textop2 text-justify">
+            Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
+            <a
+              href="#/classes"
+            >clique aqui para ver os nossos cursos.</a>
+          </p>
+        </v-card-text>
+      </v-row>
+    </v-layout>
+
+    <v-row align="center" justify="center" id="principal" class="aolado">
+      <v-col lg="4" md="4" sm="6"  xl="5">
+      <v-card class="ml-5 mb-5 tamanhocard" max-width="434" tile>
         <v-tabs>
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
@@ -40,7 +45,7 @@
           <v-tab-item>
             <v-card flat>
               <v-img height="100%" :src="require('../assets/banners/background.png')">
-                <v-row align="end" class="fill-height">
+                <v-row >
                   <v-col align-self="start" class="pa-0" cols="12">
                     <v-avatar class="profile" color="grey" size="164" tile>
                       <v-img :src="require('../assets/professores/prof1.jpg')"></v-img>
@@ -93,8 +98,9 @@
           </v-tab-item>
         </v-tabs>
       </v-card>
-
-      <v-card class="ml-5 mb-5" max-width="434" tile>
+</v-col>
+<v-col lg="4" md="4" sm="6"  xl="5" >
+      <v-card class="ml-5 mb-5 tamanhocard"  max-width="434" tile>
         <v-tabs>
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
@@ -162,8 +168,9 @@
           </v-tab-item>
         </v-tabs>
       </v-card>
-
-      <v-card class="ml-5 mb-5" max-width="434" tile>
+  </v-col>
+  <v-col lg="4" md="4" sm="6"  xl="5">
+      <v-card class="ml-5 mb-5 tamanhocard"  max-width="434" tile >
         <v-tabs>
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
@@ -231,27 +238,26 @@
           </v-tab-item>
         </v-tabs>
       </v-card>
+      </v-col>
     </v-row>
 
-      <section class="mt-5 mb-5">
-            <v-row justify="center">
-  <v-card height="100%" width="60rem" dark="" class="depoimento">
-        <p
-          class="mx-5"
-        >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-        <p class="mx-5">Luciano Renato | Santos- SP</p>
-  </v-card>
-    </v-row>
-        </section>
+    <section class="mt-5 mb-5">
+      <v-row justify="center">
+        <v-card height="100%" width="60rem" dark class="depoimento">
+          <p
+            class="mx-5"
+          >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+          <p class="mx-5">Luciano Renato | Santos- SP</p>
+        </v-card>
+      </v-row>
+    </section>
 
- <AppNewsletter/>
-
-  </div>
+    <AppNewsletter />
+  </v-container>
 </template>
 <script>
 import AppHeader from "../components/AppHeader";
-import AppNewsletter from '../components/AppNewsletter';
-import AppAcc from "../components/AppAcc";
+import AppNewsletter from "../components/AppNewsletter";
 export default {
   data() {
     return {
@@ -267,14 +273,19 @@ export default {
   components: {
     AppHeader,
     AppNewsletter,
-    AppAcc,
+   
   },
-   head: {
-    titleTemplate: '%s - Professores',
+  head: {
+    titleTemplate: "%s - Professores",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama"
+      }
     ]
   }
 };
@@ -296,8 +307,8 @@ export default {
   border-radius: 100rem;
 }
 
-.depoimento p{
-  background-color: rgba(0, 0, 0, 0.30);
+.depoimento p {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .linha {
@@ -314,7 +325,7 @@ export default {
 .lista {
   color: black;
 }
-.teste {
+.aolado {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,10 +338,16 @@ export default {
 }
 
 @media (max-width: 700px) {
-  .teste {
+  .aolado {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 370px){
+  .tamanhocard{
+    height: 16rem;
+    width: 19rem;
   }
 }
 </style>
