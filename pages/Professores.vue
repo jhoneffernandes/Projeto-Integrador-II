@@ -18,14 +18,11 @@
     <v-card-text>
       <p class="textop2 text-justify">
         Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
-        <a
-          href="#/classes"
-        >clique aqui para ver os nossos cursos.</a>
       </p>
     </v-card-text>
 
-    <v-row id="principal" class="teste">
-      <v-card class="ml-5 mb-5" max-width="434" tile>
+    <v-row  id="principal" class="teste ml-2">
+      <v-card class="ml-5 mb-5" max-width="434"  tile>
         <v-tabs>
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
@@ -163,74 +160,76 @@
         </v-tabs>
       </v-card>
 
-      <v-card class="ml-5 mb-5" max-width="434" tile>
-        <v-tabs>
-          <v-tab>
-            <v-icon left>mdi-account</v-icon>Professor
-          </v-tab>
-          <v-tab>
-            <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
-          </v-tab>
-          <v-tab>
-            <v-icon left>mdi-application</v-icon>Cursos
-          </v-tab>
-
-          <v-tab-item>
-            <v-card flat>
-              <v-img height="100%" :src="require('../assets/banners/background.png')">
-                <v-row align="end" class="fill-height">
-                  <v-col align-self="start" class="pa-0" cols="12">
-                    <v-avatar class="profile" color="grey" size="164" tile>
-                      <v-img :src="require('../assets/professores/prof3.jpg')"></v-img>
-                    </v-avatar>
-                  </v-col>
-                  <v-col class="py-0">
-                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
-                      <v-list-item-content>
-                        <v-list-item-title class="title">{{prof3}}</v-list-item-title>
-                        <v-list-item-subtitle>Programador Sênior</v-list-item-subtitle>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-col>
-                </v-row>
-              </v-img>
-            </v-card>
-          </v-tab-item>
-          <v-tab-item>
-            <v-card flat>
-              <v-card-text>
-                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
-                <ul class="lista">
-                  <li>Formado em Ciência da Computação pela PUC-PR</li>
-                  <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-                  <li>Possui diversas certificações na área de TI</li>
-                  <li>Atua desde 2003 com desenvolvimento web e treinamentos de profissionais.</li>
-                  <li>Desenvolvedor de aplicativos para o ambiente iOS da Apple</li>
-                  <li>MySQL - Guia do Programador (ed. Novatec)</li>
-                  <li>Construindo Aplicações Web com PHP & MySQL (ed. Novatec)</li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-          <v-tab-item>
-            <v-card flat>
-              <v-card-text>
-                <v-list-item-content>
-                  <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
-                </v-list-item-content>
-                <ul class="lista">
-                  <li>Curso Html5 e CSS3</li>
-                  <li>Curso Java</li>
-                  <li>Curso Javascript</li>
-                  <li>Curso Php</li>
-                  <li>Curso Python</li>
-                  <li>Curso C#</li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-        </v-tabs>
-      </v-card>
+      
+        <v-card class="ml-5 mb-5" max-width="434" tile>
+          <v-tabs>
+            <v-tab>
+              <v-icon left>mdi-account</v-icon>Professor
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-application</v-icon>Cursos
+            </v-tab>
+  
+            <v-tab-item>
+              <v-card flat>
+                <v-img height="100%" :src="require('../assets/banners/background.png')">
+                  <v-row align="end" class="fill-height">
+                    <v-col align-self="start" class="pa-0" cols="12">
+                      <v-avatar class="profile" color="grey" size="164" tile>
+                        <v-img :src="require('../assets/professores/prof3.jpg')"></v-img>
+                      </v-avatar>
+                    </v-col>
+                    <v-col class="py-0">
+                      <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                        <v-list-item-content>
+                          <v-list-item-title class="title">{{prof3}}</v-list-item-title>
+                          <v-list-item-subtitle>Programador Sênior</v-list-item-subtitle>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-col>
+                  </v-row>
+                </v-img>
+              </v-card>
+            </v-tab-item>
+            <v-tab-item>
+              <v-card flat>
+                <v-card-text>
+                  <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                  <ul class="lista">
+                    <li>Formado em Ciência da Computação pela PUC-PR</li>
+                    <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
+                    <li>Possui diversas certificações na área de TI</li>
+                    <li>Atua desde 2003 com desenvolvimento web e treinamentos de profissionais.</li>
+                    <li>Desenvolvedor de aplicativos para o ambiente iOS da Apple</li>
+                    <li>MySQL - Guia do Programador (ed. Novatec)</li>
+                    <li>Construindo Aplicações Web com PHP & MySQL (ed. Novatec)</li>
+                  </ul>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+            <v-tab-item>
+              <v-card flat>
+                <v-card-text>
+                  <v-list-item-content>
+                    <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
+                  </v-list-item-content>
+                  <ul class="lista">
+                    <li>Curso Html5 e CSS3</li>
+                    <li>Curso Java</li>
+                    <li>Curso Javascript</li>
+                    <li>Curso Php</li>
+                    <li>Curso Python</li>
+                    <li>Curso C#</li>
+                  </ul>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+          </v-tabs>
+        </v-card>
+      
     </v-row>
 
       <section class="mt-5 mb-5">
@@ -278,6 +277,7 @@ export default {
     ]
   }
 };
+
 </script>
 
 
