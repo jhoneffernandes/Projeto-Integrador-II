@@ -13,7 +13,7 @@
       <v-toolbar flat color="white">
         <v-toolbar-title>Controle de Alunos</v-toolbar-title>
                
-   <v-btn color="indigo" dark class="mb-2" v-on="on" to="/painel/usuarios/AppForm">Cadastrar Aluno</v-btn>       
+   <v-btn color="indigo" dark class="mb-2" v-on="on" to="/painel/usuarios/incluir">Cadastrar Aluno</v-btn>       
      
       </v-toolbar>
     </template>
