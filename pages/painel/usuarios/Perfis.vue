@@ -12,16 +12,13 @@
     <template v-slot:top>
       <v-toolbar flat color="white">
         <v-toolbar-title>Controle de Alunos</v-toolbar-title>
-       
-        <div class="flex-grow-1"></div>
-        
-        <v-dialog v-model="dialog" max-width="500px">
-          <template v-slot:activator="{ on }">
-            <v-btn color="indigo" dark class="mb-2" v-on="on" to="/painel/usuarios/AppForm">Cadastrar Aluno</v-btn>
-          </template>
-                 </v-dialog>
+               
+   <v-btn color="indigo" dark class="mb-2" v-on="on" to="/painel/usuarios/AppForm">Cadastrar Aluno</v-btn>       
+     
       </v-toolbar>
     </template>
+
+
     <template v-slot:item.action="{ item }">
       <v-icon
         small
@@ -32,7 +29,7 @@
       </v-icon>
       <v-icon
         small
-        @click="deleteItem(item)"
+        @click="excluir(item)"
       >
         mdi-delete
       </v-icon>
@@ -90,7 +87,14 @@ data () {
   methods: {
     editar (item) {
       this.$router.push(`/painel/usuarios/${item.id}`)
+    },
+  excluir (item) {
+      let dados = this.$ls.get('usuarios')
+      dados = dados.filter(u => u.id != item.id)
+      this.$ls.set('usuarios', dados)
+      this.usuarios = dados
     }
+
   }
 
   }
