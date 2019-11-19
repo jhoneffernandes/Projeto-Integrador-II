@@ -285,11 +285,36 @@ export default {
     AppCertificado
   },
   head: {
+    // Template padrão de título + o nome da página
     titleTemplate: '%s -  Curso de Adobe Illustrator',
     meta: [
+      // O nuxt ja coloca charset , viewport  e etc por padrão, mas resolvi adicionar mesmo assim
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Página do curso de Adobe Illustrator da Diorama Cursos online' }
+      // Meta tag description da página
+      { hid: 'description', name: 'description', content: 'Página do curso de Adobe Illustrator da Diorama Cursos online' },
+
+         // Tags para o OpenGraph 
+    {property: 'og:title', content: 'Curso de Adobe Illustrator - Diorama Cursos'},
+    {property: 'og:site_name', content: 'Diorama Cursos'},
+    {property: 'og:type', content: 'website'},
+    {property: 'og:url', content: 'http://localhost:3000/produtos/edicao/Ilustrator'},
+    {property: 'og:image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'},
+    {property: 'og:description', content: 'Página do curso de Adobe Illustrator da Diorama Cursos online'},
+
+    // Tags e card para o Twitter
+    {name: 'twitter:card', content: 'summary'},
+    {name: 'twitter:site', content: 'http://localhost:3000/produtos/edicao/Ilustrator'},
+    {name: 'twitter:title', content: 'Curso de Adobe Illustrator - Diorama Cursos'},
+    {name: 'twitter:description', content: 'Página do curso de Adobe Illustrator da Diorama Cursos online'},
+    
+    // Tags para o Google
+    {itemprop: 'name', content: 'Curso de Adobe Illustrator - Diorama Cursos'},
+    {itemprop: 'description', content: 'Página do curso de Adobe Illustrator da Diorama Cursos online'},
+    {itemprop: 'image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'}
+
+    // Link canônico do site
+    , {rel: 'canonical', href: 'http://localhost:3000/produtos/edicao/Ilustrator'}
     ]
   },
   data() {
