@@ -1,6 +1,6 @@
 <template>
   <v-container pa-0 ma-0 fluid>
-    <AppAcc/>
+   
     <AppHeader />
     <v-row class="my-5">
       <v-card width="100%" height="100%" dark tile="" color="indigo">
@@ -849,12 +849,11 @@
 <script>
 import AppHeader from "../components/AppHeader";
 import AppNewsletter from '../components/AppNewsletter'
-import AppAcc from '../components/AppAcc'
 export default {
    components: {
     AppHeader,
     AppNewsletter,
-    AppAcc,
+   
   },
   
   data() {

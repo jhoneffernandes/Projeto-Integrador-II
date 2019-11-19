@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader />
-     <AppAcc/>
+    
     <v-divider></v-divider>
 
     <v-layout align-center justify-center text-center class="my-5">
@@ -250,7 +250,7 @@
 <script>
 import AppHeader from "../components/AppHeader";
 import AppNewsletter from '../components/AppNewsletter';
-import AppAcc from "../components/AppAcc";
+
 export default {
   data() {
     return {
@@ -266,7 +266,7 @@ export default {
   components: {
     AppHeader,
     AppNewsletter,
-    AppAcc,
+
   },
    head: {
     titleTemplate: '%s - Professores',

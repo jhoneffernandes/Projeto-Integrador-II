@@ -521,7 +521,6 @@
 </template>
 
 <script>
-import AppAcc from "./AppAcc";
 import AppNewsletter from "./AppNewsletter";
 export default {
   data() {
@@ -534,7 +533,6 @@ export default {
 
   components: {
     AppNewsletter,
-    AppAcc
   },
   methods: {
     conhecer() {

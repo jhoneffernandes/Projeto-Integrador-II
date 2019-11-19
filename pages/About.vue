@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader />
-    <AppAcc/>
+    
     <v-container ma-0 pa-0 fluid>
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>
@@ -90,7 +90,7 @@
 <script>
 import AppNewsletter from '../components/AppNewsletter';
 import AppHeader from "../components/AppHeader";
-import AppAcc from '../components/AppAcc';
+
 export default {
   data() {
     return {
@@ -103,7 +103,7 @@ export default {
   components: {
     AppHeader,
     AppNewsletter,
-    AppAcc,
+
   },
    head: {
     titleTemplate: '%s - Sobre',
