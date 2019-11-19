@@ -241,16 +241,20 @@
       </v-col>
     </v-row>
 
-    <section class="mt-5 mb-5">
-      <v-row justify="center">
-        <v-card height="100%" width="60rem" dark class="depoimento">
-          <p
-            class="mx-5"
-          >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-          <p class="mx-5">Luciano Renato | Santos- SP</p>
-        </v-card>
-      </v-row>
-    </section>
+   
+      <section class="mt-5 mb-5">
+       
+        <v-row justify="center">
+          <v-card height="100%" width="100rem" dark class="depoimento">
+            <p
+              class="mx-5"
+            >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+            <p class="mx-5">Luciano Renato | Santos- SP</p>
+          </v-card>
+        </v-row>
+           
+      </section>
+ 
 
     <AppNewsletter />
   </v-container>

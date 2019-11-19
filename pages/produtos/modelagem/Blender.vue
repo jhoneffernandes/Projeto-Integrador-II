@@ -1,7 +1,7 @@
 <template>
- <v-container pa-0 ma-0 fluid>
+   <v-container pa-0 ma-0 fluid>
     <AppHeader />
-   
+  
       <section class="mt-1">
         <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
           <v-icon dark left>mdi-arrow-left</v-icon>Voltar
@@ -35,9 +35,7 @@
         </v-row>
       </v-col>
 
-      <section class="centro fundo tmn backgroundt black--text">
-        <p class="dks">Conteúdo</p>
-      </section>
+      <section class="centro fundo tmn backgroundt">Conteúdo</section>
 
       <v-col md="5" class="mx-auto">
         <v-expansion-panels>
@@ -163,8 +161,8 @@
 
       <AppCertificado />
 
-     <v-row align="center">
-        <v-card class="tamanhorecomendacard" width="90rem">
+      <v-row align="center">
+        <v-card width="100%">
           <h1 class="centro mt-7">Recomendações</h1>
 
           <v-card outlined elevation="0" class="mt-3 itenslado">
@@ -207,10 +205,10 @@
             </v-card-text>
           </v-card>
         </v-card>
-      </v-row> 
+      </v-row>
 
-      <v-banner single-line class="mb-5 mt-5 bannercardprof">
-        <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>Professor
+     <v-banner single-line class="mb-5 mt-5">
+        <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>Professor deste curso
         <template v-slot:actions>
           <router-link to="./professores">
             <v-btn color="primary" text>Ver todos os professores</v-btn>
@@ -218,18 +216,18 @@
         </template>
       </v-banner>
 
-      <v-row >
-        <v-card class="ml-5 mb-5 tamanhocardprof" max-width="30rem" tile>
+      <v-row>
+        <v-card class="ml-5 mb-5" max-width="30rem" tile>
           <v-img height="100%" :src="require('~/assets/banners/background.png')">
             <v-row align="end" class="fill-height">
               <v-col align-self="start" class="pa-0" cols="12">
-                <v-img :src="require ('~/assets/professores/prof1.jpg')"></v-img>
+                <v-img :src="require ('~/assets/professores/prof2.jpg')"></v-img>
               </v-col>
               <v-col class="py-0">
                 <v-list-item dark>
                   <v-list-item-content>
                     <v-list-item-title class="title">{{professor}}</v-list-item-title>
-                    <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
+                    <v-list-item-subtitle>Desenvolvedor de Jogos</v-list-item-subtitle>
                   </v-list-item-content>
                 </v-list-item>
               </v-col>
@@ -238,20 +236,18 @@
         </v-card>
 
         
-          <v-card class="ml-5 mb-5 tamanhocurriculo" max-width="30rem" tile>
+          <v-card class="ml-5 mb-5" max-width="30rem" tile>
             <v-list-item-content>
               <v-list-item-title class="title ml-5 black--text">Currículo do Professor</v-list-item-title>
             </v-list-item-content>
   
             <ul class="lista ml-4 black--text">
-              <li>Formado em Ciência da Computação pela PUC-PR</li>
-              <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-              <li>Design Gráfico</li>
-              <li>Web Designer</li>
-              <li>Pós-graduado em Marketing</li>
-              <li>Colaborador oficial do framework vuetify</li>
-              <li>Trabalhou por 2 anos na Tiwebdesign</li>
-              <li>Etec Dr.Adail Nunes da Silva</li>
+               <li>Pós-Graduação | Jogos E Animação Digital: Modelagem 3d, Game Design</li>
+                    <li>Desenho e Ilustração Digital</li>
+                    <li>Inteligência Artificial.</li>
+                    <li>Graduação em Projeto e desenvolvimento de jogos digitais - Universidade Cruzeiro do sul</li>
+                    <li>Alta experiência com Realidade Aumentada</li>
+                    <li>Pós-graduação lato sensu – Especialização em Produção Artística para Jogos Digitais.</li>
             </ul>
           </v-card>
         
@@ -287,44 +283,40 @@ export default {
     AppCertificado
   },
   head: {
-    titleTemplate: "%s - Curso de Adobe Photoshop",
+    titleTemplate: '%s - Curso de Corel Draw',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Página do curso de Adobe Photoshop da Diorama Cursos online"
-      },
-       // OpenGraph data (Most widely used)
-    {property: 'og:title', content: 'Curso de Adobe Photoshop - Diorama Cursos'},
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Página do curso de Corel Draw da Diorama Cursos online' },
+        // OpenGraph data (Most widely used)
+    {property: 'og:title', content: 'Curso de Corel Draw - Diorama Cursos'},
     {property: 'og:site_name', content: 'Diorama Cursos'},
     // The list of types is available here: http://ogp.me/#types
     {property: 'og:type', content: 'website'},
     // Should the the same as your canonical link, see below.
-    {property: 'og:url', content: 'http://localhost:3000/produtos/edicao/Photoshop'},
+    {property: 'og:url', content: 'http://localhost:3000/produtos/edicao/Corel'},
     {property: 'og:image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'},
     // Often the same as your meta description, but not always.
-    {property: 'og:description', content: 'Página do curso de Adobe Photoshop da Diorama Cursos online'},
+    {property: 'og:description', content: 'Página do curso de Corel Draw da Diorama Cursos online'},
 
     // Twitter card
     {name: 'twitter:card', content: 'summary'},
-    {name: 'twitter:site', content: 'http://localhost:3000/produtos/edicao/Photoshop'},
-    {name: 'twitter:title', content: 'Curso de Adobe Photoshop - Diorama Cursos'},
-    {name: 'twitter:description', content: 'Página do curso de Adobe Photoshop da Diorama Cursos online'},
+    {name: 'twitter:site', content: 'http://localhost:3000/produtos/edicao/Corel'},
+    {name: 'twitter:title', content: 'Curso de Corel Draw - Diorama Cursos'},
+    {name: 'twitter:description', content: 'Página do curso de Corel Draw da Diorama Cursos online'},
     
     // Google / Schema.org markup:
-    {itemprop: 'name', content: 'Curso de Adobe Photoshop - Diorama Cursos'},
-    {itemprop: 'description', content: 'Página do curso de Adobe Photoshop da Diorama Cursos online'},
+    {itemprop: 'name', content: 'Curso de Corel Draw - Diorama Cursos'},
+    {itemprop: 'description', content: 'Página do curso de Corel Draw da Diorama Cursos online'},
     {itemprop: 'image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'}
-    ,         {rel: 'canonical', href: 'http://localhost:3000/produtos/edicao/Photoshop'}
+    ,         {rel: 'canonical', href: 'http://localhost:3000/produtos/edicao/Corel'}
     ]
   },
   data() {
     return {
-      nomecurso: "Adobe Photoshop cs6",
+      nomecurso: "Curso de Blender",
       tempocurso: "77 aulas | 10 horas",
-      professor: "Lucas Santos",
+      professor: "Jorge Alcantara",
       rating: 5
     };
   },
@@ -417,24 +409,6 @@ export default {
   .itenslado {
     flex-direction: row;
     flex-wrap: nowrap;
-  }
-}
-
-@media (max-width: 370px){
-  .tamanhocardprof{
-    height: 16rem;
-    width: 16rem;
-
-  }
-  .tamanhocurriculo{
-     height: 22rem;
-    width: 16rem;
-  }
-  .bannercardprof{
-     width: 20rem;
-  }
-  .tamanhorecomendacard{
-    width: 20rem;
   }
 }
 </style>

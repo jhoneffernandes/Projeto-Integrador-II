@@ -153,7 +153,7 @@
                       </v-card-text>
                     </v-card>
                   </router-link>
-                  <a href="#">
+                <router-link to="/produtos/modelagem/Blender">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -174,9 +174,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                </router-link>
 
-                  <a href="#">
+                   <router-link to="/produtos/modelagem/Max">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -197,9 +197,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/modelagem/Zbrush">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -220,9 +220,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
 
-                  <a href="#">
+                   <router-link to="/produtos/modelagem/Maya">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -244,9 +244,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/modelagem/Cinema">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -268,8 +268,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
-                  <a href="#">
+                  </router-link>
+
+                   <router-link to="/produtos/web/Javascript">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -291,9 +292,8 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
-
-                  <a href="#">
+                   </router-link>
+                   <router-link to="/produtos/web/Java">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -315,9 +315,8 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
-
-                  <a href="#">
+                   </router-link>
+                   <router-link to="/produtos/web/Python">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -339,9 +338,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                    <router-link to="/produtos/web/Php">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -363,9 +362,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                    </router-link>
 
-                  <a href="#">
+                   <router-link to="/produtos/web/C">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -387,9 +386,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                    <router-link to="/produtos/web/HtmlCss">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -411,7 +410,7 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                    </router-link>
                 </v-row>
               </v-col>
             </v-row>
@@ -421,7 +420,7 @@
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                  <a href="#">
+                   <router-link to="/produtos/edicao/Photoshop">
                     <v-card fill-height color="grey lighten-4" ele class="mx-6 my-6" elevation="01">
                       <v-img
                         height="18rem"
@@ -448,8 +447,9 @@
                         </router-link>
                       </v-card-text>
                     </v-card>
-                  </a>
-                  <a href="#">
+                   </router-link>
+                  
+                   <router-link to="/produtos/edicao/Corel">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -470,9 +470,10 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                
+                   <router-link to="/produtos/edicao/Ilustrator">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -495,9 +496,10 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                  
+                   <router-link to="/produtos/edicao/After">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -520,9 +522,10 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                  
+                   <router-link to="/produtos/edicao/Premiere">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -545,7 +548,7 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
                 </v-row>
               </v-col>
             </v-row>
@@ -555,7 +558,8 @@
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                  <a href="#">
+                  
+                   <router-link to="/produtos/modelagem/Blender">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -576,9 +580,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                   <router-link to="/produtos/modelagem/Max">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -599,9 +603,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                   </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/modelagem/Zbrush">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -622,9 +626,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
 
-                  <a href="#">
+                 <router-link to="/produtos/modelagem/Maya">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -646,9 +650,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                 </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/modelagem/Cinema">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -670,7 +674,7 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
                 </v-row>
               </v-col>
             </v-row>
@@ -680,7 +684,7 @@
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                  <a href="#">
+                <router-link to="/produtos/web/Javascript">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -702,9 +706,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                </router-link>
 
-                  <a href="#">
+                 <router-link to="/produtos/web/Java">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -726,9 +730,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                 </router-link>
 
-                  <a href="#">
+                  <router-link to="/produtos/web/Python">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -750,9 +754,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
 
-                  <a href="#">
+                 <router-link to="/produtos/web/Php">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -774,9 +778,9 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                 </router-link>
 
-                  <a href="#">
+                 <router-link to="/produtos/web/C">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -798,9 +802,8 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
-
-                  <a href="#">
+                 </router-link>
+                  <router-link to="/produtos/web/HtmlCss">
                     <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
                       <v-img
                         height="18rem"
@@ -822,7 +825,7 @@
                         <v-btn color="primary">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
-                  </a>
+                  </router-link>
                 </v-row>
               </v-col>
             </v-row>
@@ -833,7 +836,7 @@
 
     <section class="mt-5 mb-5">
     <v-row justify="center">
-      <v-card height="100%" width="60rem" dark="" class="depoimento">
+      <v-card height="100%" width="100rem" dark="" class="depoimento">
       <p
         class="mx-5"
       >"Estou gostando do curso, aulas bem explicativas, já tinha algum conhecimento sobre o assunto mais não tão bem explicado como agora com esse conteúdo que a Diorama proporciona, também estou conciliando o Tempo. Enfim, a Diorama está me surpreendendo bastante."</p>

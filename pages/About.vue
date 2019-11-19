@@ -72,7 +72,7 @@
 
       <section class="mt-5 mb-5">
     <v-row justify="center">
-        <v-card height="100%" width="60rem" dark="" class="depoimento">
+        <v-card height="100%" width="100rem" dark="" class="depoimento">
           <p
             class="mx-5"
           >"A instituição de ensino é excelente, fiz um curso de Zbrush a algum certo tempo, e vou voltar a fazer mais cursos aqui, pretendo fazer todos os cursos. Obrigada equipe."</p>

@@ -25,10 +25,13 @@
     <v-col lg="10" md="12" sm="12">
       <v-row class="ml-5 fdn">
         <h1 class="fonte">Resumo</h1>
-        <p>Utilizando uma didática passo a passo, o autor descreve as ferramentas e técnicas para a criação de cartazes, panfletos, sites, livros e peças publicitárias utilizando o Corel Draw X8. Diferentemente de outros cursos, onde as ferramentas são apenas descritas, o autor mostra com exemplos práticos a utilização das principais ferramentas do software.</p>
+        <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
 
         <h1 class="fonte">Requisitos</h1>
-        <p>Informática Básica</p>
+        <p>
+          Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
+          Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
+        </p>
       </v-row>
     </v-col>
 
@@ -39,6 +42,13 @@
         <v-expansion-panel>
           <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
           <v-expansion-panel-content>CONHECENDO MELHOR O CURSO</v-expansion-panel-content>
+        </v-expansion-panel>
+
+        <v-expansion-panel>
+          <v-expansion-panel-header>+ Apresentando o Photoshop</v-expansion-panel-header>
+          <v-expansion-panel-content>INTRODUÇÃO AO PHOTOSHOP</v-expansion-panel-content>
+          <v-expansion-panel-content>O QUE É O PHOTOSHOP</v-expansion-panel-content>
+          <v-expansion-panel-content>PRINCIPAIS TECLAS DE ATALHO</v-expansion-panel-content>
         </v-expansion-panel>
 
         <v-expansion-panel>
@@ -94,6 +104,57 @@
           <v-expansion-panel-content>FERRAMENTA CARIMBO</v-expansion-panel-content>
           <v-expansion-panel-content>TRABALHO - 04</v-expansion-panel-content>
           <v-expansion-panel-content>TRABALHO - 05</v-expansion-panel-content>
+        </v-expansion-panel>
+
+        <v-expansion-panel>
+          <v-expansion-panel-header>+ Animação Gif</v-expansion-panel-header>
+          <v-expansion-panel-content>ANIMAÇÃO GIF</v-expansion-panel-content>
+          <v-expansion-panel-content>CONCEITOS BÁSICOS DE ANIMAÇÃO GIF</v-expansion-panel-content>
+          <v-expansion-panel-content>LIMITE DE CORES DO FORMATO GIF</v-expansion-panel-content>
+          <v-expansion-panel-content>CRIANDO ANIMAÇÃO GIF</v-expansion-panel-content>
+          <v-expansion-panel-content>ANIMAÇÃO GIF COM TEXTOS</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 06</v-expansion-panel-content>
+        </v-expansion-panel>
+
+        <v-expansion-panel>
+          <v-expansion-panel-header>+ Conceitos Teóricos</v-expansion-panel-header>
+          <v-expansion-panel-content>CONCEITOS TEÓRICOS</v-expansion-panel-content>
+          <v-expansion-panel-content>EIXO CARTESIANO</v-expansion-panel-content>
+          <v-expansion-panel-content>PRINCIPAIS TAMANHO DE ARQUIVOS</v-expansion-panel-content>
+          <v-expansion-panel-content>O QUE É FORMATOS DE IMAGENS</v-expansion-panel-content>
+          <v-expansion-panel-content>QUAIS OS PRINCIPAIS FORMATOS DE IMAGENS</v-expansion-panel-content>
+          <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA</v-expansion-panel-content>
+          <v-expansion-panel-content>TEORIA DAS CORES</v-expansion-panel-content>
+          <v-expansion-panel-content>COLOCANDO TEORIA EM PRATICA - 2</v-expansion-panel-content>
+          <v-expansion-panel-content>CONCEITO PARA IMPRESSÃO</v-expansion-panel-content>
+          <v-expansion-panel-content>CONCEITO TEORICO</v-expansion-panel-content>
+        </v-expansion-panel>
+
+        <v-expansion-panel>
+          <v-expansion-panel-header>+ Filtros</v-expansion-panel-header>
+          <v-expansion-panel-content>FILTROS</v-expansion-panel-content>
+          <v-expansion-panel-content>OBJETOS INTELIGENTES OU SMART OBJECT</v-expansion-panel-content>
+          <v-expansion-panel-content>GALERIA DE FILTROS</v-expansion-panel-content>
+          <v-expansion-panel-content>MINI BRIDGE E BRIDGE</v-expansion-panel-content>
+          <v-expansion-panel-content>EXERCÍCIO - 03 BANNERS</v-expansion-panel-content>
+        </v-expansion-panel>
+
+        <v-expansion-panel>
+          <v-expansion-panel-header>+ Seção de Trabalhos</v-expansion-panel-header>
+          <v-expansion-panel-content>INICIO DE SEÇÃO - TRABALHOS</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 07</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 08</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 09</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 10</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 11</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 12</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 13</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 14</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 15</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 16</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO - 17</v-expansion-panel-content>
+          <v-expansion-panel-content>TRABALHO FINAL ALUNO</v-expansion-panel-content>
+          <v-expansion-panel-content>CONCLUSÃO FINAL</v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
@@ -160,13 +221,13 @@
         <v-img height="100%" :src="require('~/assets/banners/background.png')">
           <v-row align="end" class="fill-height">
             <v-col align-self="start" class="pa-0" cols="12">
-              <v-img :src="require ('~/assets/professores/prof1.jpg')"></v-img>
+              <v-img :src="require ('~/assets/professores/prof2.jpg')"></v-img>
             </v-col>
             <v-col class="py-0">
               <v-list-item dark>
                 <v-list-item-content>
                   <v-list-item-title class="title">{{professor}}</v-list-item-title>
-                  <v-list-item-subtitle>Web Designer</v-list-item-subtitle>
+                  <v-list-item-subtitle>Desenvolvedor de Jogos</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-col>
@@ -180,14 +241,12 @@
         </v-list-item-content>
 
         <ul class="lista ml-4 black--text">
-          <li>Formado em Ciência da Computação pela PUC-PR</li>
-          <li>Pós-graduado em Business Intelligence pela PUC-PR</li>
-          <li>Design Gráfico</li>
-          <li>Web Designer</li>
-          <li>Pós-graduado em Marketing</li>
-          <li>Colaborador oficial do framework vuetify</li>
-          <li>Trabalhou por 2 anos na Tiwebdesign</li>
-          <li>Etec Dr.Adail Nunes da Silva</li>
+          <li>Pós-Graduação | Jogos E Animação Digital: Modelagem 3d, Game Design</li>
+          <li>Desenho e Ilustração Digital</li>
+          <li>Inteligência Artificial.</li>
+          <li>Graduação em Projeto e desenvolvimento de jogos digitais - Universidade Cruzeiro do sul</li>
+          <li>Alta experiência com Realidade Aumentada</li>
+          <li>Pós-graduação lato sensu – Especialização em Produção Artística para Jogos Digitais.</li>
         </ul>
       </v-card>
     </v-row>
@@ -282,9 +341,9 @@ export default {
   },
   data() {
     return {
-      nomecurso: "Corel Draw x8",
+      nomecurso: "Curso de Zbrush",
       tempocurso: "77 aulas | 10 horas",
-      professor: "Lucas Santos",
+      professor: "Jorge Alcantara",
       rating: 5
     };
   },
