@@ -1,0 +1,40 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://localhost:3000/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/Classes</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/Professores</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/About</loc>
+  </url>
+
+    <url>
+    <loc>http://localhost:3000/produtos/edicao/After</loc>
+  </url>
+
+   <url>
+    <loc>http://localhost:3000/produtos/edicao/Corel</loc>
+  </url>
+
+   <url>
+    <loc>http://localhost:3000/produtos/edicao/Ilustrator</loc>
+  </url>
+
+   <url>
+    <loc>http://localhost:3000/produtos/edicao/Photoshop</loc>
+  </url>
+
+   <url>
+    <loc>http://localhost:3000/produtos/edicao/Premiere</loc>
+  </url>
+
+</urlset>

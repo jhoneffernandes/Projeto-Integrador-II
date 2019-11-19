@@ -273,8 +273,32 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama' }
-    ]
+      { hid: 'description', name: 'description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama' },
+        // OpenGraph data (Most widely used)
+    {property: 'og:title', content: 'Professores - Diorama Cursos'},
+    {property: 'og:site_name', content: 'Diorama Cursos'},
+    // The list of types is available here: http://ogp.me/#types
+    {property: 'og:type', content: 'website'},
+    // Should the the same as your canonical link, see below.
+    {property: 'og:url', content: 'http://localhost:3000/Professores'},
+    {property: 'og:image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'},
+    // Often the same as your meta description, but not always.
+    {property: 'og:description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama'},
+
+    // Twitter card
+    {name: 'twitter:card', content: 'summary'},
+    {name: 'twitter:site', content: 'http://localhost:3000/Professores'},
+    {name: 'twitter:title', content: 'Professores - Diorama Cursos'},
+    {name: 'twitter:description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama'},
+    
+    // Google / Schema.org markup:
+    {itemprop: 'name', content: 'Professores - Diorama Cursos'},
+    {itemprop: 'description', content: 'Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama'},
+    {itemprop: 'image', content: 'https://media.licdn.com/dms/image/C4E0BAQHlFp3lz14QbQ/company-logo_200_200/0?e=2159024400&v=beta&t=XMte2KZYAlHN0yCB6xfSQtB3wYfEirImqu2uLhFy44w'},
+   
+     {rel: 'canonical', href: 'http://localhost:3000/Professores'}
+
+   ]
   }
 };
 

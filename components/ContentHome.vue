@@ -484,7 +484,7 @@
                 height="18rem"
                 contain
                 width="18rem"
-                :src="require('../assets/cursos/html.svg')"
+                :src="require('../assets/cursos/htmlecss.png')"
               ></v-img>
               <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
               <v-divider></v-divider>
