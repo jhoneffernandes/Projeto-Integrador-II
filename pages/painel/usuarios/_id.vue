@@ -1,34 +1,29 @@
 <template>
   <v-container>
-    <v-form v-model="valid" ref="form" lazy-validation="">
+    <AppDrawer/>
+
+    <v-form v-model="valid">
       <v-card>
         <v-card-title>{{ modo }} usuário</v-card-title>
         <v-card-text>
           <v-text-field
             v-model="nome"
             :counter="50"
-            :rules="nomeRules"
+            :rules="nomeRegras"
             label="Nome completo"
             required />
 
-            <v-text-field
-            v-model="cel"
-            :counter="11"
-            :rules="celRules"
-            label="Celular"
-            required />
-
-            <v-text-field
-            v-model="cpf"
-            :counter="11"
-            :rules="cpfRules"
-            label="CPF"
+          <v-text-field
+            v-model="apelido"
+            :counter="15"
+            :rules="apelidoRegras"
+            label="Apelido"
             required />
 
           <v-text-field
             v-model="email"
             :counter="100"
-            :rules="emailRules"
+            :rules="emailRegras"
             label="E-mail"
             autocomplete="new-password"
             required />
@@ -58,32 +53,29 @@
 </template>
 
 <script>
+import AppDrawer from '~/components/AppDrawer'
 export default {
+  components: {
+      AppDrawer
+  },
   data () {
     return {
       id: this.$route.params.id,
       modo: this.$route.params.id == 'incluir' ? 'Incluir' : 'Editar',
       nome: '',
-      cel: '',
-      cpf: '',
+      apelido: '',
       email: '',
       senha: '',
       valid: true,
-      nomeRules: [
+      nomeRegras: [
         v => !!v || 'Nome completo é obrigatório',
         v => (v && v.length <= 50) || 'Nome completo deve ter no máximo 50 caracteres'
       ],
-      
-      celRules: [
-        v => !!v || 'Celular é obrigatório',
-        v => (v && v.length <= 15) || 'Celular deve ter no máximo 15 caracteres'
+      apelidoRegras: [
+        v => !!v || 'Apelido é obrigatório',
+        v => (v && v.length <= 15) || 'Apelido deve ter no máximo 15 caracteres'
       ],
-      
-      cpfRules: [
-        v => !!v || 'CPF é obrigatório',
-        v => (v && v.length <= 15) || 'CPF deve ter no máximo 15 caracteres'
-      ],
-      emailRules: [
+      emailRegras: [
         v => !!v || 'E-mail é obrigatório',
         v => (v && v.length <= 100) || 'E-mail deve ter no máximo 100 caracteres',
         v => /.+@.+\..+/.test(v) || 'E-mail deve ter um formato válido'
@@ -94,6 +86,7 @@ export default {
       ]
     }
   },
+
   created () {
     const usuarios = this.$ls.get('usuarios')
     if (usuarios) {
@@ -101,26 +94,25 @@ export default {
       if (usuario) {
         this.nome = usuario.nome
         this.apelido = usuario.apelido
-        this.cel = usuario.cel
-        this.cpf = usuario.cpf
         this.email = usuario.email
       }
     }
   },
+
   methods: {
     gerarId () {
       return Math.round(Math.random() * 9999)
     },
+
     salvar () {
       let dados = this.$ls.get('usuarios')
       if (!dados) dados = []
+
       if (this.modo == 'Incluir') {
         dados.push({
           id: this.gerarId(),
           nome: this.nome,
           apelido: this.apelido,
-          cel: this.cel,
-          cpf: this.cpf,
           email: this.email,
           senha: this.senha
         })
@@ -128,13 +120,13 @@ export default {
         const i = dados.findIndex(u => u.id == this.id)
         dados[i].nome = this.nome
         dados[i].apelido = this.apelido
-        dados[i].cel = this.cel
-        dados[i].cpf = this.cpf
         dados[i].email = this.email
       }
+
       this.$ls.set('usuarios', dados)
       this.$router.push('/painel/usuarios/Perfis')
     },
+
     cancelar () {
       this.$router.push('/painel/usuarios/Perfis')
     }
