@@ -1,10 +1,11 @@
 <template>
-  <v-container>
+<div>
     <AppDrawer/>
 
+  <v-container>
     <v-form v-model="valid">
       <v-card>
-        <v-card-title>{{ modo }} usuário</v-card-title>
+        <v-card-title>{{ modo }} curso</v-card-title>
         <v-card-text>
           <v-text-field
             v-model="nome"
@@ -48,6 +49,7 @@
       </v-card>
     </v-form>
   </v-container>
+</div>
 </template>
 
 <script>

@@ -1,7 +1,8 @@
 <template>
-  <v-container>
-    <AppDrawer/>
+<div>
+      <AppDrawer/>
 
+  <v-container>
     <v-form v-model="valid">
       <v-card>
         <v-card-title>{{ modo }} professor</v-card-title>
@@ -50,6 +51,7 @@
       </v-card>
     </v-form>
   </v-container>
+</div>
 </template>
 
 <script>

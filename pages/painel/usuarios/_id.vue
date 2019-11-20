@@ -1,6 +1,8 @@
 <template>
-  <v-container>
+<div>
     <AppDrawer/>
+
+  <v-container>
 
     <v-form v-model="valid">
       <v-card>
@@ -57,6 +59,7 @@
       </v-card>
     </v-form>
   </v-container>
+</div>
 </template>
 
 <script>

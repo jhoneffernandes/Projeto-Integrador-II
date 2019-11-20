@@ -1,7 +1,7 @@
 <template>
+<div>
+  <AppDrawer/>
   <v-container>
-<AppDrawer/>
-
     <v-data-table
       :headers="headers"
       :items="professores"
@@ -44,6 +44,7 @@
       </template>
     </v-data-table>
   </v-container>
+</div>
 </template>
 
 <script>
