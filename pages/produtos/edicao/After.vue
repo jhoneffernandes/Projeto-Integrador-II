@@ -125,11 +125,10 @@
 
     <AppCertificado />
 
-    <v-row align="center">
-      <v-card width="100%">
-        <h1 class="centro mt-7">Recomendações</h1>
-
-        <v-card outlined elevation="0" class="mt-3 itenslado">
+    <section class="fundo-items">
+      <h1 class="centered titulo-item mt-8">Recomendações</h1>
+      <div class="recomenda-item">
+        <div>
           <v-img
             class="ml-5 mt-5 mb-5"
             height="10rem"
@@ -138,16 +137,17 @@
             :src="require('~/assets/cursos/ilustrator.png')"
           ></v-img>
 
-          <v-card-title class="title">Adobe Illustrator cs6</v-card-title>
-
-          <v-card-text class="subtitle text-center">
+          <div class="nome-item mb-6">
+            <h1 class="title">Adobe Illustrator cs6</h1>
             <h3>Preço: R$ 150,00</h3>
             <v-rating v-model="rating" color="yellow"></v-rating>
             <router-link to="./ilustrator">
               <v-btn color="primary">Saiba mais</v-btn>
             </router-link>
-          </v-card-text>
+          </div>
+        </div>
 
+        <div>
           <v-img
             class="ml-5 mt-5 mb-5"
             height="10rem"
@@ -156,29 +156,31 @@
             :src="require('~/assets/cursos/corel.png')"
           ></v-img>
 
-          <v-card-title>Corel Draw x8</v-card-title>
-
-          <v-card-text class="subtitle text-center">
+          <div class="nome-item mb-6">
+            <h1 class>Corel Draw x8</h1>
             <h3>Preço: R$ 150,00</h3>
-
             <v-rating v-model="rating" color="yellow"></v-rating>
-
             <router-link to="./corel">
               <v-btn color="primary">Saiba mais</v-btn>
             </router-link>
-          </v-card-text>
-        </v-card>
-      </v-card>
-    </v-row>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <v-banner single-line class="mb-5 mt-5">
-      <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>Professor deste curso
-      <template v-slot:actions>
-        <router-link to="./professores">
+    
+    <section class="container-item mt-5 mb-5">
+      <div class="apresenta-item">
+        <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>
+        <h1>Profesor deste curso</h1>
+      </div>
+
+      <div>
+         <router-link to="/Professores">
           <v-btn color="primary" text>Ver todos os professores</v-btn>
         </router-link>
-      </template>
-    </v-banner>
+      </div>
+    </section>
 
     <v-row>
       <v-card class="ml-5 mb-5" max-width="30rem" tile>
@@ -325,6 +327,50 @@ export default {
 </script>
 
 <style>
+
+.container-item{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.apresenta-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.fundo-items {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(12, 12, 14);
+}
+.titulo-item {
+  padding: 10px;
+  background-color: blue;
+  color: cyan;
+  font-size: 2rem;
+}
+.nome-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.centered {
+  text-align: center;
+}
+
+.recomenda-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .professorbanner {
   height: 100%;
   width: auto;
@@ -393,18 +439,33 @@ export default {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 360px) {
-  .itenslado {
-    align-content: center;
-    flex-direction: column;
+@media (min-width: 600px) {
+  .recomenda-item {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 370px) {
+  .tamanhocardprof {
+    height: 16rem;
+    width: 16rem;
+  }
+  .tamanhocurriculo {
+    height: 22rem;
+    width: 16rem;
+  }
+  .bannercardprof {
+    width: 20rem;
+  }
+  .tamanhorecomendacard {
+    width: 20rem;
+  }
+  .container-item{
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (min-width: 730px) {
-  .itenslado {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
 </style>
