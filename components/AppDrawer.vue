@@ -40,13 +40,13 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/painel/cursos">
+          <router-link to="/painel/cursos/Curso">
             <v-list-item>
               <v-list-item-title>Cursos</v-list-item-title>
             </v-list-item>
           </router-link>
 
-          <router-link to="/painel/professores">
+          <router-link to="/painel/professores/Profs">
             <v-list-item>
               <v-list-item-title>Professores</v-list-item-title>
             </v-list-item>

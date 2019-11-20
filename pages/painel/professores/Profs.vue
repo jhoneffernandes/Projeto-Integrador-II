@@ -1,10 +1,10 @@
 <template>
-<div>
-  <AppDrawer/>
   <v-container>
+<AppDrawer/>
+
     <v-data-table
       :headers="headers"
-      :items="usuarios"
+      :items="professores"
       sort-by="nome"
       class="elevation-1"
       :hide-default-footer="true"
@@ -15,7 +15,7 @@
           <v-spacer />
           <v-btn
             color="primary"
-            to="/painel/usuarios/incluir"
+            to="/painel/professores/incluir"
             class="elevation-1"
             small
             fab
@@ -44,7 +44,6 @@
       </template>
     </v-data-table>
   </v-container>
-</div>
 </template>
 
 <script>
@@ -57,31 +56,31 @@ export default {
     return {
       headers: [
         { text: 'Nome completo', value: 'nome' },
-        { text: 'Celular', value: 'cel' },
-        { text: 'CPF', value: 'cpf' },
+        { text: 'Salário', value: 'salario' },
+        { text: 'Curso(s) lecionado(s)', value: 'cursolecionado' },
         { text: 'E-mail', value: 'email' },
         { text: 'Ações', value: 'action', sortable: false, width: 100 }
       ],
 
-      usuarios: []
+      professores: []
     }
   },
 
   created () {
-    const usuarios = this.$ls.get('usuarios')
-    if (usuarios) this.usuarios = usuarios
+    const professores = this.$ls.get('professores')
+    if (professores) this.professores = professores
   },
 
   methods: {
     editar (item) {
-      this.$router.push(`/painel/usuarios/${item.id}`)
+      this.$router.push(`/painel/professores/${item.id}`)
     },
 
     excluir (item) {
-      let dados = this.$ls.get('usuarios')
-      dados = dados.filter(u => u.id != item.id)
-      this.$ls.set('usuarios', dados)
-      this.usuarios = dados
+      let dadosprof = this.$ls.get('professores')
+      dadosprof = dadosprof.filter(u => u.id != item.id)
+      this.$ls.set('professores', dadosprof)
+      this.professores = dadosprof
     }
   }
 }

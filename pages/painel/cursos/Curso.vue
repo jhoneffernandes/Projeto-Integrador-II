@@ -1,10 +1,11 @@
 <template>
 <div>
-  <AppDrawer/>
+<AppDrawer/>
+
   <v-container>
     <v-data-table
       :headers="headers"
-      :items="usuarios"
+      :items="cursos"
       sort-by="nome"
       class="elevation-1"
       :hide-default-footer="true"
@@ -15,7 +16,7 @@
           <v-spacer />
           <v-btn
             color="primary"
-            to="/painel/usuarios/incluir"
+            to="/painel/cursos/incluir"
             class="elevation-1"
             small
             fab
@@ -44,7 +45,7 @@
       </template>
     </v-data-table>
   </v-container>
-</div>
+  </div>
 </template>
 
 <script>
@@ -56,32 +57,32 @@ export default {
   data () {
     return {
       headers: [
-        { text: 'Nome completo', value: 'nome' },
-        { text: 'Celular', value: 'cel' },
-        { text: 'CPF', value: 'cpf' },
-        { text: 'E-mail', value: 'email' },
+        { text: 'Nome do curso', value: 'nome' },
+        { text: 'Professor do curso', value: 'profcurso' },
+        { text: 'Duração do curso', value: 'duracao' },
+        { text: 'Preço do curso', value: 'preco' },
         { text: 'Ações', value: 'action', sortable: false, width: 100 }
       ],
 
-      usuarios: []
+      cursos: []
     }
   },
 
   created () {
-    const usuarios = this.$ls.get('usuarios')
-    if (usuarios) this.usuarios = usuarios
+    const cursos = this.$ls.get('cursos')
+    if (cursos) this.cursos = cursos
   },
 
   methods: {
     editar (item) {
-      this.$router.push(`/painel/usuarios/${item.id}`)
+      this.$router.push(`/painel/cursos/${item.id}`)
     },
 
     excluir (item) {
-      let dados = this.$ls.get('usuarios')
-      dados = dados.filter(u => u.id != item.id)
-      this.$ls.set('usuarios', dados)
-      this.usuarios = dados
+      let dadoscurso = this.$ls.get('cursos')
+      dadoscurso = dadoscurso.filter(u => u.id != item.id)
+      this.$ls.set('cursos', dadoscurso)
+      this.cursos = dadoscurso
     }
   }
 }

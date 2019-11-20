@@ -4,7 +4,7 @@
 
     <v-form v-model="valid">
       <v-card>
-        <v-card-title>{{ modo }} usuário</v-card-title>
+        <v-card-title>{{ modo }} professor</v-card-title>
         <v-card-text>
           <v-text-field
             v-model="nome"
@@ -14,17 +14,17 @@
             required />
 
           <v-text-field
-            v-model="cel"
+            v-model="salario"
             :counter="15"
-            :rules="celRegras"
-            label="Celular"
+            :rules="salarioRegras"
+            label="salario"
             required />
 
-              <v-text-field
-            v-model="cpf"
+            <v-text-field
+            v-model="cursolecionado"
             :counter="15"
-            :rules="cpfRegras"
-            label="CPF"
+            :rules="cursoRegras"
+            label="Curso lecionado"
             required />
 
           <v-text-field
@@ -35,14 +35,7 @@
             autocomplete="new-password"
             required />
 
-          <v-text-field
-            type="password"
-            v-model="senha"
-            :counter="50"
-            :rules="senhaValidacao"
-            label="Senha"
-            autocomplete="new-password"
-            v-if="modo == 'Incluir'" />
+        
         </v-card-text>
         <v-card-actions>
           <v-btn color="primary" @click="salvar" :disabled="!valid">
@@ -70,43 +63,39 @@ export default {
       id: this.$route.params.id,
       modo: this.$route.params.id == 'incluir' ? 'Incluir' : 'Editar',
       nome: '',
-      apelido: '',
+      salario: '',
+      cursolecionado: '',
       email: '',
-      senha: '',
       valid: true,
       nomeRegras: [
         v => !!v || 'Nome completo é obrigatório',
         v => (v && v.length <= 50) || 'Nome completo deve ter no máximo 50 caracteres'
       ],
-      celRegras: [
-        v => !!v || 'Celular é obrigatório',
-        v => (v && v.length <= 15) || 'Celular deve ter no máximo 15 caracteres'
+       cursoRegras: [
+        v => !!v || 'Curso lecionado é obrigatório',
+        v => (v && v.length <= 50) || 'Curso lecionado deve ter no máximo 50 caracteres'
       ],
-      cpfRegras: [
-        v => !!v || 'CPF é obrigatório',
-        v => (v && v.length <= 15) || 'CPF deve ter no máximo 15 caracteres'
+      salarioRegras: [
+        v => !!v || 'salario é obrigatório',
+        v => (v && v.length <= 15) || 'salario deve ter no máximo 15 caracteres'
       ],
       emailRegras: [
         v => !!v || 'E-mail é obrigatório',
         v => (v && v.length <= 100) || 'E-mail deve ter no máximo 100 caracteres',
         v => /.+@.+\..+/.test(v) || 'E-mail deve ter um formato válido'
-      ],
-      senhaValidacao: [
-        v => this.modo == 'Incluir' && (!!v || 'Senha é obrigatória'),
-        v => this.modo == 'Incluir' && ((v && v.length <= 100) || 'Senha deve ter no máximo 50 caracteres')
       ]
     }
   },
 
   created () {
-    const usuarios = this.$ls.get('usuarios')
-    if (usuarios) {
-      const usuario = usuarios.find(u => u.id == this.id)
-      if (usuario) {
-        this.nome = usuario.nome
-        this.cel = usuario.cel
-        this.cpf = usuario.cpf
-        this.email = usuario.email
+    const professores = this.$ls.get('professores')
+    if (professores) {
+      const professor = professores.find(u => u.id == this.id)
+      if (professor) {
+        this.nome = professor.nome
+        this.cursolecionado = professor.cursolecionado
+        this.salario = professor.salario
+        this.email = professor.email
       }
     }
   },
@@ -117,32 +106,31 @@ export default {
     },
 
     salvar () {
-      let dados = this.$ls.get('usuarios')
-      if (!dados) dados = []
+      let dadosprof = this.$ls.get('professores')
+      if (!dadosprof) dadosprof = []
 
       if (this.modo == 'Incluir') {
-        dados.push({
+        dadosprof.push({
           id: this.gerarId(),
           nome: this.nome,
-          cel: this.cel,
-          cpf: this.cpf,
+          cursolecionado: this.cursolecionado,
+          salario: this.salario,
           email: this.email,
-          senha: this.senha
         })
       } else {
-        const i = dados.findIndex(u => u.id == this.id)
-        dados[i].nome = this.nome
-        dados[i].cel = this.cel
-        dados[i].cpf = this.cpf
-        dados[i].email = this.email
+        const i = dadosprof.findIndex(u => u.id == this.id)
+        dadosprof[i].nome = this.nome
+        dadosprof[i].cursolecionado = this.cursolecionado
+        dadosprof[i].salario = this.salario
+        dadosprof[i].email = this.email
       }
 
-      this.$ls.set('usuarios', dados)
-      this.$router.push('/painel/usuarios/Perfis')
+      this.$ls.set('professores', dadosprof)
+      this.$router.push('/painel/professores/Profs')
     },
 
     cancelar () {
-      this.$router.push('/painel/usuarios/Perfis')
+      this.$router.push('/painel/professores/Profs')
     }
   }
 }
