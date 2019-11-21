@@ -1,6 +1,6 @@
 <template>
   <v-container pa-0 ma-0 fluid>
-    <AppHeader />
+    <AppHeader/>
 
     <section class="mt-1">
       <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
@@ -255,16 +255,7 @@
       </v-card>
     </v-row>
 
-    <v-row>
-      <section class="depoimento mt-5 mb-5">
-        <v-col md="10" sm="10">
-          <p
-            class="ml-5"
-          >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
-          <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
-        </v-col>
-      </section>
-    </v-row>
+    
     <v-row class="ml-8" justify="center" align="center">
       <AppHelp />
       <AppNewsletter />
@@ -445,6 +436,7 @@ export default {
 .fonte {
   font-size: 1.5rem;
   color: black;
+  text-align: center
 }
 .tmn {
   height: 4rem;

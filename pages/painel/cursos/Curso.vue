@@ -4,6 +4,7 @@
 
   <v-container>
     <v-data-table
+      items-per-page="999"
       :headers="headers"
       :items="cursos"
       sort-by="nome"
@@ -12,7 +13,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat color="white">
-          <v-toolbar-title>Usuários</v-toolbar-title>
+          <v-toolbar-title>Cursos</v-toolbar-title>
           <v-spacer />
           <v-btn
             color="primary"
@@ -61,16 +62,182 @@ export default {
         { text: 'Professor do curso', value: 'profcurso' },
         { text: 'Duração do curso', value: 'duracao' },
         { text: 'Preço do curso', value: 'preco' },
+        { text: 'URL da página', value: 'url' },
+        { text: 'Categoria do curso', value: 'categoria' },
+        { text: 'Nome da imagem', value: 'imagem' },
         { text: 'Ações', value: 'action', sortable: false, width: 100 }
       ],
 
-      cursos: []
+      cursos: [
+        {
+          categoria: 'Design',
+          id: 1,
+          profcurso:  'Lucas Santos',
+          url: 'edicao/Photoshop',
+          imagem: 'photoshop',
+          nome: 'Adobe Photoshop CS6',
+          preco: '150,00',
+          duracao: '40 horas'
+        },
+
+        {
+          categoria: 'Modelagem 3D',
+          id: 2,
+          profcurso:  'Jorge Alcantara',
+          url: 'modelagem/Blender',
+          imagem: 'blender',
+          nome: 'Blender',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+         {
+          categoria: 'Design',
+          id: 3,
+          profcurso:  'Lucas Santos',
+          url: 'edicao/Corel',
+          imagem: 'corel',
+          nome: 'Corel Draw X8',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Design',
+          id: 4,
+          profcurso:  'Lucas Santos',
+          url: 'edicao/Ilustrator',
+          imagem: 'ilustrator',
+          nome: 'Adobe Illustrator CS6',
+          preco: '800,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Design',
+          id: 5,
+          profcurso:  'Lucas Santos',
+          url: 'edicao/After',
+          imagem: 'after',
+          nome: 'Adobe After Effects CS6',
+          preco: '880,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Design',
+          id: 6,
+          profcurso:  'Lucas Santos',
+          url: 'edicao/Premiere',
+          imagem: 'premiere',
+          nome: 'Adobe Premiere Pro CS6',
+          preco: '800,00',
+          duracao: '40 horas'
+        },
+      {
+          categoria: 'Modelagem 3D',
+          id: 7,
+          profcurso:  'Jorge Alcantara',
+          url: 'modelagem/Max',
+          imagem: 'max',
+          nome: '3ds Max',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Modelagem 3D',
+          id: 8,
+          profcurso:  'Jorge Alcantara',
+          url: 'modelagem/Zbrush',
+          imagem: 'zbrush',
+          nome: 'Zbrush',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Modelagem 3D',
+          id: 9,
+          profcurso:  'Jorge Alcantara',
+          url: 'modelagem/Maya',
+          imagem: 'maya',
+          nome: 'Maya',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Modelagem 3D',
+          id: 10,
+          profcurso:  'Jorge Alcantara',
+          url: 'modelagem/Cinema',
+          imagem: 'cinema',
+          nome: 'Cinema 4D',
+          preco: '120,00',
+          duracao: '40 horas'
+        },
+              {
+          categoria: 'Desenvolvimento Web',
+          id: 11,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/Javascript',
+          imagem: 'javascript',
+          nome: 'JavaScript',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+                     {
+          categoria: 'Desenvolvimento Web',
+          id: 12,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/Java',
+          imagem: 'java',
+          nome: 'Java',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+                     {
+          categoria: 'Desenvolvimento Web',
+          id: 13,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/Python',
+          imagem: 'python',
+          nome: 'Python',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+                     {
+          categoria: 'Desenvolvimento Web',
+          id: 14,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/Php',
+          imagem: 'php',
+          nome: 'PHP',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+                     {
+          categoria: 'Desenvolvimento Web',
+          id: 15,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/C',
+          imagem: 'c',
+          nome: 'C#',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+                     {
+          categoria: 'Desenvolvimento Web',
+          id: 16,
+          profcurso:  'Fabio Vasconcelos',
+          url: 'web/HtmlCss',
+          imagem: 'htmlecss',
+          nome: 'HTML 5 + CSS',
+          preco: '548,00',
+          duracao: '40 horas'
+        },
+      ]
     }
   },
 
   created () {
     const cursos = this.$ls.get('cursos')
     if (cursos) this.cursos = cursos
+    else this.$ls.set('cursos', this.cursos)
   },
 
   methods: {

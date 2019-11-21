@@ -11,7 +11,7 @@
     >
       <template v-slot:top>
         <v-toolbar flat color="white">
-          <v-toolbar-title>Usuários</v-toolbar-title>
+          <v-toolbar-title>Professores</v-toolbar-title>
           <v-spacer />
           <v-btn
             color="primary"

@@ -21,6 +21,26 @@
             label="Professor do curso"
             required />
 
+             <v-text-field
+            v-model="url"
+            :rules="urlRegras"
+            label="URL da página"
+            required />
+
+            <v-text-field
+            v-model="categoria"
+            :counter="15"
+            :rules="categoriaRegras"
+            label="Categoria do curso"
+            required />
+
+
+             <v-text-field
+            v-model="imagem"
+            :rules="imagemRegras"
+            label="Nome da imagem"
+            required />
+
            <v-text-field
             v-model="duracao"
             :counter="15"
@@ -66,6 +86,9 @@ export default {
       profcurso: '',
       duracao: '',
       preco: '',
+      categoria: '',
+      url: '',
+      imagem: '',
       valid: true,
       nomeRegras: [
         v => !!v || 'Nome do curso é obrigatório',
@@ -74,6 +97,16 @@ export default {
       profcursoRegras: [
         v => !!v || 'Professor do que ministra o curso é obrigatório',
         v => (v && v.length <= 15) || 'Professor do curso deve ter no máximo 15 caracteres'
+      ],
+      urlRegras: [
+        v => !!v || 'URL da página do curso é obrigatória',
+      ],
+      imagemRegras: [
+        v => !!v || 'Imagem do curso é obrigatório',
+      ],
+      categoriaRegras: [
+        v => !!v || 'Categoria do curso é obrigatório',
+        v => (v && v.length <= 15) || 'Categoria do curso deve ter no máximo 15 caracteres'
       ],
       precocursoRegras: [
         v => !!v || 'Preço do curso é obrigatório',
@@ -95,6 +128,10 @@ export default {
         this.profcurso = curso.profcurso
         this.duracao = curso.duracao
         this.preco = curso.preco
+        this.imagem = curso.imagem
+        this.url = curso.url
+        this.categoria = curso.categoria
+
       }
     }
   },
@@ -115,13 +152,21 @@ export default {
           profcurso: this.profcurso,
           duracao: this.duracao,
           preco: this.preco,
-        })
+          imagem: this.imagem,
+          categoria: this.categoria,
+          url: this.url,
+
+})
       } else {
         const i = dadoscurso.findIndex(u => u.id == this.id)
         dadoscurso[i].nome = this.nome
         dadoscurso[i].profcurso = this.profcurso
         dadoscurso[i].duracao = this.duracao
         dadoscurso[i].preco = this.preco
+        dadoscurso[i].url = this.url
+        dadoscurso[i].imagem = this.imagem
+        dadoscurso[i].categoria = this.categoria
+
 
       }
 
