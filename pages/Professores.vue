@@ -31,7 +31,7 @@
     <v-row align="center" justify="center" id="principal" class="aolado">
       <v-col lg="4" md="4" sm="6"  xl="5">
       <v-card class="ml-5 mb-5 tamanhocard" max-width="434" tile>
-        <v-tabs>
+        <v-tabs show-arrows="center">
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
           </v-tab>
@@ -101,7 +101,7 @@
 </v-col>
 <v-col lg="4" md="4" sm="6"  xl="5" >
       <v-card class="ml-5 mb-5 tamanhocard"  max-width="434" tile>
-        <v-tabs>
+        <v-tabs  show-arrows="center">
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
           </v-tab>
@@ -171,7 +171,7 @@
   </v-col>
   <v-col lg="4" md="4" sm="6"  xl="5">
       <v-card class="ml-5 mb-5 tamanhocard"  max-width="434" tile >
-        <v-tabs>
+        <v-tabs  show-arrows="center">
           <v-tab>
             <v-icon left>mdi-account</v-icon>Professor
           </v-tab>
