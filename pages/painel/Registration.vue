@@ -119,7 +119,7 @@ export default {
       }
 
       this.$ls.set('usuarios', dados)
-      this.$router.push('/Classes')
+      this.$router.push('/Cursos')
     },
 
     cancelar () {

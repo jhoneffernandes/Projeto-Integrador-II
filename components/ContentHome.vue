@@ -259,7 +259,7 @@ export default {
   },
   methods: {
     conhecer() {
-      this.$router.push("/classes");
+      this.$router.push("/Cursos");
     },
 
     validate() {

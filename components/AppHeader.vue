@@ -11,20 +11,20 @@
       <div class="flex-grow-1"></div>
       <v-layout justify-end align-content-center>
         <v-toolbar-items v-if="$vuetify.breakpoint.lgAndUp">
-          <router-link to="/Classes">
+          <router-link to="/Cursos">
             <v-btn class="botao" tile="" text>Cursos</v-btn>
           </router-link>
           <router-link to="/Professores">
             <v-btn class="botao" tile="" text>Professores</v-btn>
           </router-link>
-          <router-link to="/About">
+          <router-link to="/Sobre">
             <v-btn class="botao" tile="" text>Sobre</v-btn>
           </router-link>
 
-          <router-link to="/painel/Login">
+          <router-link to="/painel/Entrar">
             <v-btn dark="" class="mx-2 primary">Acessar Conta</v-btn>
           </router-link>
-          <router-link to="/painel/Registration">
+          <router-link to="/painel/Registrar">
             <v-btn dark="" class="mx-2 primary">Registrar</v-btn>
           </router-link>
 
@@ -41,7 +41,7 @@
         <v-divider></v-divider>
 
         <v-list-item-group>
-            <router-link to="/Classes">
+            <router-link to="/Cursos">
           <v-list-item>
               <v-list-item-title>Cursos</v-list-item-title>
           </v-list-item>
@@ -53,7 +53,7 @@
           </v-list-item>
             </router-link>
 
-            <router-link to="/About">
+            <router-link to="/Sobre">
           <v-list-item>
               <v-list-item-title>Sobre</v-list-item-title>
           </v-list-item>
@@ -61,14 +61,14 @@
 
           <v-divider></v-divider>
 
-            <router-link to="/painel/Login">
+            <router-link to="/painel/Entrar">
           <v-list-item>
               <v-list-item-title>Acesse sua conta</v-list-item-title>
           </v-list-item>
             </router-link>
 
 
-            <router-link to="/painel/Registration">
+            <router-link to="/painel/Registrar">
           <v-list-item>
               <v-list-item-title>Registre Sua Conta</v-list-item-title>
           </v-list-item>

@@ -21,7 +21,7 @@
           <p class="textop2 text-justify">
             Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
             <a
-              href="#/classes"
+              href="/Cursos"
             >clique aqui para ver os nossos cursos.</a>
           </p>
         </v-card-text>
