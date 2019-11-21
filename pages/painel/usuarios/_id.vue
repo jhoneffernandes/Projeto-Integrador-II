@@ -73,8 +73,8 @@ export default {
       id: this.$route.params.id,
       modo: this.$route.params.id == 'incluir' ? 'Incluir' : 'Editar',
       nome: '',
-      apelido: '',
       email: '',
+      cel: '',
       senha: '',
       valid: true,
       nomeRegras: [

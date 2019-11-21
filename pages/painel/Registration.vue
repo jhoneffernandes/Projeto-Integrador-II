@@ -1,154 +1,130 @@
 <template>
-  <div>
-    <v-divider></v-divider>
-      <v-row align="center" justify="center">
-        <v-col cols="12" sm="8" md="4">
-          <v-card class="elevation-12">
-            <v-toolbar color="indigo" dark flat>
-              <v-toolbar-title>Cadastro de usuário</v-toolbar-title>
-              <div class="flex-grow-1"></div>
-              <v-btn icon large @click="voltar">
-                <v-icon dark left @click="voltar">mdi-arrow-left</v-icon>
-              </v-btn>
-            </v-toolbar>
-            <v-form ref="form" id="registro" v-model="valid" lazy-validation>
-              <v-text-field class="mx-6" v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
+<div>
+    <AppDrawer/>
 
-              <v-text-field class="mx-6"
-                v-model="surname"
-                :counter="10"
-                :rules="surnameRules"
-                label="Sobrenome"
-                required
-              ></v-text-field>
+  <v-container>
 
-              <v-text-field class="mx-6" v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+    <v-form v-model="valid">
+      <v-card>
+        <v-card-title>Registro de usuário</v-card-title>
+        <v-card-text>
+          <v-text-field
+            v-model="nome"
+            :counter="50"
+            :rules="nomeRegras"
+            label="Nome completo"
+            required />
 
-              <v-text-field class="mx-6"
-                v-model="confemail"
-                :rules="confRules"
-                label="Confirme seu e-mail"
-                required
-              ></v-text-field>
+          <v-text-field
+            v-model="cel"
+            :counter="15"
+            :rules="celRegras"
+            label="Celular"
+            required />
 
-              <v-text-field class="mx-6"
-                v-model="cell"
-                v-mask="mask"
-                :rules="cellRules"
-                label="Celular"
-                required
-              ></v-text-field>
+              <v-text-field
+            v-model="cpf"
+            :counter="15"
+            :rules="cpfRegras"
+            label="CPF"
+            required />
 
-              <v-text-field class="mx-6"
-                v-model="password"
-                :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
-                :type="show1 ? 'text' : 'password'"
-                :rules="passRules"
-                label="Senha"
-                @click:append="show1 = !show1"
-                required
-              ></v-text-field>
+          <v-text-field
+            v-model="email"
+            :counter="100"
+            :rules="emailRegras"
+            label="E-mail"
+            autocomplete="new-password"
+            required />
 
-              <v-text-field class="mx-6"
-                v-model="confpass"
-                :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
-                :type="show2 ? 'text' : 'password'"
-                :rules="confpassRules"
-                label="Confirme sua senha"
-                @click:append="show2 = !show2"
-                required
-              ></v-text-field>
-
-              <v-checkbox
-                v-model="checkbox"
-                :rules="[v => !!v || 'Você precisa aceitar para continuar!']"
-                label="Declaro ter lido e estar de acordo com o Contrato de Prestação de Serviços."
-                required
-              ></v-checkbox>
-
-              <v-btn color="error" :disabled="!valid" class="mr-4" @click="validate">Cadastrar</v-btn>
-              <v-btn color="success" class="mr-4" @click="reset">Limpar campos</v-btn>
-            </v-form>
-          </v-card>
-        </v-col>
-      </v-row>
-  </div>
+          <v-text-field
+            type="password"
+            v-model="senha"
+            :counter="50"
+            :rules="senhaValidacao"
+            label="Senha"
+            autocomplete="new-password" />
+        </v-card-text>
+        <v-card-actions>
+          <v-btn color="primary" @click="salvar" :disabled="!valid">
+            <v-icon small class="mr-2">mdi-content-save</v-icon>
+            Salvar
+          </v-btn>
+          <v-btn color="secondary" text @click="cancelar">
+            <v-icon small class="mr-2">mdi-undo</v-icon>
+            Cancelar
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-form>
+  </v-container>
+</div>
 </template>
 
 <script>
-import { mask } from "vue-the-mask";
-
+import AppDrawer from '~/components/AppDrawer'
 export default {
-  directives: {
-    mask
+  components: {
+      AppDrawer
   },
-  data() {
+  data () {
     return {
-      name: "",
-      surname: "",
-      email: "",
-      confemail: "",
-      cell: "",
-      password: "",
-      confpass: ""
-    };
+      id: this.$route.params.id,
+      nome: '',
+      email: '',
+      cel: '',
+      senha: '',
+      valid: true,
+      nomeRegras: [
+        v => !!v || 'Nome completo é obrigatório',
+        v => (v && v.length <= 50) || 'Nome completo deve ter no máximo 50 caracteres'
+      ],
+      celRegras: [
+        v => !!v || 'Celular é obrigatório',
+        v => (v && v.length <= 15) || 'Celular deve ter no máximo 15 caracteres'
+      ],
+      cpfRegras: [
+        v => !!v || 'CPF é obrigatório',
+        v => (v && v.length <= 15) || 'CPF deve ter no máximo 15 caracteres'
+      ],
+      emailRegras: [
+        v => !!v || 'E-mail é obrigatório',
+        v => (v && v.length <= 100) || 'E-mail deve ter no máximo 100 caracteres',
+        v => /.+@.+\..+/.test(v) || 'E-mail deve ter um formato válido'
+      ],
+      senhaValidacao: [
+        v => this.modo == 'Incluir' && (!!v || 'Senha é obrigatória'),
+        v => this.modo == 'Incluir' && ((v && v.length <= 100) || 'Senha deve ter no máximo 50 caracteres')
+      ]
+    }
   },
-  head: {
-    titleTemplate: '%s - Registrar conta',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Página para usuários se registrarem na Diorama Cursos online' }
-    ]
-  },
-
-  data: () => ({
-    mask: "(###)-####-####",
-    show1: false,
-    show2: false,
-    valid: true,
-
-    name: "",
-    nameRules: [
-      v => !!v || "O nome é obrigatório",
-      v =>
-        (v && v.length <= 10) ||
-        "O nome de usuário deve ser menor que 10 caractéres"
-    ],
-
-    surname: "",
-    surnameRules: [
-      v => !!v || "O Sobrenome é obrigatório",
-      v =>
-        (v && v.length <= 10) || "O Sobrenome deve ser menor que 10 caractéres"
-    ],
-
-    
-
-    checkbox: false
-  }),
 
   methods: {
-    validate() {
-      if (this.$refs.form.validate()) {
-        (this.snackbar = true),
-          this.$ls.set("name", this.name),
-          this.$ls.set("email", this.email),
-          this.$ls.set("confemail", this.confRules),
-          this.$ls.set("surname", this.surname),
-          this.$ls.set("cell", this.cell),
-          this.$ls.set("password", this.password),
-          this.$ls.set("confpass", this.confpassRules),
-          this.$router.push("/painel/Painel");
-      }
+    gerarId () {
+      return Math.round(Math.random() * 9999)
     },
 
-    reset() {
-      this.$refs.form.reset();
+    salvar () {
+      let dados = this.$ls.get('usuarios')
+
+      if (this.valid == true) {
+        dados.push({
+          id: this.gerarId(),
+          nome: this.nome,
+          cel: this.cel,
+          cpf: this.cpf,
+          email: this.email,
+          senha: this.senha
+        })
+      }
+
+      this.$ls.set('usuarios', dados)
+      this.$router.push('/Classes')
     },
-    voltar() {
-      this.$router.push("/");
+
+    cancelar () {
+      this.$router.push('/')
     }
   }
-};
+}
 </script>
