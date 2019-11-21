@@ -18,8 +18,8 @@
       </v-row>
     </v-layout>
 
-    <v-row justify="center" class="my-12">
-      <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
+    <v-row justify="center">
+      <v-card fill-height width="100%" color="blue" dark elevation="01">
         <v-row justify="center">
           <v-card-title
             class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
