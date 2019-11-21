@@ -74,11 +74,11 @@
       </v-row>
 
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
-        <v-row justify="center" class="flex-wrap">
+        <v-row justify="center" class="flex-wrap ">
             <router-link
                     v-for="c of cursosDesign" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
@@ -86,14 +86,14 @@
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
                       <v-card-title
-                        class="align-center justify-center fill-height"
+                        class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
+                    
+                      <v-card-text class="textopadrao black--text">
                         <H1>Preço: R$ {{ c.preco }}</H1>
                       </v-card-text>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
+                     
+                      <v-card-text class="textopadrao black--text">
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
@@ -129,7 +129,7 @@
        <router-link
                     v-for="c of cursosModelagem" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6">
                       <v-img
                         contain
                         width="18rem"
@@ -137,14 +137,14 @@
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
                       <v-card-title
-                        class="align-center justify-center fill-height"
+                        class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
+                     
+                      <v-card-text class="textopadrao black--text">
                         <H1>Preço: R$ {{ c.preco }}</H1>
                       </v-card-text>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
+                     
+                      <v-card-text class="textopadrao black--text">
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
@@ -181,7 +181,7 @@
        <router-link
                     v-for="c of cursosDesenvolvimento" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
@@ -189,15 +189,15 @@
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
                       <v-card-title
-                        class="align-center justify-center fill-height"
+                        class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
-                        <H1>Preço: R$ {{ c.preco }}</H1>
+                     
+                      <v-card-text class="textopadrao black--text">
+                        <h1 >Preço: R$ {{ c.preco }}</h1>
                       </v-card-text>
-                      <v-divider></v-divider>
-                      <v-card-text class="textopadrao">
-                        <H1>Duração: {{ c.duracao }}</H1>
+                    
+                      <v-card-text class="textopadrao black--text">
+                        <h1>Duração: {{ c.duracao }}</h1>
                       </v-card-text>
                       <v-card-text class="text-center">
                         <v-btn color="primary">Saiba mais</v-btn>
