@@ -1,7 +1,6 @@
 <template>
   <v-container pa-0 ma-0 fluid>
     <AppHeader />
-    
 
     <v-layout align-center justify-center text-center class="my-5">
       <v-row>
@@ -28,85 +27,80 @@
       </v-row>
     </v-layout>
 
-    <v-row align="center" justify="center" id="principal" class="aolado">
+    <v-row v-for="p of professores" :key="p.id" align="center" justify="center"  id="principal">
+      <v-col lg="4" md="4" sm="6" xl="5">
+        <v-card class="ml-5 mb-5 tamanhocard" max-width="434" tile>
+          <v-tabs show-arrows="center">
+            <v-tab>
+              <v-icon left>mdi-account</v-icon>Professor
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+            </v-tab>
+            <v-tab>
+              <v-icon left>mdi-application</v-icon>Cursos
+            </v-tab>
 
-      <v-col lg="4" md="4" sm="6"  xl="5">
-      <v-card class="ml-5 mb-5 tamanhocard" max-width="434" tile>
-        <v-tabs v-for="p of professores" :key="p.id" show-arrows="center">
-          <v-tab>
-            <v-icon left>mdi-account</v-icon>Professor
-          </v-tab>
-          <v-tab>
-            <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
-          </v-tab>
-          <v-tab>
-            <v-icon left>mdi-application</v-icon>Cursos
-          </v-tab>
-
-          <v-tab-item>
-            <v-card flat>
-              <v-img height="100%" :src="require('../assets/banners/background.png')">
-                <v-row >
-                  <v-col align-self="start" class="pa-0" cols="12">
-                    <v-avatar class="profile" color="grey" size="164" tile>
-                      <v-img :src="require(`../assets/professores/${p.imagem}.jpg`)"
->
-                      </v-img>
-                    </v-avatar>
-                  </v-col>
-                  <v-col class="py-0">
-                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
-                      <v-list-item-content>
-                        <v-list-item-title class="title">{{ p.nome }}</v-list-item-title>
-                        <v-list-item-subtitle>{{ p.area }}</v-list-item-subtitle>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-col>
-                </v-row>
-              </v-img>
-            </v-card>
-          </v-tab-item>
-          <v-tab-item>
-            <v-card flat>
-              <v-card-text>
-                <v-list-item-title class="title">Seu Currículo</v-list-item-title>
-                <ul class="lista">
-                  <li>{{ p.curriculo }}</li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-          <v-tab-item>
-            <v-card flat>
-              <v-card-text>
-                <v-list-item-content>
-                  <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
-                </v-list-item-content>
-                <ul class="lista">
-                  <li>{{ p.cursolecionado }}</li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-        </v-tabs>
-      </v-card>
-</v-col>
+            <v-tab-item >
+              <v-card flat>
+                <v-img height="100%" :src="require('../assets/banners/background.png')">
+                  <v-row>
+                    <v-col align-self="start" class="pa-0" cols="12">
+                      <v-avatar class="profile" color="grey" size="164" tile>
+                        <v-img :src="require(`../assets/professores/${p.imagem}.jpg`)"></v-img>
+                      </v-avatar>
+                    </v-col>
+                    <v-col class="py-0">
+                      <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                        <v-list-item-content>
+                          <v-list-item-title class="title">{{ p.nome }}</v-list-item-title>
+                          <v-list-item-subtitle>{{ p.area }}</v-list-item-subtitle>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-col>
+                  </v-row>
+                </v-img>
+              </v-card>
+            </v-tab-item>
+            <v-tab-item>
+              <v-card flat>
+                <v-card-text>
+                  <v-list-item-title class="title">Seu Currículo</v-list-item-title>
+                  <ul class="lista">
+                    <li>{{ p.curriculo }}</li>
+                  </ul>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+            <v-tab-item>
+              <v-card flat>
+                <v-card-text>
+                  <v-list-item-content>
+                    <v-list-item-title class="title">Este professor ministra os cursos abaixo:</v-list-item-title>
+                  </v-list-item-content>
+                  <ul class="lista">
+                    <li>{{ p.cursolecionado }}</li>
+                  </ul>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+          </v-tabs>
+        </v-card>
+      </v-col>
     </v-row>
 
-   
-      <section class="mt-5 mb-5">
-       
-        <v-row justify="center">
-          <v-card height="100%" width="100rem" dark class="depoimento">
-            <p
-              class="mx-5"
-            >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
-            <p class="mx-5">Luciano Renato | Santos- SP</p>
-          </v-card>
-        </v-row>
-           
-      </section>
- 
+    
+
+    <section class="mt-5 mb-5">
+      <v-row justify="center">
+        <v-card height="100%" width="100rem" dark class="depoimento">
+          <p
+            class="mx-5"
+          >"Achei o curso bastante dinâmico, fluido. Fácil de levar até o final e com informação suficiente para que possamos caminhar sozinhos."</p>
+          <p class="mx-5">Luciano Renato | Santos- SP</p>
+        </v-card>
+      </v-row>
+    </section>
 
     <AppNewsletter />
   </v-container>
@@ -117,7 +111,6 @@ import AppNewsletter from "../components/AppNewsletter";
 export default {
   data() {
     return {
-
       professores: [],
 
       textoinicio1:
@@ -127,12 +120,11 @@ export default {
   },
   components: {
     AppHeader,
-    AppNewsletter,
-   
+    AppNewsletter
   },
-  created(){
-    const professores = this.$ls.get('professores')
-    if (professores) this.professores = professores
+  created() {
+    const professores = this.$ls.get("professores");
+    if (professores) this.professores = professores;
   },
   head: {
     titleTemplate: "%s - Professores",
@@ -148,47 +140,20 @@ export default {
     ]
   }
 };
-
 </script>
 
 
 <style>
-.ttl {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .textop2 {
   font-size: 1rem;
-}
-.profimg {
-  margin: 10px;
-  border-radius: 100rem;
 }
 
 .depoimento p {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.linha {
-  background-color: rgb(0, 0, 185);
-  color: white;
-  width: auto;
-  font-size: 1.7rem;
-}
-.quebra {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 .lista {
   color: black;
-}
-.aolado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -196,16 +161,8 @@ export default {
     font-size: 1.3rem;
   }
 }
-
-@media (max-width: 700px) {
-  .aolado {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 370px){
-  .tamanhocard{
+@media (max-width: 370px) {
+  .tamanhocard {
     height: 16rem;
     width: 19rem;
   }

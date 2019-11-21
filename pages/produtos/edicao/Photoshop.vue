@@ -253,9 +253,16 @@
       </v-card>
     </v-row>
 
-    <div class="cadastro-barra display-1 font-weight-bold blue lighten-4">
-      <p>Cadastros</p>
-    </div>
+   <v-row>
+      <section class="depoimento mt-5 mb-5">
+        <v-col md="10" sm="10">
+          <p
+            class="ml-5"
+          >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
+          <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
+        </v-col>
+      </section>
+    </v-row>
 
     <v-row class="ml-6" justify="center" align="center">
       <AppHelp />
@@ -361,12 +368,6 @@ export default {
 </script>
 
 <style>
-.cadastro-barra {
-  text-align: center;
-  background-color: azure;
-  color: black;
-  padding: 10px;
-}
 .curso-item {
   background-color: #2196f3;
 }

@@ -23,20 +23,20 @@
 
               <v-text-field
             v-model="area"
-            :counter="15"
+            :counter="50"
             :rules="areaRegras"
             label="area"
             required />
               <v-text-field
             v-model="curriculo"
-            :counter="15"
+            :counter="500"
             :rules="curriculoRegras"
             label="curriculo"
             required />
 
             <v-text-field
             v-model="cursolecionado"
-            :counter="15"
+            
             :rules="cursoRegras"
             label="Curso lecionado"
             required />
@@ -84,7 +84,7 @@ export default {
       ],
        curriculoRegras: [
         v => !!v || 'Currículo é obrigatório',
-        v => (v && v.length <= 50) || 'Currículo deve ter no máximo 50 caracteres'
+        v => (v && v.length <= 500) || 'Currículo deve ter no máximo 500 caracteres'
       ],
        cursoRegras: [
         v => !!v || 'Curso lecionado é obrigatório',

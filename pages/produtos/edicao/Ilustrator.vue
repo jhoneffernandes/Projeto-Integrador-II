@@ -39,7 +39,9 @@
       </v-row>
     </v-col>
 
-    <section class="centro fundo tmn backgroundt">Conteúdo</section>
+    <section class="centro fundo tmn backgroundt black--text">
+      <p class="fundo-text font-weight-bold">Conteúdo</p>
+    </section>
 
     <v-col md="5" class="mx-auto">
       <v-expansion-panels>
@@ -221,8 +223,8 @@
       </div>
     </section>
 
-    <v-row>
-      <v-card class="ml-5 mb-5" max-width="30rem" tile>
+    <v-row class="mt-9 mb-5" justify="center" align="center">
+      <v-card class="ml-5 mb-5 tamanhocardprof" max-width="20rem" tile>
         <v-img height="100%" :src="require('~/assets/banners/background.png')">
           <v-row align="end" class="fill-height">
             <v-col align-self="start" class="pa-0" cols="12">
@@ -432,9 +434,10 @@ export default {
   height: 10rem;
   width: 100rem;
 }
-.dks {
+.fundo-text {
   background-color: rgba(252, 252, 252, 0.623);
 }
+
 
 .emlinha {
   display: flex;

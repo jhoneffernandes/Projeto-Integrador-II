@@ -76,7 +76,7 @@ export default {
           url: 'edicao/Photoshop',
           imagem: 'photoshop',
           nome: 'Adobe Photoshop CS6',
-          preco: '150,00',
+          preco: '599,00',
           duracao: '40 horas'
         },
 
@@ -87,7 +87,7 @@ export default {
           url: 'modelagem/Blender',
           imagem: 'blender',
           nome: 'Blender',
-          preco: '120,00',
+          preco: '384,00',
           duracao: '40 horas'
         },
          {
@@ -97,7 +97,7 @@ export default {
           url: 'edicao/Corel',
           imagem: 'corel',
           nome: 'Corel Draw X8',
-          preco: '120,00',
+          preco: '144,00',
           duracao: '40 horas'
         },
               {
@@ -107,7 +107,7 @@ export default {
           url: 'edicao/Ilustrator',
           imagem: 'ilustrator',
           nome: 'Adobe Illustrator CS6',
-          preco: '800,00',
+          preco: '599,00',
           duracao: '40 horas'
         },
               {
@@ -117,7 +117,7 @@ export default {
           url: 'edicao/After',
           imagem: 'after',
           nome: 'Adobe After Effects CS6',
-          preco: '880,00',
+          preco: '129,00',
           duracao: '40 horas'
         },
               {
@@ -127,7 +127,7 @@ export default {
           url: 'edicao/Premiere',
           imagem: 'premiere',
           nome: 'Adobe Premiere Pro CS6',
-          preco: '800,00',
+          preco: '294,00',
           duracao: '40 horas'
         },
       {
@@ -137,7 +137,7 @@ export default {
           url: 'modelagem/Max',
           imagem: 'max',
           nome: '3ds Max',
-          preco: '120,00',
+          preco: '579,00',
           duracao: '40 horas'
         },
               {
@@ -147,7 +147,7 @@ export default {
           url: 'modelagem/Zbrush',
           imagem: 'zbrush',
           nome: 'Zbrush',
-          preco: '120,00',
+          preco: '220,00',
           duracao: '40 horas'
         },
               {
@@ -157,7 +157,7 @@ export default {
           url: 'modelagem/Maya',
           imagem: 'maya',
           nome: 'Maya',
-          preco: '120,00',
+          preco: '579,00',
           duracao: '40 horas'
         },
               {
@@ -167,7 +167,7 @@ export default {
           url: 'modelagem/Cinema',
           imagem: 'cinema',
           nome: 'Cinema 4D',
-          preco: '120,00',
+          preco: '579,00',
           duracao: '40 horas'
         },
               {
@@ -177,7 +177,7 @@ export default {
           url: 'web/Javascript',
           imagem: 'javascript',
           nome: 'JavaScript',
-          preco: '548,00',
+          preco: '252,00',
           duracao: '40 horas'
         },
                      {
@@ -187,7 +187,7 @@ export default {
           url: 'web/Java',
           imagem: 'java',
           nome: 'Java',
-          preco: '548,00',
+          preco: '200,00',
           duracao: '40 horas'
         },
                      {
@@ -197,7 +197,7 @@ export default {
           url: 'web/Python',
           imagem: 'python',
           nome: 'Python',
-          preco: '548,00',
+          preco: '260,00',
           duracao: '40 horas'
         },
                      {
@@ -207,7 +207,7 @@ export default {
           url: 'web/Php',
           imagem: 'php',
           nome: 'PHP',
-          preco: '548,00',
+          preco: '360,00',
           duracao: '40 horas'
         },
                      {
@@ -217,7 +217,7 @@ export default {
           url: 'web/C',
           imagem: 'c',
           nome: 'C#',
-          preco: '548,00',
+          preco: '268,00',
           duracao: '40 horas'
         },
                      {
@@ -227,7 +227,7 @@ export default {
           url: 'web/HtmlCss',
           imagem: 'htmlecss',
           nome: 'HTML 5 + CSS',
-          preco: '548,00',
+          preco: '120,00',
           duracao: '40 horas'
         },
       ]
