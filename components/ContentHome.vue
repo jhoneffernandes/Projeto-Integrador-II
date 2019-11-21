@@ -72,132 +72,35 @@
           </v-row>
         </v-card>
       </v-row>
+
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center" class="flex-wrap">
-          <router-link to="/produtos/edicao/Photoshop">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/photoshop.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Adobe Photoshop cs6</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 599,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-               
-                  <v-btn color="primary">Saiba mais</v-btn>
-               
-              </v-card-text>
-            </v-card>
-          </router-link>
-
-            <router-link to="/produtos/edicao/Corel">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/corel.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Corel Draw x8</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 144,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-              
-                  <v-btn color="primary">Saiba mais</v-btn>
-               
-              </v-card-text>
-            </v-card>
-          </router-link>
-
-        <router-link to="/produtos/edicao/Ilustrator">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/ilustrator.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Adobe Illustrator cs6</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 730,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-                
-                  <v-btn color="primary">Saiba mais</v-btn>
-               
-              </v-card-text>
-            </v-card>
-        </router-link>
-
-           <router-link to="/produtos/edicao/After">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/after.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Adobe After effects cs6</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 129,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-               
-                  <v-btn color="primary">Saiba mais</v-btn>
-               
-              </v-card-text>
-            </v-card>
-           </router-link>
-
-            <router-link to="/produtos/edicao/Premiere">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/premiere.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Adobe Premiere Pro cs6</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 294,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-              
-                  <v-btn color="primary">Saiba mais</v-btn>
-                
-              </v-card-text>
-            </v-card>
-          </router-link>
+            <router-link
+                    v-for="c of cursosDesign" :key="c.id"
+                    :to="`/produtos/${c.url}`">
+                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                      <v-img
+                        contain
+                        width="18rem"
+                        height="18rem"
+                        :src="require(`../assets/cursos/${c.imagem}.png`)"
+                      ></v-img>
+                      <v-card-title
+                        class="align-center justify-center fill-height"
+                      >{{ c.nome }}</v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Preço: R$ {{ c.preco }}</H1>
+                      </v-card-text>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Duração: {{ c.duracao }}</H1>
+                      </v-card-text>
+                      <v-card-text class="text-center">
+                        <v-btn color="primary">Saiba mais</v-btn>
+                      </v-card-text>
+                    </v-card>
+                 </router-link>
         </v-row>
       </v-col>
     </v-row>
@@ -223,122 +126,33 @@
 
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center">
-        <router-link to="/produtos/modelagem/Blender">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/blender.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Blender</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 384,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-        </router-link>
+       <router-link
+                    v-for="c of cursosModelagem" :key="c.id"
+                    :to="`/produtos/${c.url}`">
+                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                      <v-img
+                        contain
+                        width="18rem"
+                        height="18rem"
+                        :src="require(`../assets/cursos/${c.imagem}.png`)"
+                      ></v-img>
+                      <v-card-title
+                        class="align-center justify-center fill-height"
+                      >{{ c.nome }}</v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Preço: R$ {{ c.preco }}</H1>
+                      </v-card-text>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Duração: {{ c.duracao }}</H1>
+                      </v-card-text>
+                      <v-card-text class="text-center">
+                        <v-btn color="primary">Saiba mais</v-btn>
+                      </v-card-text>
+                    </v-card>
+                 </router-link>
 
-         <router-link to="/produtos/modelagem/Max">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/max.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">3ds Max</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 579,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-         </router-link>
-
-          <router-link to="/produtos/modelagem/Zbrush">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/zbrush.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Zbrush</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 220,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-          </router-link>
-
-           <router-link to="/produtos/modelagem/Maya">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/maya.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Maya</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 579,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-           </router-link>
-
-          <router-link to="/produtos/modelagem/Cinema">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/cinema.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Cinema 4d</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 579,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-          </router-link>
         </v-row>
       </v-col>
     </v-row>
@@ -351,164 +165,50 @@
       <br />
     </v-row>
 
-    <v-row justify="center" dense class="my-5">
+    <v-row dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
         <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
             <v-card-title
-              class="align-center text-center ma-2 fontetitulo justify-center flex-nowrap"
-            >Cursos de Desenvolvimento web</v-card-title>
+              class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
+            >Cursos de Modelagem 3d</v-card-title>
           </v-row>
         </v-card>
       </v-row>
+
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center">
-         
-            <router-link to="/produtos/web/Javascript">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/javascript.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">JavaScript</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 252,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
+       <router-link
+                    v-for="c of cursosDesenvolvimento" :key="c.id"
+                    :to="`/produtos/${c.url}`">
+                    <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
+                      <v-img
+                        contain
+                        width="18rem"
+                        height="18rem"
+                        :src="require(`../assets/cursos/${c.imagem}.png`)"
+                      ></v-img>
+                      <v-card-title
+                        class="align-center justify-center fill-height"
+                      >{{ c.nome }}</v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Preço: R$ {{ c.preco }}</H1>
+                      </v-card-text>
+                      <v-divider></v-divider>
+                      <v-card-text class="textopadrao">
+                        <H1>Duração: {{ c.duracao }}</H1>
+                      </v-card-text>
+                      <v-card-text class="text-center">
+                        <v-btn color="primary">Saiba mais</v-btn>
+                      </v-card-text>
+                    </v-card>
+                 </router-link>
 
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
-
-            <router-link to="/produtos/web/Java">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/java.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Java</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 200,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
-
-          
-            <router-link to="/produtos/web/Python">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/python.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Python</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 260,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
-
-          
-            <router-link to="/produtos/web/Php">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/php.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">PHP</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 360,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
-
-          
-            <router-link to="/produtos/web/C">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img height="18rem" contain width="18rem" :src="require('../assets/cursos/c.png')"></v-img>
-              <v-card-title class="align-center justify-center fill-height">C#</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 268,99</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
-
-         
-            <router-link to="/produtos/web/HtmlCss">
-            <v-card color="grey lighten-4" elevation="01" class="mx-6 my-6">
-              <v-img
-                height="18rem"
-                contain
-                width="18rem"
-                :src="require('../assets/cursos/htmlecss.png')"
-              ></v-img>
-              <v-card-title class="align-center justify-center fill-height">Html5 e CSS3</v-card-title>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Preço: R$ 120,00</H1>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-card-text class="textopadrao">
-                <H1>Duração: 40 horas</H1>
-              </v-card-text>
-
-              <v-card-text class="text-center">
-                <v-btn color="primary">Saiba mais</v-btn>
-              </v-card-text>
-            </v-card>
-            </router-link>
         </v-row>
       </v-col>
     </v-row>
+  
 
     <section class="justify">
       <v-row justify="center">
@@ -530,10 +230,28 @@ import AppNewsletter from "./AppNewsletter";
 export default {
   data() {
     return {
+            cursos: [],
       bemvindos: "Bem vindos a Diorama cursos online!",
       apresentacao:
         "Escola on-line que fornece os melhores cursos sobre design, programação e suas diversas variações, venha conhecer nossos cursos!"
     };
+  },
+
+  created(){
+    const cursos = this.$ls.get('cursos')
+    if (cursos) this.cursos = cursos
+  },
+  computed: {
+    cursosDesign () {
+      return this.cursos.filter(c => c.categoria == 'Design')
+    },
+
+    cursosModelagem () {
+      return this.cursos.filter(c => c.categoria == 'Modelagem 3D')
+    },
+        cursosDesenvolvimento () {
+      return this.cursos.filter(c => c.categoria == 'Desenvolvimento Web')
+    }
   },
 
   components: {
