@@ -8,19 +8,20 @@
       </v-btn>
     </section>
 
-    <v-card outlined class="emlinha blue">
-      <v-col class="cortexto" md="5" sm="5" xl="2">
-        <p class="nomecurso">
-          Curso
-          <br />
-          {{nomecurso}}
-        </p>
+      
 
-        <div class="text-center">
-          <v-rating v-model="rating" color="yellow"></v-rating>
-        </div>
-      </v-col>
-    </v-card>
+      <section class="curso-item">
+          <p class="nomecurso centered">
+            Curso
+            <br />
+            {{nomecurso}}
+          </p>
+  
+          <div class="text-center">
+            <v-rating v-model="rating" color="yellow"></v-rating>
+          </div>
+      </section>
+
 
     <v-col lg="10" md="12" sm="12">
       <v-row class="ml-5 fdn">
@@ -39,7 +40,7 @@
       <p class="dks">Conteúdo</p>
     </section>
 
-    <v-col md="5" class="mx-auto">
+      <v-col md="5" class="mx-auto">
       <v-expansion-panels>
         <v-expansion-panel>
           <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
@@ -161,6 +162,8 @@
       </v-expansion-panels>
     </v-col>
 
+
+
     <AppCertificado />
 
     <section class="fundo-items">
@@ -220,7 +223,7 @@
     </section>
 
     <v-row>
-      <v-card class="ml-5 mb-5 tamanhocardprof" max-width="30rem" tile>
+      <v-card class="ml-5 mb-5 tamanhocardprof" max-width="20rem" tile>
         <v-img height="100%" :src="require('~/assets/banners/background.png')">
           <v-row align="end" class="fill-height">
             <v-col align-self="start" class="pa-0" cols="12">
@@ -255,20 +258,11 @@
       </v-card>
     </v-row>
 
-    <v-row>
-      <section class="depoimento mt-5 mb-5">
-        <v-col md="10" sm="10">
-          <p
-            class="ml-5"
-          >"Já assisti à 1ª aula do curso de Adobe Photoshop CS6, e já fiz os exercícios propostos pós-aula, que, aliás, me deixou bastante empolgado por seu uma aula clara e coesa para com os iniciantes. Parabéns a equipe da Diorama"</p>
-          <p class="ml-5">Luciano Renato | Piracicaba - SP</p>
-        </v-col>
-      </section>
-    </v-row>
-    <v-row class="ml-8" justify="center" align="center">
-      <AppHelp />
-      <AppNewsletter />
-    </v-row>
+      <v-row class="ml-5" align="center" justify="center">
+        <AppHelp/>
+        <AppNewsletter/>
+      </v-row>
+
   </v-container>
 </template>
 <script>
@@ -369,6 +363,9 @@ export default {
 </script>
 
 <style>
+.curso-item{
+  background-color: #2196F3;
+}
 .container-item{
   background-color: white;
   display: flex;
@@ -390,8 +387,8 @@ export default {
 }
 .titulo-item {
   padding: 10px;
-  background-color: blue;
-  color: cyan;
+  background-color: #2196F3;
+  color: rgb(1, 10, 10);
   font-size: 2rem;
 }
 .nome-item {
@@ -473,14 +470,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
-@media (min-width: 600px) {
-  .recomenda-item {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-@media (max-width: 370px) {
+@media (max-width: 580px) {
   .tamanhocardprof {
     height: 16rem;
     width: 16rem;
@@ -500,6 +490,13 @@ export default {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .recomenda-item {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 </style>
