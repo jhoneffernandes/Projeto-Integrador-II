@@ -1,8 +1,8 @@
 <template>
     
       <v-col lg="5" md="5" sm="5">
-        <v-card align="center" width="30rem" height="35rem">  
-          <section class="centro agd ">
+        <v-card  width="30rem" height="35rem">  
+          <section class="centro agd headline">
             Precisa de ajuda?
             <br />Preencha o formulario com sua dúvida.
           </section>

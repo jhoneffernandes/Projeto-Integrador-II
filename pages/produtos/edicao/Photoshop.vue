@@ -8,20 +8,17 @@
       </v-btn>
     </section>
 
-      
+    <section class="curso-item">
+      <p class="nomecurso centered">
+        Curso
+        <br />
+        {{nomecurso}}
+      </p>
 
-      <section class="curso-item">
-          <p class="nomecurso centered">
-            Curso
-            <br />
-            {{nomecurso}}
-          </p>
-  
-          <div class="text-center">
-            <v-rating v-model="rating" color="yellow"></v-rating>
-          </div>
-      </section>
-
+      <div class="text-center">
+        <v-rating v-model="rating" color="yellow"></v-rating>
+      </div>
+    </section>
 
     <v-col lg="10" md="12" sm="12">
       <v-row class="ml-5 fdn">
@@ -37,10 +34,10 @@
     </v-col>
 
     <section class="centro fundo tmn backgroundt black--text">
-      <p class="dks">Conteúdo</p>
+      <p class="fundo-text font-weight-bold">Conteúdo</p>
     </section>
 
-      <v-col md="5" class="mx-auto">
+    <v-col md="5" class="mx-auto">
       <v-expansion-panels>
         <v-expansion-panel>
           <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
@@ -162,12 +159,10 @@
       </v-expansion-panels>
     </v-col>
 
-
-
     <AppCertificado />
 
     <section class="fundo-items">
-      <h1 class="centered titulo-item mt-8">Recomendações</h1>
+      <h1 class="centered titulo-item mt-8 font-weight-bold display-1">Recomendações</h1>
       <div class="recomenda-item">
         <div>
           <v-img
@@ -212,17 +207,17 @@
     <section class="container-item mt-5 mb-5">
       <div class="apresenta-item">
         <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>
-        <h1>Profesor deste curso</h1>
+        <h1 class="font-weight-bold headline">Profesor deste curso</h1>
       </div>
 
       <div>
-         <router-link to="/Professores">
+        <router-link to="/Professores">
           <v-btn color="primary" text>Ver todos os professores</v-btn>
         </router-link>
       </div>
     </section>
 
-    <v-row>
+    <v-row class="mt-9 mb-5" justify="center" align="center">
       <v-card class="ml-5 mb-5 tamanhocardprof" max-width="20rem" tile>
         <v-img height="100%" :src="require('~/assets/banners/background.png')">
           <v-row align="end" class="fill-height">
@@ -246,7 +241,7 @@
           <v-list-item-title class="title ml-5 black--text">Currículo do Professor</v-list-item-title>
         </v-list-item-content>
         <ul class="lista ml-4 black--text">
-          <li>Formado em Ciência da Computação </li>
+          <li>Formado em Ciência da Computação</li>
           <li>Pós-graduado em Business Intelligence</li>
           <li>Design Gráfico</li>
           <li>Web Designer</li>
@@ -258,11 +253,14 @@
       </v-card>
     </v-row>
 
-      <v-row class="ml-5" align="center" justify="center">
-        <AppHelp/>
-        <AppNewsletter/>
-      </v-row>
+    <div class="cadastro-barra display-1 font-weight-bold blue lighten-4">
+      <p>Cadastros</p>
+    </div>
 
+    <v-row class="ml-6" justify="center" align="center">
+      <AppHelp />
+      <AppNewsletter />
+    </v-row>
   </v-container>
 </template>
 <script>
@@ -363,10 +361,16 @@ export default {
 </script>
 
 <style>
-.curso-item{
-  background-color: #2196F3;
+.cadastro-barra {
+  text-align: center;
+  background-color: azure;
+  color: black;
+  padding: 10px;
 }
-.container-item{
+.curso-item {
+  background-color: #2196f3;
+}
+.container-item {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -387,9 +391,8 @@ export default {
 }
 .titulo-item {
   padding: 10px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: rgb(1, 10, 10);
-  font-size: 2rem;
 }
 .nome-item {
   display: flex;
@@ -414,7 +417,7 @@ export default {
   height: 10rem;
   width: 100rem;
 }
-.dks {
+.fundo-text {
   background-color: rgba(252, 252, 252, 0.623);
 }
 
@@ -485,7 +488,7 @@ export default {
   .tamanhorecomendacard {
     width: 20rem;
   }
-  .container-item{
+  .container-item {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
