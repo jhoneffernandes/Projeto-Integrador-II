@@ -57,19 +57,46 @@ export default {
     return {
       headers: [
         { text: 'Nome completo', value: 'nome' },
-        { text: 'Salário', value: 'salario' },
+        { text: 'Imagem do professor', value: 'imagem' },
+        { text: 'Área de atuação', value: 'area' },
+        { text: 'Currículo do professor', value: 'curriculo' },
         { text: 'Curso(s) lecionado(s)', value: 'cursolecionado' },
-        { text: 'E-mail', value: 'email' },
         { text: 'Ações', value: 'action', sortable: false, width: 100 }
       ],
 
-      professores: []
+      professores: [
+        {
+      nome: 'Lucas Souza',
+      id: 1,
+      imagem: 'prof1',
+      area: 'Web Designer',
+      curriculo: 'Formado em Ciência da Computação pela PUC-PR',
+      cursolecionado: 'Adobe Premiere CS6',
+        },
+        {
+      nome:  'Jorge Alcantara',
+      id: 2,
+      imagem: 'prof2',
+      area: 'Desenvolvedor de jogos',
+      curriculo: 'Pós-Graduação | Jogos E Animação Digital: Modelagem 3d, Game Design',
+      cursolecionado: 'Cinema 4D',
+        },
+        {
+      nome: 'Fabio Vasconcelos',
+      id: 3,
+      imagem: 'prof3',
+      area: 'Programador Sênior',
+      curriculo: 'Formado em Ciência da Computação pela PUC-PR',
+      cursolecionado: 'JavaScript',
+        }
+      ]
     }
   },
 
   created () {
     const professores = this.$ls.get('professores')
     if (professores) this.professores = professores
+        else this.$ls.set('professores', this.professores)
   },
 
   methods: {

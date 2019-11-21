@@ -15,10 +15,23 @@
             required />
 
           <v-text-field
-            v-model="salario"
+            v-model="imagem"
             :counter="15"
-            :rules="salarioRegras"
-            label="salario"
+            :rules="imagemRegras"
+            label="imagem"
+            required />
+
+              <v-text-field
+            v-model="area"
+            :counter="15"
+            :rules="areaRegras"
+            label="area"
+            required />
+              <v-text-field
+            v-model="curriculo"
+            :counter="15"
+            :rules="curriculoRegras"
+            label="curriculo"
             required />
 
             <v-text-field
@@ -27,15 +40,6 @@
             :rules="cursoRegras"
             label="Curso lecionado"
             required />
-
-          <v-text-field
-            v-model="email"
-            :counter="100"
-            :rules="emailRegras"
-            label="E-mail"
-            autocomplete="new-password"
-            required />
-
         
         </v-card-text>
         <v-card-actions>
@@ -65,26 +69,30 @@ export default {
       id: this.$route.params.id,
       modo: this.$route.params.id == 'incluir' ? 'Incluir' : 'Editar',
       nome: '',
-      salario: '',
+      imagem: '',
+      area: '',
+      curriculo: '',
       cursolecionado: '',
-      email: '',
       valid: true,
       nomeRegras: [
         v => !!v || 'Nome completo é obrigatório',
         v => (v && v.length <= 50) || 'Nome completo deve ter no máximo 50 caracteres'
       ],
+       areaRegras: [
+        v => !!v || 'Área lecionada é obrigatória',
+        v => (v && v.length <= 50) || 'Área lecionada deve ter no máximo 50 caracteres'
+      ],
+       curriculoRegras: [
+        v => !!v || 'Currículo é obrigatório',
+        v => (v && v.length <= 50) || 'Currículo deve ter no máximo 50 caracteres'
+      ],
        cursoRegras: [
         v => !!v || 'Curso lecionado é obrigatório',
         v => (v && v.length <= 50) || 'Curso lecionado deve ter no máximo 50 caracteres'
       ],
-      salarioRegras: [
-        v => !!v || 'salario é obrigatório',
-        v => (v && v.length <= 15) || 'salario deve ter no máximo 15 caracteres'
-      ],
-      emailRegras: [
-        v => !!v || 'E-mail é obrigatório',
-        v => (v && v.length <= 100) || 'E-mail deve ter no máximo 100 caracteres',
-        v => /.+@.+\..+/.test(v) || 'E-mail deve ter um formato válido'
+      imagemRegras: [
+        v => !!v || 'imagem é obrigatório',
+        v => (v && v.length <= 15) || 'imagem deve ter no máximo 15 caracteres'
       ]
     }
   },
@@ -96,8 +104,10 @@ export default {
       if (professor) {
         this.nome = professor.nome
         this.cursolecionado = professor.cursolecionado
-        this.salario = professor.salario
-        this.email = professor.email
+        this.imagem = professor.imagem
+        this.area = professor.area
+        this.curriculo = professor.curriculo
+
       }
     }
   },
@@ -116,15 +126,19 @@ export default {
           id: this.gerarId(),
           nome: this.nome,
           cursolecionado: this.cursolecionado,
-          salario: this.salario,
-          email: this.email,
+          imagem: this.imagem,
+          area: this.area,
+          curriculo: this.curriculo,
+
         })
       } else {
         const i = dadosprof.findIndex(u => u.id == this.id)
         dadosprof[i].nome = this.nome
         dadosprof[i].cursolecionado = this.cursolecionado
-        dadosprof[i].salario = this.salario
-        dadosprof[i].email = this.email
+        dadosprof[i].imagem = this.imagem
+        dadosprof[i].area = this.area
+        dadosprof[i].curriculo = this.curriculo
+
       }
 
       this.$ls.set('professores', dadosprof)
