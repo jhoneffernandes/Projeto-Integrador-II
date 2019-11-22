@@ -19,17 +19,15 @@
         <v-card-text>
           <p class="textop2 text-justify">
             Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
-            <a
-              href="/Cursos"
-            >clique aqui para ver os nossos cursos.</a>
+           <router-link to="/Cursos">clique aqui para ver os nossos cursos.</router-link>
           </p>
         </v-card-text>
       </v-row>
     </v-layout>
 
-    <v-row v-for="p of professores" :key="p.id" align="center" justify="center"  id="principal">
-      <v-col lg="4" md="4" sm="6" xl="5">
-        <v-card class="ml-5 mb-5 tamanhocard" max-width="434" tile>
+    <v-row align="center" justify="center"  id="principal">
+  
+        <v-card class="mx-12 mb-5 flex-row tamanhocard"  v-for="p of professores" :key="p.id" min-width="300px" max-width="450px" tile>
           <v-tabs show-arrows="center">
             <v-tab>
               <v-icon left>mdi-account</v-icon>Professor
@@ -41,7 +39,8 @@
               <v-icon left>mdi-application</v-icon>Cursos
             </v-tab>
 
-            <v-tab-item >
+            
+            <v-tab-item>
               <v-card flat>
                 <v-img height="100%" :src="require('../assets/banners/background.png')">
                   <v-row>
@@ -86,7 +85,6 @@
             </v-tab-item>
           </v-tabs>
         </v-card>
-      </v-col>
     </v-row>
 
     
