@@ -22,10 +22,10 @@
                 </v-form>
               </v-card-text>
               <v-card-actions class="flex-wrap">
-                <v-btn color="primary" @click="voltar">Voltar a página inicial</v-btn>
+                <v-btn class="my-3 mx-3" color="primary" @click="voltar">Voltar a página inicial</v-btn>
 
                 <div class="flex-grow-1"></div>
-                <v-btn color="primary" @click="acessar">Acessar</v-btn>
+                <v-btn class="my-3 mx-3" color="primary" @click="acessar">Acessar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>

@@ -2,13 +2,14 @@
   <v-container pa-0 ma-0 fluid>
     <AppHeader />
 
-    <v-layout align-center justify-center text-center class="my-5">
+      <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card min-width="auto" width="100%" max-width="auto" height="6rem" dark color="indigo">
+        <v-card tile width="100%" height="100%" dark color="indigo">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
-              <h2 class="tituloh flex-nowrap">{{textbannerprof}}</h2>
+              <h2 class="tituloh text-center">{{ textbannerprof }}</h2>
             </v-card-title>
+
           </v-layout>
         </v-card>
       </v-row>
@@ -27,7 +28,7 @@
 
     <v-row align="center" justify="center"  id="principal">
   
-        <v-card class="mx-12 mb-5 flex-row tamanhocard"  v-for="p of professores" :key="p.id" min-width="300px" max-width="450px" tile>
+        <v-card class="mx-12 mb-12 flex-row tamanhocard"  v-for="p of professores" :key="p.id" min-width="300px" max-width="450px" tile>
           <v-tabs show-arrows="center">
             <v-tab>
               <v-icon left>mdi-account</v-icon>Professor
@@ -154,11 +155,7 @@ export default {
   color: black;
 }
 
-@media (max-width: 600px) {
-  .tituloh {
-    font-size: 1.3rem;
-  }
-}
+
 @media (max-width: 370px) {
   .tamanhocard {
     height: 16rem;
