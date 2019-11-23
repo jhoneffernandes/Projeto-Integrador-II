@@ -6,8 +6,19 @@
         <v-card tile width="100%" height="100%" dark color="indigo">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
-              <h2 class="tituloh text-center">{{bemvindos}}</h2>
+              <v-btn @click="changeColor">teste</v-btn>
+              <h2 :class="[ isLoading ? 'white--text' : 'black--text' ]">{{bemvindos}}</h2>
             </v-card-title>
+
+
+ <v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+  <v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+
+  <br><br>
+  <div v-bind:style="{ fontSize: fontSize + 'rem' }">
+    Main content of website
+  </div>
+
 
             <v-card-text >
               <p  id="conteudo" class="textop">{{apresentacao}}</p>
@@ -229,6 +240,10 @@ import AppNewsletter from "../components/AppNewsletter";
 export default {
   data() {
     return {
+                    fontSize: 1.25,
+
+                isLoading: true,
+
             cursos: [],
       bemvindos: "Bem vindos a Diorama cursos online!",
       apresentacao:
@@ -290,6 +305,8 @@ export default {
     ]
   },
   methods: {
+       changeColor(){
+                    this.isLoading = !this.isLoading;},
     conhecer() {
       this.$router.push("/Cursos");
     },
