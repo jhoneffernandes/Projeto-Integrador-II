@@ -1,14 +1,20 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+    <div :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader/>
-
+    <v-row justify="center" align="end" class="my-5">
+<v-btn @click="changeColor">contraste</v-btn>
+<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+</v-row>
     <section class="mt-1">
       <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
         <v-icon dark left>mdi-arrow-left</v-icon>Voltar
       </v-btn>
     </section>
 
-    <section class="curso-item">
+    <section :class="[ isLoading ? 'blue' : 'black' ]">
       <p class="nomecurso centered">
         Curso
         <br />
@@ -21,12 +27,12 @@
     </section>
 
     <v-col lg="10" md="12" sm="12">
-      <v-row class="ml-5 fdn">
-        <h1 class="fonte">Resumo</h1>
-        <p>Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
+      <v-row v-bind:style="{ fontSize: fontSize + 'rem' }" class="ml-5 fdn">
+        <h1 :class="[ isLoading ? '' : 'white--text' ]" class="fonte">Resumo</h1>
+        <p :class="[ isLoading ? '' : 'white--text' ]">Neste Curso de Adobe Photoshop do Básico ao Avançado, vamos aprender na pratica a utilizar o programa criando diversos trabalhos e exercícios de forma que possamos trabalhar em um nível avançado e até mesmo profissional mas sem deixar a parte teórica de lado.</p>
 
-        <h1 class="fonte">Requisitos</h1>
-        <p>
+        <h1 :class="[ isLoading ? '' : 'white--text' ]" class="fonte">Requisitos</h1>
+        <p :class="[ isLoading ? '' : 'white--text']">
           Os alunos não precisam ter nenhum conhecimento no programa pois ensinamos do zero
           Basta o aluno ter um conhecimento básico de informatica e possuir o programa photoshop cs5 , cs6 ou cc.
         </p>
@@ -207,7 +213,7 @@
     <section class="container-item mt-5 mb-5">
       <div class="apresenta-item">
         <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>
-        <h1 class="font-weight-bold headline">Profesor deste curso</h1>
+        <h1 class="font-weight-bold headline">Professor deste curso</h1>
       </div>
 
       <div>
@@ -236,11 +242,11 @@
         </v-img>
       </v-card>
 
-      <v-card class="ml-5 mb-5 tamanhocurriculo" max-height="20rem" max-width="35rem" tile>
+      <v-card :class="[ isLoading ? 'white' : 'black' ]" class="ml-5 mb-5 tamanhocurriculo" max-height="20rem" max-width="35rem" tile>
         <v-list-item-content>
-          <v-list-item-title class="title ml-5 black--text">Currículo do Professor</v-list-item-title>
+          <v-list-item-title :class="[ isLoading ? 'black--text' : 'white--text' ]" class="title ml-5">Currículo do Professor</v-list-item-title>
         </v-list-item-content>
-        <ul class="lista ml-4 black--text">
+        <ul v-bind:style="{ fontSize: fontSize + 'rem' }" class="lista mx-4 my-3" :class="[ isLoading ? 'black--text' : 'white--text' ]">
           <li>Formado em Ciência da Computação</li>
           <li>Pós-graduado em Business Intelligence</li>
           <li>Design Gráfico</li>
@@ -268,6 +274,7 @@
       <AppHelp />
       <AppNewsletter />
     </v-row>
+    </div>
   </v-container>
 </template>
 <script>
@@ -356,21 +363,23 @@ export default {
       nomecurso: "Adobe Photoshop cs6",
       tempocurso: "77 aulas | 10 horas",
       professor: "Lucas Santos",
-      rating: 5
+      rating: 5,
+      fontSize: 1.5,
+      isLoading: true,
     };
   },
   methods: {
     voltar() {
       this.$router.push("/");
-    }
+    },   
+    changeColor(){
+                    this.isLoading = !this.isLoading;
+                   }
   }
 };
 </script>
 
 <style>
-.curso-item {
-  background-color: #2196f3;
-}
 .container-item {
   background-color: white;
   display: flex;

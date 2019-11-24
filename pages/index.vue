@@ -1,28 +1,26 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+            <div  :class="[ isLoading ? 'white' : 'black' ]">
         <AppHeader/>
+
+<v-row justify="center" align="end" class="my-5">
+<v-btn @click="changeColor">contraste</v-btn>
+<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+</v-row>
+
       <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card tile width="100%" height="100%" dark color="indigo">
+        <v-card tile width="100%" height="100%" dark :class="[ isLoading ? 'indigo' : 'black' ]">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
-              <v-btn @click="changeColor">teste</v-btn>
-              <h2 :class="[ isLoading ? 'white--text' : 'black--text' ]">{{bemvindos}}</h2>
+              <h2>{{bemvindos}}</h2>
             </v-card-title>
-
-
- <v-btn v-on:click="fontSize += 0.25">A+</v-btn>
-  <v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
-
-  <br><br>
-  <div v-bind:style="{ fontSize: fontSize + 'rem' }">
-    Main content of website
-  </div>
-
 
             <v-card-text >
               <p  id="conteudo" class="textop">{{apresentacao}}</p>
-              <v-btn @click="conhecer" class="mb-5 primary">Saiba mais</v-btn>
+              <v-btn @click="conhecer" :class="[ isLoading ? 'white--text primary' : 'black--text white' ]" class="mb-5">Saiba mais</v-btn>
             </v-card-text>
           </v-layout>
         </v-card>
@@ -30,7 +28,7 @@
     </v-layout>
 
     <v-row justify="center">
-      <v-card fill-height width="100%" color="blue" dark elevation="01">
+      <v-card fill-height width="100%" :class="[ isLoading ? 'blue' : 'white black--text' ]" dark elevation="01">
           <v-card-title
             class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
           >Promoções da Diorama Cursos!</v-card-title>
@@ -64,18 +62,19 @@
     </v-row>
 
     <v-row id="content" align="center" justify="center" class="my-5 mx-5">
-      <h1 class="mb-5 text-center">Diorama Cursos</h1>
+      <h1 class="mb-5 text-center"  :class="[ isLoading ? '' : 'white--text' ]">Diorama Cursos</h1>
 
-      <p
+      <p v-bind:style="{ fontSize: fontSize + 'rem' }"  :class="[ isLoading ? '' : 'white--text' ]"
+
         class="text-center"
       >A Diorama Cursos online como a mais nova escola de cursos online oferece uma grande variedade de conteúdos para desenvolvimento web, como nossos cursos online de programação como, por exemplo, nossos cursos de Java, JavaScript, Python, também possuímos cursos online de web designer com nossos cursos de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Como tal também possuímos materiais de estruturação de sites nos cursos online de HTML e CSS, Conheça alguns dos cursos mais famosos da escola online Diorama Cursos online abaixo:</p>
     </v-row>
 
     <v-row  dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
-        <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
+        <v-card fill-height  :class="[ isLoading ? 'blue' : 'white black--text' ]" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
-            <v-card-title
+            <v-card-title 
               class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
             >Cursos de web design</v-card-title>
           </v-row>
@@ -87,14 +86,14 @@
             <router-link
                     v-for="c of cursosDesign" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6 ">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
                     
@@ -106,7 +105,7 @@
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -124,31 +123,31 @@
 
     <v-row dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
-        <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
+        <v-card fill-height :class="[ isLoading ? 'blue' : 'black' ]" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
-            <v-card-title
+            <v-card-title :class="[ isLoading ? 'blue' : 'white black--text' ]"
               class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
-            >Cursos de Modelagem 3d</v-card-title>
+            >Cursos de modelagem 3D</v-card-title>
           </v-row>
         </v-card>
       </v-row>
 
       <v-col cols="6" xl="12" lg="10" md="9" sm="8">
         <v-row justify="center">
-       <router-link
+        <router-link
                     v-for="c of cursosModelagem" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                     
+                    
                       <v-card-text class="textopadrao black--text">
                         <H1>Preço: R$ {{ c.preco }}</H1>
                       </v-card-text>
@@ -157,7 +156,7 @@
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -176,11 +175,11 @@
 
     <v-row dense justify="center" class="my-5">
       <v-row justify="center" class="mb-12">
-        <v-card fill-height color="blue" dark class="mx-6 my-6" elevation="01">
+        <v-card fill-height :class="[ isLoading ? 'blue' : 'black' ]" dark class="mx-6 my-6" elevation="01">
           <v-row justify="center">
-            <v-card-title
+            <v-card-title :class="[ isLoading ? 'blue' : 'white black--text' ]"
               class="align-center ma-2 text-center fontetitulo justify-center flex-nowrap"
-            >Cursos de Modelagem 3d</v-card-title>
+            >Cursos de desenvolvimento web</v-card-title>
           </v-row>
         </v-card>
       </v-row>
@@ -190,29 +189,30 @@
        <router-link
                     v-for="c of cursosDesenvolvimento" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6 ">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                     
-                      <v-card-text class="textopadrao black--text">
-                        <h1 >Preço: R$ {{ c.preco }}</h1>
-                      </v-card-text>
                     
                       <v-card-text class="textopadrao black--text">
-                        <h1>Duração: {{ c.duracao }}</h1>
+                        <H1>Preço: R$ {{ c.preco }}</H1>
+                      </v-card-text>
+                     
+                      <v-card-text class="textopadrao black--text">
+                        <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
+
 
         </v-row>
       </v-col>
@@ -231,6 +231,7 @@
     </section>
 
     <AppNewsletter />
+        </div>
   </v-container>
 </template>
 
@@ -306,7 +307,8 @@ export default {
   },
   methods: {
        changeColor(){
-                    this.isLoading = !this.isLoading;},
+                    this.isLoading = !this.isLoading;
+                   },
     conhecer() {
       this.$router.push("/Cursos");
     },

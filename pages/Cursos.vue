@@ -1,8 +1,18 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+                <div  :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader />
+
+<v-row justify="center" align="end" class="my-5">
+<v-btn @click="changeColor">contraste</v-btn>
+<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+</v-row>
+
     <v-row class="my-5">
-      <v-card width="100%" height="100%" dark tile="" color="indigo">
+      <v-card :class="[ isLoading ? 'indigo' : 'black' ]"
+       width="100%" height="100%" dark tile="">
         <v-layout class="flex-wrap" justify-center align-center>
           <v-card-title>
             <h2 class="tituloh text-center">Nossos cursos</h2>
@@ -12,47 +22,48 @@
     </v-row>
 
     <v-row align="center" justify="center" class="mt-12 my-5 mx-5">
-      <p
+      <p :class="[ isLoading ? '' : 'white--text' ]" v-bind:style="{ fontSize: fontSize + 'rem' }"
         class="text-center"
       >Nos cursos online da Diorama Cursos você sempre terá acesso a um conteúdo atualizado, já que os cursos de programação, de edição de web designer e todos os outros são frequentemente modificados. É possível assistir às aulas dos nossos cursos online a partir de qualquer computador com acesso à internet, desde que o mesmo cumpra os requisitos mínimos, e então é só começar a aprender com nossos cursos online e a realizar seu desenvolvimento web. Além das aulas, pelo fato de sermos a mais nova escola de cursos online o ambiente de aprendizado também é totalmente online, de forma que você pode usá-lo para esclarecer suas dúvidas com os instrutores e realizar outras atividades propostas. Por estes motivos, os cursos da Diorama Cursos online não são disponibilizados em formato DVD e foi optado que a nossa escola online se mante-se totalmente ligada à web.</p>
     </v-row>
 
     <v-row id="principal">
       <v-col>
-        <v-tabs slider-size="4" slider-color="indigo" show-arrows centered>
-          <v-tabs-slider color="teal lighten-3"></v-tabs-slider>
+        <v-tabs slider-size="4" show-arrows centered>
+          <v-tabs-slider :class="[ isLoading ? 'teal lighten-3' : 'grey darken-1' ]"></v-tabs-slider>
 
-          <v-tab class="blue white--text">Todos</v-tab>
-          <v-tab class="blue white--text">Design</v-tab>
-          <v-tab class="blue white--text">Modelagem 3d</v-tab>
-          <v-tab class="blue white--text">Desenvolvimento Web</v-tab>
+          <v-tab :class="[ isLoading ? 'blue white--text' : 'white black--text' ]">Todos</v-tab>
+          <v-tab :class="[ isLoading ? 'blue white--text' : 'white black--text' ]">Design</v-tab>
+          <v-tab  :class="[ isLoading ? 'blue white--text' : 'white black--text' ]">Modelagem 3d</v-tab>
+          <v-tab :class="[ isLoading ? 'blue white--text' : 'white black--text' ]">Desenvolvimento Web</v-tab>
 
-          <v-tab-item class="mx-6">
+          <v-tab-item :class="[ isLoading ? '' : 'black']">
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                 <router-link
+                <router-link
                     v-for="c of cursos" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
-                        class="align-center justify-center fill-height"
+                      <v-card-title 
+                        class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                      <v-card-text class="textopadrao">
+                    
+                      <v-card-text class="textopadrao black--text">
                         <H1>Preço: R$ {{ c.preco }}</H1>
                       </v-card-text>
-                    
-                      <v-card-text class="textopadrao">
+                     
+                      <v-card-text class="textopadrao black--text">
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -61,33 +72,33 @@
             </v-row>
           </v-tab-item>
 
-          <v-tab-item class="mx-6">
+          <v-tab-item :class="[ isLoading ? '' : 'black']">
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                 <router-link
+                <router-link
                     v-for="c of cursosDesign" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
-                      
+                    
                       <v-card-text class="textopadrao black--text">
                         <H1>Preço: R$ {{ c.preco }}</H1>
                       </v-card-text>
-                   
+                     
                       <v-card-text class="textopadrao black--text">
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -96,21 +107,21 @@
             </v-row>
           </v-tab-item>
 
-          <v-tab-item class="mx-6">
+        <v-tab-item :class="[ isLoading ? '' : 'black']">
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                 <router-link
+                <router-link
                     v-for="c of cursosModelagem" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
                     
@@ -122,7 +133,7 @@
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -130,21 +141,22 @@
               </v-col>
             </v-row>
           </v-tab-item>
-   <v-tab-item class="mx-6">
+
+  <v-tab-item :class="[ isLoading ? '' : 'black']">
             <v-row dense justify="center" class="my-5">
               <v-col cols="6" xl="12" lg="10" md="9" sm="8">
                 <v-row justify="center" class="flex-wrap">
-                 <router-link
+                <router-link
                     v-for="c of cursosDesenvolvimento" :key="c.id"
                     :to="`/produtos/${c.url}`">
-                    <v-card color="blue lighten-3" shaped="" elevation="01" class="mx-6 my-6 ">
+                    <v-card :class="[ isLoading ? 'blue lighten-3' : 'white' ]" shaped="" elevation="01" class="mx-6 my-6 ">
                       <v-img
                         contain
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
                       ></v-img>
-                      <v-card-title
+                      <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
                       >{{ c.nome }}</v-card-title>
                     
@@ -156,7 +168,7 @@
                         <H1>Duração: {{ c.duracao }}</H1>
                       </v-card-text>
                       <v-card-text class="text-center">
-                        <v-btn color="primary">Saiba mais</v-btn>
+                        <v-btn class="white--text" :class="[ isLoading ? 'primary' : 'black' ]">Saiba mais</v-btn>
                       </v-card-text>
                     </v-card>
                  </router-link>
@@ -164,6 +176,7 @@
               </v-col>
             </v-row>
           </v-tab-item>
+
         </v-tabs>
       </v-col>
     </v-row>
@@ -180,7 +193,8 @@
     </section>
 
     <AppNewsletter/>
-  </v-container>
+                </div>
+</v-container>
 </template>
 
 <script>
@@ -195,7 +209,9 @@ export default {
   
   data() {
     return {
-      cursos: []
+      cursos: [],
+      fontSize: 1.25,
+      isLoading: true,
     }
   },
   created(){
@@ -244,7 +260,11 @@ export default {
     ,         {rel: 'canonical', href: 'http://localhost:3000/Classes'}
 
     ]
-  }
+  },
+  methods: {
+       changeColor(){
+                    this.isLoading = !this.isLoading;
+                   }}
   
 }
 </script>

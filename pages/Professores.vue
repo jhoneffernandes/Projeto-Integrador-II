@@ -1,10 +1,16 @@
 <template>
   <v-container pa-0 ma-0 fluid>
+    <div :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader />
-
+<v-row justify="center" align="end" class="my-5">
+<v-btn @click="changeColor">contraste</v-btn>
+<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+</v-row>
       <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card tile width="100%" height="100%" dark color="indigo">
+        <v-card :class="[ isLoading ? 'indigo' : 'grey darken-4' ]" tile width="100%" height="100%" dark>
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
               <h2 class="tituloh text-center">{{ textbannerprof }}</h2>
@@ -18,9 +24,9 @@
     <v-layout class="ml-5 mr-3">
       <v-row>
         <v-card-text>
-          <p class="textop2 text-justify">
+          <p :class="[ isLoading ? '' : 'white--text' ]" class="textop2 text-justify" v-bind:style="{ fontSize: fontSize + 'rem' }">
             Os professores dos nossos cursos online são mestres desenvolvimento web, programação, edição, e são web designers experientes, que tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única para nossos cursos online, que faz questão de proporcionar aos alunos a experiência de cursos online presenciais, com todas as vantagens que só o meio online oferece. Logo abaixo você confere os docentes por trás de todos os nossos cursos online e mais, bem-vindos a mais nova escola online da web.
-           <router-link to="/Cursos">clique aqui para ver os nossos cursos.</router-link>
+           <router-link :class="[ isLoading ? '' : 'grey--text text--lighten-1' ]" to="/Cursos">clique aqui para ver os nossos cursos.</router-link>
           </p>
         </v-card-text>
       </v-row>
@@ -102,6 +108,7 @@
     </section>
 
     <AppNewsletter />
+    </div>
   </v-container>
 </template>
 <script>
@@ -111,6 +118,8 @@ export default {
   data() {
     return {
       professores: [],
+      fontSize: 1.25,
+      isLoading: true,
 
       textoinicio1:
         "Os nossos professores são mestres em programação, design, frameworks e tem muita paixão por ensinar, a combinação disso estimulou o desenvolvimento de uma metodologia de ensino e aprendizado única , que faz questão de proporcionar aos alunos a experiência de um curso presencial, com todas as vantagens que só o meio online oferece.Abaixo você confere os docentes por trás de todos os nossos cursos:",
@@ -137,7 +146,11 @@ export default {
           "Página contendo todos os professores da Diorama Cursos online, mostrando seus nomes, currículos e os cursos ministrados na Diorama"
       }
     ]
-  }
+  },
+  methods: {
+       changeColor(){
+                    this.isLoading = !this.isLoading;
+                   }}
 };
 </script>
 
@@ -145,6 +158,7 @@ export default {
 <style>
 .textop2 {
   font-size: 1rem;
+  line-height: 1;
 }
 
 .depoimento p {

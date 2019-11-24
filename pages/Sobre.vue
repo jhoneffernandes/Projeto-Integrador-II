@@ -1,10 +1,16 @@
 <template>
   <v-container ma-0 pa-0 fluid>
+    <div :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader />
-    
+    <v-row justify="center" align="end" class="my-5">
+<v-btn @click="changeColor">contraste</v-btn>
+<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+</v-row>
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>
-          <v-card tile="" width="100%" height="100%" dark color="indigo">
+          <v-card tile="" width="100%" height="100%" dark :class="[ isLoading ? 'indigo' : 'grey darken-4' ]">
             <v-layout justify-center align-center>
               <v-card-title>
                 <h2 class="tituloh flex-nowrap">{{textbannersobre}}</h2>
@@ -13,19 +19,18 @@
           </v-card>
         </v-layout>
       </v-row>
+ <v-row id="content" align="center" justify="center" class="my-5 mx-5">
+      <h1 class="mb-5 text-center"  :class="[ isLoading ? '' : 'white--text' ]">A criação da instituição</h1>
 
-      <v-row class="mx-6 my-5" justify="center">
-        <v-row justify="center my-5">
-          <h3 class="display-1 text-center">A criação da instituição</h3>
-        </v-row>
-        <p
-          class="text-justify"
-        >A Diorama cursos online foi criada para o segundo projeto integrador da turma de Sistemas para internet da Fatec Taquaritinga, inspirada na empresa brasileira Diorama Digital, foi escolhido o tema de uma escola online com cursos online, que tem como objetivo além da venda dos mesmos, a propagação do desenvolvimento web, através de materiais como nossos cursos online de programação em Java, JavaScript, Python, também através do nosso material de web designer com nossos cursos online de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Além também do nosso conteúdo de estruturação de sites nos cursos online de HTML e CSS, e com esses materiais a empresa espera propagar a onda de desenvolvimento web através dos nossos cursos online e também formar profissionais de qualidade em programação, edição e também web designers qualificados, e assim também nos tornarmos uma renomada escola de cursos online.</p>
-      </v-row>
+      <p v-bind:style="{ fontSize: fontSize + 'rem' }"  :class="[ isLoading ? '' : 'white--text' ]"
 
-      <v-row class="my-5">
+        class="text-center"
+      >A Diorama cursos online foi criada para o segundo projeto integrador da turma de Sistemas para internet da Fatec Taquaritinga, inspirada na empresa brasileira Diorama Digital, foi escolhido o tema de uma escola online com cursos online, que tem como objetivo além da venda dos mesmos, a propagação do desenvolvimento web, através de materiais como nossos cursos online de programação em Java, JavaScript, Python, também através do nosso material de web designer com nossos cursos online de edição em Adobe Photoshop, Adobe Premiere Pro, Adobe Illustrator e Adobe After Effects. Além também do nosso conteúdo de estruturação de sites nos cursos online de HTML e CSS, e com esses materiais a empresa espera propagar a onda de desenvolvimento web através dos nossos cursos online e também formar profissionais de qualidade em programação, edição e também web designers qualificados, e assim também nos tornarmos uma renomada escola de cursos online.</p>
+    </v-row>
+
+        <v-row class="my-5">
         <v-card-text class="headline text-center">
-          <h3 class="tipografia">{{textvideo}}</h3>
+      <h5 class="mb-5 text-center"  :class="[ isLoading ? '' : 'white--text' ]">{{textvideo}}</h5>
         </v-card-text>
       </v-row>
 
@@ -36,7 +41,7 @@
               <section title="Dois alunos falando sobre a empresa">
                 <vue-plyr>
                   <video height="60rem" width="100%">
-                    <source src="../assets/videos/vsobre.mp4#t=2" type="video/mp4" size="1080" />
+                    <source src="../assets/videos/vsobre.mp4#t=2" type="video/mp4" size="1080"/>
                     <track kind="captions" label="Em breve" />
                   </video>
                 </vue-plyr>
@@ -49,13 +54,13 @@
       <v-row class="my-5 mx-5" justify="center" align="center">
         <v-col>
           <v-row class="my-5" justify="center">
-            <p class="display-1">{{objetivos}}</p>
+      <h1 class="mb-5 text-center" :class="[ isLoading ? '' : 'white--text' ]">{{objetivos}}</h1>
           </v-row>
 
           <v-row justify="center">
             <v-layout color="grey lighten-5" justify-center>
               <section title="Topicos falando sobre os objetivos da empresa">
-                <ul class="tipografia">
+                <ul v-bind:style="{ fontSize: fontSize + 'rem' }" :class="[ isLoading ? '' : 'white--text' ]" class="tipografia">
                   <li>Formar profissionais na área de Full-Stack</li>
                   <li>Ensinar de forma eficiente e divertida</li>
                   <li>Gerar empregos aos clientes</li>
@@ -82,6 +87,7 @@
         </section>
 
     <AppNewsletter/>
+    </div>
   </v-container>
  
 </template>
@@ -93,6 +99,8 @@ import AppHeader from "../components/AppHeader";
 export default {
   data() {
     return {
+      fontSize: 1.5,
+      isLoading: true,
       textvideo:
         "Confira um vídeo introdutório sobre o projeto Diorama Cursos:",
       textbannersobre: "Sobre Diorama Digital",
@@ -134,7 +142,11 @@ export default {
     ,         {rel: 'canonical', href: 'http://localhost:3000/About'}
 
     ]
-  }
+  },
+  methods: {
+       changeColor(){
+                    this.isLoading = !this.isLoading;
+                   }}
 };
 </script>
 
