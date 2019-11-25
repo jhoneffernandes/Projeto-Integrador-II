@@ -9,12 +9,12 @@
 <v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
 </v-row>
     <section class="mt-1">
-      <v-btn class="ma-2" color="blue darken-2" dark @click="voltar">
+      <v-btn class="ma-2" :class="[ isLoading ? 'blue darken-4' : 'white black--text' ]" dark @click="voltar">
         <v-icon dark left>mdi-arrow-left</v-icon>Voltar
       </v-btn>
     </section>
 
-    <section :class="[ isLoading ? 'blue' : 'black' ]">
+    <section :class="[ isLoading ? 'blue' : 'grey darken-4' ]">
       <p class="nomecurso centered">
         Curso
         <br />
@@ -44,7 +44,7 @@
     </section>
 
     <v-col md="5" class="mx-auto">
-      <v-expansion-panels>
+      <v-expansion-panels :dark="!isLoading">
         <v-expansion-panel>
           <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
           <v-expansion-panel-content>CONHECENDO MELHOR O CURSO</v-expansion-panel-content>
@@ -168,8 +168,8 @@
     <AppCertificado />
 
     <section class="fundo-items">
-      <h1 class="centered titulo-item mt-8 font-weight-bold display-1">Recomendações</h1>
-      <div class="recomenda-item">
+      <h1 :class="[ isLoading ? '' : 'grey darken-4 white--text' ]" class="centered titulo-item mt-8 font-weight-bold display-1">Recomendações</h1>
+      <div :class="[ isLoading ? '' : 'black white--text' ]" class="recomenda-item">
         <div>
           <v-img
             class="ml-5 mt-5 mb-5"
@@ -210,7 +210,7 @@
       </div>
     </section>
 
-    <section class="container-item mt-5 mb-5">
+    <section :class="[ isLoading ? '' : 'grey darken-4 white--text' ]" class="container-item mt-5 mb-5">
       <div class="apresenta-item">
         <v-icon slot="icon" color="warning" size="36">mdi-account</v-icon>
         <h1 class="font-weight-bold headline">Professor deste curso</h1>
@@ -218,7 +218,7 @@
 
       <div>
         <router-link to="/Professores">
-          <v-btn color="primary" text>Ver todos os professores</v-btn>
+          <v-btn :class="[ isLoading ? 'primary' : 'grey darken-4 white--text' ]" text>Ver todos os professores</v-btn>
         </router-link>
       </div>
     </section>
@@ -246,7 +246,7 @@
         <v-list-item-content>
           <v-list-item-title :class="[ isLoading ? 'black--text' : 'white--text' ]" class="title ml-5">Currículo do Professor</v-list-item-title>
         </v-list-item-content>
-        <ul v-bind:style="{ fontSize: fontSize + 'rem' }" class="lista mx-4 my-3" :class="[ isLoading ? 'black--text' : 'white--text' ]">
+        <ul class="lista mx-4 my-3" :class="[ isLoading ? 'black--text' : 'white--text' ]">
           <li>Formado em Ciência da Computação</li>
           <li>Pós-graduado em Business Intelligence</li>
           <li>Design Gráfico</li>
@@ -425,10 +425,10 @@ export default {
   background-image: url("~assets/banners/depoimento.svg");
   color: rgb(255, 253, 253);
   height: 10rem;
-  width: 100rem;
+  width: 100%;
 }
 .fundo-text {
-  background-color: rgba(252, 252, 252, 0.623);
+  background-color: rgba(252, 252, 252, 0.9);
 }
 
 .emlinha {
@@ -472,7 +472,7 @@ export default {
 }
 .horacurso {
   font-size: 2rem;
-  color: rgba(0, 0, 124, 0.658);
+  color: rgba(0, 0, 124, 0.6);
 }
 .nomeprof {
   font-size: 1.5rem;

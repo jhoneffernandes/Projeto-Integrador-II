@@ -12,7 +12,7 @@
 
       <v-layout align-center justify-center text-center class="my-5">
       <v-row>
-        <v-card tile width="100%" height="100%" dark :class="[ isLoading ? 'indigo' : 'black' ]">
+        <v-card tile width="100%" height="100%" dark :class="[ isLoading ? 'indigo' : 'grey darken-4' ]">
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
               <h2>{{bemvindos}}</h2>

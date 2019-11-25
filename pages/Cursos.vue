@@ -11,7 +11,7 @@
 </v-row>
 
     <v-row class="my-5">
-      <v-card :class="[ isLoading ? 'indigo' : 'black' ]"
+      <v-card :class="[ isLoading ? 'indigo' : 'grey darken-4' ]"
        width="100%" height="100%" dark tile="">
         <v-layout class="flex-wrap" justify-center align-center>
           <v-card-title>
