@@ -5,19 +5,19 @@
           <v-layout class="flex-wrap" justify-center align-center>
             <v-card-title>
                 <v-layout class="flex-wrap">
-          <v-btn icon large class="grey darken-4 espacamento">
+          <v-btn title="Botão para ir para a página do facebook da Diorama" icon large class="grey darken-4 espacamento">
             <v-icon large>mdi-facebook</v-icon>
           </v-btn>
 
-          <v-btn icon large class="grey darken-4 espacamento">
+          <v-btn icon title="Botão para ir para a página do twitter da Diorama" large class="grey darken-4 espacamento">
             <v-icon large>mdi-twitter</v-icon>
           </v-btn>
 
-          <v-btn icon large class="grey darken-4 espacamento">
+          <v-btn icon title="Botão para enviar um e-mail para a Diorama" large class="grey darken-4 espacamento">
             <v-icon large>mdi-gmail</v-icon>
           </v-btn>
 
-          <v-btn icon large class="grey darken-4 espacamento">
+          <v-btn icon title="Botão para ir para a página do instagram da Diorama" large class="grey darken-4 espacamento">
             <v-icon large>mdi-instagram</v-icon>
           </v-btn>
         </v-layout>

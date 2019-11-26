@@ -4,10 +4,10 @@
         <AppHeader/>
 
 <v-row justify="center" align="end" class="my-5">
-<v-btn @click="changeColor">contraste</v-btn>
-<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
-<v-btn v-on:click="fontSize = 1.5">A</v-btn>
-<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+<v-btn title="botão para aumentar contraste da página" @click="changeColor">Contraste</v-btn>
+<v-btn title="botão para aumentar texto principal da página" v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn title="botão para voltar o texto principal da página ao tamanho padrão" v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn title="botão para diminuir o texto principal da página"  v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
 </v-row>
 
       <v-layout align-center justify-center text-center class="my-5">
@@ -20,7 +20,7 @@
 
             <v-card-text >
               <p  id="conteudo" class="textop">{{apresentacao}}</p>
-              <v-btn @click="conhecer" :class="[ isLoading ? 'white--text primary' : 'black--text white' ]" class="mb-5">Saiba mais</v-btn>
+              <v-btn title="botão para ir até a página dos cursos da Diorama" @click="conhecer" :class="[ isLoading ? 'white--text primary' : 'black--text white' ]" class="mb-5">Saiba mais</v-btn>
             </v-card-text>
           </v-layout>
         </v-card>
@@ -92,6 +92,7 @@
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
+                        alt="Caixa com cantos achatados contendo a logo da empresa e o nome do curso"
                       ></v-img>
                       <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
@@ -143,6 +144,7 @@
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
+                        alt="Caixa com cantos achatados contendo a logo da empresa e o nome do curso"
                       ></v-img>
                       <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
@@ -195,6 +197,7 @@
                         width="18rem"
                         height="18rem"
                         :src="require(`../assets/cursos/${c.imagem}.png`)"
+                        alt="Caixa com cantos achatados contendo a logo da empresa e o nome do curso"
                       ></v-img>
                       <v-card-title 
                         class="align-center justify-center fill-height headline font-weight-bold"
