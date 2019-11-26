@@ -42,7 +42,6 @@
                 <vue-plyr>
                   <video height="60rem" width="100%">
                     <source src="../assets/videos/vsobre.mp4#t=2" type="video/mp4" size="1080"/>
-                    <track kind="captions" label="Em breve" />
                   </video>
                 </vue-plyr>
               </section>
