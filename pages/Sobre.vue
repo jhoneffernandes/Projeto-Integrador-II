@@ -2,11 +2,11 @@
   <v-container ma-0 pa-0 fluid>
     <div :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader />
-    <v-row justify="center" align="end" class="my-5">
-<v-btn @click="changeColor">contraste</v-btn>
-<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
-<v-btn v-on:click="fontSize = 1.5">A</v-btn>
-<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+<v-row justify="center" align="end" class="my-5">
+<v-btn title="botão para aumentar contraste da página" @click="changeColor">Contraste</v-btn>
+<v-btn title="botão para aumentar texto principal da página" v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn title="botão para voltar o texto principal da página ao tamanho padrão" v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn title="botão para diminuir o texto principal da página"  v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
 </v-row>
       <v-row class="my-5">
         <v-layout align-center justify-center text-center>

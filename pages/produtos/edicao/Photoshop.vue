@@ -9,7 +9,7 @@
 <v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
 </v-row>
     <section class="mt-1">
-      <v-btn class="ma-2" :class="[ isLoading ? 'blue darken-4' : 'white black--text' ]" dark @click="voltar">
+      <v-btn title="botão que leva de volta a página inicial" class="ma-2" :class="[ isLoading ? 'blue darken-4' : 'white black--text' ]" dark @click="voltar">
         <v-icon dark left>mdi-arrow-left</v-icon>Voltar
       </v-btn>
     </section>
@@ -46,19 +46,19 @@
     <v-col md="5" class="mx-auto">
       <v-expansion-panels :dark="!isLoading">
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Apresentação do curso</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Apresentação do curso</v-expansion-panel-header>
           <v-expansion-panel-content>CONHECENDO MELHOR O CURSO</v-expansion-panel-content>
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Apresentando o Photoshop</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Apresentando o Photoshop</v-expansion-panel-header>
           <v-expansion-panel-content>INTRODUÇÃO AO PHOTOSHOP</v-expansion-panel-content>
           <v-expansion-panel-content>O QUE É O PHOTOSHOP</v-expansion-panel-content>
           <v-expansion-panel-content>PRINCIPAIS TECLAS DE ATALHO</v-expansion-panel-content>
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Ferramentas de seleçao</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Ferramentas de seleçao</v-expansion-panel-header>
           <v-expansion-panel-content>O QUE É SELEÇÃO</v-expansion-panel-content>
           <v-expansion-panel-content>SELEÇÔES DE LETREIRO</v-expansion-panel-content>
           <v-expansion-panel-content>SELEÇÕES DE LAÇO</v-expansion-panel-content>
@@ -71,7 +71,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Pinceis</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Pinceis</v-expansion-panel-header>
           <v-expansion-panel-content>Inicio de seção - Pinceis</v-expansion-panel-content>
           <v-expansion-panel-content>DIFERENÇA ENTRE LÁPIS E PINCEL</v-expansion-panel-content>
           <v-expansion-panel-content>SELETOR DE CORES</v-expansion-panel-content>
@@ -82,7 +82,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Camadas e Máscaras</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Camadas e Máscaras</v-expansion-panel-header>
           <v-expansion-panel-content>CAMADAS</v-expansion-panel-content>
           <v-expansion-panel-content>O QUE SÃO CAMADAS</v-expansion-panel-content>
           <v-expansion-panel-content>EDIÇÃO DESTRUTIVA E EDIÇÃO NÃO DESTRUTIVA</v-expansion-panel-content>
@@ -93,7 +93,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Textos</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Textos</v-expansion-panel-header>
           <v-expansion-panel-content>TEXTOS</v-expansion-panel-content>
           <v-expansion-panel-content>TEXTOS DE PONTO E TEXTOS DE PARAGRAFO</v-expansion-panel-content>
           <v-expansion-panel-content>CONFIGURANDO TEXTOS</v-expansion-panel-content>
@@ -104,7 +104,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Trabalhando imagens</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Trabalhando imagens</v-expansion-panel-header>
           <v-expansion-panel-content>PRINCIPAIS AJUSTES DE IMAGENS</v-expansion-panel-content>
           <v-expansion-panel-content>FERRAMENTAS DE CORREÇÃO DE IMAGEM</v-expansion-panel-content>
           <v-expansion-panel-content>FERRAMENTA CARIMBO</v-expansion-panel-content>
@@ -113,7 +113,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Animação Gif</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Animação Gif</v-expansion-panel-header>
           <v-expansion-panel-content>ANIMAÇÃO GIF</v-expansion-panel-content>
           <v-expansion-panel-content>CONCEITOS BÁSICOS DE ANIMAÇÃO GIF</v-expansion-panel-content>
           <v-expansion-panel-content>LIMITE DE CORES DO FORMATO GIF</v-expansion-panel-content>
@@ -123,7 +123,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Conceitos Teóricos</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Conceitos Teóricos</v-expansion-panel-header>
           <v-expansion-panel-content>CONCEITOS TEÓRICOS</v-expansion-panel-content>
           <v-expansion-panel-content>EIXO CARTESIANO</v-expansion-panel-content>
           <v-expansion-panel-content>PRINCIPAIS TAMANHO DE ARQUIVOS</v-expansion-panel-content>
@@ -137,7 +137,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Filtros</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Filtros</v-expansion-panel-header>
           <v-expansion-panel-content>FILTROS</v-expansion-panel-content>
           <v-expansion-panel-content>OBJETOS INTELIGENTES OU SMART OBJECT</v-expansion-panel-content>
           <v-expansion-panel-content>GALERIA DE FILTROS</v-expansion-panel-content>
@@ -146,7 +146,7 @@
         </v-expansion-panel>
 
         <v-expansion-panel>
-          <v-expansion-panel-header>+ Seção de Trabalhos</v-expansion-panel-header>
+          <v-expansion-panel-header title="Painel que ao ser clicado mostra o que acontecerá nessa etapa do curso">+ Seção de Trabalhos</v-expansion-panel-header>
           <v-expansion-panel-content>INICIO DE SEÇÃO - TRABALHOS</v-expansion-panel-content>
           <v-expansion-panel-content>TRABALHO - 07</v-expansion-panel-content>
           <v-expansion-panel-content>TRABALHO - 08</v-expansion-panel-content>
@@ -177,14 +177,15 @@
             contain
             width="10rem"
             :src="require('~/assets/cursos/ilustrator.png')"
+            alt="Caixa com cantos achatados com a logo da Diorama na parte superior e o nome do curso no meio"
           ></v-img>
 
           <div class="nome-item mb-6">
             <h1 class="title">Adobe Illustrator cs6</h1>
             <h3>Preço: R$ 150,00</h3>
-            <v-rating v-model="rating" color="yellow"></v-rating>
+            <v-rating title="Pontuação do curso segundo os usuários: 5 estrelas (nota máxima)" v-model="rating" color="yellow"></v-rating>
             <router-link to="./ilustrator">
-              <v-btn color="primary">Saiba mais</v-btn>
+              <v-btn title="botão que leva a página do curso" color="primary">Saiba mais</v-btn>
             </router-link>
           </div>
         </div>
@@ -196,14 +197,15 @@
             contain
             width="10rem"
             :src="require('~/assets/cursos/corel.png')"
+          alt="Caixa com cantos achatados com a logo da Diorama na parte superior e o nome do curso no meio"
           ></v-img>
 
           <div class="nome-item mb-6">
             <h1 class>Corel Draw x8</h1>
             <h3>Preço: R$ 150,00</h3>
-            <v-rating v-model="rating" color="yellow"></v-rating>
+            <v-rating title="Pontuação do curso segundo os usuários: 5 estrelas (nota máxima)" v-model="rating" color="yellow"></v-rating>
             <router-link to="./corel">
-              <v-btn color="primary">Saiba mais</v-btn>
+              <v-btn title="botão que leva a página do curso" color="primary">Saiba mais</v-btn>
             </router-link>
           </div>
         </div>
@@ -218,7 +220,7 @@
 
       <div>
         <router-link to="/Professores">
-          <v-btn :class="[ isLoading ? 'primary' : 'grey darken-4 white--text' ]" text>Ver todos os professores</v-btn>
+          <v-btn title="botão que leva a página professores" :class="[ isLoading ? 'primary' : 'grey darken-4 white--text' ]" text>Ver todos os professores</v-btn>
         </router-link>
       </div>
     </section>
@@ -228,7 +230,7 @@
         <v-img height="100%" :src="require('~/assets/banners/background.png')">
           <v-row align="end" class="fill-height">
             <v-col align-self="start" class="pa-0" cols="12">
-              <v-img :src="require ('~/assets/professores/prof1.jpg')"></v-img>
+              <v-img :src="require ('~/assets/professores/prof1.jpg')" alt="Imagem do professor do curso sorrindo,com roupa sociais sentado numa cadeira"></v-img>
             </v-col>
             <v-col class="py-0">
               <v-list-item dark>

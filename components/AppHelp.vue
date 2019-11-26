@@ -8,13 +8,13 @@
           </section>
   
           <v-form class="mt-12 ml-5 mr-5">
-            <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
-            <v-text-field v-model="email" :counter="30" :rules="emailRules" label="E-mail" required></v-text-field>
-            <v-text-field :counter="10" label="Assunto"></v-text-field>
-            <v-textarea :counter="100" label="Descrição"></v-textarea>
+            <v-text-field title="Digite seu nome nesse campo" v-model="name" :counter="10" :rules="nameRules" label="Nome" required></v-text-field>
+            <v-text-field title="Digite seu e-mail nesse campo" v-model="email" :counter="30" :rules="emailRules" label="E-mail" required></v-text-field>
+            <v-text-field title="Digite o motivo de contato nesse campo" :counter="10" label="Assunto"></v-text-field>
+            <v-textarea title="Digite uma descrição do seu problema nesse campo" :counter="100" label="Descrição"></v-textarea>
   
-            <v-btn tile elevation="0" color="red mr-3 white--text" @click="enviar">Enviar</v-btn>
-            <v-btn tile elevation="0" color="green white--text" @click="limpar">Limpar</v-btn>
+            <v-btn tile title="Clique aqui para enviar o formulário" elevation="0" color="red mr-3 white--text" @click="enviar">Enviar</v-btn>
+            <v-btn tile title="Clique aqui para limpar todos os campos desse formulário" elevation="0" color="green white--text" @click="limpar">Limpar</v-btn>
           </v-form>
           </v-card>
         </v-col>

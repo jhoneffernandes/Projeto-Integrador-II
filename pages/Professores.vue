@@ -3,10 +3,10 @@
     <div :class="[ isLoading ? 'white' : 'black' ]">
     <AppHeader />
 <v-row justify="center" align="end" class="my-5">
-<v-btn @click="changeColor">contraste</v-btn>
-<v-btn v-on:click="fontSize += 0.25">A+</v-btn>
-<v-btn v-on:click="fontSize = 1.5">A</v-btn>
-<v-btn v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
+<v-btn title="botão para aumentar contraste da página" @click="changeColor">Contraste</v-btn>
+<v-btn title="botão para aumentar texto principal da página" v-on:click="fontSize += 0.25">A+</v-btn>
+<v-btn title="botão para voltar o texto principal da página ao tamanho padrão" v-on:click="fontSize = 1.5">A</v-btn>
+<v-btn title="botão para diminuir o texto principal da página"  v-on:click="fontSize < 0.5? fontSize = 0.25: fontSize -= 0.25">A-</v-btn>
 </v-row>
       <v-layout align-center justify-center text-center class="my-5">
       <v-row>
@@ -37,23 +37,23 @@
         <v-card class="mx-12 mb-12 flex-row tamanhocard"  v-for="p of professores" :key="p.id" min-width="300px" max-width="450px" tile>
           <v-tabs show-arrows="center">
             <v-tab>
-              <v-icon left>mdi-account</v-icon>Professor
+              <v-icon title="botão que leva a uma foto do professor" left>mdi-account</v-icon>Professor
             </v-tab>
             <v-tab>
-              <v-icon left>mdi-account-card-details-outline</v-icon>Currículo
+              <v-icon title="botão que leva as formações do professor (currículo)" left>mdi-account-card-details-outline</v-icon>Currículo
             </v-tab>
             <v-tab>
-              <v-icon left>mdi-application</v-icon>Cursos
+              <v-icon title="botão que leva aos cursos que esse professor leciona na Diorama" left>mdi-application</v-icon>Cursos
             </v-tab>
 
             
             <v-tab-item>
               <v-card flat>
-                <v-img height="100%" :src="require('../assets/banners/background.png')">
+                <v-img alt="Desenho de um homem de costas,sentado numa cadeira programando num computador com 2 telas com um café ao lado" height="100%" :src="require('../assets/banners/background.png')">
                   <v-row>
                     <v-col align-self="start" class="pa-0" cols="12">
                       <v-avatar class="profile" color="grey" size="164" tile>
-                        <v-img :src="require(`../assets/professores/${p.imagem}.jpg`)"></v-img>
+                        <v-img alt="Imagem do professor sorridente utilizando roupas sociais" :src="require(`../assets/professores/${p.imagem}.jpg`)"></v-img>
                       </v-avatar>
                     </v-col>
                     <v-col class="py-0">

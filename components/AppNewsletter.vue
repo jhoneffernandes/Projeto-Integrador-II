@@ -14,12 +14,13 @@
               class="mx-6 my-6"
               color="indigo"
               label="Digite seu e-mail"
+              title="Digite aqui seu e-mail"
             >
               <v-icon class="mx-1" slot="prepend" color="indigo">mdi-email</v-icon>
             </v-text-field>
   
             <v-card-actions class="align-center justify-center">
-              <v-btn dark :disabled="!valid" color="indigo" class="mb-5">Assinar</v-btn>
+              <v-btn dark title="Clique aqui para cadastrar seu e-mail na nossa newsletter" :disabled="!valid" color="indigo" class="mb-5">Assinar</v-btn>
             </v-card-actions>
           </v-card>
         </v-row>
